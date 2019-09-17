@@ -9,7 +9,7 @@ const Tag = props => {
 
   return (
     <Layout>
-      <Helmet title={`${tag} | ${siteTitle}`} />
+      
      
     </Layout>
   )

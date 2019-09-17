@@ -9,7 +9,7 @@ const Category = props => {
 
   return (
     <Layout>
-      <Helmet title={`${category} | ${siteTitle}`} />
+      
     
     </Layout>
   )

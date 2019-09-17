@@ -30,7 +30,7 @@ const ProcessHeader = () => (
                 prop => {
 					return (
 					<li className="">
-                                            <Link to={"precess/"+prop.node.slug} className="dropdown-item">
+                                            <Link to={"process/"+prop.node.slug} className="dropdown-item">
                                                 <span className="services-subheading" dangerouslySetInnerHTML={{
               __html: prop.node.acf.main_title
             }} />

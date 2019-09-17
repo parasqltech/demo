@@ -17,20 +17,4 @@ const Category = props => {
 
 export default Category
 
-export const pageQuery = graphql`
-  query CategoryPage($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allWordpressPost(filter: { categories: {  slug: { eq: $slug }  } }) {
-      totalCount
-      edges {
-        node {
-          ...PostListFields
-        }
-      }
-    }
-  }
-`
+

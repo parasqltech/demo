@@ -17,20 +17,4 @@ const Tag = props => {
 
 export default Tag
 
-export const pageQuery = graphql`
-  query TagPage($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allWordpressPost(filter: { tags: {  slug: { eq: $slug }  } }) {
-      totalCount
-      edges {
-        node {
-          ...PostListFields
-        }
-      }
-    }
-  }
-`
+

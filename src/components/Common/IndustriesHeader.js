@@ -6,33 +6,29 @@ const IndustriesHeader = () => (
   <StaticQuery	
     query={graphql`
       query {
-        allWordpressWpHomeservices{
-    edges{
-      node{
+         allWordpressWpIndustries {
+    edges {
+      node {
         title
-        acf{
-          title
-          descprition
-        }
+        slug
       }
     }
   }
 		}
     `}
     render={data => (
-			 <ul className="">
+			  <ul className="dropdown-menu-ul-list">
                                      
 				{data &&
-				data.allWordpressWpHomeservices &&
-				data.allWordpressWpHomeservices.edges &&
-				data.allWordpressWpHomeservices.edges.map(
+				data.allWordpressWpIndustries &&
+				data.allWordpressWpIndustries.edges &&
+				data.allWordpressWpIndustries.edges.map(
                 prop => {
 					return (
-					<li className="">
-                                           <a href="services-main-page.html" className="dropdown-item">
-                                               <span className="services-heading">{prop.node.acf.title}</span>
-                                               <span className="services-description">{prop.node.acf.descprition}</span>
-                                           </a>
+					<li>
+                                           <Link to={"industries/"+prop.node.slug} className="dropdown-item mt-1">
+                                               <span className="dropdown-menu-li-list">{prop.node.title}</span>
+                                           </Link>
                                        </li>
 					)
                 }

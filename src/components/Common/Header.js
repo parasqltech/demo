@@ -2,6 +2,9 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import logo from '../../img/logo.png'
 import ServiceHeader from './ServiceHeader'
+import IndustriesHeader from './IndustriesHeader'
+import PlatformHeader from './PlatformHeader'
+import ProcessHeader from './ProcessHeader'
 
 const Navbar = () => (
   <StaticQuery
@@ -95,64 +98,12 @@ const Navbar = () => (
                                <li className="other-menu border-right">
                                    <span className="services-heading ">Industries</span>
                                    <span className="services-description">Guiding clients with content strategy and helping them create content that converts</span>
-                                   <ul className="dropdown-menu-ul-list">
-                                       <li>
-                                           <a href="" className="dropdown-item mt-3">
-                                               <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="" className="dropdown-item">
-                                           <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="" className="dropdown-item">
-                                               <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="" className="dropdown-item">
-                                               <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="" className="dropdown-item">
-                                               <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                   </ul>
+                                   <IndustriesHeader />
                                </li>
                                <li className="other-menu">
                                    <span className="services-heading ">Platforms</span>
                                    <span className="services-description">Guiding clients with content strategy and helping them create content that converts</span>
-                                   <ul className="dropdown-menu-ul-list">
-                                       <li>
-                                           <a href="" className="dropdown-item mt-3">
-                                               <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="" className="dropdown-item">
-                                           <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="" className="dropdown-item">
-                                               <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="" className="dropdown-item">
-                                               <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                       <li>
-                                           <a href="" className="dropdown-item">
-                                               <span className="dropdown-menu-li-list">list Item</span>
-                                           </a>
-                                       </li>
-                                   </ul>
+									<PlatformHeader />
                                </li>
                            </ul>
                        </li>
@@ -165,37 +116,8 @@ const Navbar = () => (
                                Process
                            </a>
                            <ul className="dropdown-menu ">
-                               <li class="service-menu service-menu-full">
-                                    <ul class="">
-                                        <li class="">
-                                            <a href="services-main-page.html" class="dropdown-item">
-                                                <span class="services-subheading">Space for title</span>
-                                                <span class="services-heading">Strategy &amp; Consulting</span>
-                                                <span class="services-description">Deep-dive into a structured framework to plan and execute your business objectives</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="services-main-page.html" class="dropdown-item">
-                                                <span class="services-subheading">Space for title</span>
-                                                <span class="services-heading">Agile-focused Development</span>
-                                                <span class="services-description">Respond to new challenges and expectations in a flexible and swift manner. Build strong digital assets.</span>
-                                            </a>
-                                        </li>
-                                         <li class="">
-                                            <a href="services-main-page.html" class="dropdown-item">
-                                                <span class="services-subheading">Space for title</span>
-                                                <span class="services-heading">Strategy &amp; Consulting</span>
-                                                <span class="services-description">Deep-dive into a structured framework to plan and execute your business objectives</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                           <a href="services-main-page.html" class="dropdown-item">
-                                                <span class="services-subheading">Space for title</span>
-                                                <span class="services-heading">Strategy &amp; Consulting</span>
-                                                <span class="services-description">Deep-dive into a structured framework to plan and execute your business objectives</span>
-                                           </a>
-                                       </li>
-                                    </ul>
+                               <li className="service-menu service-menu-full">
+                                    <ProcessHeader />
                                 </li>
                               
                               

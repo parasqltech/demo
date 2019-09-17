@@ -6,34 +6,42 @@ const ProcessHeader = () => (
   <StaticQuery	
     query={graphql`
       query {
-        allWordpressWpHomeservices{
-    edges{
-      node{
-        title
-        acf{
-          title
-          descprition
-        }
-      }
-    }
-  }
+        allWordpressWpProcess {
+		edges {
+		  node {
+			title
+			slug
+			acf {
+			  main_title
+			  short_desc
+			}
+		  }
+		}
+	  }
 		}
     `}
     render={data => (
 			 <ul className="">
                                      
 				{data &&
-				data.allWordpressWpHomeservices &&
-				data.allWordpressWpHomeservices.edges &&
-				data.allWordpressWpHomeservices.edges.map(
+				data.allWordpressWpProcess &&
+				data.allWordpressWpProcess.edges &&
+				data.allWordpressWpProcess.edges.map(
                 prop => {
 					return (
 					<li className="">
-                                           <a href="services-main-page.html" className="dropdown-item">
-                                               <span className="services-heading">{prop.node.acf.title}</span>
-                                               <span className="services-description">{prop.node.acf.descprition}</span>
-                                           </a>
-                                       </li>
+                                            <Link to={"precess/"+prop.node.slug} className="dropdown-item">
+                                                <span className="services-subheading" dangerouslySetInnerHTML={{
+              __html: prop.node.acf.main_title
+            }} />
+                                                <span className="services-heading" dangerouslySetInnerHTML={{
+              __html: prop.node.title
+            }} />
+                                                <span className="services-description" dangerouslySetInnerHTML={{
+              __html: prop.node.acf.short_desc
+            }} />
+                                            </Link>
+                                        </li>
 					)
                 }
                 )}

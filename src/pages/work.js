@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, StaticQuery , graphql} from 'gatsby';
-import Isotope from "isotope-layout/js/isotope";
+
+	import Isotope from "isotope-layout/js/isotope";
+
 import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 import Layout from '../components/Layout'
@@ -39,7 +41,8 @@ class FilterGrid extends React.Component {
   // Click Function
   onFilterChange = (newFilter) => {
     if (this.iso === undefined) {
-      this.iso = new Isotope('#grid-container', {
+      if (typeof window !== 'undefined') {
+	  this.iso = new Isotope('#grid-container', {
         itemSelector: '.grid-item',
         layoutMode: "masonry",
         percentPosition: true,
@@ -47,6 +50,7 @@ class FilterGrid extends React.Component {
           columnWidth: '.grid-sizer2'
         }
       });
+	  }
     }
     if(newFilter === '*') {
       this.iso.arrange({ filter: `*` });

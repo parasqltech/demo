@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { withPrefix, Link } from "gatsby"
+import {withPrefix} from "gatsby"
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import Header from './Common/Header'
 import Footer from './Common/Footer'

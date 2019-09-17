@@ -40,9 +40,7 @@ const IndexPage = () => (
                         <span className="d-block">Leading best creative
                         digital </span> 
                        
-						<ReactTypingEffect cursor={""} cursorClassName="csr" typingDelay={1000} eraseDelay={1000}
-					  text={["Company.", "Team.", "Workplace."]}
-					/>
+						
 						&nbsp;
                     </h1>
                     <div className=" text-center wow fadeInUp" data-wow-delay="0.6s">

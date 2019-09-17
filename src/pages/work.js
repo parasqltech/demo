@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { Component } from "react"
 import { Link, StaticQuery , graphql} from 'gatsby';
-
-	import Isotope from "isotope-layout/js/isotope";
-
+import Isotope from "isotope-layout/js/isotope";
 import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 import Layout from '../components/Layout'
@@ -22,7 +20,8 @@ class FilterGrid extends React.Component {
   }
   
   componentDidMount() {
-    var link = document.getElementById('Allcss');
+    if (typeof window !== "undefined") {
+	var link = document.getElementById('Allcss');
     link.click();
 	
 	document.querySelectorAll('.work-thumbnial').forEach(function(button) {
@@ -35,14 +34,13 @@ class FilterGrid extends React.Component {
 			}
 		}
 	});
-	
+	}
   }
 
   // Click Function
   onFilterChange = (newFilter) => {
     if (this.iso === undefined) {
-      if (typeof window !== 'undefined') {
-	  this.iso = new Isotope('#grid-container', {
+      this.iso = new Isotope('#grid-container', {
         itemSelector: '.grid-item',
         layoutMode: "masonry",
         percentPosition: true,
@@ -50,7 +48,6 @@ class FilterGrid extends React.Component {
           columnWidth: '.grid-sizer2'
         }
       });
-	  }
     }
     if(newFilter === '*') {
       this.iso.arrange({ filter: `*` });
@@ -62,7 +59,6 @@ class FilterGrid extends React.Component {
   render() {
     const posts = this.props.data.allWordpressWpWorks;
     const category = this.props.data.allWordpressCategory;
-	console.log(category);
     return(
       // Filter Buttons
 	  <Layout>
@@ -144,6 +140,7 @@ class FilterGrid extends React.Component {
         </section>
 	</Layout>
     )
+	
   }
 }
 

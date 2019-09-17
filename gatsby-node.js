@@ -220,3 +220,26 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /isotope-layout/,
+            use: loaders.null(),
+          },
+		  {
+            test: /react-typing-effect/,
+            use: loaders.null(),
+          }	
+		  
+		  
+        ]
+      },
+    })
+  }
+}
+

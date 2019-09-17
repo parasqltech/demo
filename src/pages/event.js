@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby';
-
 import Isotope from "isotope-layout/js/isotope";
-
 import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 import Layout from '../components/Layout'
@@ -41,7 +39,6 @@ class FilterGrid extends React.Component {
   // Click Function
   onFilterChange = (newFilter) => {
     if (this.iso === undefined) {
-		if (typeof window !== 'undefined') {
       this.iso = new Isotope('#grid-container', {
         itemSelector: '.grid-item',
         layoutMode: "fitRows",
@@ -50,7 +47,6 @@ class FilterGrid extends React.Component {
           gutter: '.gutter-sizer'
         }
       });
-		}
     }
     if(newFilter === '*') {
       this.iso.arrange({ filter: `*` });
@@ -63,7 +59,6 @@ class FilterGrid extends React.Component {
     //const posts = this.props.data.allMarkdownRemark.node
 	 const posts = this.props.data.allWordpressWpEvents;
     const category = this.props.data.allWordpressCategory;
-	console.log(posts);
     return(
       // Filter Buttons
 	  <Layout>
@@ -145,6 +140,7 @@ class FilterGrid extends React.Component {
         </section>
 	</Layout>
     )
+	
   }
 }
 

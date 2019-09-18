@@ -206,11 +206,47 @@ exports.createPages = ({ actions, graphql }) => {
         })
       })
     })
+	.then(() => {
+      return graphql(`
+        {
+          allWordpressWpEvents {
+            edges {
+              node {
+                id
+                slug
+              }
+            }
+          }
+        }
+      `)
+    })
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		console.log(result.data.allWordpressWpEvents.edges);
+      const eventTemplate = path.resolve(`./src/templates/event.js`)
+		
+      _.each(result.data.allWordpressWpEvents.edges, ({ node: event }) => {
+       
+		createPage({
+          path: `/events/${event.slug}`,
+          component: eventTemplate,
+          context: {
+            
+			pathSlug: event.slug,
+          },
+        })
+      })
+    })
+	
+	
+	
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
     createNodeField({

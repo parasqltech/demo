@@ -2,7 +2,7 @@ import React from "react"
 import { withPrefix, Link } from "gatsby"
 import Helmet from 'react-helmet'
 import Particles from 'react-particles-js';
-import ReactTypingEffect from 'react-typing-effect';
+import Typewriter from 'typewriter-effect';
 import Tilt from 'react-tilt'
 import $ from "jquery";
 import Layout from '../components/Layout'
@@ -37,9 +37,14 @@ const IndexPage = () => (
             <div className="row justify-content-center">
                 <div className="col-xl-8 col-lg-10">
                     <h1 className="wow fadeInUp heading-main text-center" data-wow-delay="0.3s">
-                        <span className="d-block">Leading best creative
-                        digital </span> 
-                       
+                        <span className="d-block">Expert Caretakers to help </span> 
+                       <Typewriter
+						  options={{
+							strings: ['Hello', 'World'],
+							autoStart: true,
+							loop: true,
+						  }}
+						/>
 						
 						&nbsp;
                     </h1>

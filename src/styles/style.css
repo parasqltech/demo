@@ -8,6 +8,12 @@
 
 @charset "UTF-8";
 
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.1
@@ -3170,9 +3176,6 @@ body,html{
 
 
 /* custom scrollbar end*/
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
 h1,
 h2,
@@ -4124,7 +4127,7 @@ header .dropdown-menu .dropdown-menu-ul-list li a.dropdown-item:hover {
 
 header .dropdown:hover .dropdown-menu li{
     border-top: 1px solid #fff!important;
-
+vertical-align: top;
 }
 header .dropdown-menu {
     display: block;

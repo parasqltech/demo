@@ -40,7 +40,7 @@ const IndexPage = () => (
                         <span className="d-block">Expert Caretakers to help </span> 
                        <Typewriter
 						  options={{
-							strings: ['Hello', 'World'],
+							strings: ['Make digital work.', 'Engage and wow customers.','Get ready for the next.','Embrace analytics.'],
 							autoStart: true,
 							loop: true,
 						  }}

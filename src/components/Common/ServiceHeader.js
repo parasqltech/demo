@@ -10,6 +10,7 @@ const ServiceHeader = () => (
     edges{
       node{
         title
+		slug
         acf{
           title
           descprition
@@ -29,10 +30,10 @@ const ServiceHeader = () => (
                 prop => {
 					return (
 					<li className="">
-                                           <a href="services-main-page.html" className="dropdown-item">
+                                           <Link to={"services/"+prop.node.slug} className="dropdown-item">
                                                <span className="services-heading">{prop.node.acf.title}</span>
                                                <span className="services-description">{prop.node.acf.descprition}</span>
-                                           </a>
+                                           </Link>
                                        </li>
 					)
                 }

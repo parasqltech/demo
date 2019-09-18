@@ -6918,6 +6918,12 @@ section.work-details-section-1 .breif-text .percentage{
 section.work-details-section-1 .label-text{
     line-height: 1.6em;
 }
+section.home-services-section .inner-container .service-block-two:first-child {
+    position: absolute;
+    left: 0px;
+    top: 260px;
+    max-width: 33.33%;
+}
 @media all and (min-width:1600px) {
     .btn-default {
         font-size: 22px;
@@ -7423,6 +7429,11 @@ section.work-details-section-1 .label-text{
     section.events-section-1 .event-date-and-place ul li {
         padding: 10px 14px;
         font-size: 15px;
+    }
+	section.home-services-section .inner-container .service-block-two:first-child {
+        position: relative;
+        top: 0; margin-top: 0px;
+        max-width: 100%;
     }
 }
 
@@ -7947,6 +7958,12 @@ section.work-details-section-1 .label-text{
     section.events-section-1 .event-date-and-place ul li i {
         font-size: 30px;
         display: block;
+    }
+	section.home-services-section .inner-container .service-block-two:first-child {
+        position: relative;
+        top: 0; 
+		margin-top: 0px;
+        max-width: 100%;
     }
 }
 @media all and (max-width:576px) {
@@ -8907,3 +8924,30 @@ header .dropdown-menu .service-menu.service-menu-full li {
     width: calc(25% - 3px);
     padding-bottom: 15px;
 }
+
+.ScrollUpButton__Container {
+    background: #21a6df !important;
+    border-radius: 50%;
+	border:none !important;
+    bottom: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    height: 50px;
+    padding-top: 11px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 50px;
+    z-index: 111;
+}
+
+.ScrollUpButton__Container::before {
+	content: "\f176";
+	font-family: 'FontAwesome';
+}
+
+.ScrollUpButton__Container svg{
+	display:none;
+}
+ 
+

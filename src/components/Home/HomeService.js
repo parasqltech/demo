@@ -6,10 +6,11 @@ const HomeService = () => (
   <StaticQuery
     query={graphql`
       query {
-   allWordpressWpHomeservices {
+   allWordpressWpHomeservices (limit: 5){
     edges {
       node {
         id
+		slug
         acf {
           descprition
           title
@@ -51,20 +52,7 @@ const HomeService = () => (
                 <div className="inner-container">
                     <div className="row clearfix">
 
-                        <div className="service-block-two col-xl-4 col-lg-4 d-lg-flex d-none">
-                            <div className="inner-box wow fadeInLeft animated" data-wow-delay="0ms"
-                                data-wow-duration="1500ms">
-                                <div className="shape-one"></div>
-                                <div className="shape-two"></div>
-                                <div className="shape-three"></div>
-                                <div className="icon-box">
-                                    <span className="icon flaticon-web-design-1"></span>
-                                </div>
-                                <h3><a href="services.html">Web Develpment</a></h3>
-                                <div className="text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                    consectetur, adipisci velit, sed quia non.</div>
-                            </div>
-                        </div>
+                        
                              {data &&
               data.allWordpressWpHomeservices &&
               data.allWordpressWpHomeservices.edges.map(
@@ -82,27 +70,14 @@ const HomeService = () => (
                                 <div className="icon-box">
                                     <span className="icon flaticon-profits"></span>
                                 </div>
-                                <h3><a href={prop.node.link}>{prop.node.acf.title}</a></h3>
+                                <h3><Link to={"services/"+prop.node.slug}>{prop.node.acf.title}</Link></h3>
                                 <div className="text">{prop.node.acf.descprition}</div>
                             </div>
                         </div>
                           )
                 }
               )}
-                        <div className="service-block-two col-xl-4 col-lg-4 col-md-6 col-sm-12 d-lg-none d-flex">
-                            <div className="inner-box wow fadeInLeft animated" data-wow-delay="0ms"
-                                data-wow-duration="1500ms">
-                                <div className="shape-one"></div>
-                                <div className="shape-two"></div>
-                                <div className="shape-three"></div>
-                                <div className="icon-box">
-                                    <span className="icon flaticon-web-design-1"></span>
-                                </div>
-                                <h3><a href="services.html">Web Develpment</a></h3>
-                                <div className="text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                    consectetur, adipisci velit, sed quia non.</div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

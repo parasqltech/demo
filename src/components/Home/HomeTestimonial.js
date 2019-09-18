@@ -57,7 +57,8 @@ const HomeTestimonial = () => (
                         
                     
                         prop => {
-                        return (    
+                        return ( 
+							
                         <div className="customer-testimonial-block">
                             <div className="container">
                                 <div className="row justify-content-center">
@@ -72,7 +73,10 @@ const HomeTestimonial = () => (
                                                 <img src={quote} className="img-fluid" alt=""/>
                                             </div>
                                             <p className="label-text">
-                                                {prop.node.acf.descprition}
+                                                
+												
+												{(prop.node.acf.descprition).substring(0, 400)} ... <a   data-id={"myModal"+prop.node.id} className="read_more_btn"    href="javascript:;" >Read More</a>
+												
                                             </p>
                                             <div className="author-info">
                                                 <h4>{prop.node.acf.title}</h4>
@@ -83,6 +87,10 @@ const HomeTestimonial = () => (
                                 </div>
                             </div>
                         </div>
+						
+				
+						
+						
                           )
                         }
                     )}  

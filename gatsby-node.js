@@ -225,7 +225,7 @@ exports.createPages = ({ actions, graphql }) => {
         result.errors.forEach(e => console.error(e.toString()))
         return Promise.reject(result.errors)
       }
-		console.log(result.data.allWordpressWpEvents.edges);
+		
       const eventTemplate = path.resolve(`./src/templates/event.js`)
 		
       _.each(result.data.allWordpressWpEvents.edges, ({ node: event }) => {

@@ -115,7 +115,7 @@ class FilterGrid extends React.Component {
                             <p className="event-date"><span>24</span>Dec</p>
                         </div>
                         <div className="work-thumbnail-details">
-                            <Link to={"events/"+prop.node.title} className="work-title">{prop.node.title}</Link>
+                            <Link to={"events/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
                            
                           
                         </div>
@@ -161,6 +161,7 @@ const Event = () => (
 		  node {
 			id
 			title
+			slug
 			acf {
 			  date
 			  image

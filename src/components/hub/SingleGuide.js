@@ -5,7 +5,7 @@ const SingleGuide = () => (
   <StaticQuery
     query={graphql`
 		query {
-			allWordpressWpKnowledgehub(filter: {categories: {elemMatch: {slug: {regex: "/guide/"}}}}, limit: 2) {
+			allWordpressWpKnowledgehub(filter: {categories: {slug: {regex: "/guide/"}}}, limit: 2) {
 				edges {
 				  node {
 					id

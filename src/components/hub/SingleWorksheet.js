@@ -5,7 +5,7 @@ const SingleWorksheet = () => (
   <StaticQuery
     query={graphql`
 		query {
-			allWordpressWpKnowledgehub(filter: {categories: {elemMatch: {slug: {regex: "/worksheet/"}}}}, limit: 3) {
+			allWordpressWpKnowledgehub(filter: {categories: {slug: {regex: "/worksheet/"}}}, limit: 3) {
 				edges {
 				  node {
 					id

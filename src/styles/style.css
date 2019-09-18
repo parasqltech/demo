@@ -8427,18 +8427,24 @@ section.resource-section-1 .thumbnial-content h2{
 }
 section.resource-section-1 .thumbnial:first-child .thumbnial-content {
     width: calc( 100% - 77px );
-    margin-top: -62px;
     display: block;
     padding-bottom: 48px;
 }
+
+.top{
+	margin-top: -62px !important;
+}
+
+.top h2{
+	 font-size: 30px !important;
+}
+
 section.resource-section-1 .thumbnial:first-child .btn-secondary-link {
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-section.resource-section-1 .thumbnial:first-child .thumbnial-content h2{
-    font-size: 30px;
-}
+
 
 .subnavbar .resource-menu .input-group .form-control{
     height: calc(1.2em + .75rem + 2px);
@@ -8522,14 +8528,14 @@ section.guide-last-section .section-heading{
     margin-top: 30px;
 }
 section.guide-section .grid .guide-thumbnial{
-    width: calc((100% / 3) - 35px);
+    
     border-radius: 12px;
     overflow: hidden;
     display: block;
     box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.15);
     margin:20px 15px;
 }
-section.guide-section .grid .guide-thumbnial .guide-image{
+section.guide-section .grid .guide-thumbnial .guide-image img{
     height: 210px;
     background: url(../img/portfolio/1.jpg) no-repeat;
     background-size: cover;
@@ -8555,7 +8561,7 @@ section.worksheet-section .thumbnail{
     margin:15px 15px;
 }
 section.worksheet-section .thumbnail .thumbnial-image{
-    height: 220px;
+    
     overflow: hidden;
 }
 section.worksheet-section .thumbnail .worksheet-text{
@@ -8950,4 +8956,19 @@ header .dropdown-menu .service-menu.service-menu-full li {
 	display:none;
 }
  
+section.worksheet-section .thumbnail {
+    border-radius: 12px;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.15);
+    margin: 15px 15px;
+}
 
+section.worksheet-section .thumbnail .worksheet-text {
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    min-height: 60px;
+    padding: 15px 15px 0px;
+}

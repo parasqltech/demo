@@ -11,15 +11,22 @@ const article = () => (
   <StaticQuery
     query={graphql`
       query {
-        allWordpressPage(filter: {wordpress_id: {eq: 324}}) {
-			edges {
-				node {
+        allWordpressWpKnowledgehub(filter: {categories: {elemMatch: {slug: {regex: "/article/"}}}}) {
+				edges {
+				  node {
+					id
 					title
-					wordpress_id
+					slug
 					content
+					acf {
+					  img {
+						source_url
+					  }
+					}
+					date(formatString: "D MMMM,Y")
+				  }
 				}
-			}
-		}
+			  }
       }
     `}
     render={data => (
@@ -86,314 +93,47 @@ const article = () => (
                         <div className="col-md-12">
                             <div className=" ">
                                 <div className="row">
-                                    <div className="col-lg-4 col-md-6 wow fadeInLeft article-block">
+                                    {data &&
+				data.allWordpressWpKnowledgehub &&
+				data.allWordpressWpKnowledgehub.edges &&
+				data.allWordpressWpKnowledgehub.edges.map(
+                prop => {
+					return (
+					<div className="col-lg-4 col-md-6 wow fadeInLeft article-block">
                                          <div className="thumbnial">
                                             <div className="thumbnial-image">
-                                                <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                        alt=""/></a>
+                                                <Link to={"blog/"+prop.node.slug}><img src={prop.node.acf.img.source_url} className="img-fluid w-100"
+                                                        alt=""/></Link>
                                             </div>
                                             <div className="thumbnial-content">
-                                                <a href="article-details.html" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                                </a>
-                                                <div className="post-date">20 March, 2018</div>
+                                                <Link to={"blog/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="blog-title">
+                                                </Link>
+                                                <div className="post-date">{prop.node.date}</div>
                                             </div>
                                             <div className="thumbnial-footer">
                                                 <div className="author pull-left">
                                                     <div className="image"><img src={author} alt=""/></div>
-                                                    by Jhon Kenedy
+                                                    by demo
                                                 </div>
                                                 <div className="social-links pull-right">
                                                     <ul className="post-info ">
-                                                        <li><a href="article-details.html"><span
-                                                            className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
+                                                        <li><Link to={"blog/"+prop.node.slug}><span
+                                                            className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></Link>
                                                         </li>
-                                                        <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
+                                                        <li><Link to={"blog/"+prop.node.slug}><span className="icon flaticon-share"></span></Link>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4 col-md-6 wow fadeInUp article-block">
-                                         <div className="thumbnial">
-                                            <div className="thumbnial-image">
-                                                <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                        alt=""/></a>
-                                            </div>
-                                            <div className="thumbnial-content">
-                                                <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                                </a>
-                                                <div className="post-date">20 March, 2018</div>
-                                            </div>
-                                            <div className="thumbnial-footer">
-                                                <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
-                                                    by Jhon Kenedy
-                                                </div>
-                                                <div className="social-links pull-right">
-                                                    <ul className="post-info ">
-                                                        <li><a href="article-details.html"><span
-                                                                    className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                        </li>
-                                                        <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6  wow fadeInRight article-block">
-                                        <div className="thumbnial">
-                                           <div className="thumbnial-image">
-                                               <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                       alt=""/></a>
-                                           </div>
-                                           <div className="thumbnial-content">
-                                               <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                               </a>
-                                               <div className="post-date">20 March, 2018</div>
-                                           </div>
-                                           <div className="thumbnial-footer">
-                                               <div className="author pull-left">
-                                                   <div className="image"><img src={author} alt=""/></div>
-                                                   by Jhon Kenedy
-                                               </div>
-                                               <div className="social-links pull-right">
-                                                   <ul className="post-info ">
-                                                       <li><a href="article-details.html"><span
-                                                                   className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                       </li>
-                                                       <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                       </li>
-                                                   </ul>
-                                               </div>
-                                           </div>
-                                       </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6  wow fadeInDown article-block">
-                                         <div className="thumbnial">
-                                            <div className="thumbnial-image">
-                                                <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                        alt=""/></a>
-                                            </div>
-                                            <div className="thumbnial-content">
-                                                <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                                </a>
-                                                <div className="post-date">20 March, 2018</div>
-                                            </div>
-                                            <div className="thumbnial-footer">
-                                                <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
-                                                    by Jhon Kenedy
-                                                </div>
-                                                <div className="social-links pull-right">
-                                                    <ul className="post-info ">
-                                                        <li><a href="article-details.html"><span
-                                                                    className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                        </li>
-                                                        <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6   wow fadeInDown article-block">
-                                         <div className="thumbnial">
-                                            <div className="thumbnial-image">
-                                                <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                        alt=""/></a>
-                                            </div>
-                                            <div className="thumbnial-content">
-                                                <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                                </a>
-                                                <div className="post-date">20 March, 2018</div>
-                                            </div>
-                                            <div className="thumbnial-footer">
-                                                <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
-                                                    by Jhon Kenedy
-                                                </div>
-                                                <div className="social-links pull-right">
-                                                    <ul className="post-info ">
-                                                        <li><a href="article-details.html"><span
-                                                                    className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                        </li>
-                                                        <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6 wow fadeInLeft article-block">
-                                        <div className="thumbnial">
-                                           <div className="thumbnial-image">
-                                               <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                       alt=""/></a>
-                                           </div>
-                                           <div className="thumbnial-content">
-                                               <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                               </a>
-                                               <div className="post-date">20 March, 2018</div>
-                                           </div>
-                                           <div className="thumbnial-footer">
-                                               <div className="author pull-left">
-                                                   <div className="image"><img src={author} alt=""/></div>
-                                                   by Jhon Kenedy
-                                               </div>
-                                               <div className="social-links pull-right">
-                                                   <ul className="post-info ">
-                                                       <li><a href="article-details.html"><span
-                                                                   className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                       </li>
-                                                       <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                       </li>
-                                                   </ul>
-                                               </div>
-                                           </div>
-                                       </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6 wow fadeInUp article-block">
-                                         <div className="thumbnial">
-                                            <div className="thumbnial-image">
-                                                <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                        alt=""/></a>
-                                            </div>
-                                            <div className="thumbnial-content">
-                                                <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                                </a>
-                                                <div className="post-date">20 March, 2018</div>
-                                            </div>
-                                            <div className="thumbnial-footer">
-                                                <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
-                                                    by Jhon Kenedy
-                                                </div>
-                                                <div className="social-links pull-right">
-                                                    <ul className="post-info ">
-                                                        <li><a href="article-details.html"><span
-                                                                    className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                        </li>
-                                                        <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6  wow fadeInRight article-block">
-                                        <div className="thumbnial">
-                                           <div className="thumbnial-image">
-                                               <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                       alt=""/></a>
-                                           </div>
-                                           <div className="thumbnial-content">
-                                               <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                               </a>
-                                               <div className="post-date">20 March, 2018</div>
-                                           </div>
-                                           <div className="thumbnial-footer">
-                                               <div className="author pull-left">
-                                                   <div className="image"><img src={author} alt=""/></div>
-                                                   by Jhon Kenedy
-                                               </div>
-                                               <div className="social-links pull-right">
-                                                   <ul className="post-info ">
-                                                       <li><a href="article-details.html"><span
-                                                                   className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                       </li>
-                                                       <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                       </li>
-                                                   </ul>
-                                               </div>
-                                           </div>
-                                       </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6  wow fadeInDown article-block">
-                                         <div className="thumbnial">
-                                            <div className="thumbnial-image">
-                                                <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                        alt=""/></a>
-                                            </div>
-                                            <div className="thumbnial-content">
-                                                <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                                </a>
-                                                <div className="post-date">20 March, 2018</div>
-                                            </div>
-                                            <div className="thumbnial-footer">
-                                                <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
-                                                    by Jhon Kenedy
-                                                </div>
-                                                <div className="social-links pull-right">
-                                                    <ul className="post-info ">
-                                                        <li><a href="article-details.html"><span
-                                                                    className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                        </li>
-                                                        <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6   wow fadeInDown article-block">
-                                         <div className="thumbnial">
-                                            <div className="thumbnial-image">
-                                                <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                        alt=""/></a>
-                                            </div>
-                                            <div className="thumbnial-content">
-                                                <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                                </a>
-                                                <div className="post-date">20 March, 2018</div>
-                                            </div>
-                                            <div className="thumbnial-footer">
-                                                <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
-                                                    by Jhon Kenedy
-                                                </div>
-                                                <div className="social-links pull-right">
-                                                    <ul className="post-info ">
-                                                        <li><a href="article-details.html"><span
-                                                                    className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                        </li>
-                                                        <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-4 col-md-6 wow fadeInLeft article-block">
-                                        <div className="thumbnial">
-                                           <div className="thumbnial-image">
-                                               <a href="article-details.html"><img src={blog_thumb} className="img-fluid w-100"
-                                                       alt=""/></a>
-                                           </div>
-                                           <div className="thumbnial-content">
-                                               <a href="" className="blog-title">Top aide possible contender forced to resign over creepy.
-                                               </a>
-                                               <div className="post-date">20 March, 2018</div>
-                                           </div>
-                                           <div className="thumbnial-footer">
-                                               <div className="author pull-left">
-                                                   <div className="image"><img src={author} alt=""/></div>
-                                                   by Jhon Kenedy
-                                               </div>
-                                               <div className="social-links pull-right">
-                                                   <ul className="post-info ">
-                                                       <li><a href="article-details.html"><span
-                                                                   className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
-                                                       </li>
-                                                       <li><a href="article-details.html"><span className="icon flaticon-share"></span></a>
-                                                       </li>
-                                                   </ul>
-                                               </div>
-                                           </div>
-                                       </div>
-                                    </div>
+				)
+                }
+                )}	
+									
+									
+                                   
+                                    
                                 </div>
                                
                             </div>

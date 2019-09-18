@@ -4,6 +4,11 @@ import Layout from '../components/Layout'
 import Particles from 'react-particles-js';
 import event_thumb from '../img/events/event-thumbnial.jpg';
 
+import SingleArticle from '../components/hub/SingleArticle';
+import SingleGuide from '../components/hub/SingleGuide';
+import SingleWorksheet from '../components/hub/SingleWorksheet';
+
+
 
 const kh = () => (
   <StaticQuery
@@ -84,79 +89,12 @@ const kh = () => (
                 <div className="row justify-content-center">
                     <div className="col-md-11   ">
                         <div className="row">
-                            <div className="col-md-12 thumbnial">
-                                 <div className="">
-                                     <div className="img-thumbnial">
-                                        <img src={event_thumb} className="img-fluid w-100"/>
-                                     </div>
-                                </div>
-                                <div className="thumbnial-content">
-                                    <h2 className="thumbnial-title">Web Design &amp; Development</h2>
-                                    <p className="thumbnial-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <a href="#" className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
-                             <div className="col-md-6 thumbnial">
-                                 <div className="">
-                                     <div className="img-thumbnial">
-                                        <img src={event_thumb} className="img-fluid w-100"/>
-                                     </div>
-                                </div>
-                                <div className="thumbnial-content">
-                                    <h2 className="thumbnial-title">Web Design &amp; Development</h2>
-                                    <p className="thumbnial-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <a href="#" className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
-                            <div className="col-md-6 thumbnial">
-                                 <div className="">
-                                    <div className="img-thumbnial">
-                                        <img src={event_thumb} className="img-fluid w-100"/>
-                                     </div>
-                                </div>
-                                <div className="thumbnial-content">
-                                    <h2 className="thumbnial-title">Web Design &amp; Development</h2>
-                                    <p className="thumbnial-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <a href="#" className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 thumbnial">
-                                 <div className="">
-                                     <div className="img-thumbnial">
-                                        <img src={event_thumb} className="img-fluid w-100"/>
-                                     </div>
-                                </div>
-                                <div className="thumbnial-content">
-                                    <h2 className="thumbnial-title">Web Design &amp; Development</h2>
-                                    <p className="thumbnial-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <a href="#" className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 thumbnial">
-                                 <div className="">
-                                    <div className="img-thumbnial">
-                                        <img src={event_thumb} className="img-fluid w-100"/>
-                                     </div>
-                                </div>
-                                <div className="thumbnial-content">
-                                    <h2 className="thumbnial-title">Web Design &amp; Development</h2>
-                                    <p className="thumbnial-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <a href="#" className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 thumbnial">
-                                 <div className="">
-                                     <div className="img-thumbnial">
-                                        <img src={event_thumb} className="img-fluid w-100"/>
-                                     </div>
-                                </div>
-                                <div className="thumbnial-content">
-                                    <h2 className="thumbnial-title">Web Design &amp; Development</h2>
-                                    <p className="thumbnial-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <a href="#" className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                            <SingleArticle />
+							</div>
+                            <SingleGuide />
+							
+                            <SingleWorksheet />
+                        
                     </div>
                     <div className="col-md-12 text-center">
                         <div className="loading  text-center"> 

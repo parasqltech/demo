@@ -242,11 +242,6 @@ $(function choosefile() {
 
 
 
-$( ".read_more_btn" ).click(function() {
-	
-	var id = $(this).attr('data-id');
-	$('#'+id).modal('show');
-});
 
 
 

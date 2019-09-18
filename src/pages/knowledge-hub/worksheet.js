@@ -2,28 +2,30 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Particles from 'react-particles-js';
-import event_thumb from '../../img/events/event-thumbnial.jpg';
-import blog from '../../img/blog/dummy-image-1.jpg';
-import blog2 from '../../img/blog/dummy-image.jpg';
+import PropTypes from 'prop-types';
+import blog_thumb from '../../img/blog/blog-thubnial-1.jpg';
+import author from '../../img/blog/author-image.png';
 
 
-const worksheet = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allWordpressPage(filter: {wordpress_id: {eq: 324}}) {
-			edges {
-				node {
-					title
-					wordpress_id
-					content
-				}
-			}
-		}
-      }
-    `}
-    render={data => (
-		<Layout>
+
+class Grid extends React.Component {
+	constructor(props) {
+		super(props);
+		
+	}
+	
+	componentDidMount() {
+		
+	}
+	
+	 render() {
+		 
+		const category = this.props.data.allWordpressWpKnowledgehub; 
+		
+		var items = ['col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6 ','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6 ','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6 ','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6 ','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6 ','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6 ','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-4 col-xl-3','col-lg-8 col-xl-6'];
+		 
+		return(
+			<Layout>
 			<div className="bg">
 					<div className="area-bg">
 						 <Particles params={{"particles": {"number": {"value": 50,"density": {"enable": true,"value_area": 800}},"color": {"value": ["#FE395F", "#54DBF0", "#ad7cff", "#48d6ee"]},"shape": {"type": "polygon","stroke": {"width": 0,"color": "#000000",},"polygon": {"nb_sides": 10,},"image": {"src": "img/github.svg","width": 100,"height": 100}},"opacity": {"value": 0.2,"random": false,"anim": {"enable": false,"speed": 1,"opacity_min": 0.1,"sync": false}},"size": {"value": 5,"random": true,"anim": {"enable": false,"speed": 40,"size_min": 0.1,"sync": false}},"line_linked": {"enable": true,"distance": 150,"color": "#ffffff","opacity": 0.4,"width": 1},"move": {"enable": true,"speed": 6,"direction": "none","random": false,"straight": false,"out_mode": "out","bounce": false,"attract": {"enable": false,"rotateX": 600,"rotateY": 1200}}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": true,"mode": "grab"},"onclick": {"enable": true,"mode": "push"},"resize": true},"modes": {"grab": {"distance": 140,"line_linked": {"opacity": 1}},"bubble": {"distance": 400,"size": 40,"duration": 2,"opacity": 8,"speed": 3},"repulse": {"distance": 200,"duration": 0.4},"push": {"particles_nb": 4},"remove": {"particles_nb": 2}}},"retina_detect": true}} />
@@ -41,11 +43,11 @@ const worksheet = () => (
 						
 						
 						<h1 className="section-heading">
-						Worksheet
+						Article
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>
-							<li> Worksheet</li>
+							<li> Article</li>
 						</ul>
 					</div>
 			</section>
@@ -81,124 +83,76 @@ const worksheet = () => (
                     </div>
                 </div>
         </div>
-		<div className="container bg-white">
+       <div className="container bg-white">
                 <div className="row no-gutters">
-                    <div className="col-xl-6 col-lg-8 col-sm-6">
+                        {category &&
+				category &&
+				category.edges &&
+				category.edges.map(
+                (prop,i) => {
+					return (
+                       <div className={ "col-sm-6 "+items[i] } >
                         <div className="thumbnail">
                             <div className="thumbnial-image">
-                                <img src={blog} className="img-fluid w-100" alt=""/>
+                                <img src={prop.node.acf.img.source_url} className="img-fluid w-100" alt=""/>
                             </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
+                             <Link to={"blog/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="worksheet-text">
+									
+                            </Link>
                         </div>
                     </div>
-                    <div className="col-xl-3 col-lg-4 col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog2} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
+					
+					)
+                }
+                )}
+					
                     </div>
-                    <div className="col-xl-3 col-lg-4 col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
-                    </div>
-                     <div className="col-xl-3 col-lg-4 col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog2} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-4  col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog2} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
-                    </div>
-                     <div className="col-xl-6 col-lg-4  col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-xl-3 col-lg-8  col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog2} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
-                    </div>
-                     <div className="col-xl-3 col-lg-4  col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
-                    </div>
-                     <div className="col-xl-3 col-lg-4  col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog2} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
-                    </div>
-                     <div className="col-xl-3 col-lg-4  col-sm-6">
-                        <div className="thumbnail">
-                            <div className="thumbnial-image">
-                                <img src={blog2} className="img-fluid w-100" alt=""/>
-                            </div>
-                             <a href="brochures.html" className="worksheet-text">
-                                Space for title Here
-                            </a>
-                        </div>
-                    </div>
-
-                    <div className="col-md-12 text-center">
-                        <div className="loading  text-center"> 
-                            <div className="spinner-border  "></div> <span>
-                                    Loading... 
-                            </span>
-                        </div>
-                    </div>
-                </div>
             </div>
            
         </div>
     </section>
 		</Layout>
-    )}
+		)
+	 }
+	
+}
+Grid.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.array,
+    }),
+  }),
+}
+
+const worksheet = () => (
+	<StaticQuery
+    query = {graphql`
+      query{
+        
+		 allWordpressWpKnowledgehub(filter: {categories: {elemMatch: {slug: {regex: "/worksheet/"}}}}) {
+				edges {
+				  node {
+					id
+					title
+					slug
+					content
+					acf {
+					  img {
+						source_url
+					  }
+					}
+					date(formatString: "D MMMM,Y")
+				  }
+				}
+			  }		  
+    }
+  `}
+  render={(data) => <Grid data={data} />}
   />
 )
 
 export default worksheet
+
+
+
+

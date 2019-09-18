@@ -9,15 +9,22 @@ const guide = () => (
   <StaticQuery
     query={graphql`
       query {
-        allWordpressPage(filter: {wordpress_id: {eq: 324}}) {
-			edges {
-				node {
+        allWordpressWpKnowledgehub(filter: {categories: {elemMatch: {slug: {regex: "/guide/"}}}}) {
+				edges {
+				  node {
+					id
 					title
-					wordpress_id
+					slug
 					content
+					acf {
+					  img {
+						source_url
+					  }
+					}
+					date(formatString: "D MMMM,Y")
+				  }
 				}
-			}
-		}
+			  }
       }
     `}
     render={data => (
@@ -80,66 +87,32 @@ const guide = () => (
                 </div>
 				 <div className="container bg-white">
                 <div className="row">
-                        <div className="col-md-12">
+                        
+						              {data &&
+				data.allWordpressWpKnowledgehub &&
+				data.allWordpressWpKnowledgehub.edges &&
+				data.allWordpressWpKnowledgehub.edges.map(
+                prop => {
+					return (
+						
+						<div className="col-md-4">
                             <div className="grid">
-                                <div className="grid-item guide-thumbnial">
+                                <div className=" guide-thumbnial">
                                     <div className="guide-image">
-
+										<img src={event_thumb}  />
                                     </div>
-                                    <a href="brochures.html" className="guide-text">
-                                            Space for title Here
-                                    </a>
-                                </div>
-                                <div className="grid-item guide-thumbnial guide-thumbnial2">
-                                    <div className="guide-image">
-
-                                    </div>
-                                    <a href="brochures.html" className="guide-text">
-                                            Space for title Here
-                                    </a>
-                                </div>
-                                <div className="grid-item guide-thumbnial">
-                                    <div className="guide-image">
-
-                                    </div>
-                                    <a href="brochures.html" className="guide-text">
-                                            Space for title Here
-                                    </a>
-                                </div>
-                                <div className="grid-item guide-thumbnial">
-                                    <div className="guide-image">
-
-                                    </div>
-                                    <a href="brochures.html" className="guide-text">
-                                            Space for title Here
-                                    </a>
-                                </div>
-                                 <div className="grid-item guide-thumbnial">
-                                    <div className="guide-image">
-
-                                    </div>
-                                    <a href="brochures.html" className="guide-text">
-                                            Space for title Here
-                                    </a>
-                                </div>
-                                 <div className="grid-item guide-thumbnial">
-                                    <div className="guide-image">
-
-                                    </div>
-                                    <a href="brochures.html" className="guide-text">
-                                            Space for title Here
-                                    </a>
-                                </div>
-                                 <div className="grid-item guide-thumbnial">
-                                    <div className="guide-image">
-
-                                    </div>
-                                    <a href="brochures.html" className="guide-text">
-                                            Space for title Here
-                                    </a>
+                                    <Link to={"blog/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="guide-text">
+									
+                                    </Link>
                                 </div>
                             </div>
                         </div>
+						
+						)
+                }
+                )}	
+						
+						
                         <div className="col-md-12 text-center">
                             <div className="loading  text-center"> 
                                 <div className="spinner-border  "></div> <span >

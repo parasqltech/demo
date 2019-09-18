@@ -93,8 +93,8 @@ const IndexPage = () => (
             <div className="row justify-content-center">
                 <div className="col-md-8 mb-4">
                     <h2 className="section-heading text-center wow fadeIn">
-                        <span>Steps For Done</span>
-                        Our Working Process</h2>
+                        <span>Our Processes</span>
+                        Pillars of our base</h2>
                 </div>
             </div>
 

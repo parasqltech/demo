@@ -73,9 +73,10 @@ const HomeTestimonial = () => (
                                                 <img src={quote} className="img-fluid" alt=""/>
                                             </div>
                                             <p className="label-text">
-                                                
+                                                <span>{(prop.node.acf.descprition).substring(0, 400)}</span>
+												{(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" >Read More</a></span>):(''))}
 												
-												{(prop.node.acf.descprition).substring(0, 400)} ... <a   data-id={"myModal"+prop.node.id} className="read_more_btn"    href="javascript:;" >Read More</a>
+												
 												
                                             </p>
                                             <div className="author-info">

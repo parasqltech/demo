@@ -115,7 +115,7 @@ class FilterGrid extends React.Component {
                             <p className="event-date"><span>24</span>Dec</p>
                         </div>
                         <div className="work-thumbnail-details">
-                            <a href="event-details.html" className="work-title">{prop.node.title}</a>
+                            <Link to={"events/"+prop.node.title} className="work-title">{prop.node.title}</Link>
                            
                           
                         </div>

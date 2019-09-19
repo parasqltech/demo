@@ -14,6 +14,7 @@ const HomeService = () => (
         acf {
           descprition
           title
+		  icon
         }
         type
         link
@@ -68,7 +69,7 @@ const HomeService = () => (
                                 <div className="shape-two"></div>
                                 <div className="shape-three"></div>
                                 <div className="icon-box">
-                                    <span className="icon flaticon-profits"></span>
+                                    <span className={"icon "+prop.node.acf.icon} ></span>
                                 </div>
                                 <h3><Link to={"services/"+prop.node.slug}>{prop.node.acf.title}</Link></h3>
                                 <div className="text">{prop.node.acf.descprition}</div>

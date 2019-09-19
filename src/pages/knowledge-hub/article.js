@@ -11,7 +11,7 @@ const article = () => (
   <StaticQuery
     query={graphql`
       query {
-        allWordpressWpKnowledgehub(filter: {categories: {slug: {regex: "/article/"}}}) {
+        allWordpressWpKnowledgehub(filter: {categories:  { slug: {regex: "/article/"}}}) {
 				edges {
 				  node {
 					id

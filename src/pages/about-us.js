@@ -12,6 +12,7 @@ import clients_2 from '../img/clients/zoho-authorise-partners.png';
 import clients_3 from '../img/clients/hubspot-partners.png';
 import clients_4 from '../img/clients/keep-certified-partner.png';
 
+
 import Expereince from '../components/AboutUs/Expereince'
 import Whatwedo from '../components/AboutUs/Whatwedo'
 import Team from '../components/AboutUs/Team'
@@ -70,7 +71,7 @@ const AboutPage = () => (
             </div>
         </div>
     </section>
-	<Expereince />
+	
 	<Whatwedo />
    
     <section className="about-history-section timeline mb-4 pb-4" >
@@ -227,6 +228,7 @@ const AboutPage = () => (
             </div>
         </div>
     </section>
+	<Expereince />
 	</Layout>
 )
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Lightbox from '../components/Lightbox'
 import Particles from 'react-particles-js';
 const EventPage = () => (
   <StaticQuery
@@ -15,6 +16,7 @@ const EventPage = () => (
 					image
 					long_desc
 					short_desc
+					gallery
 				}
 			  }
 			}
@@ -52,7 +54,7 @@ const EventPage = () => (
                             <div class="event-content-block">
                                 <p dangerouslySetInnerHTML={{ __html: data.allWordpressWpEvents.edges[0].node.acf.long_desc}} />
                             <h1>Gallery :</h1>    
-                               
+                               <Lightbox images={data.allWordpressWpEvents.edges[0].node.acf.gallery} />
                              </div>
                         </div>
                     </div>

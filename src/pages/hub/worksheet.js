@@ -129,7 +129,7 @@ const worksheet = () => (
     query = {graphql`
       query{
         
-		 allWordpressWpKnowledgehub(filter: {categories: {slug: {regex: "/worksheet/"}}}) {
+		 allWordpressWpKnowledgehub(filter: {categories: {elemMatch:  {slug: {regex: "/worksheet/"}}}}) {
 				edges {
 				  node {
 					id

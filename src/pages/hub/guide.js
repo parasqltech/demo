@@ -9,7 +9,7 @@ const guide = () => (
   <StaticQuery
     query={graphql`
       query {
-        allWordpressWpKnowledgehub(filter: {categories: { slug: {regex: "/guide/"}}}) {
+        allWordpressWpKnowledgehub(filter: {categories: { elemMatch: {slug: {regex: "/guide/"}}}}) {
 				edges {
 				  node {
 					id

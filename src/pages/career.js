@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from '../components/Layout'
-import CareerSlider from '../components/Career/CareerSlider'
-import Whyqltech from '../components/Career/Whyqltech'
 import JobPost from '../components/Career/JobPost'
+import Whyqltech from '../components/Career/Whyqltech'
 import Particles from 'react-particles-js';
 import $ from 'jquery';
 
@@ -28,7 +27,7 @@ const CareerPage = () => (
                
             <span className="section-subheading-heading">Career</span>
                <h1 className="section-heading">
-                   QL Tech Career
+                   Career
                </h1>
                <ul className="breadcrumbs">
                    <li> <Link to="/">Home</Link> \</li>
@@ -36,78 +35,92 @@ const CareerPage = () => (
                </ul>
            </div>
 		</section>
-		<section className=" career-section-01">
-        <div className="container ">
-            <div className="row">
-                <div className="col-md-12 ">
-                    <CareerSlider />
+		
+		<section className="career-section-03 bg-light">
+        <div className="container">
+            <div className="main-panel">
+               
+                <div className="thumbnail bg-white">
+                <div className="row justify-content-center">
+                    <div className="col-md-9 text-sub-heading text-center">
+                             <p className="label-text text-subheading font-weight-regular">
+                                Over 400 current and former employees have written reviews of their experience at HubSpot.
+                                Learn what it's like to work here on <a href="#" target="_blank" class="nav-link text-success">Glassdoor.</a> 
+                            </p>
+                            
+                            <div className="rating-block mb-4">
+                                <span className="rating-number">4.1</span>
+                                <ul className="rating">
+                                    <li className="r10"><span className="fa fa-star "></span></li>
+                                    <li className="r10"><span className="fa fa-star "></span></li>
+                                    <li className="r10"><span className="fa fa-star "></span></li>
+                                    <li className="r10"><span className="fa fa-star"></span></li>
+                                    <li className="r10 r1"><span className="fa fa-star"></span></li>
+                                </ul>
+                            </div>
+                            <a href="#" target="_blank" className=" mb-4 d-block">
+                                <img src={glassdoor} className="img-fluid" alt="" width="220"/>
+                            </a>
+                        </div>
+                       
+                    </div>
                 </div>
-            </div>
+                 
+             </div>
         </div>
-    </section>
-     <Whyqltech />
+	</section>
+	<Whyqltech />	
+		
+     
     <section className="career-section-03 bg-light">
             <div className="container">
                 <div className="main-panel">
                     <div className="row justify-content-center text-center">
                         <div className="col-md-12 mt-4">
-                            <h2 className="section-heading ">Benifits
+                            <h2 className="section-heading ">Why us? 
                                 <span>Growth, purpose, and people. For starters.</span>
                             </h2>
                             <div className="row ">
-                                <div className="col-md-5">
+                                <div className="col-xl-4 col-lg-4 col-md-6">
                                     <div className="thumbnail wow fadeInLeft bg-white">
                                         <span className="benifits-icon text-danger"><i className="fa fa-home"></i></span>
-                                        <p className="h4">Title Here</p>
+                                        <p className="h4">Career Growth</p>
+										<p className="label-text">Training for improving skill sets.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-4">
+                                <div className="col-xl-4 col-lg-8 col-md-6">
                                     <div className="thumbnail wow fadeInUp bg-white">
-                                        <span className="benifits-icon   text-success"><i className="fa fa-home"></i></span>
-                                        <p className="h4">Title Here</p>
+                                        <span className="benifits-icon   text-warning"><i className="fa fa-home"></i></span>
+                                        <p className="h4">Compensation</p>
+										<p className="label-text">Referrals are most welcome.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-3">
+                                <div className="col-xl-4 col-lg-6 col-md-6">
                                     <div className="thumbnail wow fadeInRight bg-white">
                                        <span className="benifits-icon    text-primary"><i className="fa fa-home"></i></span>
-                                         <p className="h4">Title Here</p>
+                                         <p className="h4">CSR Activity</p>
+										 <p className="label-text">Employee engagement activities.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-4 ">
+                                <div className="col-xl-5 col-lg-6 col-md-6">
                                     <div className="thumbnail wow fadeInLeft bg-white">
-                                        <span className="benifits-icon  text-warning"><i className="fa fa-home"></i></span>
-                                         <p className="h4">Title Here</p>
+                                        <span className="benifits-icon  text-success"><i className="fa fa-home"></i></span>
+                                         <p className="h4">Office Space</p>
+										 <p className="label-text">Working environment with premium amenities.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-xl-7 col-lg-12 col-md-12">
                                     <div className="thumbnail wow fadeInDown bg-white">
                                       <span className="benifits-icon text-dark"><i className="fa fa-home"></i></span>
-                                          <p className="h4">Title Here</p>
+                                          <p className="h4">Work Culture</p>
+										  <p className="label-text">Complete transparency with least pressure & deadlines.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-2">
-                                    <div className="thumbnail wow fadeInRight bg-white">
-                                        <span className="benifits-icon"><i className="fa fa-home"></i></span>
-                                        <p className="h4">Title Here</p>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div className="thumbnail bg-white">
-                    <div className="row justify-content-center">
-                        <div className="col-md-9 text-sub-heading text-center">
-                                 <p className="section-heading-3 text-subheading font-weight-regular">
-                                    Over 400 current and former employees have written reviews of their experience at HubSpot.
-                                    Learn what it's like to work here on <a href="#"  target="_blank" className="nav-link text-success">Glassdoor.</a> 
-                                </p>
-                                <a href="#" target="_blank">
-                                    <img src={glassdoor} className="img-fluid" width="220" alt=""/>
-                                </a>
-                            </div>
-                           
-                        </div>
-                    </div>
+                    
                      
                  </div>
             </div>

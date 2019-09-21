@@ -5,7 +5,7 @@ const SingleArticle = () => (
   <StaticQuery
     query={graphql`
 		query {
-			allWordpressWpKnowledgehub(filter: {categories:{  slug: {regex: "/article/"}}}, limit: 1) {
+			allWordpressWpKnowledgehub(filter: {categories:{ slug: {regex: "/article/"}}}, limit: 1) {
 				edges {
 				  node {
 					id

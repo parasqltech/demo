@@ -21,8 +21,8 @@ const IndexPage = () => (
                </div>
            </div>
            <div className="container text-center">
-               <h1 className="section-heading"><span>Get connected</span>
-                    We'll love to hear from you!
+               <h1 className="section-heading"><span>Connect With Us</span>
+                   We'd love to hear from you! 
                </h1>
                <ul className="breadcrumbs">
                    <li> <Link to="/">Home</Link> \</li>
@@ -39,8 +39,8 @@ const IndexPage = () => (
 								<span className="card-icon   ">
 									<i className="fa fa-phone"></i>
 								</span>
-								<h6 className="card-title  mb-4">Talk to Sales</h6>
-								<p className="label-text mb-4">Interested in HubSpot's software? Just pick up the phone to chat with a 
+								<h6 className="card-title  mb-4">Talk to our experts</h6>
+								<p className="label-text mb-4">Need assistance? You are just an e-mail away. Drop a line at 
 										<a href="mailto:support@qltech.com.au" className="nav-link m-0 p-0">support@qltech.com.au</a>
 
 								</p>
@@ -67,12 +67,10 @@ const IndexPage = () => (
 									<span className="card-icon   ">
 										<i className="fa fa-comments"></i>
 									</span>
-									<h6 className="card-title  mb-4">Contact Customer Support</h6>
-									<p className="label-text  mb-4">Interested in HubSpot's software? Just pick up the phone to chat with a  <a href="mailto:career@qltech.com.au" className="nav-link    m-0 p-0">
-											career@qltech.com.au
-										</a></p>
+									<h6 className="card-title  mb-4">Career</h6>
+									<p className="label-text  mb-4">IReady to take on the challenge?  </p>
 
-								   <a href="career.html" className="btn btn-default mt-0 mb-4"> Go to career section</a>
+								   <Link to="career" className="btn btn-default mt-0 mb-4"> Go to career section</Link>
 								</div>
 							</div>
 					</div>
@@ -88,7 +86,8 @@ const IndexPage = () => (
 							<div className="card">
 								<div className="row ">
 									<div className="col-lg-12">
-											<GoogleMap />
+											
+											<GoogleMapAus />
 									</div>
 									<div className="col-lg-12 text-left">
 										<div className="card-body">
@@ -105,7 +104,7 @@ const IndexPage = () => (
 								<div className="card">
 									<div className="row">
 										<div className="col-lg-12">
-											<GoogleMapAus />
+											<GoogleMap />
 										</div>
 										<div className="col-lg-12 text-left">
 											<div className="card-body">

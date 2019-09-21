@@ -1,88 +1,89 @@
 import React from 'react'
-
 import { Link, StaticQuery, graphql } from 'gatsby'
-import thumbnial from '../../img/career/thumbnial.jpg'
+import Moment from 'react-moment';
+import 'moment-timezone';
 
-import CareerSection2Image1 from '../../img/career/why-we-are-employee-image.jpg'
-import CareerSection2Image2 from '../../img/career/why-we-are-employee-image-1.jpg'
-import employee from '../../img/career/why-we-are-employee-image.jpg'
-import employee1 from '../../img/career/why-we-are-employee-image-1.jpg'
+
+import portfolio from '../../img/portfolio/1.jpg'
 
 const Whyqltech = () => (
   <StaticQuery
     query={graphql`
       query {
-        allWordpressWpWhyqltech {
-                        edges {
-                          node {
-                            id
-                            acf {
-                              short_descp
-                              tag_lin
-                            }
-                          }
-                        }
-                      }
+        allWordpressWpEvents(limit: 3) {
+		edges {
+		  node {
+			id
+			title
+			slug
+			acf {
+			  date
+			  image
+			}
+			 categories{
+				name
+			}
+		  }
+		}	
+	  }
 		}
     `}
     render={data => (
 	
-		<section className="career-section-02 bg-white">
+		<section className="career-section-02 home-event-section bg-white">
        <div className="container">
            <div className="main-panel">
                <div className="row justify-content-center text-center">
-                       {data &&
-                                    data.allWordpressWpWhyqltech &&
-                                    data.allWordpressWpWhyqltech.edges.map(
-                                
-                                    
-                                
-                                    prop => {
-                                    return (   
-                                    <div className="col-md-10 mt-4">
-                                            <h2 className="section-heading ">Why QL Tech?
-                                                <span>{prop.node.acf.tag_lin}</span>
-                                            </h2>
-                                            <p className="label-text" dangerouslySetInnerHTML={{ __html: prop.node.acf.short_descp }} />
-                                           
-                                           
-                                            
-                                    </div>
-                                        )
-                                    }
-                                )}  
-                      
-                        
-               </div>
-                <div className="row justify-content-center">
-                    <div className="col-lg-6 col-md-9 mb-4">
-                        <div className="thumbnail wow fadeInLeft">
-                            <div className="thumbnial-content">
-                                <h2 className="thumbnial-title"> Space for Title</h2>
-                                <p className="thumbnial-description">Learn why working at VMware will help you be a force for good.</p>
-                                <a href="#" className="btn "> Watch Video</a>
-                            </div>
-                            <div className="thumbnial-image">
-                                <img src={employee} className="" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6 col-md-9 mb-4">
-                        <div className="thumbnail wow fadeInRight thumbnial-right">
-                             <div className="thumbnial-content">
-                                    <h2 className="thumbnial-title"> Space for Title</h2>
-                                    <p className="thumbnial-description">Learn why working at VMware will help you be a force for good.</p>
-                                    <a href="#" className="btn "> Watch Video</a>
-                                </div>
-                                <div className="thumbnial-image">
-                                    <img src={employee1} className="" alt=""/>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="col-md-10 mt-4">
+                        <h2 className="section-heading ">Life at QL Tech
+                            <span>Growth, purpose, and people. For starters.</span>
+                        </h2>
+                        <p className="label-text">
+                            Great art can only be designed by bringing numerous mosaics together. Well, it's the same for Us!
+
+                        </p> 
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="work-portfolio-module pt-0">
+                            <div className=" career-event-slider ">
+                                <div className="row justify-content-center">
+                                    
+                                    {data  && data.allWordpressWpEvents.edges.map(
+										prop => {
+											return (    
+													<div className="col-lg-4 col-md-6 mb-4  col-sm-6">
+												<div className='grid-item wow fadeInLeft  work-thumbnial ' >
+										<div className="work-thumbnail-image">
+											<img src={prop.node.acf.image} className="img-fluid" alt=""/>
+											<p className="event-date"><span><Moment format="DD">
+												{prop.node.acf.date}
+											</Moment></span><Moment format="MMM">
+												{prop.node.acf.date}
+											</Moment></p>
+										</div>
+										<div className="work-thumbnail-details">
+											<Link to={"events/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
+										   
+										  
+										</div>
+									</div>
+									</div>
+												
+												
+													  )
+													}
+												)}
+                                </div> 
+                                </div>
+                            </div> 
+                            
+                    </div>
+                </div>
+                    
             </div>
-      
+       </div>
     </section>
 	
 	

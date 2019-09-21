@@ -62,16 +62,16 @@ const guide = () => (
                         <div className="col-md-11 justify-content-between row mb-4">
                             <ul className="nav  resource-menu">
                                 <li className="nav-item">
-                                <Link className="nav-link " to="/knowledge-hub">Feature</Link>   
+                                <Link className="nav-link " to="/hub">Feature</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/knowledge-hub/article">Articles</Link>
+                                    <Link className="nav-link " to="/hub/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to="/knowledge-hub/guide">Guide</Link>
+                                    <Link className="nav-link active" to="/hub/guide">Guide</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/knowledge-hub/worksheet">Worksheet</Link>
+                                    <Link className="nav-link" to="/hub/worksheet">Worksheet</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">
@@ -86,8 +86,11 @@ const guide = () => (
                     </div>
                 </div>
 				 <div className="container bg-white">
-                <div className="row">
-                        
+                <div className="row justify-content-center">
+                        <div className="col-md-11 ">
+                     <div className="row">
+                        <div className="col-lg-9 col-md-12">
+                        <div className="row">
 						              {data &&
 				data.allWordpressWpKnowledgehub &&
 				data.allWordpressWpKnowledgehub.edges &&
@@ -95,7 +98,7 @@ const guide = () => (
                 prop => {
 					return (
 						
-						<div className="col-md-4">
+						<div className="col-md-6">
                             <div className="grid">
                                 <div className=" guide-thumbnial">
                                     <div className="guide-image">
@@ -113,13 +116,26 @@ const guide = () => (
                 )}	
 						
 						
-                        <div className="col-md-12 text-center">
-                            <div className="loading  text-center"> 
-                                <div className="spinner-border  "></div> <span >
-                                        Loading... 
-                                </span>
+                        
+                    </div>
+                    </div>
+					<div className="col-lg-3 col-md-12">
+                                <div className="sidebar postion-sticky">
+                                    <div className="sidebar-widget p-3 bg-light">
+                                        <h6 className="sidebar-title">Category</h6>
+                                        <ul className="Categary-list">
+                                            <li><a href="">Category</a></li>
+                                            <li><a href="">Category</a></li>
+                                            <li><a href="">Category</a></li>
+                                            <li><a href="">Category</a></li>
+                                            <li><a href="">Category</a></li>
+                                        </ul>
+                                    
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                    </div>
+                    </div>
                     </div>
             </div>
         </div>

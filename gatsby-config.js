@@ -19,6 +19,9 @@ module.exports = {
         auth: {},
         // Set to true to debug endpoints on 'gatsby build'
         verboseOutput: false,
+		
+		
+		
       },
     },
     'gatsby-plugin-sharp',
@@ -32,7 +35,7 @@ module.exports = {
         // Purge only the main css file
         purgeOnly: ['/all.sass'],
       },
-    }, // must be after other CSS plugins
+    }, // must be after other CSS plugin
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

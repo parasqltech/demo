@@ -59,16 +59,16 @@ class Grid extends React.Component {
                         <div className="col-md-11 justify-content-between row mb-4">
                             <ul className="nav  resource-menu">
                                 <li className="nav-item">
-                                <Link className="nav-link " to="/knowledge-hub">Feature</Link>   
+                                <Link className="nav-link " to="/hub">Feature</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/knowledge-hub/article">Articles</Link>
+                                    <Link className="nav-link " to="/hub/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/knowledge-hub/guide">Guide</Link>
+                                    <Link className="nav-link " to="/hub/guide">Guide</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to="/knowledge-hub/worksheet">Worksheet</Link>
+                                    <Link className="nav-link active" to="/hub/worksheet">Worksheet</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">

@@ -45,7 +45,8 @@ const HomeService = () => (
                             <span className="text-left mb-2">
                                 Our Services
                             </span>
-                            We Are Providing Digital Services
+                            Solutions to transform your business
+                        
                         </h2>
                         
                     </div>

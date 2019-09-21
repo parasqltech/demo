@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby';
 import Isotope from "isotope-layout/js/isotope";
+import Moment from 'react-moment';
+import 'moment-timezone';
 import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 import Layout from '../components/Layout'
@@ -112,7 +114,11 @@ class FilterGrid extends React.Component {
 								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.map(item => { return ( item.name ) }) } >
                         <div className="work-thumbnail-image">
                             <img src={prop.node.acf.image} className="img-fluid" alt=""/>
-                            <p className="event-date"><span>24</span>Dec</p>
+                            <p className="event-date"><span><Moment format="DD">
+												{prop.node.acf.date}
+											</Moment></span><Moment format="MMM">
+												{prop.node.acf.date}
+											</Moment></p>
                         </div>
                         <div className="work-thumbnail-details">
                             <Link to={"events/"+prop.node.slug} className="work-title">{prop.node.title}</Link>

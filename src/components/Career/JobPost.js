@@ -90,7 +90,7 @@ const JobPost = () => (
                                     
                                 </div>
                                 <div className=" col-lg-4">
-                                    <div className="bg-light p-3">
+                                    <div className="p-3">
                                         <h2 className="section-heading-2 ">Send Your Resume</h2>
                                         <form method="POST" action="">
                                             <div className="row ">

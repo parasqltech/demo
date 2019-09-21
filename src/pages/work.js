@@ -117,7 +117,7 @@ class FilterGrid extends React.Component {
                         </div>
                         <div className="work-thumbnail-details">
                             <p className="work-title">{prop.node.acf.title}</p>
-                            <p className="label-text">{prop.node.acf.descprtiton}</p>
+                            <p className="label-text">{prop.node.acf.short_descprition}</p>
                             <a href="work-details.html" className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></a>
                         </div>
                     </div>

@@ -22,6 +22,7 @@ const article = () => (
 					  img {
 						source_url
 					  }
+					  written_by
 					}
 					date(formatString: "D MMMM,Y")
 				  }
@@ -64,16 +65,16 @@ const article = () => (
                         <div className="col-md-11 justify-content-between row mb-4">
                             <ul className="nav  resource-menu">
                                 <li className="nav-item">
-                                <Link className="nav-link " to="/knowledge-hub">Feature</Link>   
+                                <Link className="nav-link " to="/hub">Feature</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to="/knowledge-hub/article">Articles</Link>
+                                    <Link className="nav-link active" to="/hub/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/knowledge-hub/guide">Guide</Link>
+                                    <Link className="nav-link " to="/hub/guide">Guide</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/knowledge-hub/worksheet">Worksheet</Link>
+                                    <Link className="nav-link" to="/hub/worksheet">Worksheet</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">
@@ -88,9 +89,11 @@ const article = () => (
                     </div>
                 </div>
         </div>
-       <div className="container bg-white">
+       <div className="container bg-white article-div">
                 <div className="row">
-                        <div className="col-md-12">
+                        <div className="col-md-11">
+						<div className="row justify-content-center">
+                            <div className="col-lg-9 col-md-12">
                             <div className=" ">
                                 <div className="row">
                                     {data &&
@@ -99,7 +102,7 @@ const article = () => (
 				data.allWordpressWpKnowledgehub.edges.map(
                 prop => {
 					return (
-					<div className="col-lg-4 col-md-6 wow fadeInLeft article-block">
+					<div className="col-lg-6 col-md-6 wow fadeInLeft article-block">
                                          <div className="thumbnial">
                                             <div className="thumbnial-image">
                                                 <Link to={"blog/"+prop.node.slug}><img src={prop.node.acf.img.source_url} className="img-fluid w-100"
@@ -113,7 +116,7 @@ const article = () => (
                                             <div className="thumbnial-footer">
                                                 <div className="author pull-left">
                                                     <div className="image"><img src={author} alt=""/></div>
-                                                    by demo
+                                                    By <b>{prop.node.acf.written_by}</b>  
                                                 </div>
                                                 <div className="social-links pull-right">
                                                     <ul className="post-info ">
@@ -138,13 +141,24 @@ const article = () => (
                                
                             </div>
                         </div>
-                        <div className="col-md-12 text-center">
-                            <div className="loading  text-center"> 
-                                <div className="spinner-border  "></div> <span >
-                                        Loading... 
-                                </span>
+						<div className="col-lg-3 col-md-12">
+                                <div className="sidebar postion-sticky">
+                                    <div className="sidebar-widget p-3 bg-light">
+                                        <h6 className="sidebar-title">Category</h6>
+                                        <ul className="Categary-list">
+                                            <li><a href="">Category</a></li>
+                                            <li><a href="">Category</a></li>
+                                            <li><a href="">Category</a></li>
+                                            <li><a href="">Category</a></li>
+                                            <li><a href="">Category</a></li>
+                                        </ul>
+                                    
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        
+                    </div>
+                    </div>
                     </div>
             </div>
            

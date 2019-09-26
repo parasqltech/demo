@@ -9,7 +9,7 @@ import BlogAuthor from '../../img/blog/author-image.png'
 
 const settings = {
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 2,
@@ -24,18 +24,15 @@ const HomeBlog = () => (
   <StaticQuery
     query={graphql`
      query {
-            allWordpressWpBlogarticles(limit: 10) {
+            allWordpressPost(limit: 10) {
                 edges {
                   node {
-                    link
+                    slug
                     acf {
-                      date
-                      title
-                      written_by
-                      image {
-                        source_url
-                      }
-                    }
+         
+				  feature_image
+				  posted_by
+				}
                   }
                 }
               }
@@ -58,8 +55,8 @@ const HomeBlog = () => (
                 <div className="col-md-12">
 					<Slider {...settings} className="home-blog-slider" >
                        {data &&
-                        data.allWordpressWpBlogarticles &&
-                        data.allWordpressWpBlogarticles.edges.map(
+                        data.allWordpressPost &&
+                        data.allWordpressPost.edges.map(
                     
                         
                     
@@ -67,25 +64,25 @@ const HomeBlog = () => (
                         return (    
                                 <div className="thumbnial">
                                     <div className="thumbnial-image">
-                                        <a href="blog-single.html"><img src={prop.node.acf.image.source_url} className="img-fluid"
-                                                alt=""/></a>
+                                        <Link to={"blog/"+prop.node.slug}><img src={prop.node.acf.feature_image} className="img-fluid"
+                                                alt=""/></Link>
                                     </div>
                                     <div className="thumbnial-content">
-                                        <a href={prop.node.link} className="blog-title">{prop.node.acf.title}
-                                        </a>
+                                        <Link to={"blog/"+prop.node.slug} className="blog-title">{prop.node.title}
+                                        </Link>
                                         <div className="post-date">{prop.node.acf.date}</div>
                                     </div>
                                     <div className="thumbnial-footer">
                                         <div className="author pull-left">
                                             <div className="image"><img src={BlogAuthor} alt=""/></div>
-                                            by {prop.node.acf.written_by}
+                                            by {prop.node.acf.posted_by}
                                         </div>
                                         <div className="social-links pull-right">
                                             <ul className="post-info ">
                                                 <li><a href=""><span
                                                     className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
                                                 </li>
-                                                <li><a href="blog-single.html"><span className="icon flaticon-share"></span></a>
+                                                <li><Link to={"blog/"+prop.node.slug}><span className="icon flaticon-share"></span></Link>
                                                 </li>
                                             </ul>
                                         </div>

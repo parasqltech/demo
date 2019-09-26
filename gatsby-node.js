@@ -1,5 +1,6 @@
 const _ = require('lodash')
 const path = require('path')
+const slash = require('slash')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { paginate } = require('gatsby-awesome-pagination')
 
@@ -51,92 +52,254 @@ exports.createPages = ({ actions, graphql }) => {
         })
       })
     })
-    .then(() => {
+	.then(() => {
       return graphql(`
-        {
-          allWordpressPost {
-            edges {
-              node {
-                id
-                slug
-                status
-              }
-            }
+         {
+      allWordpressWpEvents {
+        edges {
+          node {
+            id
+            slug
           }
         }
+      }
+    }
       `)
     })
-    .then(result => {
+	.then(result => {
       if (result.errors) {
         result.errors.forEach(e => console.error(e.toString()))
         return Promise.reject(result.errors)
       }
-
-      const postTemplate = path.resolve(`./src/templates/post.js`)
-      const blogTemplate = path.resolve(`./src/templates/blog.js`)
-
-      // In production builds, filter for only published posts.
-      const allPosts = result.data.allWordpressPost.edges
-      const posts =
-        process.env.NODE_ENV === 'production'
-          ? getOnlyPublished(allPosts)
-          : allPosts
-
-      // Iterate over the array of posts
-      _.each(posts, ({ node: post }) => {
-        // Create the Gatsby page for this WordPress post
-        createPage({
-          path: `/${post.slug}/`,
-          component: postTemplate,
-          context: {
-            id: post.id,
-          },
-        })
-      })
-
-      // Create a paginated blog, e.g., /, /page/2, /page/3
-      paginate({
-        createPage,
-        items: posts,
-        itemsPerPage: 10,
-        pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/` : `/page`),
-        component: blogTemplate,
-      })
+		const { allWordpressWpEvents } = result.data
+		 const eventTemplate = path.resolve(`./src/templates/single-event.js`)
+		  // We want to create a detailed page for each
+		  // post node. We'll just use the WordPress Slug for the slug.
+		  // The Post ID is prefixed with 'POST_'
+		  allWordpressWpEvents.edges.forEach(edge => {
+			createPage({
+			  path: `/event/${edge.node.slug}/`,
+			  component: slash(eventTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
     })
 	.then(() => {
       return graphql(`
-        {
-          allWordpressWpEvents {
-            edges {
-              node {
-                id
-                slug
-              }
-            }
+         {
+      allWordpressWpWorks {
+        edges {
+          node {
+            id
+            slug
           }
         }
+      }
+    }
       `)
     })
-    .then(result => {
+	.then(result => {
       if (result.errors) {
         result.errors.forEach(e => console.error(e.toString()))
         return Promise.reject(result.errors)
       }
-		
-      const eventTemplate = path.resolve(`./src/templates/event.js`)
-		
-      _.each(result.data.allWordpressWpEvents.edges, ({ node: event }) => {
-       
-		createPage({
-          path: `/events/${event.slug}`,
-          component: eventTemplate,
-          context: {
-            
-			pathSlug: event.slug,
-          },
-        })
-      })
+		const { allWordpressWpWorks } = result.data
+		 const workTemplate = path.resolve(`./src/templates/single-work.js`);
+		  allWordpressWpWorks.edges.forEach(edge => {
+			createPage({
+			  path: `/work/${edge.node.slug}/`,
+			  component: slash(workTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
     })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressWpIndustries {
+        edges {
+          node {
+            id
+            slug
+          }
+        }
+      }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressWpIndustries } = result.data
+		 const industriesTemplate = path.resolve(`./src/templates/single-industries.js`);
+		  allWordpressWpIndustries.edges.forEach(edge => {
+			createPage({
+			  path: `/industries/${edge.node.slug}/`,
+			  component: slash(industriesTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressWpPlatform {
+        edges {
+          node {
+            id
+            slug
+          }
+        }
+      }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressWpPlatform } = result.data
+		 const platformsTemplate = path.resolve(`./src/templates/single-platforms.js`);
+		  allWordpressWpPlatform.edges.forEach(edge => {
+			createPage({
+			  path: `/platforms/${edge.node.slug}/`,
+			  component: slash(platformsTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressWpServices {
+        edges {
+          node {
+            id
+            slug
+			acf {
+				service_slug
+			}
+          }
+        }
+      }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressWpServices } = result.data
+		 const platformsTemplate = path.resolve(`./src/templates/single-service.js`);
+		  allWordpressWpServices.edges.forEach(edge => {
+			  
+			createPage({
+			  path: `/services/${edge.node.slug}/`,
+			  component: slash(platformsTemplate),
+			  context: {
+				id: edge.node.id,
+				catslug: `/${edge.node.acf.service_slug}/`,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressWpProcess {
+        edges {
+          node {
+            id
+            slug
+			acf {
+				service_slug
+			}
+          }
+        }
+      }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressWpProcess } = result.data
+		 const processTemplate = path.resolve(`./src/templates/single-process.js`);
+		  allWordpressWpProcess.edges.forEach(edge => {
+			  
+			createPage({
+			  path: `/process/${edge.node.slug}/`,
+			  component: slash(processTemplate),
+			  context: {
+				id: edge.node.id,
+				catslug: `/${edge.node.acf.service_slug}/`,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressPost{
+        edges {
+          node {
+            id
+            slug
+			
+          }
+        }
+      }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressPost } = result.data
+		 const blogTemplate = path.resolve(`./src/templates/single-blog.js`);
+		  allWordpressPost.edges.forEach(edge => {
+			  
+			createPage({
+			  path: `/blog/${edge.node.slug}/`,
+			  component: slash(blogTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	
+	
 	
 	
 	
@@ -148,9 +311,22 @@ exports.createPages = ({ actions, graphql }) => {
 
 
 
+
+
+
+
+
+
+
+
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
+	  const fileNode = getNode(node.parent)
+    console.log(`\n`, fileNode.relativePath)
+	  
+	  
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,

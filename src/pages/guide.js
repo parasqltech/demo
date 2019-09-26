@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 import Particles from 'react-particles-js';
-import event_thumb from '../../img/events/event-thumbnial.jpg';
+import event_thumb from '../img/events/event-thumbnial.jpg';
 
 
 const guide = () => (
@@ -65,13 +65,13 @@ const guide = () => (
                                 <Link className="nav-link " to="/hub">Feature</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/hub/article">Articles</Link>
+                                    <Link className="nav-link " to="/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to="/hub/guide">Guide</Link>
+                                    <Link className="nav-link active" to="/guide">Guide</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/hub/worksheet">Worksheet</Link>
+                                    <Link className="nav-link" to="/worksheet">Worksheet</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">

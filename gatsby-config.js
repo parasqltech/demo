@@ -9,11 +9,11 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         // The base url to your WP site.
-        baseUrl: 'demo.steamlinedesign.com',
+        baseUrl: 'qltech.io',
         // WP.com sites set to true, WP.org set to false
         hostingWPCOM: false,
         // The protocol. This can be http or https.
-        protocol: 'http',
+        protocol: 'https',
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: true,
         auth: {},
@@ -36,6 +36,12 @@ module.exports = {
         purgeOnly: ['/all.sass'],
       },
     }, // must be after other CSS plugin
+	{
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'qltech'
+      }
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

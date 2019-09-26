@@ -6,7 +6,7 @@ const ProcessHeader = () => (
   <StaticQuery	
     query={graphql`
       query {
-        allWordpressWpProcess {
+        allWordpressWpProcess(limit: 4, sort: {order: ASC, fields: wordpress_id}){
 		edges {
 		  node {
 			title

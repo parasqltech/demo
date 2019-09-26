@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 import Particles from 'react-particles-js';
 
-import blog_thumb from '../../img/blog/blog-thubnial-1.jpg';
-import author from '../../img/blog/author-image.png';
+import blog_thumb from '../img/blog/blog-thubnial-1.jpg';
+import author from '../img/blog/author-image.png';
 
 
 const article = () => (
@@ -68,13 +68,13 @@ const article = () => (
                                 <Link className="nav-link " to="/hub">Feature</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to="/hub/article">Articles</Link>
+                                    <Link className="nav-link active" to="/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/hub/guide">Guide</Link>
+                                    <Link className="nav-link " to="/guide">Guide</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/hub/worksheet">Worksheet</Link>
+                                    <Link className="nav-link" to="/worksheet">Worksheet</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">

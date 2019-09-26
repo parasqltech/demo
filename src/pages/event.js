@@ -121,7 +121,7 @@ class FilterGrid extends React.Component {
 											</Moment></p>
                         </div>
                         <div className="work-thumbnail-details">
-                            <Link to={"events/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
+                            <Link to={"event/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
                            
                           
                         </div>
@@ -138,11 +138,7 @@ class FilterGrid extends React.Component {
                 </div>
             </div>
         </div>		
-		<div className="loading  text-center"> 
-            <div className="spinner-border  "></div> <span >
-                    Loading... 
-            </span>
-        </div>	
+		
         </section>
 	</Layout>
     )

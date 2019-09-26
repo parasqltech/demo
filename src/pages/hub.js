@@ -63,13 +63,13 @@ const kh = () => (
                                 <Link className="nav-link active" to="/hub">Feature</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/hub/article">Articles</Link>
+                                    <Link className="nav-link " to="/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/hub/guide">Guide</Link>
+                                    <Link className="nav-link " to="/guide">Guide</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/hub/worksheet">Worksheet</Link>
+                                    <Link className="nav-link" to="/worksheet">Worksheet</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">

@@ -27,9 +27,9 @@ const ServiceHeader = () => (
 				data.allWordpressWpHomeservices &&
 				data.allWordpressWpHomeservices.edges &&
 				data.allWordpressWpHomeservices.edges.map(
-                prop => {
+                (prop,i) => {
 					return (
-					<li className="">
+					<li key={i} className="">
                                            <Link to={"services/"+prop.node.slug} className="dropdown-item">
                                                <span className="services-heading">{prop.node.acf.title}</span>
                                                <span className="services-description">{prop.node.acf.descprition}</span>

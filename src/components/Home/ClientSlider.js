@@ -30,12 +30,7 @@ const ClientSlider = () => (
         acf {
           img {
             source_url
-            media_details {
-              dummy
-              width
-              height
-              file
-            }
+            
           }
         }
       }

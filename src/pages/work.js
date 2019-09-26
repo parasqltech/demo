@@ -12,6 +12,8 @@ import port_5 from '../img/portfolio/5.jpg'
 import port_6 from '../img/portfolio/6.jpg'
 import port_7 from '../img/portfolio/7.jpg'
 import port_8 from '../img/portfolio/8.jpg'
+import Moment from 'react-moment';
+import 'moment-timezone';
 
 class FilterGrid extends React.Component {
   constructor(props) {
@@ -112,13 +114,20 @@ class FilterGrid extends React.Component {
                                     <div>
 								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.map(item => { return ( item.name ) }) } >
                         <div className="work-thumbnail-image">
-                            <img src={prop.node.acf.image.source_url} className="img-fluid" alt=""/>
-                            <p className="event-date"><span>24</span>Dec</p>
+                            <img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>
+                           <p className="event-date"><span><Moment format="DD">
+												{prop.node.acf.date}
+											</Moment></span><Moment format="MMM">
+												{prop.node.acf.date}
+											</Moment></p>
                         </div>
                         <div className="work-thumbnail-details">
                             <p className="work-title">{prop.node.acf.title}</p>
                             <p className="label-text">{prop.node.acf.short_descprition}</p>
-                            <a href="work-details.html" className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></a>
+                            
+							
+							<Link to={"work/"+prop.node.slug} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
+							
                         </div>
                     </div>
                     </div>
@@ -132,11 +141,7 @@ class FilterGrid extends React.Component {
                 </div>
             </div>
         </div>		
-		<div className="loading  text-center"> 
-            <div className="spinner-border  "></div> <span >
-                    Loading... 
-            </span>
-        </div>	
+		
         </section>
 	</Layout>
     )
@@ -161,8 +166,9 @@ const Work = () => (
                         edges {
                           node {
                             id
+							slug
                             acf {
-                              image {
+                              main_image {
                                 source_url
                                 link
                               }

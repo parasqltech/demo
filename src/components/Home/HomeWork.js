@@ -38,8 +38,9 @@ const ClientSlider = () => (
                         edges {
                           node {
                             id
+							slug
                             acf {
-                              image {
+                              main_image {
                                 source_url
                                 link
                               }
@@ -118,12 +119,12 @@ const ClientSlider = () => (
                                     return (    
                                         <div class="work-thumbnial" >
                                             <div class="work-thumbnail-image">
-                                                <img src={prop.node.acf.image.source_url} class="img-fluid" alt=""/>
+                                                <img src={prop.node.acf.main_image.source_url} class="img-fluid" alt=""/>
                                             </div>
                                             <div class="work-thumbnail-details">
                                                 <p class="work-title">{prop.node.acf.title}</p>
                                                 <p class="label-text">{prop.node.acf.short_descprition}</p>
-                                                <a href={prop.node.acf.image.link} class="btn btn-secondary-link">Read More <i class="fa fa-long-arrow-right ml-1"></i></a>
+                                                <Link to={"work/"+prop.node.slug} class="btn btn-secondary-link">Read More <i class="fa fa-long-arrow-right ml-1"></i></Link>
                                             </div>
                                         </div>
                                          )

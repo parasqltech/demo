@@ -77,11 +77,11 @@ const Navbar = () => (
               data.allWordpressWpApiMenusMenusItems.edges[0].node &&
               data.allWordpressWpApiMenusMenusItems.edges[0].node.items &&
               data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
-                prop => {
+                (prop,i) => {
 					
 					return (
 						
-						<div  >
+						<div key={i} >
 						{(prop.wordpress_children ? (
 						
 							<div>

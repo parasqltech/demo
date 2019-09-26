@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
+import Layout from '../components/Layout'
 import Particles from 'react-particles-js';
 import PropTypes from 'prop-types';
-import blog_thumb from '../../img/blog/blog-thubnial-1.jpg';
-import author from '../../img/blog/author-image.png';
+import blog_thumb from '../img/blog/blog-thubnial-1.jpg';
+import author from '../img/blog/author-image.png';
 
 
 
@@ -62,13 +62,13 @@ class Grid extends React.Component {
                                 <Link className="nav-link " to="/hub">Feature</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/hub/article">Articles</Link>
+                                    <Link className="nav-link " to="/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/hub/guide">Guide</Link>
+                                    <Link className="nav-link " to="/guide">Guide</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to="/hub/worksheet">Worksheet</Link>
+                                    <Link className="nav-link active" to="/worksheet">Worksheet</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">

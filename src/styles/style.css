@@ -8323,9 +8323,13 @@ section.service-section-1 .thumbnial{
     display: block;
     width: 100%;
 }
-section.service-section-1  .thumbnial-icon{
-    font-size: 60px;
+section.service-section-1 .thumbnial-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-bottom: 15px;
 }
+
 section.service-section-1  .thumbnial-title{
     font-size: 24px;
     font-weight: 500;
@@ -9111,5 +9115,74 @@ section.home-event-section .work-thumbnial .work-thumbnail-image .event-date spa
 }
 .bg-light {
     background: #fdfdfd !important;
+}
+
+section.service-section-1 .thumbnail {
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+
+section.service-section-1 .services-block:nth-child(1){
+    padding-left: 120px;
+    display: block;
+}
+section.service-section-1 .services-block:nth-child(2){
+    
+    padding-left: 40px;
+    margin-top: 72px;
+    padding-right: 120px;
+    display: block;
+}
+section.service-section-1 .services-block:nth-child(3){
+    padding-left: 120px;
+    display: block;
+    margin-top: -30px;
+}
+section.service-section-1 .services-block:nth-child(4){
+    padding-right: 120px;
+    display: block;
+    margin-top: 60px;
+}
+section.service-section-1 .services-block:nth-child(5){
+    padding-left: 120px;
+    display: block;
+}
+section.service-section-1 .services-block:nth-child(6){
+    
+    padding-left: 40px;
+    margin-top: 72px;
+    padding-right: 120px;
+    display: block;
+}
+section.service-section-1 .services-block:nth-child(7){
+    padding-left: 120px;
+    display: block;
+}
+section.service-section-1 .services-block:nth-child(8){
+    
+    padding-left: 40px;
+    margin-top: 72px;
+    padding-right: 120px;
+    display: block;
+}
+
+.sub-service .slick-arrow::before{
+	display:none !important;
+}
+
+
+section.work-details-section-1 .breif-text .percentage {
+    font-size: 28px;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #21a6df;
+}
+section.work-details-section-1 .breif-text span {
+    vertical-align: middle;
 }
 

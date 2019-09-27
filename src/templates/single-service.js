@@ -88,7 +88,11 @@ class Singleservice extends Component {
 										<div key={i} className="col-md-6 services-block ">
 											<div className="thumbnail">
 												<div className="thumbnial-icon text-secondary">
-												   <img src={prop.node.acf.icon.source_url} className="img-fluid" alt=""/>
+												   
+												   
+												   {(prop.node.acf.icon != null) ? (<img src={prop.node.acf.icon.source_url} className="img-fluid" alt=""/>) : ('')}
+												   
+												   
 												</div>
 												<h3 className="thumbnial-title">{prop.node.title} </h3>
 												<p className="label-text">

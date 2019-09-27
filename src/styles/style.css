@@ -5308,6 +5308,9 @@ section.home-process-section .process-block.one .inner-box .icon-box:first-child
     bottom: 0px;
     background: url(../img/process-bg-1.png) no-repeat;
     background-position: center center;
+    background-size:100%;
+    width:260px;
+    height:260px;
 }
 
 section.home-process-section .process-block-two.two .inner-box .icon-box::before {
@@ -5319,6 +5322,9 @@ section.home-process-section .process-block-two.two .inner-box .icon-box::before
     bottom: 0px;
     background: url(../img/process-bg-2.png) no-repeat;
     background-position: center center;
+    background-size:100%;
+    width:260px;
+    height:260px;
 }
 
 
@@ -5331,6 +5337,9 @@ section.home-process-section .process-block.three .inner-box .icon-box:before {
     bottom: 0px;
     background: url(../img/process-bg-3.png) no-repeat;
     background-position: center center;
+    background-size:100%;
+    width:260px;
+    height:260px;
 }
 
 
@@ -5342,7 +5351,10 @@ section.home-process-section .process-block-two.four .inner-box .icon-box::befor
     right: 0px;
     bottom: 0px;
     background: url(../img/process-bg-4.png) no-repeat;
-    background-position: center center;
+    background-size:100%;
+    background-position: center ;
+    width:260px;
+    height:260px;
 }
 
 

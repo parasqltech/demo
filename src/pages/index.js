@@ -16,10 +16,10 @@ import HomeWork from '../components/Home/HomeWork'
 import home_section from '../img/home/home-section-1-img.png';
 import home_section_bg from '../img/home/home-section-1-img-background.png';
 import about_us from '../img/about-us.png';
-import pro_1 from '../img/process-1.png';
-import pro_2 from '../img/process-2.png';
-import pro_3 from '../img/process-3.png';
-import pro_4 from '../img/process-4.png';
+import pro_1 from '../img/Inbound-Methodology.gif';
+import pro_2 from '../img/Integrated-Thinking-or-Systems-Thinking-3.gif';
+import pro_3 from '../img/OKR.gif';
+import pro_4 from '../img/sostac.gif';
 import ico_4 from '../img/icon-4.png';
 import ico_3 from '../img/icon-3.png';
 import ico_2 from '../img/icon-2.png';
@@ -87,9 +87,9 @@ const IndexPage = () => (
                 <div className="row justify-content-center">
                     <div className="col-xl-8 col-lg-8 col-md-10  col-sm-10">
                          <h6 className="section-heading-2 text-center mb-0">
-                            Clientle
+                            Trusted By
                         </h6>
-                        <p className="sub-heading text-center">Some of the clients we have worked with</p>
+                       
                         
                             <ClientSlider />
                        
@@ -114,43 +114,43 @@ const IndexPage = () => (
             <div className="row clearfix wow fadeIn">
                 <div className="process-block one col-lg-3 col-md-6 col-sm-6">
                     <div className="inner-box">
-                        <div className="icon-box">
-                            <span className="icon"><img src={pro_1} className="img-fluid" alt=""/></span>
+                        <div className="icon-box  ">
+                            <span className="icon text-center"><img src={pro_1} className="img-fluid" alt=""/></span>
                         </div>
-                        <h3>Date Exchange</h3>
-                        <div className="number">01</div>
+                        <h3>Inbound Methodology</h3>
+                        <div className="number"></div>
                     </div>
                 </div>
                 <div className="process-block-two two col-lg-3 col-md-6 col-sm-6">
                     <div className="inner-box">
-                        <div className="icon-box d-lg-none d-block">
-                            <span className="icon"><img src={pro_2} className="img-fluid" alt=""/></span>
+                        <div className="icon-box d-lg-none d-block  text-center">
+                            <span className="icon "><img src={pro_2} className="img-fluid  d-inline" alt=""/></span>
                         </div>
-                        <div className="number">02</div>
-                        <h3>Content Managment</h3>
-                        <div className="icon-box d-lg-block d-none">
-                            <span className="icon"><img src={pro_2} className="img-fluid" alt=""/></span>
+                        <div className="number"></div>
+                        <h3>Integrated Thinking</h3>
+                        <div className="icon-box d-lg-block d-none text-center">
+                            <span className="icon "><img src={pro_2} className="img-fluid  d-inline" alt=""/></span>
                         </div>
                     </div>
                 </div>
                 <div className="process-block three col-lg-3 col-md-6 col-sm-6">
                     <div className="inner-box">
-                        <div className="icon-box">
-                            <span className="icon"><img src={pro_3} className="img-fluid" alt=""/></span>
+                        <div className="icon-box  ">
+                            <span className="icon text-center"><img src={pro_3} className="img-fluid  d-inline" alt=""/></span>
                         </div>
-                        <h3>Workflow</h3>
-                        <div className="number">03</div>
+                        <h3>OKR</h3>
+                        <div className="number"></div>
                     </div>
                 </div>
                 <div className="process-block-two four col-lg-3 col-md-6 col-sm-6">
                     <div className="inner-box">
-                        <div className="icon-box  d-lg-none d-block">
-                            <span className="icon"><img src={pro_4} className="img-fluid" alt=""/></span>
+                        <div className="icon-box  d-lg-none d-block text-center ">
+                            <span className="icon text-center"><img src={pro_4} className="img-fluid  d-inline" alt=""/></span>
                         </div>
-                        <div className="number">04</div>
-                        <h3>Business Digital</h3>
-                        <div className="icon-box  d-lg-block d-none">
-                            <span className="icon"><img src={pro_4} className="img-fluid" alt=""/></span>
+                        <div className="number"></div>
+                        <h3>SOSTAC</h3>
+                        <div className="icon-box  d-lg-block d-none  text-center">
+                            <span className="icon text-center "><img src={pro_4} className="img-fluid  d-inline" alt=""/></span>
                         </div>
                     </div>
                 </div>

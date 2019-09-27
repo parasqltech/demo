@@ -147,9 +147,11 @@ const Navbar = () => (
 					
 					)
                 }
-              )}
-			   
-
+              )}		<li className="nav-item d-md-none d-inline">
+                            <Link className="nav-link" to="contact-us" >
+								Contact Us
+							</Link>
+                        </li>
                         <li className="nav-item d-none  d-md-inline">
                             <Link className="nav-link btn-default" to="contact-us" >
 								Contact Us

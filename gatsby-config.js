@@ -4,6 +4,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+	{
+		resolve: 'gatsby-plugin-react-helmet-canonical-urls',
+		options: {
+		  siteUrl: 'https://www.qltech.com.au',
+		},
+	},
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-wordpress',

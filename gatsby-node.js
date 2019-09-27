@@ -288,8 +288,78 @@ exports.createPages = ({ actions, graphql }) => {
 		  allWordpressPost.edges.forEach(edge => {
 			  
 			createPage({
-			  path: `/blog/${edge.node.slug}/`,
+			  path: `/hub/${edge.node.slug}/`,
 			  component: slash(blogTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressWpWorksheet{
+        edges {
+          node {
+            id
+            slug
+			
+          }
+        }
+      }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressWpWorksheet } = result.data
+		 const worksheetTemplate = path.resolve(`./src/templates/single-worksheet.js`);
+		  allWordpressWpWorksheet.edges.forEach(edge => {
+			  
+			createPage({
+			  path: `/worksheet/${edge.node.slug}/`,
+			  component: slash(worksheetTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressWpGuide{
+        edges {
+          node {
+            id
+            slug
+			
+          }
+        }
+      }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressWpGuide } = result.data
+		 const guideTemplate = path.resolve(`./src/templates/single-guide.js`);
+		  allWordpressWpGuide.edges.forEach(edge => {
+			  
+			createPage({
+			  path: `/guide/${edge.node.slug}/`,
+			  component: slash(guideTemplate),
 			  context: {
 				id: edge.node.id,
 			  },

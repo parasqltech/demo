@@ -2,6 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from '../components/Layout'
 import JobPost from '../components/Career/JobPost'
+import CareerSlider from '../components/Career/CareerSlider'
+import Helmet from 'react-helmet'
+
 import Whyqltech from '../components/Career/Whyqltech'
 import Particles from 'react-particles-js';
 import $ from 'jquery';
@@ -10,19 +13,25 @@ import glassdoor from '../img/glassdoor-logo.png'
 
 const CareerPage = () => (
 	<Layout>
+		<Helmet>
+		<title>Careers | Web Design & Development Company Perth, Australia- QL Tech</title>
+		<meta name="title" content="Careers | Web Design & Development Company Perth, Australia- QL Tech"></meta>
+		<meta name="description" content="Join and explore your skills with 100% employee satisfaction. If you think you fit, fill the form and be the most talented web and mobile app developers of QL Tech, Perth."></meta>
+		 <meta name="keywords" content="Looking for career opportunities, career goals, career job, ql tech job, dream job, web design job, mobile app job, digital marketing agency, job at ql tech"></meta>
+		<meta property="og:type" content="website"></meta>
+		<meta property="og:title" content="Careers | Web Design & Development Company Perth, Australia- QL Tech"></meta>
+		<meta property="og:description" content="Join and explore your skills with 100% employee satisfaction. If you think you fit, fill the form and be the most talented web and mobile app developers of QL Tech, Perth."></meta>
+		<meta property="twitter:card" content="summary_large_image"></meta>
+		<meta property="twitter:title" content="Careers | Web Design & Development Company Perth, Australia- QL Tech"></meta>
+		<meta property="twitter:description" content="Join and explore your skills with 100% employee satisfaction. If you think you fit, fill the form and be the most talented web and mobile app developers of QL Tech, Perth."></meta>
+		</Helmet>
 		<div className="bg">
-			<div className="area-bg">
-				<Particles params={{"particles": {"number": {"value": 50,"density": {"enable": true,"value_area": 800}},"color": {"value": ["#FE395F", "#54DBF0", "#ad7cff", "#48d6ee"]},"shape": {"type": "polygon","stroke": {"width": 0,"color": "#000000",},"polygon": {"nb_sides": 10,},"image": {"src": "img/github.svg","width": 100,"height": 100}},"opacity": {"value": 0.2,"random": false,"anim": {"enable": false,"speed": 1,"opacity_min": 0.1,"sync": false}},"size": {"value": 5,"random": true,"anim": {"enable": false,"speed": 40,"size_min": 0.1,"sync": false}},"line_linked": {"enable": true,"distance": 150,"color": "#ffffff","opacity": 0.4,"width": 1},"move": {"enable": true,"speed": 6,"direction": "none","random": false,"straight": false,"out_mode": "out","bounce": false,"attract": {"enable": false,"rotateX": 600,"rotateY": 1200}}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": true,"mode": "grab"},"onclick": {"enable": true,"mode": "push"},"resize": true},"modes": {"grab": {"distance": 140,"line_linked": {"opacity": 1}},"bubble": {"distance": 400,"size": 40,"duration": 2,"opacity": 8,"speed": 3},"repulse": {"distance": 200,"duration": 0.4},"push": {"particles_nb": 4},"remove": {"particles_nb": 2}}},"retina_detect": true}} />
-			</div>
-		</div>
+         <div className="area-bg">
+            <Particles params={{"particles": {"number": {"value": 80,"density": {"enable": true,"value_area": 1600}},"color": {"value": ["#fd8788", "#f1aea6", "#21a6df", "#75d3ff"]},"shape": {"type": "circle","stroke": {"width": 0,"color": "#000000",},"polygon": {"nb_sides": 5,},"image": {"src": "img/github.svg","width": 100,"height": 100}},"opacity": {"value": 0.4489553770423464,"random": false,"anim": {"enable": false,"speed": 40,"opacity_min": 0.1,"sync": false}},"size": {"value": 5,"random": true,"anim": {"enable": false,"speed": 40,"size_min": 0.1,"sync": false}},"line_linked": {"enable": true,"distance": 150,"color": "#ffffff","opacity": 0.4,"width": 1},"move": {"enable": true,"speed": 6,"direction": "none","random": false,"straight": false,"out_mode": "out","bounce": false,"attract": {"enable": false,"rotateX": 600,"rotateY": 1200}}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": true,"mode": "grab"},"onclick": {"enable": true,"mode": "push"},"resize": true},"modes": {"grab": {"distance": 140,"line_linked": {"opacity": 1}},"bubble": {"distance": 400,"size": 40,"duration": 2,"opacity": 8,"speed": 3},"repulse": {"distance": 200,"duration": 0.4},"push": {"particles_nb": 4},"remove": {"particles_nb": 2}}},"retina_detect": true}} />
+            </div>
+        </div>
 		<section className="breadcumbs-and-title-section">
-            <div className="container">
-               <div className="breadcumbs-icon">
-                   <span className="icon-collection-1"></span>
-                   <span className="icon-collection-2"></span>
-                   <span className="icon-collection-3"></span>
-               </div>
-           </div>
+            
            <div className="container text-center">
                
             <span className="section-subheading-heading">Career</span>
@@ -69,6 +78,7 @@ const CareerPage = () => (
              </div>
         </div>
 	</section>
+    <CareerSlider/>
 	<Whyqltech />	
 		
      
@@ -77,43 +87,44 @@ const CareerPage = () => (
                 <div className="main-panel">
                     <div className="row justify-content-center text-center">
                         <div className="col-md-12 mt-4">
-                            <h2 className="section-heading ">Why us? 
-                                <span>Growth, purpose, and people. For starters.</span>
+                            <h2 className="section-heading ">What sets us apart?
+                                <span>Our focus on bringing folks with diverse ideas, perspectives &amp; experiences.</span>
                             </h2>
                             <div className="row ">
                                 <div className="col-xl-4 col-lg-4 col-md-6">
                                     <div className="thumbnail wow fadeInLeft bg-white">
                                         <span className="benifits-icon text-danger"><i className="fa fa-home"></i></span>
-                                        <p className="h4">Career Growth</p>
-										<p className="label-text">Training for improving skill sets.</p>
+                                        <p className="h4">Work Culture</p>
+										<p className="label-text">An open &amp; transparent work environment</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-8 col-md-6">
                                     <div className="thumbnail wow fadeInUp bg-white">
                                         <span className="benifits-icon   text-warning"><i className="fa fa-home"></i></span>
-                                        <p className="h4">Compensation</p>
-										<p className="label-text">Referrals are most welcome.</p>
+                                        <p className="h4">Skill Tuning</p>
+										<p className="label-text">Continuous learning and development opportunities.</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-6 col-md-6">
-                                    <div className="thumbnail wow fadeInRight bg-white">
-                                       <span className="benifits-icon    text-primary"><i className="fa fa-home"></i></span>
-                                         <p className="h4">CSR Activity</p>
-										 <p className="label-text">Employee engagement activities.</p>
+                                    
+                                     <div className="thumbnail wow fadeInLeft bg-white">
+                                        <span className="benifits-icon  text-success"><i className="fa fa-home"></i></span>
+                                         <p className="h4">Vision</p>
+										 <p className="label-text">A place where everyone is inspired to innovate.</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-5 col-lg-6 col-md-6">
-                                    <div className="thumbnail wow fadeInLeft bg-white">
-                                        <span className="benifits-icon  text-success"><i className="fa fa-home"></i></span>
-                                         <p className="h4">Office Space</p>
-										 <p className="label-text">Working environment with premium amenities.</p>
+                                <div className="thumbnail wow fadeInRight bg-white">
+                                       <span className="benifits-icon    text-primary"><i className="fa fa-home"></i></span>
+                                         <p className="h4">Values</p>
+										 <p className="label-text">Our core values drive everything we do.</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-7 col-lg-12 col-md-12">
                                     <div className="thumbnail wow fadeInDown bg-white">
                                       <span className="benifits-icon text-dark"><i className="fa fa-home"></i></span>
-                                          <p className="h4">Work Culture</p>
-										  <p className="label-text">Complete transparency with least pressure & deadlines.</p>
+                                          <p className="h4">Ambitious</p>
+										  <p className="label-text">Each day brings new &amp; exciting challenges.</p>
                                     </div>
                                 </div>
                                 

@@ -14,7 +14,9 @@ const Whatwedo = () => (
                   node {
                     acf {
                       descp
-                      icon
+                      icon{
+						  source_url
+					  }
                       title
                     }
                   }
@@ -28,9 +30,9 @@ const Whatwedo = () => (
         <div className="container">
             <div className="main-panel">
                 
-                <span className="section-subheading-heading">What we do</span>
+                <span className="section-subheading-heading">Our Values</span>
                 <h2 className="section-heading text-center">
-                    We Grow Your Business
+                Values that make a difference
                 </h2>
                 <div className="row">
                 {data &&
@@ -41,13 +43,21 @@ const Whatwedo = () => (
                 
                     prop => {
                     return (   
-                        <div className="col-md-4">
+                        <div className="col-lg-4 col-md-6">
                             <div className="thumbnial">
                                 <div className="thumbnial-bg"></div>
-                                <i className={prop.node.acf.icon}></i>
+                                
+                                 <div className="thumbnial-icon">
+                                  {(prop.node.acf.icon != null) ? (<img  src={prop.node.acf.icon.source_url} className="img-fluid" alt=""/>) : ('')}
+                                </div> 
+								
+								
+								
+								
+                                
                                 <h3 className="thumbnial-heading">{prop.node.acf.title}</h3>
                                 <p className="label-text">{prop.node.acf.descp}</p>
-                                <a href="" className="btn btn-secondary-link">Learn More</a>
+                                
                             </div>
                         </div>
                         )

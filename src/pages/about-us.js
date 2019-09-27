@@ -11,8 +11,7 @@ import clients_1 from '../img/clients/google-partners.png';
 import clients_2 from '../img/clients/zoho-authorise-partners.png';
 import clients_3 from '../img/clients/hubspot-partners.png';
 import clients_4 from '../img/clients/keep-certified-partner.png';
-
-
+import Helmet from 'react-helmet'
 import Expereince from '../components/AboutUs/Expereince'
 import Whatwedo from '../components/AboutUs/Whatwedo'
 import Team from '../components/AboutUs/Team'
@@ -20,19 +19,25 @@ import Team from '../components/AboutUs/Team'
 
 const AboutPage = () => (
 	<Layout>
+		<Helmet>
+		<title>About US | Web development & marketing agency Perth, Australia- QL Tech</title>
+		<meta name="title" content="About US | Web development & marketing agency Perth, Australia- QL Tech"></meta>
+		<meta name="description" content="QL Tech is Australia's leading web development company, specialized in offering custom web development, CRM Services, digital marketing solutions. To know more, contact us @ +61 (0)8 6262 3559"></meta>
+		 <meta name="keywords" content="QL Tech about us, about us, Mobile App Development, hubspot crm, marketing agency, Zoho crm service, content agency Perth"></meta>
+		<meta property="og:type" content="website"></meta>
+		<meta property="og:title" content="About US | Web development & marketing agency Perth, Australia- QL Tech"></meta>
+		<meta property="og:description" content="QL Tech is Australia's leading web development company, specialized in offering custom web development, CRM Services, digital marketing solutions. To know more, contact us @ +61 (0)8 6262 3559"></meta>
+		<meta property="twitter:card" content="summary_large_image"></meta>
+		<meta property="twitter:title" content="About US | Web development & marketing agency Perth, Australia- QL Tech"></meta>
+		<meta property="twitter:description" content="QL Tech is Australia's leading web development company, specialized in offering custom web development, CRM Services, digital marketing solutions. To know more, contact us @ +61 (0)8 6262 3559"></meta>
+		</Helmet>
 		<div className="bg">
-			<div className="area-bg">
-				<Particles params={{"particles": {"number": {"value": 50,"density": {"enable": true,"value_area": 800}},"color": {"value": ["#FE395F", "#54DBF0", "#ad7cff", "#48d6ee"]},"shape": {"type": "polygon","stroke": {"width": 0,"color": "#000000",},"polygon": {"nb_sides": 10,},"image": {"src": "img/github.svg","width": 100,"height": 100}},"opacity": {"value": 0.2,"random": false,"anim": {"enable": false,"speed": 1,"opacity_min": 0.1,"sync": false}},"size": {"value": 5,"random": true,"anim": {"enable": false,"speed": 40,"size_min": 0.1,"sync": false}},"line_linked": {"enable": true,"distance": 150,"color": "#ffffff","opacity": 0.4,"width": 1},"move": {"enable": true,"speed": 6,"direction": "none","random": false,"straight": false,"out_mode": "out","bounce": false,"attract": {"enable": false,"rotateX": 600,"rotateY": 1200}}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": true,"mode": "grab"},"onclick": {"enable": true,"mode": "push"},"resize": true},"modes": {"grab": {"distance": 140,"line_linked": {"opacity": 1}},"bubble": {"distance": 400,"size": 40,"duration": 2,"opacity": 8,"speed": 3},"repulse": {"distance": 200,"duration": 0.4},"push": {"particles_nb": 4},"remove": {"particles_nb": 2}}},"retina_detect": true}} />
-			</div>
-		</div>
+            <div className="area-bg">
+            <Particles params={{"particles": {"number": {"value": 80,"density": {"enable": true,"value_area": 1600}},"color": {"value": ["#fd8788", "#f1aea6", "#21a6df", "#75d3ff"]},"shape": {"type": "circle","stroke": {"width": 0,"color": "#000000",},"polygon": {"nb_sides": 5,},"image": {"src": "img/github.svg","width": 100,"height": 100}},"opacity": {"value": 0.4489553770423464,"random": false,"anim": {"enable": false,"speed": 40,"opacity_min": 0.1,"sync": false}},"size": {"value": 5,"random": true,"anim": {"enable": false,"speed": 40,"size_min": 0.1,"sync": false}},"line_linked": {"enable": true,"distance": 150,"color": "#ffffff","opacity": 0.4,"width": 1},"move": {"enable": true,"speed": 6,"direction": "none","random": false,"straight": false,"out_mode": "out","bounce": false,"attract": {"enable": false,"rotateX": 600,"rotateY": 1200}}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": true,"mode": "grab"},"onclick": {"enable": true,"mode": "push"},"resize": true},"modes": {"grab": {"distance": 140,"line_linked": {"opacity": 1}},"bubble": {"distance": 400,"size": 40,"duration": 2,"opacity": 8,"speed": 3},"repulse": {"distance": 200,"duration": 0.4},"push": {"particles_nb": 4},"remove": {"particles_nb": 2}}},"retina_detect": true}} />
+            </div>
+        </div>
 		<section className="breadcumbs-and-title-section">
-			 <div className="container">
-				<div className="breadcumbs-icon">
-					<span className="icon-collection-1"></span>
-					<span className="icon-collection-2"></span>
-					<span className="icon-collection-3"></span>
-				</div>
-			</div>
+			 
 			<div className="container text-center">
 				
 				<span className="section-subheading-heading">Our Story</span>
@@ -64,7 +69,7 @@ const AboutPage = () => (
                         
                         <h2 className="section-heading-2">One Linear Here </h2>
                         <p className="label-text">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                We offer end-to-end solutions to help transform businesses - strategise, develop, automate &amp; grow the brand’s online presence. In collaboration with our partners, we’ve successfully managed to help transform their business, increase productivity, reduce costs, enhance agility & performance.
                         </p>
                     </div>
                 </div>

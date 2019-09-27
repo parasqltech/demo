@@ -66,35 +66,31 @@ class Lightbox extends Component {
         <div class="row">
           {images.map((img, i) => (
             <div class="col-lg-4 mb-sm-4">
-              <a href={img} alt="Car Image"  onClick={e => this.handleClick(e, i)}>
+              <a href={img} alt=""  onClick={e => this.handleClick(e, i)}>
                 <img src={img} class="img-fluid" />
               </a>
-			 </div> 
+			      </div> 
             
           ))}
         </div>
-		
 		<LightboxModal visible={showLightbox} onKeyUp={e => this.handleKeyDown(e)}>
           <LightboxContent>
             
 			<img src={images[selectedImage]} class="img-fluid" />
             <Controls>
-              <Button onClick={this.closeModal}>Close</Button>
+              <Button className="CloseGalleryButton" onClick={this.closeModal}><i className="fa fa-close"></i></Button>
               <LeftRight>
-                <Button onClick={this.goBack} disabled={selectedImage === 0}>
-                  Previous
+                <Button className="LeftBtn" onClick={this.goBack} disabled={selectedImage === 0}>
+                  <i className="fa fa-arrow-left"></i>
                 </Button>
-                <Button onClick={this.goForward} disabled={selectedImage === images.length - 1}>
-                  Next
+                <Button className="RightBtn" onClick={this.goForward} disabled={selectedImage === images.length - 1}>
+                <i className="fa fa-arrow-right"></i>
                 </Button>
               </LeftRight>
             </Controls>
           </LightboxContent>
         </LightboxModal>
         </Fragment>
-		
-
-        
     )
   }
 }
@@ -143,9 +139,9 @@ const LightboxModal = styled.div`
   bottom: 0;
   right: 0;
   display: flex;
-  z-index: 999;
   justify-content: center;
   align-items: center;
+  z-index: 2099 !important;
   background: rgba(0, 0, 0, 0.5);
   opacity: ${props => (props.visible ? '1' : '0')};
   visibility: ${props => (props.visible ? 'visible' : 'hidden')};

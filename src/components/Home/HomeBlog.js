@@ -9,9 +9,9 @@ import BlogAuthor from '../../img/blog/author-image.png'
 
 const settings = {
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 500,
-      slidesToShow: 2,
+      slidesToShow: 4,
       slidesToScroll: 2,
 	  variableWidth: true,
 	  autoplay: true,
@@ -24,13 +24,17 @@ const HomeBlog = () => (
   <StaticQuery
     query={graphql`
      query {
-            allWordpressPost(limit: 10) {
+			allWordpressPost(limit: 10, sort: {fields: wordpress_id, order: DESC}) {	
                 edges {
                   node {
                     slug
+					title
+					date(formatString: "D MMMM,Y")
                     acf {
          
-				  feature_image
+				  feature_image{
+					  source_url
+				  }
 				  posted_by
 				}
                   }
@@ -64,13 +68,17 @@ const HomeBlog = () => (
                         return (    
                                 <div className="thumbnial">
                                     <div className="thumbnial-image">
-                                        <Link to={"blog/"+prop.node.slug}><img src={prop.node.acf.feature_image} className="img-fluid"
-                                                alt=""/></Link>
-                                    </div>
+                                        <Link to={"hub/"+prop.node.slug}>
+										{(prop.node.acf.feature_image != null) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid"
+                                                alt=""/>) : ('')}
+										</Link>
+										
+									</div>
+									
                                     <div className="thumbnial-content">
-                                        <Link to={"blog/"+prop.node.slug} className="blog-title">{prop.node.title}
+                                        <Link to={"hub/"+prop.node.slug} className="blog-title">{prop.node.title}
                                         </Link>
-                                        <div className="post-date">{prop.node.acf.date}</div>
+                                        <div className="post-date">{prop.node.date}</div>
                                     </div>
                                     <div className="thumbnial-footer">
                                         <div className="author pull-left">
@@ -82,7 +90,7 @@ const HomeBlog = () => (
                                                 <li><a href=""><span
                                                     className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
                                                 </li>
-                                                <li><Link to={"blog/"+prop.node.slug}><span className="icon flaticon-share"></span></Link>
+                                                <li><Link to={"hub/"+prop.node.slug}><span className="icon flaticon-share"></span></Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -95,7 +103,7 @@ const HomeBlog = () => (
                     </Slider>
                 </div>
                 <div className="col-md-12 text-center">
-                    <a href="" className="btn-default">View All</a>
+                    <Link to="article" className="btn-default">View All</Link>
                 </div>
             </div>
         </div>

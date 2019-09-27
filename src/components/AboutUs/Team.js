@@ -32,7 +32,7 @@ const Team = () => (
                             <div className="main-panel">
                                 <span className="section-subheading-heading">Team Memeber</span>
                                 <h2 className="section-heading text-center">
-                                    We Have Some Awesome People
+                                    Together We Succeed!!
                                 </h2>
                                
                                        

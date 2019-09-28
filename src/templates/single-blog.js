@@ -103,12 +103,12 @@ class Singleblog extends Component {
                 </div>
             </div>
        </div>
-	   
-    </section>
-		
-      <div className="container bg-white">
+	   <div className="container bg-white">
       <Disqus config={disqusConfig} />
 	  </div>
+    </section>
+		
+      
 		</Layout>
     )
   }

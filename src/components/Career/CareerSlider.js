@@ -37,6 +37,8 @@ const CareerSlider = () => (
 		}
     `}
     render={data => (
+		<section className="career-section-01">
+		<div classname="container"><div className="main-panel" >
 		<Slider {...settings} className="career-slider-1" >
 			  {data &&
                             data.allWordpressWpWorkpage &&
@@ -62,7 +64,11 @@ const CareerSlider = () => (
                                    )
                                 }
                             )} 
-		</Slider>                    	
+		</Slider>
+			</div>
+			</div>
+		</section>  
+			
     )}
 	/>
 )

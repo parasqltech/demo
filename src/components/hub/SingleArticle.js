@@ -25,7 +25,7 @@ const SingleArticle = () => (
 		}
     `}
     render={data => (
-				<div className="col-md-12 thumbnial" >
+				<div className="col-md-12 thumbnial thumbnial1" >
 				{data &&
 				data.allWordpressPost &&
 				data.allWordpressPost.edges &&
@@ -43,8 +43,8 @@ const SingleArticle = () => (
                                 </div>
                                 <div className="thumbnial-content top">
                                     <h2 dangerouslySetInnerHTML={{ __html: prop.node.title}}  className="thumbnial-title"/>
-                                    <p className="thumbnial-details" dangerouslySetInnerHTML={{ __html: (prop.node.content).substring(0, 400) }} />
-										{(prop.node.content.length > 400) ? ("....") : ("")}
+                                    <p className="thumbnial-details" dangerouslySetInnerHTML={{ __html: (prop.node.content).substring(0, 250) }} />
+										{(prop.node.content.length > 250) ? (<span>...</span>) : ("")}
 									
 									
                                     <Link to={"hub/"+prop.node.slug} className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>

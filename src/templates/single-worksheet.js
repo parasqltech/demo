@@ -74,34 +74,36 @@ class Singleworksheet extends Component {
 							<div className="sidebar bg-light">
                             <div className="sidebar-widget">
                                 <p className="section-heading-2 text-center">Download now</p>
-                                <form className="form-section">
+                                 <form method="POST" className="gform form-section" action="https://script.google.com/macros/s/AKfycbzL2C_5HX4tC_eCYeVnoB7mdM4Z_Urpt6mbubrLA4LSTC18g-g/exec" >
                                  <div className="row">
                                     <div className="col-md-6 mb-3">
                                         <label className="label-text">First Name<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
+                                        <input type="text" name="first_name" required="" className="form-control" placeholder=""/>
                                     </div>
                                     <div className="col-md-6 mb-3">
                                             <label className="label-text">Last Name<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
+                                        <input type="text" name="last_name" required="" className="form-control" placeholder=""/>
                                     </div>
                                     <div className="col-md-12 mb-3">
                                         <label className="label-text">Email<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
+                                        <input type="email" name="email" required="" className="form-control" placeholder=""/>
                                     </div>
                                     <div className="col-md-12 mb-3">
                                         <label className="label-text">Phone Number<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
+                                        <input type="number" name="number" required="" className="form-control" placeholder=""/>
                                     </div>
                                     <div className="col-md-12 mb-3">
                                         <label className="label-text">Which CRM do you currently use?<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
+                                        <input type="text" name="crm" required="" className="form-control" placeholder=""/>
                                     </div>
                                     <div className="col-md-12 ">
                                         <label className="label-text">Your Goal:</label>
-                                        <textarea rows="4" className="form-control" placeholder=""></textarea>
+                                        <textarea rows="4" name="message" required="" className="form-control" placeholder=""></textarea>
                                     </div>
-                                    <div className="col-md-12  mb-3 text-right">
-                                        <button className="btn btn-default btn-block border-0">Submit</button>
+                                     <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value={"worksheet/"+blog.edges[0].node.slug} />
+                                        <input type="hidden" className="form-control" name="form_name" value="Resource" />
+                                        <div className="col-md-12  mb-3 text-right">
+                                        <input type="submit" className="btn-default border-0" value="Submit"/>
                                     </div>
                                 </div>
                             </form>

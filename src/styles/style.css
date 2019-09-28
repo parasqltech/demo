@@ -4588,8 +4588,7 @@ section.home-trust-list-section .owl-carousel img:hover{
 section.home-services-section {
     position: relative;
     overflow: hidden;
-    padding: 100px 0;
-    margin-top: -100px;
+    padding: 30px 0;
 }
 
 section.home-services-section.style-two {
@@ -4930,19 +4929,20 @@ section.home-services-section .service-block-two .inner-box:hover::before {
 
 section.home-services-section .service-block-two .inner-box .icon-box {
     position: relative;
-    font-size: 60px;
-    line-height: 1em;
-    color: #fd8788;
-    -webkit-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    transition: all 300ms ease;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
 }
 
-section.home-services-section .service-block-two .inner-box .icon-box .icon {
+section.home-services-section .service-block-two .inner-box .icon-box img{
     position: relative;
+    top: 0px;
 }
+section.home-services-section .service-block-two:hover .inner-box .icon-box img{
+    position: relative;
+    top: -60px;
+}
+
 
 section.home-services-section .service-block-two .inner-box h3 {
     position: relative;
@@ -4951,7 +4951,7 @@ section.home-services-section .service-block-two .inner-box h3 {
     color: #222222;
     font-weight: 600;
     line-height: 1.3em;
-    margin: 35px 0px 28px;
+    margin: 20px 0px 28px;
 }
 
 section.home-services-section .service-block-two .inner-box h3 a {
@@ -5270,6 +5270,8 @@ section.home-process-section .process-block {
 section.home-process-section .process-block .inner-box {
     position: relative;
     text-align: center;
+    width: 260px;
+    height: 260px;
 }
 section.home-process-section .process-block .inner-box .icon-box {
     position: relative;
@@ -5306,12 +5308,11 @@ section.home-process-section .process-block.one .inner-box .icon-box:first-child
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: url(../img/process-bg-1.png) no-repeat;
+    background: url(../img/process-bg.png) no-repeat;
     background-position: center center;
     background-size:100%;
-    width:260px;
-    height:260px;
 }
+
 
 section.home-process-section .process-block-two.two .inner-box .icon-box::before {
     position: absolute;
@@ -5320,11 +5321,9 @@ section.home-process-section .process-block-two.two .inner-box .icon-box::before
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: url(../img/process-bg-2.png) no-repeat;
+    background: url(../img/process-bg.png) no-repeat;
     background-position: center center;
     background-size:100%;
-    width:260px;
-    height:260px;
 }
 
 
@@ -5335,11 +5334,9 @@ section.home-process-section .process-block.three .inner-box .icon-box:before {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: url(../img/process-bg-3.png) no-repeat;
+    background: url(../img/process-bg.png) no-repeat;
     background-position: center center;
     background-size:100%;
-    width:260px;
-    height:260px;
 }
 
 
@@ -5350,11 +5347,9 @@ section.home-process-section .process-block-two.four .inner-box .icon-box::befor
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: url(../img/process-bg-4.png) no-repeat;
+    background: url(../img/process-bg.png) no-repeat;
     background-size:100%;
     background-position: center ;
-    width:260px;
-    height:260px;
 }
 
 
@@ -5376,8 +5371,8 @@ section.home-process-section .process-block .inner-box h3 {
 section.home-process-section .process-block .inner-box .number {
     position: relative;
     color: #000000;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     font-weight: 600;
     line-height: 1.3em;
     line-height: 40px;
@@ -5407,6 +5402,10 @@ section.home-process-section .process-block-two {
 section.home-process-section .process-block-two .inner-box {
     position: relative;
     text-align: center;
+    width: 260px;
+    height: 260px;
+   
+   
 }
 
 section.home-process-section .process-block-two .inner-box .icon-box {
@@ -5430,8 +5429,8 @@ section.home-process-section .process-block-two .inner-box h3 {
 section.home-process-section .process-block-two .inner-box .number {
     position: relative;
     color: #000000;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     font-size: 18px;
     font-weight: 700;
     line-height: 40px;
@@ -6256,7 +6255,7 @@ section.about-us-section-3 .thumbnial {
     transition: 0.5s;
     margin-bottom: 15px;
     border-radius: 12px;
-    min-height: 368px;
+    min-height: 320px;
 }
 
 section.about-us-section-3 .thumbnial-bg {
@@ -6297,10 +6296,11 @@ section.about-us-section-3 .thumbnial:hover .thumbnial-icon img{
     top: -40px;
 }
 
-section.about-us-section-3 .thumbnial i {
-    font-size: 50px;
+section.about-us-section-3 .thumbnial  .thumbnial-icon{
+    width: 60px;
+    height: 60px;
     margin-bottom: 20px;
-    display: inline-block;
+    overflow: hidden;
 
 }
 
@@ -6312,10 +6312,19 @@ section.about-us-section-3 .thumbnial:hover * {
     color: #fff;
     transition: 0.5s;
 }
+section.about-us-section-3 .thumbnial  .thumbnial-icon img{
+    top:0px;
+    position: relative;
+    transition: 0s;
+}
+section.about-us-section-3 .thumbnial:hover  .thumbnial-icon img{
+    top:-60px;
+}
 
 section.about-us-section-4 {
     position: relative;
     overflow: hidden;
+    padding-bottom: 30px;
 }
 
 section.about-us-section-4 .team-list {
@@ -6441,9 +6450,7 @@ section.about-history-section .history-block .thumbnial {
 
 }
 
-.timeline .thumbnial{
-	width: calc(100% - 40px) !important;
-}
+
 
 
 section.about-history-section .history-block .thumbnial::after {
@@ -6567,39 +6574,11 @@ section.career-section-01 {
     z-index: 1;
 }
 
-section.career-section-01 .owl-nav {
-    position: relative;
-}
-
-section.career-section-01 .owl-nav button {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    border: 2px solid #1692c7 !important;
-    float: left;
-    padding: 10px;
-    font-size: 26px !important;
-    margin: 0px -30px;
-    margin-top: -250px;
-    position: relative;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-section.career-section-01 .career-slider-1:hover .owl-nav button {
-    opacity: 1;
-    margin: 0px -15px;
-    margin-top: -250px;
-    transition: 0.5s;
-}
-
-section.career-section-01 .owl-nav button.owl-next {
-    float: right;
-}
 
 section.career-section-01 .slide .section-heading {
     margin-top: 80px;
 }
+
 
 section.career-section-02 {}
 
@@ -6674,7 +6653,10 @@ section.career-section-03 .thumbnail {
 }
 
 section.career-section-03 .benifits-icon {
-    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 section.career-section-1 .apply-btn {
@@ -6692,6 +6674,9 @@ section.career-section-1 .apply-btn {
 }
 
 
+section.career-section-01 .slide .section-heading {
+    margin-top: 80px;
+}
 
 section.career-section-02 .thumbnial .btn {
     background: #fff;
@@ -6778,14 +6763,15 @@ section.events-section-1 .work-thumbnial {
     width: calc((100% / 4) - 20px);
     margin: 10px;
     display: inline-block;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.15);
 }
-section.events-section-1 .work-thumbnial2 {
-    height: 300px;
+section.events-section-1 .work-thumbnial:nth-child(2n){
+    height: 230px;
 }
+
 section.events-section-1 .work-thumbnial .work-thumbnail-image{
     position: relative;
     width: 100%;
@@ -6905,12 +6891,12 @@ section.events-section-1 .event-date-and-place ul li span {
 section.events-section-1 .event-content-block {
     padding: 8px 15px;
 }
-section.events-section-1 .event-content-block img{
+section.events-section-1 .event-content-block img,.blank-section img{
     max-width: 100% !important;
     height: auto;
 }
 
-section.events-section-1 .event-content-block img{
+section.events-section-1 .event-content-block img,.blank-section img{
     max-width: 100% !important;
     height: auto;
 }
@@ -7548,8 +7534,8 @@ section.home-services-section .inner-container .service-block-two:first-child {
         font-size: 28px;
     }
     section.guide-last-section {
-        min-height: 321px;
-        background-size: auto 100%;
+        min-height: 321px !important;
+        background-size: auto 100%  !important;
     }
    
 }
@@ -7834,9 +7820,8 @@ section.home-services-section .inner-container .service-block-two:first-child {
         font-size: 26px;
     }
     section.guide-last-section {
-        background: url(../img/guide-last-section-bg.jpg) no-repeat;
-        min-height: 316px;
-        background-size: auto 77%;
+        min-height: 316px !important;
+        background-size: auto 77% !important;
     }
     section.guide-section .grid .guide-thumbnial{
         width: calc((100% / 2) - 35px);
@@ -7856,6 +7841,17 @@ section.home-services-section .inner-container .service-block-two:first-child {
         right: auto;
         display: inline-block;
         margin: auto;
+    }
+    section.home-process-section .process-block-two {
+        position: relative;
+        margin-top: 54px;
+    }
+    header .dropdown-menu .service-menu.service-menu-full li {
+        width:50% !important;
+        margin-bottom: 0px;
+    }
+    section.service-section-1 .services-block{
+        padding: 15px !important;
     }
 }
 
@@ -8066,6 +8062,7 @@ section.home-services-section .inner-container .service-block-two:first-child {
     }
     header .dropdown-menu .services-subheading {
         margin-bottom: 0px;
+        font-size: 14px;
     }
     header .dropdown-menu .services-heading {
         font-size: 14px;
@@ -8306,11 +8303,13 @@ section.home-services-section .inner-container .service-block-two:first-child {
 
     section.about-history-section .history-block .thumbnial {
         float: right;
+        width: calc(100% - 19px) !important;
+
     }
 
     section.about-history-section .thumbnial::after {
         right: auto !important;
-        left: -53px !important;
+        left: -32px !important;
         top: -32px !important;
     }
 
@@ -8427,15 +8426,20 @@ section.home-services-section .inner-container .service-block-two:first-child {
         margin-top: 0px;
     }
 
-    section.resource-section-1 .thumbnial-content ,section.resource-section-1 .thumbnial:first-child .thumbnial-content{
+    section.resource-section-1 .thumbnial-content ,section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content{
         width: calc( 100% - 43px );
         margin: auto;
         top: -50px;
         padding: 30px;
         padding-bottom: 48px;
     }
+ 
+ 
     section.resource-section-1 .thumbnial-content h2 {
         font-size: 18px !important;
+    }
+    section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content h2 {
+        font-size: 30px;
     }
     section.resource-section-1 .thumbnial:first-child .btn-secondary-link {
         font-size: 16px;
@@ -8500,10 +8504,10 @@ section.home-services-section .inner-container .service-block-two:first-child {
         margin-top: 0px;
     }
     section.guide-last-section {
-        background: url(../img/guide-last-section-bg.jpg) no-repeat;
-        min-height: 400px;
-        background-position: -339px;
-        background-size: auto 100%;
+        background: url(../img/guide-last-section-bg.jpg) no-repeat !important;
+        min-height: 400px !important;
+        background-position: -339px !important;
+        background-size: auto 100% !important;
     }
     section.guide-section .grid .guide-thumbnial{
         width: calc( 100% - 30px);
@@ -8584,8 +8588,21 @@ section.home-services-section .inner-container .service-block-two:first-child {
     margin-top: 0px;
     }
     header .dropdown-menu .service-menu.service-menu-full li {
-        width:100%;
-        padding-bottom: 15px;
+        width:100% !important;
+        padding-bottom: 0px !important;
+    }
+    header .dropdown-menu .service-menu.service-menu-full li p{
+        margin-bottom: 0px !important;
+    }
+    section.home-process-section .process-block-two .inner-box .icon-box, section.home-process-section .process-block .inner-box .icon-box{
+        margin-top:0px;
+    }
+    section.home-process-section .process-block .inner-box h3{
+        margin-top:0px;
+        margin-bottom: 35px;
+    }
+    section.about-us-section-3 .thumbnial{
+        min-height: auto;
     }
 
 }
@@ -8714,8 +8731,8 @@ section.home-services-section .inner-container .service-block-two:first-child {
         margin: auto;
     }
     section.guide-last-section {
-        min-height: 400px;
-        background: none;
+        min-height: 400px  !important;
+        background: none  !important;
     }
     section.blog-section .home-blog-slider {
          width: 100%; 
@@ -8726,13 +8743,15 @@ section.home-services-section .inner-container .service-block-two:first-child {
     section.career-section-02  .owl-item:nth-child(2n) {
         margin-top: 0px;
     }
-    
+    section.service-section-1 .services-block{
+        padding: 0px 15px !important;
+    }
 }
 @media all and (max-width:520px) {
      section.events-section-1 .work-thumbnial{
         width: calc(100% - 20px);
     }
-    section.resource-section-1 .thumbnial-content, section.resource-section-1 .thumbnial:first-child .thumbnial-content {
+    section.resource-section-1 .thumbnial-content, section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content {
         top: -36px;
     }
     section.home-work-section .icon-one {
@@ -8812,13 +8831,8 @@ section.home-services-section .inner-container .service-block-two:first-child {
 
 
 
-.bg-none{
-	background:transparent !important;	
-}
-.footer{
-	background: transparent;
-	padding: 0;
-}
+
+
 .icon-one{
 	background-image:url(../img/icon-1.png)
 }
@@ -8831,37 +8845,12 @@ section.home-services-section .inner-container .service-block-two:first-child {
 	background-image:url(../img/icon-4.png)
 }
 
-.inner-box{
-	visibility: visible; 
-	animation-duration: 1500ms; 
-	animation-delay: 0ms; 
-	animation-name: fadeInLeft;
-}
-.about-content{
-	visibility: visible; 
-	animation-name: fadeInUp;
-}
-.inner-column{
-	visibility: visible; 
-	animation-duration: 1500ms; 
-	animation-delay: 0ms; 
-	animation-name: fadeInLeft;
-}
+
+
 section.contact-us-section-2 {
     padding-top: 45px;
 }
-.form-section .form-control {
-    min-height: calc(1.5em + .75rem + 12px);
-    outline: none;
-    box-shadow: none;
-    font-size: 14px;
-    background: #fff !important;
-    outline: none;
-    box-shadow: none;
-}
-.form-section label.label-text {
-    color: #000000;
-}
+
 
 .form-section .btn-outline-secondary {
     color: #ffffff;
@@ -8999,7 +8988,7 @@ section.service-section-1 .thumbnial{
 }
 section.service-section-1  .thumbnial-icon{
 	width:60px;
-	height:auto;
+	height:60px;
 	margin-bottom:15px;
 }
 section.service-section-1  .thumbnial-title{
@@ -9032,7 +9021,9 @@ section.service-section-1 .services-block-4{
     margin-top: -30px;
 }
 section.service-section-1 .sub-service .thumbnial-icon{
-    font-size: 40px;
+   width: 40px;
+   height: 40px;
+   margin-bottom:0px;
 }
 .subnavbar .resource-menu {
     margin-bottom: 20px;
@@ -9100,7 +9091,7 @@ section.resource-section-1 .thumbnial-content {
 section.resource-section-1 .thumbnial-content h2{
     font-size: 20px;
 }
-section.resource-section-1 .thumbnial:first-child .thumbnial-content {
+section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content {
     width: calc( 100% - 77px );
     display: block;
     padding-bottom: 48px;
@@ -9114,7 +9105,7 @@ section.resource-section-1 .thumbnial:first-child .thumbnial-content {
 	 font-size: 30px !important;
 }
 
-section.resource-section-1 .thumbnial:first-child .btn-secondary-link {
+section.resource-section-1 .thumbnial.thumbnial1 .btn-secondary-link {
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -9411,7 +9402,7 @@ section.blog-section .thumbnial {
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.15);
-    margin: 30px 10px;
+    margin: 15px 10px;
     background: #fff;
     
 }

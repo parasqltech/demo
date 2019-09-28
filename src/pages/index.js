@@ -16,10 +16,10 @@ import HomeWork from '../components/Home/HomeWork'
 import home_section from '../img/home/home-section-1-img.png';
 import home_section_bg from '../img/home/home-section-1-img-background.png';
 import about_us from '../img/about-us.png';
-import pro_1 from '../img/Inbound-Methodology.gif';
-import pro_2 from '../img/Integrated-Thinking-or-Systems-Thinking-3.gif';
-import pro_3 from '../img/OKR.gif';
-import pro_4 from '../img/sostac.gif';
+import pro_1 from '../img/Inbound-Methodology.png';
+import pro_2 from '../img/Integrated-Thinking-or-Systems-Thinking-3.png';
+import pro_3 from '../img/OKR.png';
+import pro_4 from '../img/sostac.png';
 import ico_4 from '../img/icon-4.png';
 import ico_3 from '../img/icon-3.png';
 import ico_2 from '../img/icon-2.png';

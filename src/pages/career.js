@@ -10,6 +10,11 @@ import Particles from 'react-particles-js';
 import $ from 'jquery';
 
 import glassdoor from '../img/glassdoor-logo.png'
+import Ambitious from '../img/career/Ambitious.png'
+import SkillTuning from '../img/career/Skill-Tuning.png'
+import Values from '../img/career/Values.png'
+import Vision from '../img/career/Vision.png'
+import WorkCulture from '../img/career/Work-Culture.png'
 
 const CareerPage = () => (
 	<Layout>
@@ -86,44 +91,58 @@ const CareerPage = () => (
                 <div className="main-panel">
                     <div className="row justify-content-center text-center">
                         <div className="col-md-12 mt-4">
-                            <h2 className="section-heading ">Why us?
-                                <span>People-first focus & bringing together diverse ideas, perspectives & experience</span>
+                            <h2 className="section-heading ">What sets us apart?
+                                <span>Our focus on bringing folks with diverse ideas, perspectives &amp; experiences.</span>
                             </h2>
                             <div className="row ">
                                 <div className="col-xl-4 col-lg-4 col-md-6">
                                     <div className="thumbnail wow fadeInLeft bg-white">
-                                        <span className="benifits-icon text-danger"><i className="fa fa-home"></i></span>
+                                        <span className="benifits-icon">
+                                            <img src={WorkCulture} className="img-fluid" alt=""/>
+                                        </span>
+
+                                        
+
                                         <p className="h4">Work Culture</p>
-										<p className="label-text">An open & transparent work environment</p>
+										<p className="label-text">An open &amp; transparent work environment</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-8 col-md-6">
                                     <div className="thumbnail wow fadeInUp bg-white">
-                                        <span className="benifits-icon   text-warning"><i className="fa fa-home"></i></span>
+                                        <span className="benifits-icon">
+                                            <img src={SkillTuning} className="img-fluid" alt=""/>
+                                        </span>
                                         <p className="h4">Skill Tuning</p>
-										<p className="label-text">Continuous learning and development opportunities</p>
+										<p className="label-text">Continuous learning and development opportunities.</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-6 col-md-6">
                                     
                                      <div className="thumbnail wow fadeInLeft bg-white">
-                                        <span className="benifits-icon  text-success"><i className="fa fa-home"></i></span>
-                                         <p className="h4">Values</p>
-										 <p className="label-text">Our core values drive everything we do</p>
+                                        <span className="benifits-icon">
+                                        <img src={Vision} className="img-fluid" alt=""/>
+                                        </span>
+                                         <p className="h4">Vision</p>
+										 <p className="label-text">A place where everyone is inspired to innovate.</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-5 col-lg-6 col-md-6">
                                 <div className="thumbnail wow fadeInRight bg-white">
-                                       <span className="benifits-icon    text-primary"><i className="fa fa-home"></i></span>
-                                         <p className="h4">Vision</p>
-										 <p className="label-text">A place where everyone is inspired to innovate</p>
+                                        <span className="benifits-icon">
+                                            <img src={Values} className="img-fluid" alt=""/>
+                                        </span>
+                                         <p className="h4">Values</p>
+										 <p className="label-text">Our core values drive everything we do.</p>
                                     </div>
                                 </div>
+                                      
                                 <div className="col-xl-7 col-lg-12 col-md-12">
-                                    <div className="thumbnail wow fadeInDown bg-white">
-                                      <span className="benifits-icon text-dark"><i className="fa fa-home"></i></span>
+                                    <div className="thumbnail wow fadeInDown bg-white ">
+                                        <span className="benifits-icon">
+                                            <img src={Ambitious} className="img-fluid" alt=""/>
+                                        </span>
                                           <p className="h4">Ambitious</p>
-										  <p className="label-text">Each day brings new & exciting challenges</p>
+										  <p className="label-text">Each day brings new &amp; exciting challenges.</p>
                                     </div>
                                 </div>
                                 

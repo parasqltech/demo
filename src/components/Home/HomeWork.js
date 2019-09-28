@@ -54,7 +54,7 @@ const ClientSlider = () => (
                 }
     `}
     render={data => (
-		<section className="home-work-section">
+		<section className="home-work-section bg-white">
         
         <div className="section-icons">
             

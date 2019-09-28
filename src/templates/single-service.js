@@ -63,19 +63,14 @@ class Singleservice extends Component {
 					</div>
 			</section>
 			<section className="home-services-section service-section-1 ">
-         <div className="section-icons">
-            
-            <div className="icon-one" ></div>
-            
-            <div className="icon-two " ></div>
-            
-            <div className="icon-three " ></div>
-        </div>
+        
         <div className="container bg-white">
             <div className="main-panel text-center">
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
+						<div className="event-section-1">
                         <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></p>
+						</div>
                     </div>
                 </div>
 				

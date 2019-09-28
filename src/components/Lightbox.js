@@ -65,7 +65,7 @@ class Lightbox extends Component {
       <Fragment>
         <div class="row">
           {images.map((img, i) => (
-            <div class="col-lg-4 mb-sm-4">
+            <div class="col-lg-4 mb-sm-4 mb-4">
               <a href={img} alt=""  onClick={e => this.handleClick(e, i)}>
                 <img src={img} class="img-fluid" />
               </a>

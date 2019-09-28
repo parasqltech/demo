@@ -24,7 +24,7 @@ allWordpressWpHomeaboutus {
      render={data => {
       return (
         <div>
-        <section class="home-about-section">
+        <section class="home-about-section bg-white">
         <div class="container">
             <div class="about-mockup-bg  wow fadeIn">
                 <img src={img} class="img-fluid about-us-image" alt="" />

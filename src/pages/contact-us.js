@@ -41,13 +41,13 @@ const IndexPage = () => (
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-6  mb-4">
-						<div className="card text-center  pb-4">
+						<div className="card text-center">
 							<div className="card-body">
 								<span className="card-icon   ">
 									<i className="fa fa-phone"></i>
 								</span>
 								<h6 className="card-title  mb-4">Talk to our experts</h6>
-								<p className="label-text mb-4">Need assistance? You are just an e-mail away. Drop a line at 
+								<p className="label-text mb-4">Need assistance? You are just an e-mail away. Drop a line at  
 										<a href="mailto:support@qltech.com.au" className="nav-link m-0 p-0">support@qltech.com.au</a>
 
 								</p>
@@ -75,7 +75,7 @@ const IndexPage = () => (
 										<i className="fa fa-comments"></i>
 									</span>
 									<h6 className="card-title  mb-4">Career</h6>
-									<p className="label-text  mb-4">IReady to take on the challenge?  </p>
+									<p className="label-text  mb-4">Ready to take on the challenge?  </p>
 
 								   <Link to="career" className="btn btn-default mt-0 mb-4"> Go to career section</Link>
 								</div>
@@ -92,7 +92,7 @@ const IndexPage = () => (
 						<div className="col-md-5 d-flex">
 							<div className="card">
 								<div className="row ">
-									<div className="col-lg-12">
+									<div className="col-lg-12 mb-4">
 											
 											<GoogleMapAus />
 									</div>
@@ -110,7 +110,7 @@ const IndexPage = () => (
 						<div className="col-md-5  d-flex">
 								<div className="card">
 									<div className="row">
-										<div className="col-lg-12">
+										<div className="col-lg-12 mb-4">
 											<GoogleMap />
 										</div>
 										<div className="col-lg-12 text-left">

@@ -28,7 +28,7 @@ const HomeService = () => (
      render={data => {
       return (
         <div>
-       <section className="home-services-section">
+       <section className="home-services-section bg-white">
         <div className="container">
             <div className="section-icons">
               

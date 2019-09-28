@@ -44,19 +44,19 @@ class SingleWork extends Component {
                         <div className="col-md-4 col-sm-6 text-center">
                             <p className="breif-text">
                                 <span className="percentage">{work.edges[0].node.acf.revenue_1} %</span> 
-                                <span>increase in revenue</span>
+                                <span>{work.edges[0].node.acf.revenue_text_1}</span>
                             </p>
                         </div>
                         <div className="col-md-4 col-sm-6 text-center">
                             <p className="breif-text">
                                 <span className="percentage">{work.edges[0].node.acf.revenue_2} %</span> 
-                                <span>increase in revenue</span>
+                                <span>{work.edges[0].node.acf.revenue_text_2}</span>
                             </p>
                         </div>
                         <div className="col-md-4 col-sm-6 text-center">
                             <p className="breif-text">
                                 <span className="percentage">{work.edges[0].node.acf.revenue_3} %</span> 
-                                <span>increase in revenue</span>
+                                <span>{work.edges[0].node.acf.revenue_text_3}</span>
                             </p>
                         </div>
                     </div>
@@ -68,18 +68,20 @@ class SingleWork extends Component {
                         <div className="col-xl-8 col-lg-8">
                             
                             <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.content }}  ></p>
-                            <h2 className="section-heading-2 mb-2">Problem Statement</h2>
-                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.problem_statement }} ></p>
-                            <div className="text-center">
-							<iframe width="560" height="315" src={work.edges[0].node.acf.youtube_video_url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							
+							<div className="embed-responsive embed-responsive-16by9 text-center">
+							<iframe className="embed-responsive-item " width="560" height="315" src={work.edges[0].node.acf.youtube_video_url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
+                            <h2 className="section-heading-2 mb-2 mt-4">Challenge</h2>
+                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.problem_statement }} ></p>
+                            
                              <div className="text-center">
                                 <span className="custom-break-line">
                                     <span className="custom-break-line-one"></span>
                                     <span  className="custom-break-line-two"></span>
                                 </span>
                             </div>
-                            <h2 className="section-heading-2 mb-2">The QL Approach To The Business</h2>
+                            <h2 className="section-heading-2 mb-2">Strategy</h2>
                             <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.the_ql_approach_to_the_business }} ></p>
                            
                             <div className="text-center">
@@ -88,16 +90,16 @@ class SingleWork extends Component {
                                        <span  className="custom-break-line-two"></span>
                                    </span>
                                </div>
-                            <h2 className="section-heading-2 mb-2"> How The Client's Business Transformed</h2>
+                            <h2 className="section-heading-2 mb-2"> Transformation</h2>
                             <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.how_the_clients_business_transformed }} ></p>    
                         </div>
                         
                         <div className="col-xl-3 col-lg-4">
                             <h5 className="section-heading-3">About us</h5>
                             <p className="label-text" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.about_company }} ></p>
-                            <p className="label-text mb-0"><b>Company Name: </b><a href="" className="nav-link">{work.edges[0].node.acf.company_name}</a></p>
-                            <p className="label-text mb-0"><b>Company Size: </b><a href="" className="nav-link">{work.edges[0].node.acf.company_size}</a></p>
-                            <p className="label-text mb-4"><b>Location: </b><a href="" className="nav-link">{work.edges[0].node.acf.location}</a></p>
+                            <p className="label-text mb-0"><b>Industry: </b> {work.edges[0].node.acf.company_name}</p>
+                            <p className="label-text mb-0"><b>Platform: </b> {work.edges[0].node.acf.company_size}</p>
+                            <p className="label-text mb-4"><b>Service: </b> {work.edges[0].node.acf.location}</p>
                            
                             
                             <div className="form-section postion-sticky">
@@ -177,39 +179,7 @@ class SingleWork extends Component {
             </div>
         </div>
     </section>
-	<section className="what-you-get ">
-        <div className="container bg-white">
-            <h2 className="section-heading text-center mb-1">What this guide has to offfer?</h2>
-            <p className="sub-heading text-center pb-4" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <div className="row">
-                {
-				work.edges[0].node.acf.what_this_guide_has_to_offfer &&
-				work.edges[0].node.acf.what_this_guide_has_to_offfer.map(
-                (prop,i) => {
-					return (
-						<div key={i} className=" col-lg-4 col-md-6 customer-benifil">
-						<div className="thumbnial text-center"  data-wow-delay="0.4s" data-tilt=""
-						data-tilt-max="10" data-tilt-scale="1">
-							<div className="thumbnial-icon"><i className="fa fa-home"></i> </div>
-							<h4 className="section-heading-2"> {prop.offer_title}</h4>
-							<p className="label-text">{prop.offer_short_desc}</p>
-						</div>
-					</div>
-					)
-                }
-                )}
-				
-				
-				
-                
-                
-            </div> 
-            
-            
-            
-        </div>  
-    </section>	
-		
+	
 		
 		
 		
@@ -250,6 +220,9 @@ export const pageQuery = graphql`
           revenue_1
           revenue_2
           revenue_3
+		   revenue_text_1
+          revenue_text_2
+          revenue_text_3
           short_descprition
           sub_title
           testimonial_

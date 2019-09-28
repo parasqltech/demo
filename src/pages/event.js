@@ -39,7 +39,12 @@ class FilterGrid extends React.Component {
   }
 
   // Click Function
-  onFilterChange = (newFilter) => {
+  onFilterChange = (newFilter,id) => {
+	
+	document.querySelectorAll('.flt').forEach(function(button) {	
+		button.classList.remove('menu-active');
+	});
+	document.querySelector("#"+id).classList.add('menu-active');	
     if (this.iso === undefined) {
       this.iso = new Isotope('#grid-container', {
         itemSelector: '.grid-item',
@@ -97,11 +102,11 @@ class FilterGrid extends React.Component {
 		<section className="events-section-1">
         <div className="container text-center">
             <ul id="filters" className="isotop-sorting-menu ">
-                <li><a href="javascript:void(0)" id="Allcss" onClick={() => {this.onFilterChange("*")}} className="menu-active Allcss" >All</a></li>
+                <li><a href="javascript:void(0)" id="Allcss" onClick={() => {this.onFilterChange("*","Allcss")}} className="menu-active Allcss flt" >All</a></li>
                {category && category.edges.map(
-                        cats => {
+                        (cats,i) => {
 				 return ( 
-					 <li><a href="javascript:void(0)" onClick={() => {this.onFilterChange(cats.node.name)}} className="" >{cats.node.name}</a></li>
+					 <li><a href="javascript:void(0)" id={"cls"+i} onClick={() => {this.onFilterChange(cats.node.name,"cls"+i)}} className="flt" >{cats.node.name}</a></li>
 
 				 )})}   
             </ul>

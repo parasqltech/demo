@@ -137,11 +137,11 @@ const JobPost = () => (
                                                     <div className="row">
                                                         <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
                                                             <label className="label-text">Current CTC:</label>
-                                                            <input type="text" name="CCTC" required className="form-control" placeholder="Enter Current CTC"/>
+                                                            <input type="number" name="CCTC" required className="form-control" placeholder="Enter Current CTC"/>
                                                         </div>
                                                         <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
                                                             <label className="label-text">Expected CTC:</label>
-                                                            <input type="text" name="ECTC" required className="form-control" placeholder="Enter Expected CTC"/>
+                                                            <input type="number" name="ECTC" required className="form-control" placeholder="Enter Expected CTC"/>
                                                         </div>
                                                     </div>
                                                 </div>

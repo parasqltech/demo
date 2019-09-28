@@ -72,6 +72,26 @@ module.exports = {
       output: `/sitemap.xml`,
     }
   },
+  {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        custom: `
+            ExpiresActive On
+			  ExpiresByType image/jpeg "access plus 1 year"
+			  ExpiresByType image/gif "access plus 1 year"
+			  ExpiresByType image/png "access plus 1 year"
+			  ExpiresByType image/webp "access plus 1 year"
+			  ExpiresByType image/svg+xml "access plus 1 year"
+			  ExpiresByType image/x-icon "access plus 1 year"
+			  ExpiresByType video/mp4 "access plus 1 year"
+			  ExpiresByType video/mpeg "access plus 1 year"
+			  ExpiresByType text/css "access plus 1 month"
+			  ExpiresByType text/javascript "access plus 1 month"
+			  ExpiresByType application/pdf "access plus 1 month"
+			  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+        `,
+      },
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

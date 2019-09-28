@@ -3170,7 +3170,9 @@ body,html{
 }
 
 
-
+.d-inline-block{
+	display:inline-block !important;
+}
 
 h1,
 h2,

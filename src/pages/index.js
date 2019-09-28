@@ -105,13 +105,13 @@ const IndexPage = () => (
                 <div className="col-md-8 mb-4">
                     <h2 className="section-heading text-center wow fadeIn">
                         <span>Our Processes</span>
-                        Pillars of our Success</h2>
+                        Pillars of our base</h2>
                 </div>
             </div>
 
             <div className="row clearfix wow fadeIn">
-                <div className="process-block one col-lg-3 col-md-6 col-sm-6">
-                    <div className="inner-box">
+                <div className="process-block one col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div className="inner-box  d-inline-block">
                         <div className="icon-box  ">
                             <span className="icon text-center"><img src={pro_1} className="img-fluid" alt=""/></span>
                         </div>
@@ -119,8 +119,8 @@ const IndexPage = () => (
                         <div className="number"></div>
                     </div>
                 </div>
-                <div className="process-block-two two col-lg-3 col-md-6 col-sm-6">
-                    <div className="inner-box">
+                <div className="process-block-two two col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div className="inner-box  d-inline-block">
                         <div className="icon-box d-lg-none d-block  text-center">
                             <span className="icon "><img src={pro_2} className="img-fluid  d-inline" alt=""/></span>
                         </div>
@@ -131,8 +131,8 @@ const IndexPage = () => (
                         </div>
                     </div>
                 </div>
-                <div className="process-block three col-lg-3 col-md-6 col-sm-6">
-                    <div className="inner-box">
+                <div className="process-block three col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div className="inner-box  d-inline-block" >
                         <div className="icon-box  ">
                             <span className="icon text-center"><img src={pro_3} className="img-fluid  d-inline" alt=""/></span>
                         </div>
@@ -140,8 +140,8 @@ const IndexPage = () => (
                         <div className="number"></div>
                     </div>
                 </div>
-                <div className="process-block-two four col-lg-3 col-md-6 col-sm-6">
-                    <div className="inner-box">
+                <div className="process-block-two four col-lg-3 col-md-6 col-sm-6 text-center">
+                    <div className="inner-box d-inline-block">
                         <div className="icon-box  d-lg-none d-block text-center ">
                             <span className="icon text-center"><img src={pro_4} className="img-fluid  d-inline" alt=""/></span>
                         </div>

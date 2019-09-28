@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import GoogleMap from '../components/Contact/GoogleMap'
 import GoogleMapAus from '../components/Contact/GoogleMapAus'
 import Helmet from 'react-helmet'
-const BASE_URL = location.pathname;
+
 const IndexPage = () => (
 	<Layout>
 		<Helmet>
@@ -130,7 +130,7 @@ const IndexPage = () => (
 				<div className="container">
 					<div className="main-panel">
 						<h2 className="section-heading-2 text-center mb-4"><span className=" sub-heading d-block">contact Us</span> How Can We Help You?</h2>
-						<form method="POST" action="https://formbucket.com/f/buk_yXKvkq7idEgpjRnbi6HtiFDt" >
+						<form method="POST" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" >
 							<div className="row justify-content-center">
 								<div className="col-lg-8 col-md-10">
 									 <div className="row">
@@ -154,7 +154,7 @@ const IndexPage = () => (
 											<label className="label-text">Message:</label>
 											<textarea rows="3" className="form-control" placeholder="Message" name="message" required></textarea>
 										</div>
-										<input type="hidden" required className="form-control" name="url" value={BASE_URL} />
+										<input type="hidden" required className="form-control" name="url" value="/contact-us" />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
 										<div className="col-md-12  mb-4 ">
 										<button type="submit" className="btn-default border-0" value="Submit">Submit</button>

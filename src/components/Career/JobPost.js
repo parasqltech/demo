@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-const BASE_URL = location.pathname;
+
 
 
 
@@ -100,7 +100,7 @@ const JobPost = () => (
                                 <div className=" col-lg-10">
                                     <div className="p-3">
                                         <h2 className="section-heading-2 d-block text-center">Are you Ready?</h2>
-                                        <form method="post" action="https://formbucket.com/f/buk_ebtX0wjJeIA2gVE3kgBop5RR" enctype="multipart/form-data">
+                                        <form method="post" action="https://script.google.com/macros/s/AKfycbwcE57k_MU__-34meqARCcZLmpXf0TDZr51E4_S0WsyGZ54g4uj/exec" enctype="multipart/form-data">
                                             <div className="row ">
                                                 <div className="col-md-6 mb-4">
                                             <label className="label-text">First Name :</label>
@@ -156,7 +156,7 @@ const JobPost = () => (
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value={BASE_URL} />
+                                                <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value="/career" />
                                         <input type="hidden" className="form-control" name="form_name" value="Career" />
                                                 <div className="col-md-12  mb-3 ">
                                                     <button type="submit" className="btn-default border-0" value="Submit">Submit</button>

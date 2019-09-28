@@ -28,6 +28,15 @@ const article = () => (
 				  }
 				}
 			  }
+			  allWordpressCategory(filter: {wordpress_parent: {eq: 24}}) {
+				edges {
+				  node {
+					id
+					name
+					slug
+				  }
+				}
+			  }
 		}
     `}
     render={data => (
@@ -83,6 +92,7 @@ const article = () => (
                     </div>
                 </div>
         </div>
+		
        <div className="container bg-white article-div">
                 <div className="row">
                         <div className="col-md-11">
@@ -143,11 +153,19 @@ const article = () => (
                                     <div className="sidebar-widget p-3 bg-light">
                                         <h6 className="sidebar-title">Category</h6>
                                         <ul className="Categary-list">
-                                            <li><a href="">Category</a></li>
-                                            <li><a href="">Category</a></li>
-                                            <li><a href="">Category</a></li>
-                                            <li><a href="">Category</a></li>
-                                            <li><a href="">Category</a></li>
+                                            {data &&
+												data.allWordpressCategory &&
+												data.allWordpressCategory.edges &&
+												data.allWordpressCategory.edges.map(
+												(propd,i) => {
+													return (
+											
+											
+											<li key={i} ><Link to={"category/"+propd.node.slug}>{propd.node.name}</Link></li>
+											)
+												}
+												)}		
+										 
                                         </ul>
                                     
                                     </div>

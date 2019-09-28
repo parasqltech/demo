@@ -32,7 +32,7 @@ const Whatwedo = () => (
                 
                 <span className="section-subheading-heading">Our Values</span>
                 <h2 className="section-heading text-center">
-                Values that make a difference
+                Foundations that define our character, shape culture and build trust.
                 </h2>
                 <div className="row">
                 {data &&

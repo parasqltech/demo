@@ -53,8 +53,7 @@ const CareerPage = () => (
                 <div className="row justify-content-center">
                     <div className="col-md-9 text-sub-heading text-center">
                              <p className="label-text text-subheading font-weight-regular">
-                                Over 400 current and former employees have written reviews of their experience at HubSpot.
-                                Learn what it's like to work here on <a href="#" target="_blank" class="nav-link text-success">Glassdoor.</a> 
+                                Learn what it's like to work here on <a href="https://www.glassdoor.co.in/Reviews/QL-Tech-Reviews-E1394850.htm" target="_blank" class="nav-link text-success">Glassdoor.</a> 
                             </p>
                             
                             <div className="rating-block mb-4">
@@ -87,44 +86,44 @@ const CareerPage = () => (
                 <div className="main-panel">
                     <div className="row justify-content-center text-center">
                         <div className="col-md-12 mt-4">
-                            <h2 className="section-heading ">What sets us apart?
-                                <span>Our focus on bringing folks with diverse ideas, perspectives &amp; experiences.</span>
+                            <h2 className="section-heading ">Why us?
+                                <span>People-first focus & bringing together diverse ideas, perspectives & experience</span>
                             </h2>
                             <div className="row ">
                                 <div className="col-xl-4 col-lg-4 col-md-6">
                                     <div className="thumbnail wow fadeInLeft bg-white">
                                         <span className="benifits-icon text-danger"><i className="fa fa-home"></i></span>
                                         <p className="h4">Work Culture</p>
-										<p className="label-text">An open &amp; transparent work environment</p>
+										<p className="label-text">An open & transparent work environment</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-8 col-md-6">
                                     <div className="thumbnail wow fadeInUp bg-white">
                                         <span className="benifits-icon   text-warning"><i className="fa fa-home"></i></span>
                                         <p className="h4">Skill Tuning</p>
-										<p className="label-text">Continuous learning and development opportunities.</p>
+										<p className="label-text">Continuous learning and development opportunities</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-4 col-lg-6 col-md-6">
                                     
                                      <div className="thumbnail wow fadeInLeft bg-white">
                                         <span className="benifits-icon  text-success"><i className="fa fa-home"></i></span>
-                                         <p className="h4">Vision</p>
-										 <p className="label-text">A place where everyone is inspired to innovate.</p>
+                                         <p className="h4">Values</p>
+										 <p className="label-text">Our core values drive everything we do</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-5 col-lg-6 col-md-6">
                                 <div className="thumbnail wow fadeInRight bg-white">
                                        <span className="benifits-icon    text-primary"><i className="fa fa-home"></i></span>
-                                         <p className="h4">Values</p>
-										 <p className="label-text">Our core values drive everything we do.</p>
+                                         <p className="h4">Vision</p>
+										 <p className="label-text">A place where everyone is inspired to innovate</p>
                                     </div>
                                 </div>
                                 <div className="col-xl-7 col-lg-12 col-md-12">
                                     <div className="thumbnail wow fadeInDown bg-white">
                                       <span className="benifits-icon text-dark"><i className="fa fa-home"></i></span>
                                           <p className="h4">Ambitious</p>
-										  <p className="label-text">Each day brings new &amp; exciting challenges.</p>
+										  <p className="label-text">Each day brings new & exciting challenges</p>
                                     </div>
                                 </div>
                                 

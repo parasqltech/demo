@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import GoogleMap from '../components/Contact/GoogleMap'
 import GoogleMapAus from '../components/Contact/GoogleMapAus'
 import Helmet from 'react-helmet'
+const BASE_URL = location.pathname;
 const IndexPage = () => (
 	<Layout>
 		<Helmet>
@@ -129,45 +130,35 @@ const IndexPage = () => (
 				<div className="container">
 					<div className="main-panel">
 						<h2 className="section-heading-2 text-center mb-4"><span className=" sub-heading d-block">contact Us</span> How Can We Help You?</h2>
-						<form method="POST" action="">
+						<form method="POST" action="https://formbucket.com/f/buk_yXKvkq7idEgpjRnbi6HtiFDt" >
 							<div className="row justify-content-center">
 								<div className="col-lg-8 col-md-10">
 									 <div className="row">
 										<div className="col-md-6 mb-4">
-											<label className="label-text">What's your name:</label>
-											<input type="text" className="form-control" placeholder="Enter your name"/>
+											<label className="label-text">First Name :</label>
+											<input type="text" className="form-control" placeholder="first name" name="first_name" required/>
 										</div>
 										<div className="col-md-6 mb-4">
-											<label className="label-text">What's your email address:</label>
-											<input type="text" className="form-control" placeholder="Enter your name"/>
+											<label className="label-text">Last Name :</label>
+											<input type="text" className="form-control" placeholder="last name" name="last_name" required/>
 										</div>
-										<div className="col-md-6 mb-4">
-											<label className="label-text">Select Service:</label>
-											<select className="form-control">
-												<option> Option 1</option>
-												<option> Option 1</option>
-												<option> Option 1</option>
-												<option> Option 1</option>
-												<option> Option 1</option>
-											</select>
+										<div className="col-md-12 mb-4">
+											<label className="label-text">Email :</label>
+											<input type="email" className="form-control" placeholder="email" name="email" required/>
 										</div>
-										<div className="col-md-6 mb-4">
-											<label className="label-text">City:</label>
-											<select className="form-control">
-												<option> Option 1</option>
-												<option> Option 1</option>
-												<option> Option 1</option>
-												<option> Option 1</option>
-												<option> Option 1</option>
-											</select>
+										<div className="col-md-12 mb-4">
+											<label className="label-text">Number :</label>
+											<input type="number" className="form-control" placeholder="Number" name="number" required/>
 										</div>
 										<div className="col-md-12">
 											<label className="label-text">Message:</label>
-											<textarea rows="2" className="form-control" placeholder="Message"></textarea>
+											<textarea rows="3" className="form-control" placeholder="Message" name="message" required></textarea>
 										</div>
-									
+										<input type="hidden" required className="form-control" name="url" value={BASE_URL} />
+										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
 										<div className="col-md-12  mb-4 ">
-											<button className="btn btn-default border-0">Submit</button>
+										<button type="submit" className="btn-default border-0" value="Submit">Submit</button>
+											
 										</div>
 									</div>
 								</div>

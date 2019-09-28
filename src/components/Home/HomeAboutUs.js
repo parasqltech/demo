@@ -50,7 +50,7 @@ allWordpressWpHomeaboutus {
                             <span data-video-id="" class="video-area-popup">
 
                                 <i class="fa fa-play"></i></span>
-                            <span>Check How we work together</span>
+                            <span>Check out our quick introduction</span>
                         </div>
                     </div>
                          )

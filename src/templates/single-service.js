@@ -78,6 +78,7 @@ class Singleservice extends Component {
                         <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></p>
                     </div>
                 </div>
+				
 				<div className="row justify-content-center">
                     <div className="col-xl-11">
                         <div className="row text-left">
@@ -106,7 +107,8 @@ class Singleservice extends Component {
 												propd => {
 													return (
 														<Link to={"services/"+propd.slider_url} class="thumbnial-icon d-inline"  title={propd.slider_title}>
-														<img src={propd.slider_image} class="img-fluid" alt=""/>
+															{(propd.slider_image != null) ? (<img src={propd.slider_image.source_url} class="img-fluid" alt=""/>) : ('') }
+														
 														</Link>
 													)
 												}
@@ -369,7 +371,9 @@ export const pageQuery = graphql`
 				}
 				short_description
 				service_slider {
-					slider_image
+					slider_image{
+						source_url
+					}
 					slider_title
 					slider_url
 				}

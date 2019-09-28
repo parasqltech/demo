@@ -97,12 +97,12 @@ const Navbar = () => (
                                </li>
                                <li className="other-menu border-right">
                                    <span className="services-heading ">Industries</span>
-                                   <span className="services-description">Guiding clients with content strategy and helping them create content that converts</span>
+                                   <span className="services-description">Discover how we're helping transform myriad industries to win tomorrow’s customer.</span>
                                    <IndustriesHeader />
                                </li>
                                <li className="other-menu">
                                    <span className="services-heading ">Platforms</span>
-                                   <span className="services-description">Guiding clients with content strategy and helping them create content that converts</span>
+                                   <span className="services-description">Explore possibilities or get the most from your technology investments</span>
 									<PlatformHeader />
                                </li>
                            </ul>

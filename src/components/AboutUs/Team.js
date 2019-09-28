@@ -30,9 +30,9 @@ const Team = () => (
 		<section className="about-us-section-4 bg-white">
                         <div className="container">
                             <div className="main-panel">
-                                <span className="section-subheading-heading">Team Memeber</span>
+                                <span className="section-subheading-heading">Our Team</span>
                                 <h2 className="section-heading text-center">
-                                    Together We Succeed!!
+                                    People that make it happen
                                 </h2>
                                
                                        

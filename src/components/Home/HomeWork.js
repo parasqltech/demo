@@ -91,11 +91,11 @@ const ClientSlider = () => (
                                         <div>
                                 <div class="inner-column">
                                     
-                                    <span class="section-subheading-heading text-left mb-2">Our Processes</span> 
+                                    <span class="section-subheading-heading text-left mb-2">Our Success</span> 
                                     <h2 class="section-heading text-left mb-4">{prop.node.acf.title}</h2>
                                     <p class="label-text mb-4">{prop.node.acf.descprtiton}</p>
 
-                                    <a href="#" class="btn btn-secondary-link"><span>View More Work <i class="fa fa-long-arrow-right ml-1"></i></span></a>
+                                    <Link to="/work" class="btn btn-secondary-link"><span>View More Work <i class="fa fa-long-arrow-right ml-1"></i></span></Link>
                                 </div>
                                 </div>
                                       )

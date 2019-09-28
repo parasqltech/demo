@@ -53,7 +53,7 @@ const IndexPage = () => (
                         <span className="d-block">Expert Caretakers to help </span> 
                        <Typewriter
 						  options={{
-							strings: ['Make digital work.', 'Engage and wow customers.','Get ready for the next.','Embrace analytics.'],
+							strings: ['Make digital work', 'Engage and wow customers','Get ready for the next','Embrace analytics'],
 							autoStart: true,
 							loop: true,
 						  }}
@@ -61,9 +61,7 @@ const IndexPage = () => (
 						
 						&nbsp;
                     </h1>
-                    <div className=" text-center wow fadeInUp" data-wow-delay="0.6s">
-                        <a href="#" className="btn-default">Get an Estimate</a>
-                    </div>
+                    
                 </div>
             </div>
             <div className="row justify-content-center">
@@ -107,7 +105,7 @@ const IndexPage = () => (
                 <div className="col-md-8 mb-4">
                     <h2 className="section-heading text-center wow fadeIn">
                         <span>Our Processes</span>
-                        Pillars of our base</h2>
+                        Pillars of our Success</h2>
                 </div>
             </div>
 

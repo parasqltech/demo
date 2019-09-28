@@ -23,7 +23,16 @@ const guide = () => (
 					date(formatString: "D MMMM,Y")
 				  }
 				}
-			  }
+			}
+			allWordpressCategory(filter: {wordpress_parent: {eq: 25}}) {
+				edges {
+				  node {
+					id
+					name
+					slug
+				  }
+				}
+			}
       }
     `}
     render={data => (
@@ -117,11 +126,18 @@ const guide = () => (
                                     <div className="sidebar-widget p-3 bg-light">
                                         <h6 className="sidebar-title">Category</h6>
                                         <ul className="Categary-list">
-                                            <li><a href="">Category</a></li>
-                                            <li><a href="">Category</a></li>
-                                            <li><a href="">Category</a></li>
-                                            <li><a href="">Category</a></li>
-                                            <li><a href="">Category</a></li>
+                                            {data &&
+												data.allWordpressCategory &&
+												data.allWordpressCategory.edges &&
+												data.allWordpressCategory.edges.map(
+												(propd,i) => {
+													return (
+											
+											
+											<li key={i} ><Link to={"guide-category/"+propd.node.slug}>{propd.node.name}</Link></li>
+											)
+												}
+												)}	
                                         </ul>
                                     
                                     </div>

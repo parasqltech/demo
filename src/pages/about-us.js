@@ -42,7 +42,7 @@ const AboutPage = () => (
 				
 				<span className="section-subheading-heading">Our Story</span>
 				<h1 className="section-heading">
-					Helping millions grow better.
+					Helping businesses grow online
 				</h1>
 				<ul className="breadcrumbs">
 					<li> <Link to="/">Home</Link> \</li>
@@ -65,11 +65,12 @@ const AboutPage = () => (
                         </div>
                     </div>
                     <div className="col-lg-7">
-                        <p className="mb-0 sub-heading">Our Story</p>
+                        <p className="mb-0 sub-heading">How we work</p>
                         
-                        <h2 className="section-heading-2">One Linear Here </h2>
+                        <h2 className="section-heading-2">We help transform and grow businesses for the next </h2>
                         <p className="label-text">
-                                We offer end-to-end solutions to help transform businesses - strategise, develop, automate &amp; grow the brand’s online presence. In collaboration with our partners, we’ve successfully managed to help transform their business, increase productivity, reduce costs, enhance agility & performance.
+                                We offer end-to-end solutions to help transform businesses - strategise, develop, automate & grow the brand’s online. In collaboration with our clients, we’ve successfully managed to help businesses increase productivity, reduce costs, enhance agility & performance.
+
                         </p>
                     </div>
                 </div>
@@ -83,7 +84,7 @@ const AboutPage = () => (
         <div className="container">
                 <span className="section-subheading-heading">Our History</span>
                 <h3 className="section-heading text-center">
-                    We Grow Your Business
+                    Milestones we are proud of 
                 </h3>
                 <div className="row justify-content-center">
                     <div className=" col-lg-10">
@@ -219,7 +220,7 @@ const AboutPage = () => (
                     <div className="row justify-content-center">
                         <div className=" col-lg-8 col-md-10">
                             <div className="ceo-message">
-                                <p>Success is making those who believed in you look brilliant.
+                                <p>Enjoy the consistent pursuit of your potential
                                 </p> 
                             </div>
                             <div className="text-right">

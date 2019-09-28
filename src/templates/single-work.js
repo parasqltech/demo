@@ -70,7 +70,9 @@ class SingleWork extends Component {
                             <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.content }}  ></p>
                             <h2 className="section-heading-2 mb-2">Problem Statement</h2>
                             <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.problem_statement }} ></p>
-                            
+                            <div className="text-center">
+							<iframe width="560" height="315" src={work.edges[0].node.acf.youtube_video_url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
                              <div className="text-center">
                                 <span className="custom-break-line">
                                     <span className="custom-break-line-one"></span>
@@ -232,6 +234,7 @@ export const pageQuery = graphql`
 				title
 				content
 				acf {
+			youtube_video_url		
           about_company
           client_name
           company_name

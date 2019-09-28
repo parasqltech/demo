@@ -44,8 +44,8 @@ const HomeTestimonial = () => (
             <div className="row justify-content-center">
                 <div className="col-md-8 ">
                     <h2 className="section-heading text-center wow fadeIn">
-                        <span>Testimonial</span>
-                        Our customers loves us</h2>
+                        <span>Testimonials</span>
+                        Hear from our loved customers</h2>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + WordPress Starter',
+    title: 'QL Tech',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -45,9 +45,30 @@ module.exports = {
 	{
       resolve: 'gatsby-plugin-disqus',
       options: {
-        shortname: 'qltech'
+        shortname: 'qltechau'
       }
     },
+	{
+    resolve: "gatsby-plugin-google-tagmanager",
+    options: {
+      id: "GTM-WKD5LWX",
+
+      // Include GTM in development.
+      // Defaults to false meaning GTM will only be loaded in production.
+      includeInDevelopment: false,
+
+      // datalayer to be set before GTM is loaded
+      // should be an object or a function that is executed in the browser
+      // Defaults to null
+      defaultDataLayer: { platform: "gatsby" },
+    },
+  },
+  {
+    resolve: `gatsby-plugin-sitemap`,
+    options: {
+      output: `/sitemap.xml`,
+    }
+  },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-
+const BASE_URL = location.pathname;
 
 
 
@@ -33,7 +33,7 @@ const JobPost = () => (
                         <div className="row justify-content-center">
                             <div className="col-lg-12 ">
                                 <div className=" p-3">
-                                        <h2 className="section-heading-2 ">Featured Positions</h2>
+                                        <h2 className="section-heading-2 ">Explore Opportunities</h2>
                                         <div className="card  border-bottom border-top-0 border-left-0 border-right-0">
                                             <div className="card-header bg-white row justify-content-between m-0" role="tab" >
                                                 <p className=" mb-0 d-inline">
@@ -99,52 +99,67 @@ const JobPost = () => (
                                 <div className="row justify-content-center">
                                 <div className=" col-lg-10">
                                     <div className="p-3">
-                                        <h2 className="section-heading-2 d-block text-center">Send Your Resume</h2>
-                                        <form method="POST" action="">
+                                        <h2 className="section-heading-2 d-block text-center">Are you Ready?</h2>
+                                        <form method="post" action="https://formbucket.com/f/buk_ebtX0wjJeIA2gVE3kgBop5RR" enctype="multipart/form-data">
                                             <div className="row ">
-                                                <div className="col-md-6 mb-3">
-                                                    <label className="label-text">First Name:</label>
-                                                    <input type="text" className="form-control" placeholder="First Name"/>
+                                                <div className="col-md-6 mb-4">
+                                            <label className="label-text">First Name :</label>
+                                            <input type="text" className="form-control" placeholder="first name" name="first_name" required/>
+                                        </div>
+                                        <div className="col-md-6 mb-4">
+                                            <label className="label-text">Last Name :</label>
+                                            <input type="text" className="form-control" placeholder="last name" name="last_name" required/>
+                                        </div>
+                                                <div className="col-md-12 mb-3">
+                                                    <label className="label-text">Email</label>
+                                                    <input type="email" name="email" required="" className="form-control" placeholder="Enter your name" required />
                                                 </div>
-                                                <div className="col-md-6 mb-3">
-                                                    <label className="label-text">last Name:</label>
-                                                    <input type="text" className="form-control" placeholder="last Name"/>
-                                                </div>
-                                                <div className="col-md-6 mb-3">
-                                                    <label className="label-text">Email address:</label>
-                                                    <input type="text" className="form-control" placeholder="Email address"/>
-                                                </div>
-                                                <div className="col-md-6 mb-3">
+                                                <div className="col-md-12 mb-3">
                                                     <label className="label-text">Select Position:</label>
-                                                    <select className="form-control">
-                                                        <option> Option 1</option>
-                                                        <option> Option 1</option>
-                                                        <option> Option 1</option>
-                                                        <option> Option 1</option>
-                                                        <option> Option 1</option>
+                                                    <select className="form-control" name="position" required>
+                                                        <option value="">Please Select</option>
+                                                        <option value="Jr. PHP Developer">Jr. PHP Developer</option>
+                                                        <option value="UI/UX Designer">UI/UX Designer</option>
+                                                        <option value="HR Executive">HR Executive</option>
+                                                        <option value="SEO Executive">SEO Executive</option>
+                                                        <option value="Sr. Magento Developer">Sr. Magento Developer</option>
+                                                        <option value="Content Writer">Content Writer</option>
+                                                        <option value="Graphic Designer">Graphic Designer</option>
+                                                        <option value="Junior WordPress Developer">Junior WordPress Developer</option>
+                                                        <option value="Jr. iOS Developer">Jr. iOS Developer</option>
+                                                        <option value="Sr. Android Developer">Sr. Android Developer</option>
+                                                        <option value="Programmer / Developer">Programmer / Developer</option>
+                                                        <option value="Customer Service Representative">Customer Service Representative</option>
+                                                        <option value="Strategic Account Manager">Strategic Account Manager</option>
                                                     </select>
                                                 </div>
-                                                <div className="col-md-6 mb-4">
-                                                    <label className="label-text">Current CTC:</label>
-                                                    <input type="text" className="form-control" placeholder="Enter Current CTC"/>
-                                                </div>
-                                                <div className="col-md-6 mb-4">
-                                                    <label className="label-text">Expected CTC:</label>
-                                                    <input type="text" className="form-control" placeholder="Enter Expected CTC"/>
+                                                <div className="col-md-12">
+                                                    <div className="row">
+                                                        <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
+                                                            <label className="label-text">Current CTC:</label>
+                                                            <input type="text" name="CCTC" required className="form-control" placeholder="Enter Current CTC"/>
+                                                        </div>
+                                                        <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
+                                                            <label className="label-text">Expected CTC:</label>
+                                                            <input type="text" name="ECTC" required className="form-control" placeholder="Enter Expected CTC"/>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div className="col-md-12  mb-0">
                                                     <label className="label-text">Resume Upload:</label>
                                                     <div className="input-group ">
-                                                        <input type="text" className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
+                                                        <input type="text"  className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
                                                                                                                 <label className="input-group-btn">
                                                             <span className="btn btn-outline-secondary">
-                                                               Browse<input type="file" className="d-none" multiple=""/>
+                                                                Browse<input type="file" className="d-none" required multiple="" name="resume"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
                                                             </span>
                                                         </label>
                                                     </div>
                                                 </div>
+                                                <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value={BASE_URL} />
+                                        <input type="hidden" className="form-control" name="form_name" value="Career" />
                                                 <div className="col-md-12  mb-3 ">
-                                                    <button className="btn btn-default border-0">Submit</button>
+                                                    <button type="submit" className="btn-default border-0" value="Submit">Submit</button>
                                                 </div>
                                             </div>
                                         </form>

@@ -50,7 +50,7 @@ const Expereince = () => (
                             prop => {
                             return (  
                                 <> 
-                                <h4 className="sub-heading">Our Partners</h4>
+                                <h4 className="sub-heading">Our Partnerships</h4>
                                 <h3 className="section-heading-2">{prop.node.acf.tagline}</h3>
                                 <p className="label-text">{prop.node.acf.descprition}</p>
                                 <a href="#" className="btn btn-secondary-link">Get an Estimate <i

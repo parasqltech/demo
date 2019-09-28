@@ -62,7 +62,62 @@ class SingleProject extends Component {
             </div>
        </div>
     </section>
-		
+	<section className="home-event-section  pt-4 mb-4">
+        
+        <div className="container ">
+               
+            <div className="row">
+                <div className="col-md-12">
+                    
+                        <span className="section-subheading-heading">Relevant Story</span>  
+                        <h2 className="section-heading text-center wow fadeIn">
+                           
+                            Some other case study
+                        </h2>
+                    <div className="work-portfolio-module pt-0">
+                        <div className=" home-portfolio-slider-1 ">
+                            <div className="row">
+                                <div className="col-md-4">
+                                    <div className="work-thumbnial " >
+                                        <div className="work-thumbnail-image">
+                                            <img src="img/portfolio/1.jfif" className="img-fluid" alt=""/>
+                                            <p className="event-date"><span>24</span>Dec</p>
+                                        </div>
+                                        <div className="work-thumbnail-details">
+                                            <a href="event-details.html" className="work-title">Space for Title</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4  mt-4">
+                                    <div className="work-thumbnial " >
+                                        <div className="work-thumbnail-image">
+                                            <img src="img/portfolio/1.jfif" className="img-fluid" alt=""/>
+                                            <p className="event-date"><span>24</span>Dec</p>
+                                        </div>
+                                        <div className="work-thumbnail-details">
+                                            <a href="event-details.html" className="work-title">Space for Title</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4">
+                                    <div className="work-thumbnial " >
+                                        <div className="work-thumbnail-image">
+                                            <img src="img/portfolio/1.jfif" className="img-fluid" alt=""/>
+                                            <p className="event-date"><span>24</span>Dec</p>
+                                        </div>
+                                        <div className="work-thumbnail-details">
+                                            <a href="event-details.html" className="work-title">Space for Title</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>	
 		
 		
 		

@@ -368,6 +368,78 @@ exports.createPages = ({ actions, graphql }) => {
 	 
 	 
     })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressCategory(filter: {wordpress_parent: {eq: 24}}){
+            edges {
+              node {
+                id
+                name
+                slug
+              }
+            }
+          }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressCategory } = result.data
+		 const categoryTemplate = path.resolve(`./src/templates/single-category.js`);
+		  allWordpressCategory.edges.forEach(edge => {
+			  
+			createPage({
+			  path: `/category/${edge.node.slug}/`,
+			  component: slash(categoryTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressCategory(filter: {wordpress_parent: {eq: 25}}){
+            edges {
+              node {
+                id
+                name
+                slug
+              }
+            }
+          }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const { allWordpressCategory } = result.data
+		 const guidecategoryTemplate = path.resolve(`./src/templates/single-guide-category.js`);
+		  allWordpressCategory.edges.forEach(edge => {
+			  
+			createPage({
+			  path: `/guide-category/${edge.node.slug}/`,
+			  component: slash(guidecategoryTemplate),
+			  context: {
+				id: edge.node.id,
+			  },
+			})
+		  })
+	 
+	 
+    })
+	
+	
 	
 	
 	

@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'QL Tech',
+	siteUrl: 'https://www.qltech.com.au';
+	description: `Web Development & Digital Marketing Services In Perth, Australia - QL Tech`,
+    author: `@qltechau`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

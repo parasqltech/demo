@@ -9,8 +9,7 @@ import quote from  "../img/quote.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Moment from 'react-moment';
-import 'moment-timezone';
+
 import Tilt from 'react-tilt'
 import Helmet from 'react-helmet'
 const settings = {

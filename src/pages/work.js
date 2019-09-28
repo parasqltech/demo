@@ -12,8 +12,7 @@ import port_5 from '../img/portfolio/5.jpg'
 import port_6 from '../img/portfolio/6.jpg'
 import port_7 from '../img/portfolio/7.jpg'
 import port_8 from '../img/portfolio/8.jpg'
-import Moment from 'react-moment';
-import 'moment-timezone';
+
 import Helmet from 'react-helmet'
 class FilterGrid extends React.Component {
   constructor(props) {
@@ -121,11 +120,7 @@ class FilterGrid extends React.Component {
 								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.map(item => { return ( item.name ) }) } >
                         <div className="work-thumbnail-image">
                             <img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>
-                           <p className="event-date"><span><Moment format="DD">
-												{prop.node.acf.date}
-											</Moment></span><Moment format="MMM">
-												{prop.node.acf.date}
-											</Moment></p>
+                          
                         </div>
                         <div className="work-thumbnail-details">
                             <p className="work-title">{prop.node.acf.title}</p>

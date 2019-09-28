@@ -259,40 +259,41 @@ class Singleprocess extends Component {
                     </div>
                 </div>
                 <div className="main-panel">
-                    <form method="POST" action="">
-                        <div className="row justify-content-center">
-                            <div className="col-lg-8 col-md-10">
-                                 <div className="row">
-                                    <div className="col-md-6 mb-4">
-                                        <label className="label-text">First Name<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
-                                    </div>
-                                    <div className="col-md-6 mb-4">
-                                            <label className="label-text">Last Name<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
-                                    </div>
-                                    <div className="col-md-12 mb-4">
-                                        <label className="label-text">Email<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
-                                    </div>
-                                    <div className="col-md-12 mb-4">
-                                        <label className="label-text">Phone Number<sup>*</sup></label>
-                                        <input type="text" className="form-control" placeholder=""/>
-                                    </div>
-                                   
-                                    <div className="col-md-12">
-                                        <label className="label-text">Your Goal:</label>
-                                        <textarea rows="4" className="form-control" placeholder=""></textarea>
-                                    </div>
-                                
-                                    <div className="col-md-12  mb-4 text-right">
-                                        <button className="btn btn-default border-0">Submit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </form>
+                   <form method="POST" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" >
+							<div className="row justify-content-center">
+								<div className="col-lg-8 col-md-10">
+									 <div className="row">
+										<div className="col-md-6 mb-4">
+											<label className="label-text">First Name :</label>
+											<input type="text" className="form-control" placeholder="first name" name="first_name" required/>
+										</div>
+										<div className="col-md-6 mb-4">
+											<label className="label-text">Last Name :</label>
+											<input type="text" className="form-control" placeholder="last name" name="last_name" required/>
+										</div>
+										<div className="col-md-12 mb-4">
+											<label className="label-text">Email :</label>
+											<input type="email" className="form-control" placeholder="email" name="email" required/>
+										</div>
+										<div className="col-md-12 mb-4">
+											<label className="label-text">Number :</label>
+											<input type="number" className="form-control" placeholder="Number" name="number" required/>
+										</div>
+										<div className="col-md-12">
+											<label className="label-text">Message:</label>
+											<textarea rows="3" className="form-control" placeholder="Message" name="message" required></textarea>
+										</div>
+										<input type="hidden" required className="form-control" name="url" value={service.edges[0].node.slug} />
+										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
+										<div className="col-md-12  mb-4 ">
+										<button type="submit" className="btn-default border-0" value="Submit">Submit</button>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						   
+						</form>
                 </div>
             </div>
     </section>

@@ -229,10 +229,7 @@ export const pageQuery = graphql`
           the_ql_approach_to_the_business
           title
           title_main
-          what_this_guide_has_to_offfer {
-            offer_short_desc
-            offer_title
-          }
+         
         }
 		yoast {
 				focuskw

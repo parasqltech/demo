@@ -3,9 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link, StaticQuery, graphql } from 'gatsby'
-import blog_thubnail from '../../img/blog/blog-thubnial-1.jpg';
-import author_image from '../../img/blog/author-image.png';
-import BlogAuthor from '../../img/blog/author-image.png'
+import BlogAuthor from '../../img/fevicon.png';
 
 const settings = {
       dots: false,

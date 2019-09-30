@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import Particles from 'react-particles-js';
 import Helmet from 'react-helmet'
 import blog_thumb from '../img/blog/blog-thubnial-1.jpg';
-import author from '../img/blog/author-image.png';
+import author from '../img/fevicon.png';
 
 
 const article = () => (

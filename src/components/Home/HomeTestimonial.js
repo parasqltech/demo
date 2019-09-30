@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link, StaticQuery, graphql } from 'gatsby'
-import testimonial_author from '../../img/testmonial-author.png';
 import quote from '../../img/quote.png';
 
 const settings = {

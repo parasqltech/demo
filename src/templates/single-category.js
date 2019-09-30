@@ -5,8 +5,7 @@ import Layout from '../components/Layout'
 import Lightbox from '../components/Lightbox'
 import Particles from 'react-particles-js';
 import Helmet from 'react-helmet'
-import quote from  "../img/quote.png"
-import author from '../img/blog/author-image.png';
+import author from '../img/fevicon.png';
 
 class Singlecategory extends Component {
   render() {

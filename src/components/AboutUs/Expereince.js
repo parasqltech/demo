@@ -53,8 +53,8 @@ const Expereince = () => (
                                 <h4 className="sub-heading">Our Partnerships</h4>
                                 <h3 className="section-heading-2">{prop.node.acf.tagline}</h3>
                                 <p className="label-text">{prop.node.acf.descprition}</p>
-                                <a href="#" className="btn btn-secondary-link">Get an Estimate <i
-                                        className="fa fa-long-arrow-right ml-1"></i></a>
+                                
+                              
                                   </>
                                         )
                                     }

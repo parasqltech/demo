@@ -53,7 +53,7 @@ class SingleProject extends Component {
                             <div className="event-content-block">
                                 <p dangerouslySetInnerHTML={{ __html: event.edges[0].node.acf.long_desc}} />
                               <h2 className="section-heading text-center d-block mt-4">Gallery </h2> 
-                               <Lightbox images={event.edges[0].node.acf.gallery} />
+                              
                              </div>
                         </div>
                     </div>
@@ -62,6 +62,10 @@ class SingleProject extends Component {
             </div>
        </div>
     </section>
+    <div className="container">
+
+    <Lightbox images={event.edges[0].node.acf.gallery} />
+    </div>
 	<section className="home-event-section  pt-4 mb-4">
         
         <div className="container ">

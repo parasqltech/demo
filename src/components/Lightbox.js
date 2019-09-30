@@ -73,7 +73,8 @@ class Lightbox extends Component {
             
           ))}
         </div>
-		<LightboxModal visible={showLightbox} onKeyUp={e => this.handleKeyDown(e)}>
+          <div className="Demo" onKeyUp={e => this.handleKeyDown(e)}>
+		<LightboxModal visible={showLightbox} >
           <LightboxContent>
             
 			<img src={images[selectedImage]} class="img-fluid" />
@@ -90,6 +91,7 @@ class Lightbox extends Component {
             </Controls>
           </LightboxContent>
         </LightboxModal>
+        </div>
         </Fragment>
     )
   }
@@ -137,6 +139,8 @@ const LightboxModal = styled.div`
   top: 0;
   left: 0;
   bottom: 0;
+  width:100%;
+  height:100%;
   right: 0;
   display: flex;
   justify-content: center;

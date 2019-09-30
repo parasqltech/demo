@@ -4,8 +4,8 @@ import Layout from '../components/Layout'
 import Particles from 'react-particles-js';
 import PropTypes from 'prop-types';
 import blog_thumb from '../img/blog/blog-thubnial-1.jpg';
-import author from '../img/blog/author-image.png';
 import Helmet from 'react-helmet'
+import author from '../img/fevicon.png';
 
 
 class Grid extends React.Component {

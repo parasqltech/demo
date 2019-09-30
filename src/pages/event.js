@@ -99,7 +99,7 @@ class FilterGrid extends React.Component {
 				</ul>
 			</div>
 		</section>
-		<section className="events-section-1">
+		<section className="events-section-1 bg-white">
         <div className="container text-center">
             <ul id="filters" className="isotop-sorting-menu ">
                 <li><a href="javascript:void(0)" id="Allcss" onClick={() => {this.onFilterChange("*","Allcss")}} className="menu-active Allcss flt" >All</a></li>

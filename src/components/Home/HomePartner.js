@@ -38,7 +38,7 @@ const HomePartner = () => (
         }
     `}
     render={data => (
-		<section className="client-and-partners">
+		<section className="client-and-partners bg-white">
         <div className="container">
             
 			<Slider {...settings} className="client-and-partners-slider" >

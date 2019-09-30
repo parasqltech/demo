@@ -49,8 +49,8 @@ const HomeBlog = () => (
             <div className="row justify-content-center">
                 <div className="col-md-8 ">
                     <h2 className="section-heading text-center wow fadeIn">
-                        <span>Latest News</span>
-                        Media Information
+                        <span>Latest Articles</span>
+                        Knowledge Hub
                     </h2>
                 </div>
             </div>

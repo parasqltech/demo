@@ -38,7 +38,7 @@ const HomeTestimonial = () => (
         }
     `}
     render={data => (
-		<section className="home-testimonial-section">
+		<section className="home-testimonial-section bg-white">
 		
         <div className="container">
             <div className="row justify-content-center">
@@ -74,13 +74,13 @@ const HomeTestimonial = () => (
                                             </div>
                                             <p className="label-text">
                                                 <span>{(prop.node.acf.descprition).substring(0, 400)}</span>
-												{(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" >Read More</a></span>):(''))}
+												{(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" >Read More</a></span>):(''))}
 												
 												
 												
                                             </p>
                                             <div className="author-info">
-                                                <h4>{prop.node.acf.title}</h4>
+                                                <h4>{prop.node.acf.name}</h4>
                                                 <p>{prop.node.acf.desgination}</p>
                                             </div>
                                         </div>

@@ -104,15 +104,15 @@ const JobPost = () => (
                                             <div className="row ">
                                                 <div className="col-md-6 mb-4">
                                             <label className="label-text">First Name :</label>
-                                            <input type="text" className="form-control" placeholder="first name" name="first_name" required/>
+                                            <input type="text" className="form-control" placeholder="" name="first_name" required/>
                                         </div>
                                         <div className="col-md-6 mb-4">
                                             <label className="label-text">Last Name :</label>
-                                            <input type="text" className="form-control" placeholder="last name" name="last_name" required/>
+                                            <input type="text" className="form-control" placeholder="" name="last_name" required/>
                                         </div>
                                                 <div className="col-md-12 mb-3">
                                                     <label className="label-text">Email</label>
-                                                    <input type="email" name="email" required="" className="form-control" placeholder="Enter your name" required />
+                                                    <input type="email" name="email" required="" className="form-control" placeholder="" required />
                                                 </div>
                                                 <div className="col-md-12 mb-3">
                                                     <label className="label-text">Select Position:</label>
@@ -137,11 +137,11 @@ const JobPost = () => (
                                                     <div className="row">
                                                         <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
                                                             <label className="label-text">Current CTC:</label>
-                                                            <input type="number" name="CCTC" required className="form-control" placeholder="Enter Current CTC"/>
+                                                            <input type="number" name="CCTC" required className="form-control" placeholder=""/>
                                                         </div>
                                                         <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
                                                             <label className="label-text">Expected CTC:</label>
-                                                            <input type="number" name="ECTC" required className="form-control" placeholder="Enter Expected CTC"/>
+                                                            <input type="number" name="ECTC" required className="form-control" placeholder=""/>
                                                         </div>
                                                     </div>
                                                 </div>

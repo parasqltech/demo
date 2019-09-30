@@ -63,19 +63,15 @@ class Singleprocess extends Component {
 					</div>
 			</section>
 			<section className="home-services-section service-section-1 ">
-         <div className="section-icons">
-            
-            <div className="icon-one" ></div>
-            
-            <div className="icon-two " ></div>
-            
-            <div className="icon-three " ></div>
-        </div>
+        
         <div className="container bg-white">
             <div className="main-panel text-center">
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
-                        <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></p>
+						<div className="blank-section">
+						<div  dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></div>
+                    
+						</div>
                     </div>
                 </div>
 				<div className="row justify-content-center">
@@ -265,23 +261,23 @@ class Singleprocess extends Component {
 									 <div className="row">
 										<div className="col-md-6 mb-4">
 											<label className="label-text">First Name :</label>
-											<input type="text" className="form-control" placeholder="first name" name="first_name" required/>
+											<input type="text" className="form-control" placeholder="" name="first_name" required/>
 										</div>
 										<div className="col-md-6 mb-4">
 											<label className="label-text">Last Name :</label>
-											<input type="text" className="form-control" placeholder="last name" name="last_name" required/>
+											<input type="text" className="form-control" placeholder="" name="last_name" required/>
 										</div>
 										<div className="col-md-12 mb-4">
 											<label className="label-text">Email :</label>
-											<input type="email" className="form-control" placeholder="email" name="email" required/>
+											<input type="email" className="form-control" placeholder="" name="email" required/>
 										</div>
 										<div className="col-md-12 mb-4">
 											<label className="label-text">Number :</label>
-											<input type="number" className="form-control" placeholder="Number" name="number" required/>
+											<input type="number" className="form-control" placeholder="" name="number" required/>
 										</div>
 										<div className="col-md-12">
 											<label className="label-text">Message:</label>
-											<textarea rows="3" className="form-control" placeholder="Message" name="message" required></textarea>
+											<textarea rows="3" className="form-control" placeholder="" name="message" required></textarea>
 										</div>
 										<input type="hidden" required className="form-control" name="url" value={service.edges[0].node.slug} />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />

@@ -9,7 +9,7 @@ const Team = () => (
   <StaticQuery
     query={graphql`
       query {
-    allWordpressWpTeam {
+                allWordpressWpTeam {
                         edges {
                         node {
                             id
@@ -21,8 +21,8 @@ const Team = () => (
                             }
                             }
                         }
-                        }
                     }
+                }
             
         }
     `}

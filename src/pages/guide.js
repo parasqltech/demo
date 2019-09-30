@@ -100,12 +100,13 @@ const guide = () => (
                 prop => {
 					return (
 						
-						<div className="col-md-6">
+						<div className="col-md-6 col-sm-6">
                             <div className="grid">
                                 <div className=" guide-thumbnial">
-                                    <div className="guide-image">
-										<img src={prop.node.acf.feature_image}  />
+                                    <div className="guide-image" style={{"background-image":"url("+  prop.node.acf.feature_image +")"}}>
+								
                                     </div>
+                                   
                                     <Link to={"guide/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="guide-text">
 									
                                     </Link>

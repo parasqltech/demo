@@ -46,9 +46,9 @@ allWordpressWpHomeaboutus {
                         <h3 class="section-heading">{prop.node.acf.title}</h3>
                         <p class="label-text">{prop.node.acf.short_descprition}</p>
                         <p class="text-primary font-weight-bold">{prop.node.acf.boldcontent}</p>
-                        <div class="play-button">
+                        <div data-video="https://youtu.be/pozK-668Ams" class="play-button">
                             <span data-video-id="" class="video-area-popup">
-
+                    
                                 <i class="fa fa-play"></i></span>
                             <span>Check out our quick introduction</span>
                         </div>

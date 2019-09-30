@@ -35,7 +35,7 @@ const Expereince = () => (
     `}
     render={data => (
 		<section className="about-us-section-2 mt-4 pt-4 ">
-                <div className="container">
+                <div className="container bg-white">
                     <div className="main-panel">
                   
                         <div className="row">

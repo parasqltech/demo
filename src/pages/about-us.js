@@ -213,7 +213,7 @@ const AboutPage = () => (
         </div>
     </section>
    <Team />
-    <section className="about-history-section pt-0">
+    <section className="about-history-section pt-0 bg-white">
         <div className="container">
             <div className="main-panel pb-0">
                 <div className="ceo-message-block">

@@ -87,7 +87,7 @@ const IndexPage = () => (
 		<section className="contact-us-section-3">
 			<div className="container">
 				<div className="main-panel">
-					<h2 className="section-heading-2 mb-4  pb-4 text-center">Connect with one of our global offices</h2>
+					<h2 className="section-heading-2 mb-4  pb-4 text-center">Our Offices</h2>
 					<div className="row justify-content-center">
 						<div className="col-md-5 d-flex">
 							<div className="card">
@@ -129,30 +129,30 @@ const IndexPage = () => (
 		<section className="form-section ">
 				<div className="container">
 					<div className="main-panel">
-						<h2 className="section-heading-2 text-center mb-4"><span className=" sub-heading d-block">contact Us</span> How Can We Help You?</h2>
+						<h2 className="section-heading-2 text-center mb-4"><span className=" sub-heading d-block mb-2" >Contact Us</span> How Can We Help You?</h2>
 						<form method="POST" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" >
 							<div className="row justify-content-center">
 								<div className="col-lg-8 col-md-10">
 									 <div className="row">
 										<div className="col-md-6 mb-4">
 											<label className="label-text">First Name :</label>
-											<input type="text" className="form-control" placeholder="first name" name="first_name" required/>
+											<input type="text" className="form-control" placeholder="" name="first_name" required/>
 										</div>
 										<div className="col-md-6 mb-4">
 											<label className="label-text">Last Name :</label>
-											<input type="text" className="form-control" placeholder="last name" name="last_name" required/>
+											<input type="text" className="form-control" placeholder="" name="last_name" required/>
 										</div>
 										<div className="col-md-12 mb-4">
 											<label className="label-text">Email :</label>
-											<input type="email" className="form-control" placeholder="email" name="email" required/>
+											<input type="email" className="form-control" placeholder="" name="email" required/>
 										</div>
 										<div className="col-md-12 mb-4">
 											<label className="label-text">Number :</label>
-											<input type="number" className="form-control" placeholder="Number" name="number" required/>
+											<input type="number" className="form-control" placeholder="" name="number" required/>
 										</div>
 										<div className="col-md-12">
 											<label className="label-text">Message:</label>
-											<textarea rows="3" className="form-control" placeholder="Message" name="message" required></textarea>
+											<textarea rows="3" className="form-control" placeholder="" name="message" required></textarea>
 										</div>
 										<input type="hidden" required className="form-control" name="url" value="/contact-us" />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />

@@ -105,7 +105,7 @@ class SingleWork extends Component {
                             <div className="form-section postion-sticky">
                                 <form method="POST" action="">
                                         <div className="bg-light p-3">
-                                            <h2 className="section-heading-3 text-center text-primary"> Contact Us</h2>
+                                            <h2 className="section-heading-3 text-center "> Contact Us</h2>
                                             <form method="POST" action="">
                                                 <div className="row ">
                                                     <div className="col-md-12 mb-2">

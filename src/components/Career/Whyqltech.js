@@ -36,10 +36,10 @@ const Whyqltech = () => (
                <div className="row justify-content-center text-center">
                     <div className="col-md-10 mt-4">
                         <h2 className="section-heading ">Life at QL Tech
-                            <span>Growth, purpose, and people. For starters.</span>
+                            <span>Growth, purpose, and collaboration. For starters.</span>
                         </h2>
                         <p className="label-text">
-                            Great art can only be designed by bringing numerous mosaics together. Well, it's the same for Us!
+						Learning is fun here. Check out some of our recent ventures
 
                         </p> 
                     </div>

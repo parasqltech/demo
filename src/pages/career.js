@@ -91,9 +91,9 @@ const CareerPage = () => (
                 <div className="main-panel">
                     <div className="row justify-content-center text-center">
                         <div className="col-md-12 mt-4">
-                            <h2 className="section-heading ">What sets us apart?
-                                <span>Our focus on bringing folks with diverse ideas, perspectives &amp; experiences.</span>
-                            </h2>
+                            <h2 className="section-heading mb-0">Why us? </h2>
+                                <span className="sub-heading pb-4 d-block">People-first focus &amp; bringing together diverse ideas, perspectives &amp; experience</span>
+                           
                             <div className="row ">
                                 <div className="col-xl-4 col-lg-4 col-md-6">
                                     <div className="thumbnail wow fadeInLeft bg-white">

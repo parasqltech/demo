@@ -38,7 +38,7 @@ const Footer = () => (
                 <div className="row">
                     <div className="col-md-12 text-center">
                         <h3 className="section-heading"><span>Stay in the Know </span>
-                            Discover Ideas & Insights right in your inbox.
+                            Discover Ideas &amp; Insights right in your inbox
                         </h3>
                         
                         <div className="input-group mb-3 subcribe-form">
@@ -47,7 +47,7 @@ const Footer = () => (
                                 <button className="btn btn-outline-secondary" type="button">Subscribe Now</button>
                             </div>
                         </div>
-						<h3 className="section-heading mt-4"><span>Explore our Knowledge Hub.</span></h3>
+						<h3 className="section-heading mt-4"><span>Explore our  <Link to="hub" className="text-light">Knowledge Hub</Link></span></h3>
                     </div>
                 </div>
             </div>

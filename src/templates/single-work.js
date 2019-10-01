@@ -159,7 +159,8 @@ class SingleWork extends Component {
                     <div className="row justify-content-center">
                         <div className="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                             <div className="author-image">
-                                <img src={work.edges[0].node.acf.image.source_url} className="img-fluid" alt=""/>
+                                
+									{(work.edges[0].node.acf.client_image != null) ? (<img src={work.edges[0].node.acf.client_image.source_url} className="img-fluid" alt=""/>) : ('')}
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-8 col-sm-8">
@@ -167,10 +168,10 @@ class SingleWork extends Component {
                                 <div className="quote">
                                     <img src={quote} className="img-fluid" alt=""/>
                                 </div>
-                                <p className="label-text">{work.edges[0].node.acf.testimonial_}</p>
+                                <p className="label-text">{work.edges[0].node.acf.client_testimonial}</p>
                                 <div className="author-info">
                                     <h4>{work.edges[0].node.acf.client_name}</h4>
-                                    <p>{work.edges[0].node.acf.designationcompany}</p>
+                                    <p>{work.edges[0].node.acf.client_designation}</p>
                                 </div>
                             </div>
                         </div>
@@ -209,11 +210,11 @@ export const pageQuery = graphql`
           client_name
           company_name
           company_size
-          designationcompany
+          client_designation
           how_the_clients_business_transformed
-          image {
-            source_url
-          }
+          client_image{
+			  source_url
+		  } 
           location
           long_descprition
           problem_statement
@@ -225,7 +226,7 @@ export const pageQuery = graphql`
           revenue_text_3
           short_descprition
           sub_title
-          testimonial_
+          client_testimonial
           the_ql_approach_to_the_business
           title
           title_main

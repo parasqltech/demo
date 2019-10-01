@@ -65,7 +65,7 @@ class Singleblog extends Component {
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
                         <div className="event-detail-continer ">
-                            <h1 className="section-heading mb-2">{blog.edges[0].node.title}</h1>
+                            <h1 className="section-heading mb-2" dangerouslySetInnerHTML={{ __html: blog.edges[0].node.title}} ></h1>
                            
                             <div className="event-image">
 								{(blog.edges[0].node.acf.feature_image != null) ? (<img src={blog.edges[0].node.acf.feature_image.source_url} className="img-fluid w-100"

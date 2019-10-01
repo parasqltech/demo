@@ -271,6 +271,11 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             id
             slug
+			categories{
+			  id
+			  name
+			  slug
+			}
 			
           }
         }
@@ -287,13 +292,16 @@ exports.createPages = ({ actions, graphql }) => {
 		 const blogTemplate = path.resolve(`./src/templates/single-blog.js`);
 		  allWordpressPost.edges.forEach(edge => {
 			  
-			createPage({
-			  path: `/hub/${edge.node.slug}/`,
-			  component: slash(blogTemplate),
-			  context: {
-				id: edge.node.id,
-			  },
-			})
+			edge.node.categories.forEach(newedge =>{
+				  createPage({
+				  path: `/hub/${newedge.slug}/${edge.node.slug}/`,
+				  component: slash(blogTemplate),
+				  context: {
+					id: edge.node.id,
+				  },
+				})
+				  
+			  })
 		  })
 	 
 	 

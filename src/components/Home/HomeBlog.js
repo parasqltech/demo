@@ -14,7 +14,28 @@ const settings = {
 	  variableWidth: true,
 	  autoplay: true,
 	  autoplaySpeed: 4000,
-	  cssEase: "linear"
+	  cssEase: "linear",
+	  mobileFirst: true,
+	     responsive: [
+    {
+      breakpoint: 1024,
+      settings: "unslick"
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
     };
 
 
@@ -35,6 +56,11 @@ const HomeBlog = () => (
 				  }
 				  posted_by
 				}
+				categories{
+					  id
+					  name
+					  slug
+					}
                   }
                 }
               }
@@ -66,7 +92,7 @@ const HomeBlog = () => (
                         return (    
                                 <div className="thumbnial">
                                     <div className="thumbnial-image">
-                                        <Link to={"hub/"+prop.node.slug}>
+                                        <Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug}>
 										{(prop.node.acf.feature_image != null) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid"
                                                 alt=""/>) : ('')}
 										</Link>
@@ -74,7 +100,7 @@ const HomeBlog = () => (
 									</div>
 									
                                     <div className="thumbnial-content">
-                                        <Link to={"hub/"+prop.node.slug} className="blog-title">{prop.node.title}
+                                        <Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug} className="blog-title" dangerouslySetInnerHTML={{ __html: prop.node.title}}>	
                                         </Link>
                                         <div className="post-date">{prop.node.date}</div>
                                     </div>
@@ -88,7 +114,7 @@ const HomeBlog = () => (
                                                 <li><a href=""><span
                                                     className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
                                                 </li>
-                                                <li><Link to={"hub/"+prop.node.slug}><span className="icon flaticon-share"></span></Link>
+                                                <li><Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug}><span className="icon flaticon-share"></span></Link>
                                                 </li>
                                             </ul>
                                         </div>

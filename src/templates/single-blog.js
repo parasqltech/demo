@@ -30,6 +30,7 @@ const settings = {
 class Singleblog extends Component {
   render() {
     const blog = this.props.data.allWordpressPost
+	console.log(blog);
 	const id = this.props.data.allWordpressPost.edges[0].node.wordpress_id
 	const title = this.props.data.allWordpressPost.edges[0].node.title
 	let disqusConfig = {
@@ -85,14 +86,14 @@ class Singleblog extends Component {
                         
                         
                         <div className="clearfix nav-controls border rounded mb-4">
-                            {(blog.edges[0].node.previous) ? (<Link to={blog.edges[0].node.previous.slug} className="nav-control-left float-left  rounded p-1">
+                            {(blog.edges[0].previous != null) ? (<Link to={"hub"+blog.edges[0].previous.categories[0].slug+"/"+blog.edges[0].previous.slug} className="nav-control-left float-left  rounded p-1">
                                <span className="label-text  d-block">Previous Post</span>
-                               <span className="section-heading-3  mb-0">{blog.edges[0].node.previous.title}</span>
+                               <span className="section-heading-3  mb-0">{blog.edges[0].previous.title}</span>
                             </Link>) : ('')}
 							
-							{(blog.edges[0].node.next) ? (<Link to={blog.edges[0].node.next.slug} className="nav-control-left float-right text-right  rounded p-1">
+							{(blog.edges[0].next != null) ? (<Link to={"hub"+blog.edges[0].next.categories[0].slug+"/"+blog.edges[0].next.slug} className="nav-control-left float-right text-right  rounded p-1">
                                <span className="label-text  d-block">Next Post</span>
-                               <span className="section-heading-3  mb-0">{blog.edges[0].node.next.title}</span>
+                               <span className="section-heading-3  mb-0">{blog.edges[0].next.title}</span>
                             </Link>) : ('')}
 							
                         </div>
@@ -128,10 +129,16 @@ export const pageQuery = graphql`
 			next {
 				slug
 				title
+				categories {
+				  slug
+				}
 			}	
 			previous {
 				slug
 				title
+				categories {
+				  slug
+				}
 			}
 			node {
 				id

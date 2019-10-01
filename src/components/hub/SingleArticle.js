@@ -19,6 +19,11 @@ const SingleArticle = () => (
 					}
 					posted_by
 					}
+					categories{
+					  id
+					  name
+					  slug
+					}
 				  }
 				}
 			  }
@@ -47,7 +52,7 @@ const SingleArticle = () => (
 										{(prop.node.content.length > 250) ? (<span>...</span>) : ("")}
 									
 									
-                                    <Link to={"hub/"+prop.node.slug} className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
+                                    <Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug} className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
                                 </div>
                                 </div>
                             

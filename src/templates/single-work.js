@@ -6,7 +6,7 @@ import Lightbox from '../components/Lightbox'
 import Particles from 'react-particles-js';
 import Helmet from 'react-helmet'
 import quote from  "../img/quote.png"
-
+import Randomwork from '../components/Work/Randomwork'
 
 class SingleWork extends Component {
   render() {
@@ -180,7 +180,7 @@ class SingleWork extends Component {
         </div>
     </section>
 	
-		
+	<Randomwork />	
 		
 		
 			 

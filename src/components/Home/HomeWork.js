@@ -15,6 +15,31 @@ const settings = {
 	  variableWidth: true,
 	  autoplay: true,
 	  autoplaySpeed: 4000,
+	   mobileFirst: true,
+	     responsive: [
+    {
+      breakpoint: 1024,
+      settings: "unslick"
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
     };
 
 
@@ -119,7 +144,7 @@ const ClientSlider = () => (
                                     return (    
                                         <div class="work-thumbnial" >
                                             <div class="work-thumbnail-image">
-                                                <img src={prop.node.acf.main_image.source_url} class="img-fluid" alt=""/>
+                                                {(prop.node.acf.main_image != null) ? (<img src={prop.node.acf.main_image.source_url} class="img-fluid" alt=""/>) : ('')}
                                             </div>
                                             <div class="work-thumbnail-details">
                                                 <p class="work-title">{prop.node.acf.title}</p>

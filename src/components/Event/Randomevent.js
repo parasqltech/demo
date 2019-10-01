@@ -1,130 +1,78 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-
+import Moment from 'react-moment';
+import 'moment-timezone';
 
 const Randomevent = () => (
   <StaticQuery
     query={graphql`
       query {
-        allWordpressWpApiMenusMenusItems{
-            edges{
-                node{
-                    id
-                    name
-                    items{
-                        title
-                        url
-						object_slug
-						wordpress_children {
-							title,
-							url,
-							object_slug
-						  }
-                    }
-                }
-            }
-        }
+        allWordpressWpEvents(limit: 3, sort: {fields: wordpress_id, order: DESC}) {
+		edges {
+			node {
+				title
+				slug
+				acf{
+					date
+					image
+				}
+				
+		}}
+    }
       }
     `}
     render={data => (
-       <div><footer className="footer-area sky-gray-bg relative white padding-top" id="contact">
-        <div className="area-bg"></div>
-        <div className="footer-contant-us-area">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-12 text-center">
-                        <h3 className="section-heading"><span>Stay in the Know </span>
-                            Discover Ideas & Insights right in your inbox.
-                        </h3>
-                        
-                        <div className="input-group mb-3 subcribe-form">
-                            <input type="text" className="form-control" placeholder="Email address" />
-                            <div className="input-group-prepend">
-                                <button className="btn btn-outline-secondary" type="button">Subscribe Now</button>
-                            </div>
-                        </div>
-						<h3 className="section-heading mt-4"><span>Explore our Knowledge Hub.</span></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="footer-separator"></div>
-        <div className="main-footer">
-            <div className="container">
-
-                <div className="row">
+       <section className="home-event-section  pt-4 mb-4">
+        
+        <div className="container ">
+               
+            <div className="row">
+                <div className="col-md-12">
                     
-
-                    <div className="col-xl-12">
-                        <div className="row ">
-                            <div className="col-lg-3 col-md-6  col-sm-6 mb-4">
-                                <div className="footer-widget wow fadeIn">
-                                    <p className="footer-widget-title">
-                                        About
-                                    </p>
-                                    <FooterM1 />
+                        <span className="section-subheading-heading">Relevant Story</span>  
+                        <h2 className="section-heading text-center wow fadeIn">
+                           
+                            Some other case study
+                        </h2>
+                    <div className="work-portfolio-module pt-0">
+                        <div className=" home-portfolio-slider-1 ">
+                            <div className="row">
+							
+								{data &&
+							data.allWordpressWpEvents &&
+							data.allWordpressWpEvents.edges.map(
+							prop => {
+								return (
+									<div className="col-md-4">
+                                    <div className="work-thumbnial " >
+                                        <div className="work-thumbnail-image">
+                                            <img src={prop.node.acf.image} className="img-fluid" alt=""/>
+                                            <p className="event-date"><span><Moment format="DD">
+												{prop.node.acf.date}
+											</Moment></span><Moment format="MMM">
+												{prop.node.acf.date}
+											</Moment></p>
+                                        </div>
+                                        <div className="work-thumbnail-details">
+                                            <Link to={"event/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
+                                        </div>
+                                    </div>
                                 </div>
+								)
+							}
+							)}
+							
+                                
+                               
+                               
                             </div>
-                            <div className="col-lg-3 col-md-6  col-sm-6 mb-4">
-                                <div className="footer-widget wow fadeIn">
-                                    <p className="footer-widget-title">
-                                        Services
-                                    </p>
-                                    <FooterM2 />
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6  col-sm-6 mb-4">
-                                <div className="footer-widget wow fadeIn">
-                                    <p className="footer-widget-title">
-                                        Industries
-                                    </p>
-                                    <FooterM3 />
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6  col-sm-6 mb-4">
-                                <div className="footer-widget wow fadeIn">
-                                    <p className="footer-widget-title">
-                                        Platforms
-                                    </p>
-                                    <FooterM4 />
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 text-center">
-                             <h6 className="text-white h4 mb-3">Follow us on</h6>
-                                <FooterSocial />
-                        </div>
-                    </div>
-            </div>
-           
-            
-
-        </div>
-        <div className="footer-last">
-            <div className="container">
-                <div className="row mx-0 justify-content-between">
-                    <p className="mb-0 pull-left company-copyright"> © 2019 QL Tech. All Rights Reserved.
+                        </div> 
                         
-                    </p>
-                    <ul className="pull-right mb-0 footer other-links">
-                        <li><Link to="/privacy-policy">Privacy Policy</Link> |</li>
-                        <li><Link to="/terms-and-conditions">Terms and Conditions</Link> |</li>
-                        <li><Link to="/disclaimer">Disclaimer</Link> |</li>
-                        <li><Link to="/personal-information-request">Personal Information Request</Link></li>
-                    </ul>
+                    </div>
                 </div>
-
             </div>
         </div>
-    </footer>
-    </div>
+    </section>	
     )}
   />
 )

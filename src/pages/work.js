@@ -4,6 +4,7 @@ import Isotope from "isotope-layout/js/isotope";
 import PropTypes from 'prop-types';
 import Particles from 'react-particles-js';
 import Layout from '../components/Layout'
+
 import port_1 from '../img/portfolio/1.jpg'
 import port_2 from '../img/portfolio/2.jpg'
 import port_3 from '../img/portfolio/3.jpg'
@@ -150,6 +151,7 @@ class FilterGrid extends React.Component {
         </div>		
 		
         </section>
+		
 	</Layout>
     )
 	

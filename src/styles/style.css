@@ -9199,8 +9199,18 @@ section.what-you-get .thumbnial{
 }
 
 section.what-you-get .thumbnial .thumbnial-icon{
-    font-size: 54px;
-    color:#707070;
+    width:60px;
+	height:60px;
+	overflow:hidden;
+	display:inline-block;
+	margin-bottom:15px;
+}
+section.what-you-get .thumbnial .thumbnial-icon img{
+	position:relative;
+	top:0px;
+}
+section.what-you-get .thumbnial:hover .thumbnial-icon img{
+	top:-60px;
 }
 section.what-you-get .thumbnial .section-heading-2{
    font-weight: 500;

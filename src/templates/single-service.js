@@ -20,6 +20,8 @@ const settings = {
       slidesToShow: 4,
 	  autoplay: true,
 	  autoplaySpeed: 2000,
+	  
+	  mobileFirst: true,
       
     };
 
@@ -69,14 +71,14 @@ class Singleservice extends Component {
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
 						<div className="event-section-1">
-							<div className="">
+							<div className="blank-section">
                         		<div className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></div>
 							</div>
 						</div>
                     </div>
                 </div>
 				
-				<div className="row justify-content-center">
+				<div className="row justify-content-center mt-4">
                     <div className="col-xl-11">
                         <div className="row text-left">
 							{subservice &&
@@ -266,23 +268,23 @@ class Singleservice extends Component {
 								<div className="col-lg-8 col-md-10">
 									 <div className="row">
 										<div className="col-md-6 mb-4">
-											<label className="label-text">First Name :</label>
+											<label className="label-text">First Name</label>
 											<input type="text" className="form-control" placeholder="first name" name="first_name" required/>
 										</div>
 										<div className="col-md-6 mb-4">
-											<label className="label-text">Last Name :</label>
+											<label className="label-text">Last Name</label>
 											<input type="text" className="form-control" placeholder="last name" name="last_name" required/>
 										</div>
 										<div className="col-md-12 mb-4">
-											<label className="label-text">Email :</label>
+											<label className="label-text">Email</label>
 											<input type="email" className="form-control" placeholder="email" name="email" required/>
 										</div>
 										<div className="col-md-12 mb-4">
-											<label className="label-text">Number :</label>
+											<label className="label-text">Number</label>
 											<input type="number" className="form-control" placeholder="Number" name="number" required/>
 										</div>
 										<div className="col-md-12">
-											<label className="label-text">Message:</label>
+											<label className="label-text">Message</label>
 											<textarea rows="3" className="form-control" placeholder="Message" name="message" required></textarea>
 										</div>
 										<input type="hidden" required className="form-control" name="url" value={service.edges[0].node.slug} />

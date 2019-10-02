@@ -29,7 +29,7 @@ const SingleWorksheet = () => (
 				data.allWordpressWpWorksheet.edges.map(
                 prop => {
 					return (
-								<div className="col-md-4 thumbnial" >
+							<div className="col-lg-4 col-md-6 thumbnial" >
                                  <div className="">
                                      <div className="img-thumbnial">
                                         <img src={prop.node.acf.feature_image} className="img-fluid w-100"/>
@@ -40,7 +40,7 @@ const SingleWorksheet = () => (
                                     <p className="thumbnial-details" dangerouslySetInnerHTML={{ __html: (prop.node.content).substring(0, 250)+"...."}} />
                                     <Link to={"worksheet/"+prop.node.slug} className="btn btn-secondary-link  float-left">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
                                 </div>
-                                </div>
+							</div>
                             
 					)
                 }

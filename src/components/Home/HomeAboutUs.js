@@ -2,29 +2,41 @@ import React, {Component} from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import {Helmet} from "react-helmet";
 import img from '../../img/about-us.png';
+import ReactModal from 'react-modal'
 
-const HomeAboutUs = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-allWordpressWpHomeaboutus {
-    edges {
-      node {
-        id
-        acf {
-          title
-          short_descprition
-          boldcontent
-        }
-      }
+
+
+
+
+class HomeAboutUsData extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isModalOpen: false,
+      testimonial_img: "",
+      testimonial_name: "",
+      testimonial_designation: "",
+      testimonial_text: "",
     }
   }
-      }
-    `}
-     render={data => {
-      return (
-        <div>
-        <section class="home-about-section bg-white">
+	handleModalOpen = () => {
+		this.setState({ isModalOpen: true})
+	
+	}
+  
+	handleModalClose = event => {
+	this.setState({ isModalOpen: false })
+	}
+
+
+render() {
+  //const posts = this.props.data.allMarkdownRemark.node
+ const AboutUsData = this.props.data.allWordpressWpHomeaboutus;
+  return(
+      <>
+
+         
+<section class="home-about-section bg-white">
         <div class="container">
             <div class="about-mockup-bg  wow fadeIn">
                 <img src={img} class="img-fluid about-us-image" alt="" />
@@ -34,21 +46,19 @@ allWordpressWpHomeaboutus {
                 <div class="col-md-7 col-lg-6 col-sm-12 ">
                     <div class="about-content xs-center sm-center wow fadeInUp">
                         <h4 class="sub-heading ">About us</h4>
-                         {data &&
-              data.allWordpressWpHomeaboutus &&
-              data.allWordpressWpHomeaboutus.edges.map(
-           
-              
-        
-                prop => {
-                  return (
+                        {AboutUsData && AboutUsData && AboutUsData.edges.map(
+     
+                
+                    
+                
+                          prop => {
+                          return ( 
                   <div>
                         <h3 class="section-heading">{prop.node.acf.title}</h3>
                         <p class="label-text">{prop.node.acf.short_descprition}</p>
                         <p class="text-primary font-weight-bold">{prop.node.acf.boldcontent}</p>
-                        <div data-video="https://youtu.be/pozK-668Ams" class="play-button">
+                        <div  class="play-button" onClick={() => this.handleModalOpen()}>
                             <span data-video-id="" class="video-area-popup">
-                    
                                 <i class="fa fa-play"></i></span>
                             <span>Check out our quick introduction</span>
                         </div>
@@ -62,9 +72,64 @@ allWordpressWpHomeaboutus {
         </div>
       
     </section>
-    </div>
-     )
-    }}
-  />
+<ReactModal  
+        isOpen={this.state.isModalOpen}
+        onRequestClose={this.handleModalClose}
+          className="modal d-block fade testimonial-view show"
+      >
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ">
+            <button type="button" class="close btn-default" onClick={this.handleModalClose} data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+      
+          <div class="modal-body p-0">
+          <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pozK-668Ams?rel=0" allowfullscreen></iframe>
+            </div>
+              
+          </div>
+        
+        </div>
+      </div>
+     
+        
+    
+    
+      </ReactModal>
+        </>
 )
+
+}
+}
+
+
+
+
+
+
+const HomeAboutUs = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+          allWordpressWpHomeaboutus {
+            edges {
+              node {
+                id
+                acf {
+                  title
+                  short_descprition
+                  boldcontent
+                }
+              }
+            }
+          }
+            
+        }
+    `}
+    render={(data) => <HomeAboutUsData data={data} />}
+  
+	/>
+)
+
 export default HomeAboutUs

@@ -2,33 +2,28 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from '../components/Layout'
 import Particles from 'react-particles-js';
-import about_top from '../img/about/about-us-top-image.png'
 import team from  "../img/team/member-1.png"
 import testmonial from  "../img/testmonial-author.png"
 import quote from  "../img/quote.png"
-import team_member from  "../img/team/vishal-suthar.png"
-import clients_1 from '../img/clients/google-partners.png';
-import clients_2 from '../img/clients/zoho-authorise-partners.png';
-import clients_3 from '../img/clients/hubspot-partners.png';
-import clients_4 from '../img/clients/keep-certified-partner.png';
 import Helmet from 'react-helmet'
 import Expereince from '../components/AboutUs/Expereince'
 import Whatwedo from '../components/AboutUs/Whatwedo'
 import Team from '../components/AboutUs/Team'
+import AboutFirstSection from '../components/AboutUs/AboutFirstSection'
 
 
 const AboutPage = () => (
 	<Layout>
 		<Helmet>
-		<title>About US | Web development & marketing agency Perth, Australia- QL Tech</title>
-		<meta name="title" content="About US | Web development & marketing agency Perth, Australia- QL Tech"></meta>
+		<title>About US | Web development &amp; marketing agency Perth, Australia- QL Tech</title>
+		<meta name="title" content="About US | Web development &amp; marketing agency Perth, Australia- QL Tech"></meta>
 		<meta name="description" content="QL Tech is Australia's leading web development company, specialized in offering custom web development, CRM Services, digital marketing solutions. To know more, contact us @ +61 (0)8 6262 3559"></meta>
 		 <meta name="keywords" content="QL Tech about us, about us, Mobile App Development, hubspot crm, marketing agency, Zoho crm service, content agency Perth"></meta>
 		<meta property="og:type" content="website"></meta>
-		<meta property="og:title" content="About US | Web development & marketing agency Perth, Australia- QL Tech"></meta>
+		<meta property="og:title" content="About US | Web development &amp; marketing agency Perth, Australia- QL Tech"></meta>
 		<meta property="og:description" content="QL Tech is Australia's leading web development company, specialized in offering custom web development, CRM Services, digital marketing solutions. To know more, contact us @ +61 (0)8 6262 3559"></meta>
 		<meta property="twitter:card" content="summary_large_image"></meta>
-		<meta property="twitter:title" content="About US | Web development & marketing agency Perth, Australia- QL Tech"></meta>
+		<meta property="twitter:title" content="About US | Web development &amp; marketing agency Perth, Australia- QL Tech"></meta>
 		<meta property="twitter:description" content="QL Tech is Australia's leading web development company, specialized in offering custom web development, CRM Services, digital marketing solutions. To know more, contact us @ +61 (0)8 6262 3559"></meta>
 		</Helmet>
 		<div className="bg">
@@ -50,34 +45,8 @@ const AboutPage = () => (
 				</ul>
 			</div>
 		</section>
-		<section className="about-us-section-1  bg-white">
-        <div className="container">
-            <div className="main-panel">
-                <div className="row">
-                    <div className="col-lg-5 mb-4">
-                        <div className="play-video-thumbnial">
-                            <img src={about_top} className="img-fluid " alt=""/>
-                            <div className="play-button">
-                                <a href="" className="video-area-popup">
-                                    <i className="fa fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-7">
-                        <p className="mb-0 sub-heading">How we work</p>
-                        
-                        <h2 className="section-heading-2">We help transform and grow businesses for the next </h2>
-                        <p className="label-text">
-                                We offer end-to-end solutions to help transform businesses - strategise, develop, automate & grow the brand’s online. In collaboration with our clients, we’ve successfully managed to help businesses increase productivity, reduce costs, enhance agility & performance.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	
+		
+	<AboutFirstSection/>
 	<Whatwedo />
    
     <section className="about-history-section timeline mb-4 pb-4" >

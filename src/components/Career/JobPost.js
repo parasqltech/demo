@@ -76,8 +76,8 @@ const JobPost = () => (
 
                                                 <div id={"opt"+i} className="collapse " role="tabpanel" data-parent="#accordion">
                                                 <div className="card-body">
-                                                <p className="label-text   d-md-none d-block">{prop.node.acf.exp} </p>
-                                                <p className="label-text   d-md-none d-block">{prop.node.acf.location} </p>
+                                                <p className="label-text   d-md-none d-block">Experience : {prop.node.acf.exp} </p>
+                                                <p className="label-text   d-md-none d-block">Location : {prop.node.acf.location} </p>
                                                    <div dangerouslySetInnerHTML={{ __html: prop.node.acf.descprition }}  className="JobDescription blank-section" />
                                                         
                                                     
@@ -103,11 +103,11 @@ const JobPost = () => (
                                         <form method="post" action="https://script.google.com/macros/s/AKfycbwcE57k_MU__-34meqARCcZLmpXf0TDZr51E4_S0WsyGZ54g4uj/exec" enctype="multipart/form-data">
                                             <div className="row ">
                                                 <div className="col-md-6 mb-4">
-                                            <label className="label-text">First Name :</label>
+                                            <label className="label-text">First Name</label>
                                             <input type="text" className="form-control" placeholder="" name="first_name" required/>
                                         </div>
                                         <div className="col-md-6 mb-4">
-                                            <label className="label-text">Last Name :</label>
+                                            <label className="label-text">Last Name</label>
                                             <input type="text" className="form-control" placeholder="" name="last_name" required/>
                                         </div>
                                                 <div className="col-md-12 mb-3">
@@ -115,7 +115,7 @@ const JobPost = () => (
                                                     <input type="email" name="email" required="" className="form-control" placeholder="" required />
                                                 </div>
                                                 <div className="col-md-12 mb-3">
-                                                    <label className="label-text">Select Position:</label>
+                                                    <label className="label-text">Select Position</label>
                                                     <select className="form-control" name="position" required>
                                                         <option value="">Please Select</option>
                                                         <option value="Jr. PHP Developer">Jr. PHP Developer</option>
@@ -136,17 +136,17 @@ const JobPost = () => (
                                                 <div className="col-md-12">
                                                     <div className="row">
                                                         <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
-                                                            <label className="label-text">Current CTC:</label>
+                                                            <label className="label-text">Current CTC</label>
                                                             <input type="number" name="CCTC" required className="form-control" placeholder=""/>
                                                         </div>
                                                         <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
-                                                            <label className="label-text">Expected CTC:</label>
+                                                            <label className="label-text">Expected CTC</label>
                                                             <input type="number" name="ECTC" required className="form-control" placeholder=""/>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-12  mb-0">
-                                                    <label className="label-text">Resume Upload:</label>
+                                                    <label className="label-text">Resume Upload</label>
                                                     <div className="input-group ">
                                                         <input type="text"  className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
                                                                                                                 <label className="input-group-btn">

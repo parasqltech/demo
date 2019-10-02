@@ -4091,6 +4091,7 @@ h6 {
     font-weight: 400;
     transform: rotate(-43deg);
 }
+
 .modal .modal-content{
     position: relative;
     border-radius: 12px;
@@ -4168,14 +4169,14 @@ header {
     width: 100%;
     background: #fff;
     transition: 0.5s;
-    z-index: 9;
+    z-index: 10;
 }
 
 header.sticky {
     z-index: 1;
     box-shadow: 0px 0px 26px -13px rgba(0, 0, 0, 0.6);
     transition: 0.5s;
-    z-index: 9;
+    z-index: 10;
 }
 
 header .social-header {
@@ -4624,7 +4625,7 @@ section.home-services-section .section-icons .icon-one {
 section.home-about-section {
     overflow: hidden;
     position: relative;
-    padding: 150px 0px;
+    padding: 110px 0px 150px;
 }
 
 section.home-about-section .about-us-image {
@@ -5115,7 +5116,7 @@ section.home-work-section .work-thumbnial {
 }
 
 section.home-work-section .work-thumbnial .work-thumbnail-image {
-    height: 250px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -5970,6 +5971,7 @@ section.breadcumbs-and-title-section {
     border-bottom: 10px solid #fff;
     box-shadow: 0px 10px 13px -7px rgba(0, 0, 0, 0.05);
     position: relative;
+    z-index: 9;
 }
 
 section.breadcumbs-and-title-section .breadcrumbs {
@@ -7188,7 +7190,7 @@ section.work-section-1 .isotop-sorting-menu li a.menu-active::before , section.e
     z-index: 1;
 }
 section.work-section-1 {
-    padding: 60px 0px 0px;
+    padding: 60px 0px 120px;
 }
 section.work-section-1 .work-thumbnial {
     width: calc((100% / 4) - 20px);
@@ -7200,12 +7202,11 @@ section.work-section-1 .work-thumbnial {
     display: inline-block;
 }
 section.work-section-1 .work-thumbnial .work-thumbnail-image {
-    height: 250px;
-    overflow: hidden;
+    height: auto;
 }
 section.work-section-1 .work-thumbnial:nth-child(2n) .work-thumbnail-image {
-    height: 300px;
-    overflow: hidden;
+   
+    height: auto;
 }
 section.work-section-1 .work-thumbnial .work-thumbnail-image img {
     width: 100%;
@@ -7883,6 +7884,10 @@ section.thank-you-section .social-menu li span{
     section.service-section-1 .services-block{
         padding: 15px !important;
     }
+    .modal{
+        overflow: scroll;
+    }
+ 
 }
 
 @media all and (max-width:767px) {
@@ -8202,7 +8207,7 @@ section.thank-you-section .social-menu li span{
     }
 
     section.home-testimonial-section {
-        padding: 50px 0px 0px;
+        padding: 50px 0px 30px;
     }
 
     section.home-testimonial-section .author-content {
@@ -8649,6 +8654,28 @@ section.thank-you-section .social-menu li span{
     section .section-icons{
         display: none;
     }
+    section.home-process-section .process-block .inner-box .number, section.home-process-section .process-block-two .inner-box .number{
+        display: none;
+    }
+    section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content {
+        width: calc( 100% - 38px ) !important;
+        display: block;
+        padding-bottom: 40px;
+        top: 30px;
+    }
+    section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content{
+        margin-bottom: 60px;
+    }
+    section.home-work-section .icon-one {
+        top: 17%;
+    }
+    section.home-work-section .icon-two {
+        top: 20%;
+    }
+    .modal{
+        overflow: scroll;
+    }
+ 
 }
 @media all and (max-width:576px) {
     .label-text {
@@ -8790,20 +8817,17 @@ section.thank-you-section .social-menu li span{
     section.service-section-1 .services-block{
         padding: 0px 15px !important;
     }
+    .modal{
+        overflow: scroll;
+    }
+ 
 }
 @media all and (max-width:520px) {
      section.events-section-1 .work-thumbnial{
         width: calc(100% - 20px);
     }
-    section.resource-section-1 .thumbnial-content, section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content {
-        top: -36px;
-    }
-    section.home-work-section .icon-one {
-        top: 17%;
-    }
-    section.home-work-section .icon-two {
-        top: 20%;
-    }
+
+ 
 }
 
 @media all and (max-width:360px) {
@@ -9901,12 +9925,12 @@ section.work-details-section-1 .breif-text span {
 /* Chintan Bhai Css*/
 
 
-.Demo{
-    position: fixed;
-    z-index: 11111;
-}
+
 .ReactModalPortal{
     position: fixed; 
     z-index: 11111 !important;
 
+}
+.ReactModalPortal .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, .5) !important;
 }

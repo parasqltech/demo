@@ -98,7 +98,7 @@ const IndexPage = () => (
 									</div>
 									<div className="col-lg-12 text-left">
 										<div className="card-body">
-											<p className="card-title mb-1">Headquarters</p>
+											<p className="card-title mb-1">Australia Office (Headquarters)</p>
 											<p className="label-text">45 St Georges Terrace, Ground Floor, Perth, 6000</p>
 											
 										</div>
@@ -135,23 +135,23 @@ const IndexPage = () => (
 								<div className="col-lg-8 col-md-10">
 									 <div className="row">
 										<div className="col-md-6 mb-4">
-											<label className="label-text">First Name :</label>
+											<label className="label-text">First Name</label>
 											<input type="text" className="form-control" placeholder="" name="first_name" required/>
 										</div>
 										<div className="col-md-6 mb-4">
-											<label className="label-text">Last Name :</label>
+											<label className="label-text">Last Name</label>
 											<input type="text" className="form-control" placeholder="" name="last_name" required/>
 										</div>
 										<div className="col-md-12 mb-4">
-											<label className="label-text">Email :</label>
+											<label className="label-text">Email</label>
 											<input type="email" className="form-control" placeholder="" name="email" required/>
 										</div>
 										<div className="col-md-12 mb-4">
-											<label className="label-text">Number :</label>
+											<label className="label-text">Number</label>
 											<input type="number" className="form-control" placeholder="" name="number" required/>
 										</div>
 										<div className="col-md-12">
-											<label className="label-text">Message:</label>
+											<label className="label-text">Message</label>
 											<textarea rows="3" className="form-control" placeholder="" name="message" required></textarea>
 										</div>
 										<input type="hidden" required className="form-control" name="url" value="/contact-us" />

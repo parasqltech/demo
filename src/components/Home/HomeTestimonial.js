@@ -105,8 +105,8 @@ render() {
           onRequestClose={this.handleModalClose}
             className="modal d-block fade testimonial-view show"
         >
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content ">
+            <div class="modal-dialog modal-dialog-centered modal-lg " tabindex="-1" role="dialog">
+          <div class="modal-content " >
               <button type="button" class="close btn-default" onClick={this.handleModalClose} data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>

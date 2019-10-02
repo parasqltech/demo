@@ -109,23 +109,23 @@ class SingleWork extends Component {
                                             <form method="POST" action="">
                                                 <div className="row ">
                                                     <div className="col-md-12 mb-2">
-                                                        <label className="label-text">First Name:</label>
+                                                        <label className="label-text">First Name</label>
                                                         <input type="text" className="form-control" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-2">
-                                                        <label className="label-text">Last Name:</label>
+                                                        <label className="label-text">Last Name</label>
                                                         <input type="text" className="form-control" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-2">
-                                                        <label className="label-text">Email:</label>
+                                                        <label className="label-text">Email</label>
                                                         <input type="text" className="form-control" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-2">
-                                                        <label className="label-text">Phone Number:</label>
+                                                        <label className="label-text">Phone Number</label>
                                                         <input type="text" className="form-control" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-3">
-                                                        <label className="label-text">Your Goal:</label>
+                                                        <label className="label-text">Your Goal</label>
                                                         <textarea type="text"  className="form-control resize" placeholder=""></textarea>
                                                     </div>
                                                     <div className="col-md-12  mb-0 ">

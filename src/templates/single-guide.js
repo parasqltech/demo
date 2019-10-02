@@ -98,7 +98,7 @@ class Singleguide extends Component {
                                         <input type="text" name="crm" required="" className="form-control" placeholder=""/>
                                     </div>
                                     <div className="col-md-12 ">
-                                        <label className="label-text">Your Goal:</label>
+                                        <label className="label-text">Your Goal</label>
                                         <textarea rows="4" name="message" required="" className="form-control" placeholder=""></textarea>
                                     </div>
                                      <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value={"guide/"+blog.edges[0].node.slug} />

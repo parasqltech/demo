@@ -71,7 +71,7 @@ const CareerPage = () => (
                                     <li className="r10 r1"><span className="fa fa-star"></span></li>
                                 </ul>
                             </div>
-                            <a href="#" target="_blank" className=" mb-4 d-block">
+                            <a href="https://www.glassdoor.co.in/Reviews/QL-Tech-Reviews-E1394850.htm" target="_blank" className=" mb-4 d-block">
                                 <img src={glassdoor} className="img-fluid" alt="" width="220"/>
                             </a>
                         </div>

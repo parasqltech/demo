@@ -69,8 +69,8 @@ class Singleservice extends Component {
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
 						<div className="event-section-1">
-							<div className="blank-section">
-                        		<p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></p>
+							<div className="">
+                        		<div className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></div>
 							</div>
 						</div>
                     </div>

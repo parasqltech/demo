@@ -9905,3 +9905,8 @@ section.work-details-section-1 .breif-text span {
     position: fixed;
     z-index: 11111;
 }
+.ReactModalPortal{
+    position: fixed; 
+    z-index: 11111 !important;
+
+}

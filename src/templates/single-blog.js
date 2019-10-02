@@ -67,18 +67,6 @@ class Singleblog extends Component {
                         <div className="event-detail-continer ">
                             <h1 className="section-heading mb-2" dangerouslySetInnerHTML={{ __html: blog.edges[0].node.title}} ></h1>
                            
-                            <div className="event-image">
-								{(blog.edges[0].node.acf.feature_image != null) ? (<img src={blog.edges[0].node.acf.feature_image.source_url} className="img-fluid w-100"
-                                                alt=""/>) : ('')}
-                            </div>
-                            <div className="event-date-and-place">
-                                <ul className="date-and-place justify-content-between">
-                                    <li><i className="fa fa-calendar"></i> <span>Date : <Moment format="DD MMM Y">
-												{blog.edges[0].node.date}
-											</Moment> </span></li>
-                                    <li><i className="fa fa-user"></i> <span>Posted by : {blog.edges[0].node.acf.posted_by}</span></li>
-                                </ul>
-                            </div>
                             
                         </div>
 						<div className="event-content-block" dangerouslySetInnerHTML={{ __html: blog.edges[0].node.content}} >

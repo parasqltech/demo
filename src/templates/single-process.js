@@ -68,7 +68,7 @@ class Singleprocess extends Component {
             <div className="main-panel text-center">
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
-						<div className="blank-section">
+						<div className="">
 						<div  dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></div>
                     
 						</div>

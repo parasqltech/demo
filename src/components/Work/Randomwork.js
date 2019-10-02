@@ -34,7 +34,7 @@ const Randomwork = () => (
                     
                         <span className="section-subheading-heading">Relevant Story</span> 
                         <h2 className="section-heading text-center wow fadeIn" >
-                            Some other case study dfdf
+                            Some other case study
                         </h2>
                     <div className=" pt-0">
                         <div className="home-portfolio-slider-1 wow  animated" >

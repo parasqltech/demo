@@ -42,7 +42,8 @@ class SingleProject extends Component {
                          
                         <div className="event-detail-continer ">
                             <div className="event-image ">
-                                <img src={event.edges[0].node.acf.image.source_url} className="img-fluid w-100" alt=""/>
+								{(event.edges[0].node.acf.image != null) ? ( <img src={event.edges[0].node.acf.image.source_url} className="img-fluid w-100" alt=""/>) : ('')}
+                               
                             </div>
                             <div className="event-date-and-place">
                                 <ul className="date-and-place justify-content-start">

@@ -41,7 +41,7 @@ const CareerPage = () => (
                
             <span className="section-subheading-heading">Career</span>
                <h1 className="section-heading">
-                   Career
+               Exciting Opportunity Awaits!
                </h1>
                <ul className="breadcrumbs">
                    <li> <Link to="/">Home</Link> \</li>
@@ -58,7 +58,7 @@ const CareerPage = () => (
                 <div className="row justify-content-center">
                     <div className="col-md-9 text-sub-heading text-center">
                              <p className="label-text text-subheading font-weight-regular">
-                                Learn what it's like to work here on <a href="https://www.glassdoor.co.in/Reviews/QL-Tech-Reviews-E1394850.htm" target="_blank" class="nav-link text-success">Glassdoor.</a> 
+                                Learn what it's like to work here on  <a href="https://www.glassdoor.co.in/Reviews/QL-Tech-Reviews-E1394850.htm" target="_blank" class="nav-link text-success">Glassdoor.</a> 
                             </p>
                             
                             <div className="rating-block mb-4">

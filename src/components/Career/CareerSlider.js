@@ -7,35 +7,46 @@ import thumbnial from '../../img/career/thumbnial.jpg'
 
 
 const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-	  mobileFirst: true,
-	     responsive: [
+	    mobileFirst: true,
+      responsive: [
     {
       breakpoint: 1024,
-      settings: "unslick"
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows : false
+      }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows : false
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows : false
       }
     }
   ]
     };
-
-
 const CareerSlider = () => (
   <StaticQuery
     query={graphql`

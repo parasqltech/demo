@@ -19,7 +19,10 @@ const settings = {
 	     responsive: [
     {
       breakpoint: 1024,
-      settings: "unslick"
+      settings:{
+        slidesToShow: 4,
+        slidesToScroll: 3,
+      }
     },
     {
       breakpoint: 600,

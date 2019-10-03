@@ -87,7 +87,7 @@ class Singlecategory extends Component {
                                             <div className="thumbnial-image">
                                                 <Link to={"guide/"+prop.node.slug}>
 												
-												{(prop.node.acf.feature_image != null) ? (<img src={prop.node.acf.feature_image} className="img-fluid w-100"
+												{(prop.node.acf.feature_image != null) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid w-100"
                                                 alt=""/>) : ('')}		
 														</Link>
                                             </div>
@@ -183,7 +183,9 @@ export const pageQuery = graphql`
       node {
         id
         acf {
-          feature_image
+          feature_image{
+            source_url
+          }
           posted_by
         }
         title

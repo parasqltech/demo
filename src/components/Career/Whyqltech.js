@@ -53,23 +53,21 @@ const Whyqltech = () => (
                                     {data  && data.allWordpressWpEvents.edges.map(
 										prop => {
 											return (    
-													<div className="col-lg-4 col-md-6 mb-4  col-sm-6">
+												<div className="col-lg-4 col-md-6 mb-4  col-sm-6">
 												<div className='grid-item wow fadeInLeft  work-thumbnial ' >
-										<div className="work-thumbnail-image">
-											<img src={prop.node.acf.image} className="img-fluid" alt=""/>
-											<p className="event-date"><span><Moment format="DD">
-												{prop.node.acf.date}
-											</Moment></span><Moment format="MMM">
-												{prop.node.acf.date}
-											</Moment></p>
+												<div className="work-thumbnail-image">
+													<img src={prop.node.acf.image} className="img-fluid" alt=""/>
+													<p className="event-date"><span><Moment format="DD">
+														{prop.node.acf.date}
+													</Moment></span><Moment format="MMM">
+														{prop.node.acf.date}
+													</Moment></p>
+												</div>
+												<div className="work-thumbnail-details">
+													<Link to={"event/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
+												</div>
+											</div>
 										</div>
-										<div className="work-thumbnail-details">
-											<Link to={"events/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
-										   
-										  
-										</div>
-									</div>
-									</div>
 												
 												
 													  )

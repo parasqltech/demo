@@ -6929,7 +6929,7 @@ section.events-section-1 .event-content-block ul li,
     font-size: 16px;
     line-height: 1.8em;
     font-weight: 400;
-    color: #7B8697;
+    color: #333;
     padding-left: 20px;
     position: relative;
 }
@@ -6956,7 +6956,7 @@ section.events-section-1 .event-content-block ol li,
     font-size: 16px;
     line-height: 1.8em;
     font-weight: 400;
-    color: #7B8697;
+    color: #333;
     position: relative;
 }
 
@@ -7891,6 +7891,8 @@ section.thank-you-section .social-menu li span{
 }
 
 @media all and (max-width:767px) {
+
+    
     .top-space {
         height: 96px;
     }
@@ -8435,11 +8437,8 @@ section.thank-you-section .social-menu li span{
     section.about-us-section-4 .team-list li,section.about-us-section-4 .team-list li:hover {
         width: 100px;
         transition: 0.5s;
-        transform: scale(1);
     }
-    .team-person:hover .team-member-name, .team-person:hover .team-member-position{
-        display: none;
-    }
+   
     section.work-details-section-1 .breif-text{
         margin-bottom: 30px;
     }
@@ -8675,7 +8674,9 @@ section.thank-you-section .social-menu li span{
     .modal{
         overflow: scroll;
     }
- 
+    section.career-section-01 .slide{
+            padding:0px 15px;
+    }   
 }
 @media all and (max-width:576px) {
     .label-text {
@@ -9316,6 +9317,63 @@ section.worksheet-section .thumbnail .worksheet-text{
     padding: 15px 15px 0px;
 }
 
+section.career-section-01 .slick-slider .slick-prev {
+    left: 0px !important;
+}
+section.career-section-01 .slick-slider .slick-next {
+    right: -20px !important;
+}
+section.career-section-01 .slick-slider .slick-prev:before,section.career-section-01 .slick-slider  .slick-next:before{
+    content: "" !important;
+}
+section.career-section-01 .slick-slider .slick-prev:before,section.career-section-01 .slick-slider  .slick-next:before{
+    content: "" !important;
+    width: 36px;
+    height: 3px;
+    background: #0078ad;
+    display: block;
+}
+section.career-section-01 .slick-slider .slick-prev:after, 
+section.career-section-01 .slick-slider .slick-next:after{
+    content: "" !important;
+    width: 1px;
+    height: 3px;
+    border: 12px solid transparent;
+    display: block;
+    position: absolute;
+    top: 14px;
+}
+section.career-section-01 .slick-slider .slick-prev:after{
+    border-right: 16px  solid #0192ca;
+    left:-10px;
+}
+section.career-section-01 .slick-slider .slick-next:after{
+    border-left: 16px  solid #0192ca;
+    right: -10px;
+}
+section.career-section-01 .slick-slider .slick-prev,section.career-section-01 .slick-slider .slick-next{
+    width: 50px !important;
+    height: 50px  !important;
+    z-index: 11111;
+    background: #fff !important;
+}
+section.career-section-01 .slick-slider .slick-prev:before,section.career-section-01 .slick-slider .slick-next:before {
+    position: absolute;
+}
+section.career-section-01 .slick-slider .slick-prev:before{
+    left: 9px;
+}
+section.career-section-01 .slick-slider .slick-next:before {
+    right: 9px;
+}
+section.career-section-01 .slick-slider button{
+    opacity: 0;
+    transition: 0.5s;
+ }
+ section.career-section-01 .slick-slider:hover button{
+   opacity: 1;
+   transition: 0.5s;
+}
 @media all and (min-width:1600px) {
     .btn-default {
         font-size: 22px;
@@ -9933,4 +9991,16 @@ section.work-details-section-1 .breif-text span {
 }
 .ReactModalPortal .ReactModal__Overlay {
     background-color: rgba(0, 0, 0, .5) !important;
+}
+
+
+.is-style-stripes {
+    background: #fbfbfb;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.is-style-stripes tr td{
+ 
+    padding: 10px;
 }

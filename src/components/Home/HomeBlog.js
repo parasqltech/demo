@@ -8,6 +8,7 @@ import BlogAuthor from '../../img/fevicon.png';
 const settings = {
       dots: false,
       infinite: false,
+      arrows : false,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 2,
@@ -111,8 +112,8 @@ const HomeBlog = () => (
                                         </div>
                                         <div className="social-links pull-right">
                                             <ul className="post-info ">
-                                                <li><a href=""><span
-                                                    className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></a>
+                                               
+                                                <li><Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug}><span className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></Link>
                                                 </li>
                                                 <li><Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug}><span className="icon flaticon-share"></span></Link>
                                                 </li>

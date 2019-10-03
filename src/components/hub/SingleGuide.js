@@ -13,7 +13,9 @@ const SingleGuide = () => (
 					slug
 					content
 					 acf {
-					  feature_image
+					  feature_image{
+						  source_url
+					  }
 					  posted_by
 					}
 				  }
@@ -32,7 +34,8 @@ const SingleGuide = () => (
 								<div className="col-md-6 thumbnial" >
                                  
                                      <div className="img-thumbnial">
-                                        <img src={prop.node.acf.feature_image} className="img-fluid w-100"/>
+                                        
+										{(prop.node.acf.feature_image != null) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid w-100"/>) : ('')}
                                      </div>
                                 
                                 <div className="thumbnial-content">

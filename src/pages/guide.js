@@ -17,7 +17,9 @@ const guide = () => (
 					slug
 					content
 					acf {
-					  feature_image
+            feature_image{
+						  source_url
+					  }
 					  posted_by
 					}
 					date(formatString: "D MMMM,Y")
@@ -103,7 +105,7 @@ const guide = () => (
 						<div className="col-md-6 col-sm-6">
                             <div className="grid">
                                 <div className=" guide-thumbnial">
-                                    <div className="guide-image" style={{"background-image":"url("+  prop.node.acf.feature_image +")"}}>
+                                    <div className="guide-image" style={{"background-image":"url("+  prop.node.acf.feature_image.source_url +")"}}>
 								
                                     </div>
                                    

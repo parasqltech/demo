@@ -10,11 +10,38 @@ import clients_4 from '../../img/clients/keep-certified-partner.png';
 
 
 const settings = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 2
+  dots: false,
+  arrows : false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  mobileFirst: true,
+  responsive: [
+    {
+    breakpoint: 767,
+    settings: {
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    infinite: true,
+    dots: true
+    }
+},
+{
+    breakpoint: 400,
+    settings: {
+    slidesToShow: 3,
+    slidesToScroll: 2
+    }
+},
+{
+    breakpoint:320,
+    settings: {
+    slidesToShow: 2,
+    slidesToScroll: 1
+    }
+}
+]
     };
 
 

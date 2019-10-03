@@ -1,10 +1,5 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-
-
-
-
-
 const JobPost = () => (
   <StaticQuery
     query={graphql`
@@ -23,12 +18,12 @@ const JobPost = () => (
                     }
                     }
                 }
-                }
+            }
 		}
     `}
     render={data => (
-		<section className="career-section-1 form-section">
-                <div className="container">
+		<section className="career-section-1 form-section ">
+                <div className="container bg-white">
                     <div className="main-panel">
                         <div className="row justify-content-center">
                             <div className="col-lg-12 ">
@@ -96,7 +91,7 @@ const JobPost = () => (
                                     
                                 </div>
                                 </div>
-                                <div className="row justify-content-center">
+                                <div className="row justify-content-center mt-4 pt-4">
                                 <div className=" col-lg-10">
                                     <div className="p-3">
                                         <h2 className="section-heading-2 d-block text-center">Are you Ready?</h2>

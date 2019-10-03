@@ -89,7 +89,8 @@ class Grid extends React.Component {
                        <div className={ "col-sm-6 "+items[i] } >
                         <div className="thumbnail">
                             <div className="thumbnial-image">
-                                <img src={prop.node.acf.feature_image} className="img-fluid w-100" alt=""/>
+                                {(prop.node.acf.feature_image) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid w-100" alt=""/>) : ('')}
+                                
                             </div>
                              <Link to={"worksheet/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="worksheet-text">
 									
@@ -132,7 +133,9 @@ const worksheet = () => (
 					slug
 					content
 					acf {
-					  feature_image
+					  feature_image{
+              source_url
+            }
 					  posted_by
 					  
 					}

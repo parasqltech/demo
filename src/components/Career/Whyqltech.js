@@ -18,7 +18,9 @@ const Whyqltech = () => (
 			slug
 			acf {
 			  date
-			  image
+			  image{
+				  source_url
+			  }
 			}
 			 categories{
 				name
@@ -56,7 +58,7 @@ const Whyqltech = () => (
 												<div className="col-lg-4 col-md-6 mb-4  col-sm-6">
 												<div className='grid-item wow fadeInLeft  work-thumbnial ' >
 												<div className="work-thumbnail-image">
-													<img src={prop.node.acf.image} className="img-fluid" alt=""/>
+													{(prop.node.acf.image != null) ? (<img src={prop.node.acf.image.source_url} className="img-fluid" alt=""/>) : ('')}
 													<p className="event-date"><span><Moment format="DD">
 														{prop.node.acf.date}
 													</Moment></span><Moment format="MMM">

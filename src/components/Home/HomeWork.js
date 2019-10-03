@@ -46,7 +46,7 @@ const settings = {
     };
 
 
-const ClientSlider = () => (
+const HomeWork = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -168,4 +168,4 @@ const ClientSlider = () => (
 	/>
 )
 
-export default ClientSlider
+export default HomeWork

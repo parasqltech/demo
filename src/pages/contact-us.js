@@ -147,7 +147,7 @@ const IndexPage = () => (
 											<input type="email" className="form-control" placeholder="" name="email" required/>
 										</div>
 										<div className="col-md-12 mb-4">
-											<label className="label-text">Number</label>
+											<label className="label-text">Contact Number</label>
 											<input type="number" className="form-control" placeholder="" name="number" required/>
 										</div>
 										<div className="col-md-12">

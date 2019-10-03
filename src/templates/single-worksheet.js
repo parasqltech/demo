@@ -58,7 +58,8 @@ class Singleworksheet extends Component {
                             <h1 className="section-heading mb-2">{blog.edges[0].node.title}</h1>
                            
                             <div className="event-image">
-                                <img src={blog.edges[0].node.acf.feature_image} className="img-fluid w-100" alt=""/>
+                              {(blog.edges[0].node.acf.feature_image != null) ? (<img src={blog.edges[0].node.acf.feature_image.source_url} className="img-fluid" alt=""/>) : ("") }
+						      
                             </div>
                             
                             
@@ -188,7 +189,9 @@ export const pageQuery = graphql`
 				wordpress_id
 				slug
 				acf {
-				  feature_image
+				  feature_image{
+					  source_url
+          }
 				  posted_by
 				  section_desc
 				  section_title

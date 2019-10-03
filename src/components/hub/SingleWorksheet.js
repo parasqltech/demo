@@ -13,7 +13,9 @@ const SingleWorksheet = () => (
 					slug
 					content
 					acf {
-					  feature_image
+					  feature_image{
+						  source_url
+					  }
 					  posted_by
 					}
 				  }
@@ -32,7 +34,7 @@ const SingleWorksheet = () => (
 							<div className="col-lg-4 col-md-6 thumbnial" >
                                  <div className="">
                                      <div className="img-thumbnial">
-                                        <img src={prop.node.acf.feature_image} className="img-fluid w-100"/>
+										 {(prop.node.acf.feature_image != null) ? (<img src={prop.node.acf.feature_image} className="img-fluid w-100"/>) : ('')}
                                      </div>
                                 </div>
                                 <div className="thumbnial-content">

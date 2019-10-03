@@ -14,7 +14,9 @@ const Randomevent = () => (
 				slug
 				acf{
 					date
-					image
+					image{
+                        source_url
+                    }
 				}
 				
 		}}
@@ -46,7 +48,7 @@ const Randomevent = () => (
 									<div className="col-md-4">
                                     <div className="work-thumbnial " >
                                         <div className="work-thumbnail-image">
-                                            <img src={prop.node.acf.image} className="img-fluid" alt=""/>
+                                            <img src={prop.node.acf.image.source_url} className="img-fluid" alt=""/>
                                             <p className="event-date"><span><Moment format="DD">
 												{prop.node.acf.date}
 											</Moment></span><Moment format="MMM">

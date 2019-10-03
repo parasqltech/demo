@@ -124,7 +124,7 @@ class FilterGrid extends React.Component {
                                     <>
 								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.map(item => { return ( item.name ) }) } >
                         <div className="work-thumbnail-image">
-                            <img src={prop.node.acf.image} className="img-fluid" alt=""/>
+                            <img src={prop.node.acf.image.source_url} className="img-fluid" alt=""/>
                             <p className="event-date"><span><Moment format="DD">
 												{prop.node.acf.date}
 											</Moment></span><Moment format="MMM">
@@ -177,7 +177,9 @@ const Event = () => (
 			slug
 			acf {
 			  date
-			  image
+			  image{
+          source_url
+        }
 			}
 			 categories{
 				name

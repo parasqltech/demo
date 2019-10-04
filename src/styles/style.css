@@ -7711,6 +7711,7 @@ section.thank-you-section .social-menu li span{
         top: 0px;
         left: 20px;
         margin-top: 0px !important;
+        display: none !important;
     }
 
     section.home-process-section .process-block-two .inner-box h3 {
@@ -8852,7 +8853,9 @@ section.thank-you-section .social-menu li span{
         font-weight: 400;
     }
     
-  
+    section.home-work-section .work-thumbnial {
+        max-width: 280px;
+    }
     section.home-services-section .section-icons .icon-three {
         right: 31%;
         background-size: 80%;

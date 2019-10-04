@@ -35,10 +35,9 @@ const kh = () => (
 				<section className="breadcumbs-and-title-section">
 					
 					<div className="container text-center">
-						
-						
+						<span className="sub-heading">Knowledge Hub</span>
 						<h1 className="section-heading">
-						    Discover Insights &amp; Shape Trends
+						    Discover insights &amp; shape trends
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>

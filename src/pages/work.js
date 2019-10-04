@@ -191,7 +191,7 @@ const Work = () => (
                           }
                         }
                       }
-		allWordpressCategory(filter: {slug: {regex: "/work/"}}) {
+		allWordpressCategory(filter: {slug: {regex: "/work/"}}, sort: {fields: wordpress_id, order: ASC}) {	
 			edges {
 			  node {
 				id

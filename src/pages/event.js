@@ -188,7 +188,8 @@ const Event = () => (
 		  }
 		}	
 	  }
-		allWordpressCategory(filter: {slug: {regex: "/event/"}}) {
+	  allWordpressCategory(filter: {slug: {regex: "/event/"}}, sort: {fields: wordpress_id, order: ASC}) {
+		
 			edges {
 			  node {
 				id

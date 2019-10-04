@@ -24,6 +24,7 @@ const settings = {
     {
       breakpoint: 767,
       settings: {
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows : false
@@ -34,7 +35,8 @@ const settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows : false
+        arrows : false,
+        dots: true
       }
     },
     {
@@ -42,7 +44,8 @@ const settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows : false
+        arrows : false,
+        dots: true
       }
     }
   ]

@@ -45,7 +45,7 @@ const Randomevent = () => (
 							data.allWordpressWpEvents.edges.map(
 							prop => {
 								return (
-									<div className="col-md-4">
+									<div className="col-lg-4 col-md-6 col-sm-6 mb-4">
                                     <div className="work-thumbnial " >
                                         <div className="work-thumbnail-image">
                                             {(prop.node.acf.image != null) ? (<img src={prop.node.acf.image.source_url} className="img-fluid" alt=""/>) : ('')}

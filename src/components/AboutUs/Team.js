@@ -9,7 +9,7 @@ const Team = () => (
   <StaticQuery
     query={graphql`
       query {
-                allWordpressWpTeam {
+        allWordpressWpTeam(sort: {fields: wordpress_id, order: ASC}) {
                         edges {
                         node {
                             id

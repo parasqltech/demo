@@ -25,7 +25,7 @@ const Randomwork = () => (
       }
     `}
     render={data => (
-       <section className="home-work-section pt-4 ">
+       <section className="home-work-section home-work-section-details pt-4  ">
         
         <div className="container bg-white">
                

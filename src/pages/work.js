@@ -92,7 +92,7 @@ class FilterGrid extends React.Component {
 			<div className="container text-center">
 				<span className="section-subheading-heading">Our Story</span> 
 				<h1 className="section-heading">
-					Portfolio 
+            Success Stories 
 				</h1>
 				<ul className="breadcrumbs">
 					<li> <Link to="/">Home</Link> \</li>

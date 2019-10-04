@@ -92,7 +92,7 @@ const guide = () => (
 				 <div className="container bg-white">
                 <div className="row justify-content-center">
                         <div className="col-md-11 ">
-                     <div className="row">
+                     <div className="row  justify-content-center">
                         <div className="col-lg-9 col-md-12">
                         <div className="row">
 						              {data &&

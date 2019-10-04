@@ -79,7 +79,9 @@ class Grid extends React.Component {
                 </div>
         </div>
        <div className="container bg-white">
-                <div className="row no-gutters">
+         <div className="row justify-content-center">
+            <div className="col-md-11">
+                <div className="row ">
                         {category &&
 				category &&
 				category.edges &&
@@ -106,6 +108,8 @@ class Grid extends React.Component {
             </div>
            
         </div>
+        </div>
+         </div>
     </section>
 		</Layout>
 		)

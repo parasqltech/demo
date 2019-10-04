@@ -106,7 +106,7 @@ class FilterGrid extends React.Component {
                {category && category.edges.map(
                         (cats,i) => {
 				 return ( 
-					 <li><a href="javascript:void(0)" id={"cls"+i} onClick={() => {this.onFilterChange(cats.node.name,"cls"+i)}} className="flt" >{cats.node.name}</a></li>
+					 <li><a href="javascript:void(0)" id={"cls"+i} onClick={() => {this.onFilterChange(cats.node.slug,"cls"+i)}} className="flt" >{cats.node.name}</a></li>
 
 				 )})}   
             </ul>
@@ -122,7 +122,7 @@ class FilterGrid extends React.Component {
                         prop => {
                             return (    
                                     <>
-								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.map(item => { return ( item.name ) }) } >
+								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.map(item => { return ( item.slug ) }) } >
                         <div className="work-thumbnail-image">
                           {(prop.node.acf.image != null) ? (<img src={prop.node.acf.image.source_url} className="img-fluid" alt=""/>) : ('')}
                             
@@ -184,11 +184,13 @@ const Event = () => (
 			}
 			 categories{
 				name
+				slug
 			}
 		  }
 		}	
 	  }
-		allWordpressCategory(filter: {slug: {regex: "/event/"}}) {
+	  allWordpressCategory(filter: {slug: {regex: "/event/"}}, sort: {fields: wordpress_id, order: ASC}) {
+		
 			edges {
 			  node {
 				id

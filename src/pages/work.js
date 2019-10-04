@@ -28,6 +28,7 @@ class FilterGrid extends React.Component {
 	
 	document.querySelectorAll('.work-thumbnial').forEach(function(button) {
 		var classList = button.className.split(/\s+/);
+		
 		for (var i = 0; i < classList.length; i++) {
 			if(classList[i].indexOf(",") != -1){
 				classList[i].split(",").forEach(function(item){
@@ -107,7 +108,7 @@ class FilterGrid extends React.Component {
 				 {category && category.edges.map(
                         (cats,i) => {
 				 return ( 
-					 <li><a href="javascript:void(0)" id={"cls"+i} onClick={() => {this.onFilterChange(cats.node.name,"cls"+i)}} className="flt" >{cats.node.name}</a></li>
+					 <li><a href="javascript:void(0)" id={"cls"+i} onClick={() => {this.onFilterChange(cats.node.slug,"cls"+i)}} className="flt" >{cats.node.name}</a></li>
 
 				 )})}   
 
@@ -124,7 +125,7 @@ class FilterGrid extends React.Component {
                         prop => {
                             return (    
                                     <>
-								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.map(item => { return ( item.name ) }) } >
+								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.map(item => { return ( item.slug ) }) } >
                         <div className="work-thumbnail-image">
                             
 								{(prop.node.acf.main_image != null) ? (<img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>) : ('')}
@@ -187,11 +188,12 @@ const Work = () => (
 							categories {
                               id
                               name
+							  slug
                             }
                           }
                         }
                       }
-		allWordpressCategory(filter: {slug: {regex: "/work/"}}) {
+		allWordpressCategory(filter: {slug: {regex: "/work/"}}, sort: {fields: wordpress_id, order: ASC}) {	
 			edges {
 			  node {
 				id

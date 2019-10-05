@@ -46,8 +46,9 @@ render() {
       <div className="container">
           <div className="row justify-content-center">
               <div className="col-md-8 ">
+                
+                  <span className="sub-heading d-block mb-0 text-center">Testimonials</span>
                   <h2 className="section-heading text-center wow fadeIn">
-                      <span>Testimonials</span>
                       Hear from our loved customers</h2>
               </div>
           </div>

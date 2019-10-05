@@ -49,6 +49,7 @@ const IndexPage = () => (
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-xl-8 col-lg-10">
+                    
                     <h1 className="wow fadeInUp heading-main text-center" data-wow-delay="0.3s">
                         <span className="d-block">Expert Caretakers to help </span> 
                        <Typewriter
@@ -99,8 +100,8 @@ const IndexPage = () => (
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-md-8 mb-4">
+                        <span className="sub-heading d-block text-center mb-0">Our Processes</span>
                     <h2 className="section-heading text-center wow fadeIn">
-                        <span>Our Processes</span>
                         Pillars of our Success</h2>
                 </div>
             </div>
@@ -153,9 +154,7 @@ const IndexPage = () => (
                 </div>
                 
         </div>
-       
     </section>
-	
 	<HomeWork />
 	<HomeTestimonial />
 	<HomeBlog />

@@ -47,7 +47,7 @@ const Footer = () => (
                                 <button className="btn btn-outline-secondary" type="button">Subscribe Now</button>
                             </div>
                         </div>
-						<h3 className="section-heading mt-4"><span>Explore our  <Link to="hub" className="text-light">Knowledge Hub</Link></span></h3>
+						<h3 className="section-heading mt-4"><span className="text-light d-inline" >Explore our <Link to="hub"  className="text-white">Knowledge Hub</Link></span></h3>
                     </div>
                 </div>
             </div>

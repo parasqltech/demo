@@ -37,7 +37,7 @@ const kh = () => (
 					<div className="container text-center">
 						<span className="sub-heading">Knowledge Hub</span>
 						<h1 className="section-heading">
-						    Discover insights &amp; shape trends
+						    Discover insights
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>

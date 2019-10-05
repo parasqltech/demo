@@ -73,8 +73,9 @@ const HomeBlog = () => (
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-md-8 ">
+                  
+                <span className="sub-heading d-block text-center mb-2">Latest Articles</span>
                     <h2 className="section-heading text-center wow fadeIn">
-                        <span>Latest Articles</span>
                         Knowledge Hub
                     </h2>
                 </div>

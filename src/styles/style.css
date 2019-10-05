@@ -3507,7 +3507,7 @@ h6 {
 }
 
 .section-heading {
-    font-size: 45px;
+    font-size: 36px;
     margin-bottom: 30px;
     /* text-transform: capitalize; */
     color: #233653;
@@ -3525,7 +3525,13 @@ h6 {
     font-weight: 500;
     color: #233653;
 }
-
+section.breadcumbs-and-title-section .section-heading {
+    font-size: 45px;
+    margin-bottom: 30px;
+    /* text-transform: capitalize; */
+    color: #233653;
+    font-weight: 400;
+}
 .video-thumbnial-block {
     font-size: 18px;
     border: 2px solid #f1f1f1;
@@ -4212,7 +4218,7 @@ header .social-header .social-list {
 
 header .social-header .social-list li {
     display: inline-block;
-    margin: 0px 4px;
+    margin: 0px 8px;
     font-size: 14px;
 }
 
@@ -4637,9 +4643,6 @@ section.home-about-section .about-us-image {
 
 }
 
-section.home-about-section h3 {
-    font-size: 36px;
-}
 
 
 
@@ -5754,6 +5757,15 @@ footer .section-heading {
 footer .section-heading span {
     color: #7B8697;
     opacity: 0.6;
+}
+footer .section-heading span.text-light{
+    opacity: .6;
+}
+footer .section-heading span:hover {
+    opacity:1;
+}
+footer .section-heading span:hover a{
+    text-decoration: none;
 }
 
 footer .btn-default {
@@ -9312,7 +9324,13 @@ section.guide-section .grid .guide-thumbnial .guide-text{
     text-align: center;
     font-size: 16px;
     min-height: 60px;
-    padding: 10px 15px 0px;
+    padding: 10px 15px ;
+    color: #233653;
+}
+
+section.guide-section .grid .guide-thumbnial .guide-text:hover {
+    color: #21a6df;
+    text-decoration: none;
 }
 section.worksheet-section .thumbnail{
     border-radius: 12px;

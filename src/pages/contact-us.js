@@ -28,7 +28,8 @@ const IndexPage = () => (
 		<section className="breadcumbs-and-title-section">
             
            <div className="container text-center">
-               <h1 className="section-heading"><span>Connect With Us</span>
+			   <span className="sub-heading">Connect With Us</span>
+               <h1 className="section-heading">
                    We'd love to hear from you! 
                </h1>
                <ul className="breadcrumbs">

@@ -43,9 +43,10 @@ const HomeService = () => (
 
                 <div className="row">
                     <div className="col-lg-4">
+                    <span className="sub-heading d-block mb-0 ">Services</span>
                         <h2 className="section-heading text-left">
                             <span className="text-left mb-2">
-                                Services
+                                
                             </span>
                             Solutions to transform your business
                         

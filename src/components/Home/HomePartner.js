@@ -15,7 +15,7 @@ const settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 4,
-  slidesToScroll: 2,
+  slidesToScroll: 1,
   mobileFirst: true,
   responsive: [
     {
@@ -24,7 +24,7 @@ const settings = {
     slidesToShow: 4,
     slidesToScroll: 4,
     infinite: true,
-    dots: true
+    dots: false
     }
 },
 {

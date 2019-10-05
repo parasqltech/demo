@@ -41,7 +41,7 @@ const CareerPage = () => (
                
             <span className="section-subheading-heading">Career</span>
                <h1 className="section-heading">
-               Exciting Opportunity Awaits!
+               Exciting opportunity awaits!
                </h1>
                <ul className="breadcrumbs">
                    <li> <Link to="/">Home</Link> \</li>

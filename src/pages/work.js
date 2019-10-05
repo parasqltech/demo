@@ -91,13 +91,13 @@ class FilterGrid extends React.Component {
 		<section className="breadcumbs-and-title-section">
 			
 			<div className="container text-center">
-				<span className="section-subheading-heading">Portfolio</span> 
+				<span className="section-subheading-heading">Work</span> 
 				<h1 className="section-heading">
             Success stories
 				</h1>
 				<ul className="breadcrumbs">
 					<li> <Link to="/">Home</Link> \</li>
-					<li>Portfolio</li>
+					<li>Work</li>
 				</ul>
 			</div>
 		</section>

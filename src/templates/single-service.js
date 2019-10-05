@@ -99,23 +99,7 @@ class Singleservice extends Component {
 												   {prop.node.acf.short_description}
 												</p>
 												
-												<Slider {...settings} className="sub-service" >
-													{
-												prop.node.acf.service_slider &&
-												prop.node.acf.service_slider.map(
-												propd => {
-													return (
-														<Link to={"services/"+propd.slider_url} class="thumbnial-icon d-inline"  title={propd.slider_title}>
-															{(propd.slider_image != null) ? (<img src={propd.slider_image.source_url} class="img-fluid" alt=""/>) : ('') }
-														
-														</Link>
-													)
-												}
-												)}
-													
-													
-													
-												</Slider>
+												
 												
 												
 												
@@ -370,13 +354,7 @@ export const pageQuery = graphql`
 					source_url
 				}
 				short_description
-				service_slider {
-					slider_image{
-						source_url
-					}
-					slider_title
-					slider_url
-				}
+				
 				}
 			}
 		}	

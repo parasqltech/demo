@@ -50,19 +50,19 @@ const HomePartner = () => (
     query={graphql`
       query {
            allWordpressWpPartners {
-    edges {
-      node {
-        id
-        acf {
-          icon {
-            source_url
+            edges {
+              node {
+                id
+                acf {
+                  icon {
+                    source_url
+                  }
+                }
+              }
+            }
           }
-        }
-      }
-    }
-  }
             
-        }
+  }
     `}
     render={data => (
 		<section className="client-and-partners bg-white">

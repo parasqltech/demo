@@ -6,7 +6,7 @@ import Lightbox from '../components/Lightbox'
 import Particles from 'react-particles-js';
 import Helmet from 'react-helmet'
 import quote from  "../img/quote.png"
-import author from '../img/blog/author-image.png';
+import BlogAuthor from '../img/fevicon.png';
 
 class Singlecategory extends Component {
   render() {
@@ -78,11 +78,11 @@ class Singlecategory extends Component {
                             <div className=" ">
                                 <div className="row">
                                     {
-				posts.edges &&
-				posts.edges.map(
-                prop => {
-					return (
-					<div className="col-lg-6 col-md-6 wow fadeInLeft article-block">
+                          posts.edges &&
+                          posts.edges.map(
+                                  prop => {
+                            return (
+				                      <div className="col-lg-6 col-md-6 wow fadeInLeft article-block">
                                          <div className="thumbnial">
                                             <div className="thumbnial-image">
                                                 <Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug}>
@@ -98,7 +98,7 @@ class Singlecategory extends Component {
                                             </div>
                                             <div className="thumbnial-footer">
                                                 <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
+                                                    <div className="image"><img src={BlogAuthor} alt=""/></div>
                                                     By <b>{prop.node.acf.posted_by}</b>  
                                                 </div>
                                                 <div className="social-links pull-right">
@@ -113,9 +113,9 @@ class Singlecategory extends Component {
                                             </div>
                                         </div>
                                     </div>
-				)
-                }
-                )}	
+                                  )
+                                          }
+                                          )}	
 									
 									
                                    

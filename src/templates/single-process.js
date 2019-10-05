@@ -91,22 +91,6 @@ class Singleprocess extends Component {
 												   {prop.node.acf.short_description}
 												</p>
 												
-												<Slider {...settings} className="sub-service" >
-													{
-												prop.node.acf.service_slider &&
-												prop.node.acf.service_slider.map(
-												propd => {
-													return (
-														<Link to={"process/"+propd.slider_url} class="thumbnial-icon d-inline"  title={propd.slider_title}>
-														<img src={propd.slider_image} class="img-fluid" alt=""/>
-														</Link>
-													)
-												}
-												)}
-													
-													
-													
-												</Slider>
 												
 												
 												
@@ -362,11 +346,7 @@ export const pageQuery = graphql`
 					source_url
 				}
 				short_description
-				service_slider {
-					slider_image
-					slider_title
-					slider_url
-				}
+				
 				}
 			}
 		}	

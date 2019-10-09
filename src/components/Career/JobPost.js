@@ -63,7 +63,7 @@ const JobPost = () => (
                                                     <div class="d-inline m-0">
                                                         <p className="label-text  exp-loc-text d-inline">{prop.node.acf.exp} </p>
                                                         <p className="label-text  exp-loc-text d-inline">{prop.node.acf.location} </p>
-                                                        <a href={prop.node.acf.button_link} className="apply-btn">{prop.node.acf.button_name} </a>
+                                                        <a href="javascript:;" className="apply-btn">{prop.node.acf.button_name} </a>
                                                     </div>
                                                    
                                                 

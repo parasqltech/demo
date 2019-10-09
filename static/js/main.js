@@ -260,9 +260,9 @@ $(function choosefile() {
 		}); 
     }
    
-	$(document).on('click','.apply-btn',function(){
+	$(document).on('click','.apply',function(){
 				$('html, body').animate({
-					scrollTop: $(".formdiv").offset().top
+					scrollTop: $(".formdiv").offset().top - 110
 				}, 2000);
 			});
    

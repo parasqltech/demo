@@ -87,7 +87,7 @@ const CareerSlider = () => (
                                             <p className="label-text">
                                             {prop.node.acf.short_descrpition}
                                             </p>
-                                            <a href={prop.node.acf.button_link} className="btn btn-default">
+                                            <a href="javascript:;" className="btn btn-default apply">
                                                 {prop.node.acf.button_name}
                                             </a>
                                         </div>

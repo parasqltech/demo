@@ -38,7 +38,7 @@ const JobPost = () => (
                                                     <div class="d-inline m-0">
                                                         <p className="  label-text exp-loc-text d-inline ">Experience</p>
                                                         <p className=" label-text d-inline  exp-loc-text  ">Loaction </p>
-                                                        <a href="javascript:void(0)" className=" apply-btn visiblity-hidden border-0 text-white">&nbsp;Apply </a>
+                                                        <a href="javascript:void(0)" className="apply apply-btn visiblity-hidden border-0 text-white">&nbsp;Apply </a>
                                                     </div>
                                                 </div>
                                                 
@@ -63,7 +63,7 @@ const JobPost = () => (
                                                     <div class="d-inline m-0">
                                                         <p className="label-text  exp-loc-text d-inline">{prop.node.acf.exp} </p>
                                                         <p className="label-text  exp-loc-text d-inline">{prop.node.acf.location} </p>
-                                                        <a href="javascript:;" className="apply-btn">{prop.node.acf.button_name} </a>
+                                                        <a href="javascript:;" className="apply apply-btn">{prop.node.acf.button_name} </a>
                                                     </div>
                                                    
                                                 

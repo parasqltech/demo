@@ -93,7 +93,7 @@ const JobPost = () => (
                                 </div>
                                 <div className="row justify-content-center mt-4 pt-4">
                                 <div className=" col-lg-10">
-                                    <div className="p-3">
+                                    <div className="p-3 formdiv"  >
                                         <h2 className="section-heading-2 d-block text-center">Are you Ready?</h2>
                                         <form method="post" action="https://script.google.com/macros/s/AKfycbwcE57k_MU__-34meqARCcZLmpXf0TDZr51E4_S0WsyGZ54g4uj/exec" enctype="multipart/form-data">
                                             <div className="row ">

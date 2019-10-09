@@ -74,158 +74,12 @@ class Singleprocess extends Component {
 						</div>
                     </div>
                 </div>
-				<div className="row justify-content-center">
-                    <div className="col-xl-11">
-                        <div className="row text-left">
-							{subservice &&
-								subservice.edges.map(
-									(prop,i) => {
-									return (
-										<div key={i} className="col-md-6 services-block ">
-											<div className="thumbnail">
-												<div className="thumbnial-icon text-secondary">
-												   {(prop.node.acf.icon != null) ? (<img src={prop.node.acf.icon.source_url} className="img-fluid" alt=""/>) : ('')}
-												</div>
-												<h3 className="thumbnial-title">{prop.node.title} </h3>
-												<p className="label-text">
-												   {prop.node.acf.short_description}
-												</p>
-												
-												
-												
-												
-												
-												
-												<div className="clear-fix py-4">
-													<a href="#" className="btn btn-secondary-link  float-left">Schedule a call <i className="fa fa-long-arrow-right ml-1"></i></a>
-												</div>
-											</div>
-										</div>
-									)
-								}
-								)}
-						
-						
-						
-						
-						
-							
-						</div>
-					</div>
-				</div>
+				
 				
 				
                 
             </div>
         </div>
-    </section>
-	{(service.edges[0].node.acf.about_image != null) ? (<section className="home-about-section bg-white">
-        <div className="container">
-            <div className="about-mockup-bg  wow fadeIn">
-                <img src={(service.edges[0].node.acf.about_image != null) ? service.edges[0].node.acf.about_image.source_url : ''} className="img-fluid about-us-image" alt=""/>
-            </div>
-
-            <div className="row justify-content-end">
-                <div className="col-md-7 col-lg-6 col-sm-12 ">
-                    <div className="about-content xs-center sm-center wow fadeInUp">
-                        <h4 className="sub-heading ">About us</h4>
-                        <h3 className="section-heading" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.title}} ></h3>
-                        <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.description}} ></p>
-                        <div className="play-button">
-                            <span data-video-id="" className="video-area-popup">
-
-                                <i className="fa fa-play"></i></span>
-                            <span>Check How we work together</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-    </section>) : ('')}
-	
-	
-	
-	{(service.edges[0].node.acf.image != null) ? (<section className="home-testimonial-section">
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8 ">
-                    <span className="section-subheading-heading">Testimonial</span> 
-                    <h2 className="section-heading text-center wow fadeIn">
-                        Our customers loves us
-                    </h2>
-                </div>
-            </div>
-        </div>
-        
-        <div className="testiomonial-slider ">
-            <div className="customer-testimonial-block">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
-                            <div className="author-image">
-                                <img src={(service.edges[0].node.acf.image != null) ? service.edges[0].node.acf.image.source_url : ''} className="img-fluid" alt=""/>
-                            </div>
-                        </div>
-                        <div className="col-xl-6 col-lg-6 col-md-8 col-sm-8">
-                            <div className="author-content">
-                                <div className="quote">
-                                    <img src={quote} className="img-fluid" alt=""/>
-                                </div>
-                                <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.testimonial_}} ></p>
-                                <div className="author-info">
-                                    <h4 dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.client_name}} ></h4>
-                                    <p dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.designationcompany}} ></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>) : ('') }
-	 
-	
-	 <section className="home-about-section pt-4 pb-4 bg-white">
-        <div className="container">
-           
-            <div className="row justify-content-start">
-                <div className="col-md-12">
-                    <div className="about-content xs-center sm-center wow fadeInUp">
-                        <span className="sub-heading text-center d-block mb-0">FAQ</span>
-                        <h3 className="section-heading text-center">We develop digital strategies products and services.</h3>
-                         <div id="accordion" className="faq-section">
-                                
-								{service.edges[0].node.acf.faq &&
-									service.edges[0].node.acf.faq.map(
-									(prop,i) => {
-									return (
-										<div key={i} className="card">
-										<div className="card-header collapsed bg-white row  m-0" data-toggle="collapse" href={"#faq"+i} role="tab">
-											<span className="toggle-icon"></span> {prop.question}
-										</div>
-										<div id={"faq"+i} className="collapse" role="tabpanel" data-parent="#accordion" >
-											<div className="card-body">
-												<p className="label-text">
-													{prop.answer}
-												</p>
-											</div>
-										</div>
-									</div>
-									)
-								}
-								)}
-								
-								
-								
-								
-                            </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
     </section>
 	
 	<section className="form-section mt-4 ">
@@ -291,7 +145,7 @@ Singleprocess.propTypes = {
 export default Singleprocess
 
 export const pageQuery = graphql`
-  query($id: String!,$catslug: String!) {
+  query($id: String!) {
     allWordpressWpProcess(filter: {id: { eq: $id }}) {
 		edges {
       node {
@@ -299,24 +153,6 @@ export const pageQuery = graphql`
         title
         content
 		slug
-        acf {
-          client_name
-          description
-          designationcompany
-          testimonial_
-          title
-          about_image {
-            source_url
-          }
-          image {
-            source_url
-          }
-		  faq {
-           question
-           answer
-         }
-          
-        }
 		yoast {
 				focuskw
 				linkdex
@@ -336,21 +172,7 @@ export const pageQuery = graphql`
       }
     }
     }
-	allWordpressWpSubprocess(filter: {categories: {elemMatch: {slug: {regex: $catslug}}}}){
-		edges {
-			node {
-				id
-				title
-				acf{
-					icon{
-					source_url
-				}
-				short_description
-				
-				}
-			}
-		}	
-	}
+	
 	
   }
   

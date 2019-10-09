@@ -49,7 +49,47 @@ class Singleplatform extends Component {
 					</div>
 				</div>
 			</section>
-			
+			<section className="home-about-section pt-4 pb-4 bg-white">
+        <div className="container">
+           
+            <div className="row justify-content-start">
+                <div className="col-md-12">
+                    <div className="about-content xs-center sm-center wow fadeInUp">
+                        <span className="sub-heading text-center d-block mb-0">FAQ</span>
+                        <h3 className="section-heading text-center"></h3>
+                         <div id="accordion" className="faq-section">
+                                
+								{platform.edges[0].node.acf.faq &&
+									platform.edges[0].node.acf.faq.map(
+									(prop,i) => {
+									return (
+										<div key={i} className="card">
+										<div className="card-header collapsed bg-white row  m-0" data-toggle="collapse" href={"#faq"+i} role="tab">
+											<span className="toggle-icon"></span> {prop.question}
+										</div>
+										<div id={"faq"+i} className="collapse" role="tabpanel" data-parent="#accordion" >
+											<div className="card-body">
+												<p className="label-text">
+													{prop.answer}
+												</p>
+											</div>
+										</div>
+									</div>
+									)
+								}
+								)}
+								
+								
+								
+								
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
 			 
 		</Layout>
     )
@@ -70,6 +110,12 @@ export const pageQuery = graphql`
 			node {
 				title
 				content
+				acf{
+					faq {
+					answer
+					question
+				  }
+				}
 				yoast {
 				focuskw
 				linkdex

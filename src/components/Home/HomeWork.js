@@ -117,13 +117,13 @@ const HomeWork = () => (
                                     prop => {
                                     return (    
                                         <div>
-                                <div class="inner-column">
+                                <div className="inner-column">
                                     
-                                    <span class="section-subheading-heading text-left mb-2">Our Success</span> 
-                                    <h2 class="section-heading text-left mb-4">{prop.node.acf.title}</h2>
-                                    <p class="label-text mb-4">{prop.node.acf.descprtiton}</p>
+                                    <span className="section-subheading-heading text-left mb-2">Our Success</span> 
+                                    <h2 className="section-heading text-left mb-4">{prop.node.acf.title}</h2>
+                                    <p className="label-text mb-4">{prop.node.acf.descprtiton}</p>
 
-                                    <Link to="/work" class="btn btn-secondary-link"><span>View More Work <i class="fa fa-long-arrow-right ml-1"></i></span></Link>
+                                    <Link to="/work" className="btn btn-secondary-link"><span>View More Work <i className="fa fa-long-arrow-right ml-1"></i></span></Link>
                                 </div>
                                 </div>
                                       )
@@ -145,14 +145,14 @@ const HomeWork = () => (
                                 
                                     prop => {
                                     return (    
-                                        <div class="work-thumbnial" >
-                                            <div class="work-thumbnail-image">
-                                                {(prop.node.acf.main_image != null) ? (<img src={prop.node.acf.main_image.source_url} class="img-fluid" alt=""/>) : ('')}
+                                        <div className="work-thumbnial" >
+                                            <div className="work-thumbnail-image">
+                                                {(prop.node.acf.main_image != null) ? (<img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>) : ('')}
                                             </div>
-                                            <div class="work-thumbnail-details">
-                                                <p class="work-title">{prop.node.acf.title}</p>
-                                                <p class="label-text">{prop.node.acf.short_descprition}</p>
-                                                <Link to={"work/"+prop.node.slug} class="btn btn-secondary-link">Read More <i class="fa fa-long-arrow-right ml-1"></i></Link>
+                                            <div className="work-thumbnail-details">
+                                                <p className="work-title">{prop.node.acf.title}</p>
+                                                <p className="label-text">{prop.node.acf.short_descprition}</p>
+                                                <Link to={"work/"+prop.node.slug} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
                                             </div>
                                         </div>
                                          )

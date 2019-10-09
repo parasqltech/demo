@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet title="Home | QL Tech"  link={[{ rel: "shortcut icon", type: "image/png", href: `${favicon}` }]}  />
 	<Helmet>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<script src={withPrefix("js/jquery.min.js")}></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src={withPrefix("js/bootstrap.min.js")}></script>
 		<script src={withPrefix("js/main.js")}></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfTkf7ZJoHR9hN3KeNdpOGX9hj4XDO7sA">

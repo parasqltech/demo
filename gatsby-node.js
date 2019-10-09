@@ -233,9 +233,7 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             id
             slug
-			acf {
-				service_slug
-			}
+			
           }
         }
       }
@@ -256,7 +254,7 @@ exports.createPages = ({ actions, graphql }) => {
 			  component: slash(processTemplate),
 			  context: {
 				id: edge.node.id,
-				catslug: `/${edge.node.acf.service_slug}/`,
+				
 			  },
 			})
 		  })

@@ -137,7 +137,7 @@ class Singleservice extends Component {
             <div className="row justify-content-end">
                 <div className="col-md-7 col-lg-6 col-sm-12 ">
                     <div className="about-content xs-center sm-center wow fadeInUp">
-                        <h4 className="sub-heading ">About us</h4>
+                       
                         <h3 className="section-heading" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.title}} ></h3>
                         <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.description}} ></p>
                         <div className="play-button">

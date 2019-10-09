@@ -77,8 +77,8 @@ const HomePartner = () => (
                     
                         prop => {
                         return ( 
-                <div class="client-logo">
-                    <img src={prop.node.acf.icon.source_url} class="img-fluid" alt=""/>
+                <div className="client-logo">
+                    <img src={prop.node.acf.icon.source_url} className="img-fluid" alt=""/>
                 </div>
                  )
                         }

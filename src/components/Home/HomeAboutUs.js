@@ -36,16 +36,16 @@ render() {
       <>
 
          
-<section class="home-about-section bg-white">
-        <div class="container">
-            <div class="about-mockup-bg  wow fadeIn">
-                <img src={img} class="img-fluid about-us-image" alt="" />
+<section className="home-about-section bg-white">
+        <div className="container">
+            <div className="about-mockup-bg  wow fadeIn">
+                <img src={img} className="img-fluid about-us-image" alt="" />
             </div>
 
-            <div class="row justify-content-end">
-                <div class="col-md-7 col-lg-6 col-sm-12 ">
-                    <div class="about-content xs-center sm-center wow fadeInUp">
-                        <h4 class="sub-heading ">About us</h4>
+            <div className="row justify-content-end">
+                <div className="col-md-7 col-lg-6 col-sm-12 ">
+                    <div className="about-content xs-center sm-center wow fadeInUp">
+                        <h4 className="sub-heading ">About us</h4>
                         {AboutUsData && AboutUsData && AboutUsData.edges.map(
      
                 
@@ -54,12 +54,12 @@ render() {
                           prop => {
                           return ( 
                   <div>
-                        <h3 class="section-heading">{prop.node.acf.title}</h3>
-                        <p class="label-text">{prop.node.acf.short_descprition}</p>
-                        <p class="text-primary font-weight-bold">{prop.node.acf.boldcontent}</p>
-                        <div  class="play-button" onClick={() => this.handleModalOpen()}>
-                            <span data-video-id="" class="video-area-popup">
-                                <i class="fa fa-play"></i></span>
+                        <h3 className="section-heading">{prop.node.acf.title}</h3>
+                        <p className="label-text">{prop.node.acf.short_descprition}</p>
+                        <p className="text-primary font-weight-bold">{prop.node.acf.boldcontent}</p>
+                        <div  className="play-button" onClick={() => this.handleModalOpen()}>
+                            <span data-video-id="" className="video-area-popup">
+                                <i className="fa fa-play"></i></span>
                             <span>Check out our quick introduction</span>
                         </div>
                     </div>
@@ -77,15 +77,15 @@ render() {
         onRequestClose={this.handleModalClose}
           className="modal d-block fade testimonial-view show"
       >
-          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content ">
-            <button type="button" class="close btn-default" onClick={this.handleModalClose} data-dismiss="modal" aria-label="Close">
+          <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div className="modal-content ">
+            <button type="button" className="close btn-default" onClick={this.handleModalClose} data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
       
-          <div class="modal-body p-0">
-          <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pozK-668Ams?rel=0" allowfullscreen></iframe>
+          <div className="modal-body p-0">
+          <div className="embed-responsive embed-responsive-16by9">
+                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/pozK-668Ams?rel=0" allowfullscreen></iframe>
             </div>
               
           </div>

@@ -260,16 +260,16 @@ $(function choosefile() {
 		}); 
     }
    
-	
-   
-	
-	$( document ).ready(function() {
-		
-		$(document).on('click','.apply-btn',function(){
+	$(document).on('click','.apply-btn',function(){
 				$('html, body').animate({
 					scrollTop: $(".formdiv").offset().top
 				}, 2000);
 			});
+   
+	
+	$( document ).ready(function() {
+		
+		
 		
 		
 		setTimeout(function(){ 

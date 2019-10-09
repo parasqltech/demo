@@ -65,7 +65,7 @@ class Singleprocess extends Component {
 			<section className="home-services-section service-section-1 ">
         
         <div className="container bg-white">
-            <div className="main-panel text-center">
+            <div className="main-panel">
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
 						<div className="">

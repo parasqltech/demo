@@ -265,7 +265,7 @@ $(function choosefile() {
 	
 	$( document ).ready(function() {
 		
-		$(".apply-btn").click(function() {
+		$(document).on('click','.apply-btn',function(){
 				$('html, body').animate({
 					scrollTop: $(".formdiv").offset().top
 				}, 2000);

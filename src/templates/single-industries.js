@@ -39,7 +39,7 @@ class Singleindustries extends Component {
 						<div className="row justify-content-center">
 							<div className="col-xl-9 col-lg-10">
 								<div className="event-content-block">
-								<h1 class="section-heading mb-2">{industries.edges[0].node.title}</h1>
+								<h1 class="section-heading mb-2" dangerouslySetInnerHTML={{ __html: industries.edges[0].node.title}}/>
 									
 								<div dangerouslySetInnerHTML={{ __html: industries.edges[0].node.content }}>
 

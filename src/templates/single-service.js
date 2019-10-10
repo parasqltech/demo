@@ -94,7 +94,8 @@ class Singleservice extends Component {
 												   
 												   
 												</div>
-												<h3 className="thumbnial-title">{prop.node.title} </h3>
+												
+												<h3 className="thumbnial-title" dangerouslySetInnerHTML={{ __html: prop.node.title}}/>
 												<p className="label-text">
 												   {prop.node.acf.short_description}
 												</p>

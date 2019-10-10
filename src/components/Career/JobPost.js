@@ -37,7 +37,7 @@ const JobPost = () => (
                                                 <div >
                                                     <div class="d-inline m-0">
                                                         <p className="  label-text exp-loc-text d-inline ">Experience</p>
-                                                        <p className=" label-text d-inline  exp-loc-text  ">Loaction </p>
+                                                        <p className=" label-text d-inline  exp-loc-text  ">Location </p>
                                                         <a href="javascript:void(0)" className="apply apply-btn visiblity-hidden border-0 text-white">&nbsp;Apply </a>
                                                     </div>
                                                 </div>

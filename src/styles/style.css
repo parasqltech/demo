@@ -8322,7 +8322,7 @@ section.thank-you-section .social-menu li span{
     section.service-section-1 .services-block {
         padding: 15px;
         z-index: 2;
-        margin-top: 0px;
+        margin-top: 15px !important; 
     }
 
     section.resource-section-1 .thumbnial-content ,section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content{
@@ -8550,6 +8550,10 @@ section.thank-you-section .social-menu li span{
     section.work-section-1 .work-thumbnial{
     height: auto !important;
     width: calc((100% / 2) - 30px);
+}
+section.breadcumbs-and-title-section .section-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 }
 @media all and (max-width:576px) {
@@ -9660,23 +9664,24 @@ section.service-section-1 .services-block:nth-child(1){
 section.service-section-1 .services-block:nth-child(2){
     
     padding-left: 40px;
-    margin-top: 72px;
+    margin-top: 40px;
     padding-right: 120px;
     display: block;
 }
 section.service-section-1 .services-block:nth-child(3){
     padding-left: 120px;
     display: block;
-    margin-top: -30px;
+    margin-top: -48px;
 }
 section.service-section-1 .services-block:nth-child(4){
     padding-right: 120px;
     display: block;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 section.service-section-1 .services-block:nth-child(5){
     padding-left: 120px;
     display: block;
+    margin-top: -63px;
 }
 section.service-section-1 .services-block:nth-child(6){
     

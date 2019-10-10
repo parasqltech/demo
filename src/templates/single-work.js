@@ -98,8 +98,8 @@ class SingleWork extends Component {
                             <h5 className="section-heading-3">About us</h5>
                             <p className="label-text" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.about_company }} ></p>
                             <p className="label-text mb-0"><b>Industry: </b> {work.edges[0].node.acf.company_name}</p>
-                            <p className="label-text mb-0"><b>Platform: </b> {work.edges[0].node.acf.company_size}</p>
-                            <p className="label-text mb-4"><b>Service: </b> {work.edges[0].node.acf.location}</p>
+                            <p className="label-text mb-0"><b>Platforms: </b> {work.edges[0].node.acf.company_size}</p>
+                            <p className="label-text mb-4"><b>Services: </b> {work.edges[0].node.acf.location}</p>
                            
                             
                             <div className="form-section postion-sticky">

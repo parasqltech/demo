@@ -5,7 +5,7 @@ const SingleArticle = () => (
   <StaticQuery
     query={graphql`
 		query {
-			allWordpressPost(limit: 1, sort: {fields: wordpress_id, order: DESC}) {
+			 allWordpressPost(filter: {acf: {is_featured: {eq: "1:Featured"}}}, limit: 1, sort: {fields: wordpress_id, order: DESC}) {
 				edges {
 				  node {
 					id
@@ -14,6 +14,10 @@ const SingleArticle = () => (
 					date(formatString: "D MMMM,Y")
 					content
 					acf{
+					knowledge_hub_featured_image {
+						id
+						source_url
+					  }	
 					feature_image{
 						source_url
 					}
@@ -41,7 +45,7 @@ const SingleArticle = () => (
                                  <div className="">
                                      <div className="img-thumbnial">
                                         
-										{(prop.node.acf.feature_image != null) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid w-100"
+										{(prop.node.acf.knowledge_hub_featured_image != null) ? (<img src={prop.node.acf.knowledge_hub_featured_image.source_url} className="img-fluid w-100"
                                                 alt=""/>) : ('')}
 										
                                      </div>

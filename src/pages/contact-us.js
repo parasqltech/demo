@@ -149,7 +149,7 @@ const IndexPage = () => (
 										</div>
 										<div className="col-md-12 mb-4">
 											<label className="label-text">Contact Number</label>
-											<input type="number" className="form-control" placeholder="" name="number" required/>
+											<input type="number" minlength="10" maxlength="10" min="0" className="form-control" placeholder="" name="number" required/>
 										</div>
 										<div className="col-md-12">
 											<label className="label-text">Message</label>

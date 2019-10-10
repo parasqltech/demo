@@ -11,7 +11,7 @@ import quote from  "../img/quote.png"
 class Singleplatform extends Component {
   render() {
     const platform = this.props.data.allWordpressWpPlatform
-	console.log(platform);
+	 const works = this.props.data.allWordpressWpWorks
     return (
       <Layout>
 			<Helmet>
@@ -49,6 +49,47 @@ class Singleplatform extends Component {
 					</div>
 				</div>
 			</section>
+			
+			{(platform.edges[0].node.acf.image != null) ? (<section className="home-testimonial-section">
+        <div className="container">
+            <div className="row justify-content-center">
+                <div className="col-md-8 ">
+                    <span className="section-subheading-heading">Testimonial</span> 
+                    <h2 className="section-heading text-center wow fadeIn">
+                        Our customers loves us
+                    </h2>
+                </div>
+            </div>
+        </div>
+        
+        <div className="testiomonial-slider ">
+            <div className="customer-testimonial-block">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
+                            <div className="author-image">
+                                <img src={(platform.edges[0].node.acf.image != null) ? platform.edges[0].node.acf.image.source_url : ''} className="img-fluid" alt=""/>
+                            </div>
+                        </div>
+                        <div className="col-xl-6 col-lg-6 col-md-8 col-sm-8">
+                            <div className="author-content">
+                                <div className="quote">
+                                    <img src={quote} className="img-fluid" alt=""/>
+                                </div>
+                                <p className="label-text" dangerouslySetInnerHTML={{ __html: platform.edges[0].node.acf.testimonial_}} ></p>
+                                <div className="author-info">
+                                    <h4 dangerouslySetInnerHTML={{ __html: platform.edges[0].node.acf.client_name}} ></h4>
+                                    <p dangerouslySetInnerHTML={{ __html: platform.edges[0].node.acf.designationcompany}} ></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>):('')}
+			
+			
 			<section className="home-about-section pt-4 pb-4 bg-white">
         <div className="container">
            
@@ -90,7 +131,50 @@ class Singleplatform extends Component {
         </div>
         
     </section>
-			 
+	<section className="home-work-section home-work-section-details pt-4  ">
+        
+        <div className="container bg-white">
+               
+            <div className="row">
+                <div className="col-md-12">
+                    
+                        <span className="section-subheading-heading">Relevant Story</span> 
+                        <h2 className="section-heading text-center wow fadeIn" >
+                            Some other case study
+                        </h2>
+                    <div className=" pt-0">
+                        <div className="home-portfolio-slider-1 wow  animated" >
+                            <div className="row">
+							{
+							works &&
+							works.edges.map(
+							prop => {
+								return (
+                                <div className="col-md-4">
+                                   <div className="work-thumbnial">
+                                       <div className="work-thumbnail-image">
+                                           <img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>
+                                       </div>
+                                       <div className="work-thumbnail-details">
+                                           <p className="work-title" dangerouslySetInnerHTML={{ __html: prop.node.title }}  ></p>
+                                           <p className="label-text">{prop.node.acf.short_descprition}</p>
+                                           <Link to={"work/"+prop.node.slug} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
+                                       </div>
+                                   </div>
+                               </div>
+							   )
+							}
+							)}
+							   
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>		 
 		</Layout>
     )
   }
@@ -104,7 +188,7 @@ Singleplatform.propTypes = {
 export default Singleplatform
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query($id: String!,$casestudyids: [Int]) {
     allWordpressWpPlatform(filter: {id: { eq: $id }}) {
 		edges {
 			node {
@@ -115,6 +199,14 @@ export const pageQuery = graphql`
 					answer
 					question
 				  }
+				  
+					  testimonial_
+					  client_name
+					  designationcompany
+					image {
+						id
+						source_url
+					}  
 				}
 				yoast {
 				focuskw
@@ -135,5 +227,22 @@ export const pageQuery = graphql`
 				
 		}}
     }
+	allWordpressWpWorks(filter: {wordpress_id: {in: $casestudyids}},sort: {fields: wordpress_id, order: ASC}) {
+    edges {
+      node {
+				title
+				slug
+				acf{
+					short_descprition
+					main_image {
+                                source_url
+                                link
+                              }
+				}
+				
+		}
+    }
+  }
+	
   }
 `

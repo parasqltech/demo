@@ -129,6 +129,9 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             id
             slug
+			acf{
+				case_study
+			}
           }
         }
       }
@@ -143,11 +146,20 @@ exports.createPages = ({ actions, graphql }) => {
 		const { allWordpressWpIndustries } = result.data
 		 const industriesTemplate = path.resolve(`./src/templates/single-industries.js`);
 		  allWordpressWpIndustries.edges.forEach(edge => {
+			
+			if(edge.node.acf != null){
+				var v = edge.node.acf.case_study;
+			}	
+			else{
+				var v = [289,1600,1603];
+			}
+ 
 			createPage({
 			  path: `/industries/${edge.node.slug}/`,
 			  component: slash(industriesTemplate),
 			  context: {
 				id: edge.node.id,
+				casestudy: v,
 			  },
 			})
 		  })
@@ -162,6 +174,9 @@ exports.createPages = ({ actions, graphql }) => {
           node {
             id
             slug
+			acf{
+				case_study
+			}
           }
         }
       }
@@ -176,11 +191,21 @@ exports.createPages = ({ actions, graphql }) => {
 		const { allWordpressWpPlatform } = result.data
 		 const platformsTemplate = path.resolve(`./src/templates/single-platforms.js`);
 		  allWordpressWpPlatform.edges.forEach(edge => {
+			
+			if(edge.node.acf != null){
+				var v = edge.node.acf.case_study;
+			}	
+			else{
+				var v = [289,1600,1603];
+			}	
+			
+			  
 			createPage({
 			  path: `/platforms/${edge.node.slug}/`,
 			  component: slash(platformsTemplate),
 			  context: {
 				id: edge.node.id,
+				casestudyids: v
 			  },
 			})
 		  })

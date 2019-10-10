@@ -3506,7 +3506,7 @@ h6 {
     font-weight: 500;
 }
 
-.section-heading {
+.section-heading,h1 {
     font-size: 36px;
     margin-bottom: 30px;
     /* text-transform: capitalize; */
@@ -3514,13 +3514,13 @@ h6 {
     font-weight: 400;
 }
 
-.section-heading-2 {
+.section-heading-2,h2 {
     font-size: 30px;
     margin-bottom: 20px;
     color: #233653;
     font-weight: 400;
 }
-.section-heading-3 {
+.section-heading-3 ,h3{
     font-size: 20px;
     font-weight: 500;
     color: #233653;
@@ -3538,7 +3538,6 @@ section.breadcumbs-and-title-section .section-heading {
     position: relative;
     margin-bottom: 30px;
 }
-
 .video-thumbnial-block .thumbnial-title {
     font-size: 18px;
     margin: 0px;
@@ -3546,19 +3545,16 @@ section.breadcumbs-and-title-section .section-heading {
     padding: 9px;
     font-weight: 400;
 }
-
 .video-thumbnail {
     position: relative;
     overflow: hidden;
     display: block;
-
     border-radius: 12px;
 }
 .img-thumbnial{
     overflow: hidden;
     display: block;
     border-radius: 12px;
-
 }
 .video-thumbnail::before {
     position: absolute;
@@ -3571,7 +3567,6 @@ section.breadcumbs-and-title-section .section-heading {
     border-radius: 4px;
     content: "";
 }
-
 .video-thumbnail .video-play-btn,
 .video-thumbnail .video-play-btn:hover {
     position: absolute;
@@ -3589,20 +3584,16 @@ section.breadcumbs-and-title-section .section-heading {
     padding: 8px 2px;
     text-align: center;
     z-index: 1;
-    
     transition: 0.5s;
 }
-
 .video-thumbnail:hover .video-play-btn {
     box-shadow: 0px 0px 30px  rgba(33, 166, 223 ,0.5);
 }
-
 .thumbnial .thumbnial-heading {
     font-size: 18px;
     font-weight: 600;
     color: #233653;
 }
-
 .sub-heading {
     color: #233653;
     opacity: .6;
@@ -3610,7 +3601,6 @@ section.breadcumbs-and-title-section .section-heading {
     margin-bottom: 20px;
     font-weight: 400;
 }
-
 .section-heading span {
     color: #233653;
     opacity: .6;
@@ -3629,15 +3619,12 @@ section.breadcumbs-and-title-section .section-heading {
     text-align: center;
     font-weight: 300;
 }
-
 .heading-xl {
     font-size: 80px;
     font-weight: 400;
     color: #233653;
 }
-
 .section-icons .icon-one {
-
     animation-name: rotateme;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -3647,7 +3634,6 @@ section.breadcumbs-and-title-section .section-heading {
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 }
-
 .section-icons .icon-two {
     animation-name: float_up_down;
     animation-duration: 5s;
@@ -4806,15 +4792,15 @@ section.home-services-section .inner-container .service-block-two:first-child {
 section.home-services-section .inner-container .service-block-two:nth-child(3) {
     margin-top: 55px;
 }
-
+section.home-services-section .inner-container .service-block-two:nth-child(4) {
+    margin-top: -30px;
+}
 section.home-services-section .inner-container .service-block-two:nth-child(5) {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 /* Service Block Two */
 
-section.home-services-section .inner-container .service-block-two:nth-child(4) {
-    margin-top: 15px;
-}
+
 section.home-services-section .service-block-two {
     position: relative;
     z-index: 1;
@@ -7304,6 +7290,12 @@ section.thank-you-section .social-menu li span{
     .section-heading span {
         font-size: 16px;
     }
+    .section-heading-2, h2 {
+        font-size: 24px;
+    }
+    .section-heading-3, h3 {
+        font-size: 20px;
+    }
 
     header .navbar-light .navbar-nav .nav-link {
         font-size: 0.98em;
@@ -7426,7 +7418,10 @@ section.thank-you-section .social-menu li span{
         min-height: 321px !important;
         background-size: auto 100%  !important;
     }
-   
+    section.home-services-section .inner-container .service-block-two:nth-child(4) {
+        margin-top: -10px;
+    }
+  
 }
 
 @media all and (max-width:991px) and (min-width:768px) {
@@ -7747,7 +7742,16 @@ section.thank-you-section .social-menu li span{
     .modal{
         overflow: scroll;
     }
- 
+    section.home-services-section .inner-container .service-block-two{
+        position: relative !important; 
+        top: 0px !important;
+        left: 0px !important;
+        max-width:50% !important;
+        margin:15px 0px !important;
+    }
+    section.home-section-1 {
+        padding-bottom: 60px;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -9049,12 +9053,8 @@ section.resource-section-1 .thumbnial.thumbnial1 .thumbnial-content {
 	margin-top: -62px !important;
 }
 
-.top h2{
-	 font-size: 30px !important;
-}
-
 section.resource-section-1 .thumbnial.thumbnial1 .btn-secondary-link {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 
@@ -9075,6 +9075,7 @@ section.resource-section-1 .thumbnial.thumbnial1 .btn-secondary-link {
     border: none;
 }
 .faq-section .card .card-header{
+    font-size: 18px;
     font-weight: 500;
     opacity: 1;
     color:#707070 !important;
@@ -9749,3 +9750,281 @@ section.work-details-section-1 .breif-text span {
   .LeftBtn:disabled {
     display:none !important;
   }
+
+  @media all and (min-width:1600px) {
+      p{
+          font-size: 20px;
+      }
+    header .social-header .key-message,
+    header .social-header .social-list li {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    header .navbar-light .navbar-nav .nav-link {
+        font-size: 1.4em;
+    }
+    header .dropdown-menu .dropdown-item {
+        font-size: 18px;
+    }  
+    header .dropdown-menu .services-heading {
+        font-size: 18px;
+    }
+    header .dropdown-menu p {
+        font-size: 16px;
+    }   
+    header .navbar-light .navbar-nav .nav-link.btn-default {
+        font-size: 18px;
+    }  
+    section.breadcumbs-and-title-section .breadcrumbs li {
+        font-size: 20px;
+    } 
+    .label-text {
+        font-size: 20px;
+    }
+    .container{
+        max-width: 1570px;
+    }
+    .sub-heading {
+        font-size: 24px;
+    }
+    .section-heading {
+        font-size: 48px;
+        margin-bottom: 18px;
+    }
+    .section-heading-2, h2{
+        font-size: 36px;
+    }
+    .section-heading-3, h3 {
+        font-size: 28px;
+    }
+    section.breadcumbs-and-title-section .section-heading {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+    section.home-section-1 .home-parallax-layers {
+        height: 752px;
+    }
+    .section-subheading-heading {
+        font-size: 24px;
+    }
+    .btn-default {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .btn-secondary-link {
+        font-size: 20px;
+    }
+    section.client-and-partners .container{
+        max-width: 1170px;
+    }
+    section.home-section-1 .heading-main {
+        font-size: 72px;
+    }
+    section.about-us-section-3 .thumbnial {
+        min-height: 347px;
+    }
+    section.about-us-section-3 .thumbnial .thumbnial-heading {
+        font-size: 24px;
+    }
+    section.about-history-section .h5{
+        font-size: 24px;
+    }
+    section.about-history-section .details{
+        font-size: 18px;
+    }
+    section.about-history-section .history-block .year-and-month {
+        top: -36px;
+        font-size: 18px;
+    }
+    section.about-history-section .ceo-message-block .ceo-message {
+        font-size: 46px;
+    }
+   
+    section.about-us-section-2  .about-us-data-show .about-us-data-show-single {
+        width: 300px;
+        height: 300px;
+    }
+    section.about-us-section-4 {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 60px;
+    }
+    section.about-us-section-4  .team-person .team-member-name, section.about-us-section-4 .team-person .team-member-position {
+        font-size: 16px;
+    }
+    section.home-section-1 {
+        padding-bottom: 120px;
+    }
+    section.home-services-section .inner-container {
+        padding-left: 540px;
+    }    
+    section.home-about-section {
+        padding: 180px 0px ;
+    }
+    section.home-work-section .work-thumbnial .work-thumbnail-details .work-title {
+        font-size: 22px;
+    }
+    section.home-work-section .work-thumbnial .work-thumbnail-details .label-text {
+        font-size: 18px;
+    }
+    section.home-testimonial-section .label-text {
+        font-size: 20px;
+    }
+    
+    section.home-testimonial-section h4, section.home-testimonial-section .author-info p {
+        font-size: 22px;
+    }
+    section.home-process-section .process-block .inner-box h3 ,section.home-process-section .process-block-two .inner-box h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    section.home-services-section .service-block-two .inner-box h3 {
+        font-size: 28px;
+    }    
+    section.home-services-section .service-block-two .inner-box .text {
+        font-size: 22px;
+    }
+    .play-button {
+        font-size: 20px;
+    }
+     
+    section.contact-us-section-2 .card .card-title, section.contact-us-section-3 .card .card-title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    section.contact-us-section-2 .card .nav-link, section.contact-us-section-3 .card .nav-link {
+        font-size: 20px;
+    }
+    section.contact-us-section-2 .card .label-text, section.contact-us-section-3 .card .label-text {
+        font-size: 20px;
+    }
+    section.home-blog-section .thumbnial-content .blog-title {
+        font-size: 18px;
+    }
+    section.home-blog-section .thumbnial-content .post-date {
+        font-size: 16px;
+    }   
+    section.work-section-1 .work-thumbnial, section.events-section-1 .work-thumbnial {
+        width: calc((100% / 5) - 20px);
+    }
+    section.events-section-1 .work-thumbnial .work-thumbnail-details .work-title ,section.home-event-section .work-thumbnial .work-thumbnail-details .work-title{
+        font-size: 18px;
+    }
+    section.service-section-1 .thumbnial-title {
+        font-size: 30px;
+    }
+    section.events-section-1 .event-content-block p, .blank-section p {
+        font-size: 20px;
+    }
+    section.service-section-1 .services-block:nth-child(1) {
+        margin-top: 10px;
+    }
+    section.service-section-1 .services-block:nth-child(3) {
+        margin-top: 10px;
+    }
+    section.service-section-1 .services-block:nth-child(2) {
+        margin-top: 40px;
+    }
+    section.service-section-1 .services-block:nth-child(4) {
+        margin-top: 20px;
+    }
+    section.service-section-1 .services-block:nth-child(5) {
+        margin-top: 10px;
+    }
+    .faq-section .card .card-header {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .form-section .label-text {
+        font-size: 20px;
+    }
+    .form-section .form-control {
+        font-size: 18px;
+    }    
+    section.events-section-1 .event-content-block ul li, .blank-section ul li {
+        font-size: 20px;
+    }
+    section.work-section-1 .isotop-sorting-menu li a, section.events-section-1 .isotop-sorting-menu li a {
+        font-size: 20px;
+    }
+    section.work-section-1 .work-thumbnial .work-thumbnail-details .label-text {
+        font-size: 18px;
+    }
+    section.work-section-1 .work-thumbnial .work-thumbnail-details .work-title {
+        font-size: 22px;
+    }
+    section.work-details-section-1 .breif-text .percentage {
+        font-size: 40px;
+    }
+    .subnavbar .resource-menu .nav-item .nav-link {
+        font-size: 18px;
+    }
+    .subnavbar .search-box .form-control {
+        min-height: calc(1.5em + .75rem + 8px);
+        font-size: 18px;
+    }
+    section.resource-section-1  .thumbnial h2.thumbnial-title{
+        font-size: 36px;
+    }
+    section.resource-section-1  .thumbnial h2{
+        font-size: 28px;
+    }
+    section.resource-section-1 .thumbnial1 h2.thumbnial-title {
+        font-size: 46px;
+    }
+    section.events-section-1 .event-content-block ol li, .blank-section ol li ,section.what-you-get .thumbnial .label-text {
+        font-size: 20px;
+    }    
+    section.blog-section .thumbnial-content .blog-title,section.guide-section .grid .guide-thumbnial .guide-text, section.worksheet-section .thumbnail .worksheet-text{
+        font-size: 22px;
+    }
+    section.blog-section .thumbnial-content .post-date {
+        font-size: 18px;
+    }    
+    .sidebar-title {
+        font-size: 24px;
+    }
+    .sidebar .Categary-list li a,    section.blog-section .thumbnial-footer .post-info li a ,section.blog-section .thumbnial-footer .post-info li{
+        font-size: 18px;
+    }
+    section.what-you-get .thumbnial {
+        height: 420px;
+        padding: 30px 30px;
+    }
+    section.career-section-03 .h4 {
+        font-size: 30px;
+    }
+    section.career-section-1 #accordion .nav-link {
+        font-size: 18px;
+    }
+    section.career-section-1 .apply-btn {
+        font-size: 18px;
+    }
+    .form-section .btn-outline-secondary {
+        font-size: 20px;
+        padding: 10px 8px;
+    }
+    section.contact-us-section-3 .card{
+        width: 100%;
+    }
+    footer .subcribe-form {
+        max-width: 420px;
+    }
+    footer .footer-widget-title {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    footer .footer-link-list li a ,footer .other-links li a, footer .footer-last p ,footer .subcribe-form .btn ,footer .form-control, footer .form-control:focus, footer .form-control:hover {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width:1599px) and (min-width:1400px) {
+    section.work-section-1 .work-thumbnial, section.events-section-1 .work-thumbnial {
+        width: calc((100% / 4) - 20px);
+    }
+}
+
+
+
+  

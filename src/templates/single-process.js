@@ -28,7 +28,7 @@ class Singleprocess extends Component {
   render() {
     const service = this.props.data.allWordpressWpProcess
     const subservice = this.props.data.allWordpressWpSubprocess
-	console.log(subservice);
+	
     return (
       <Layout>
 	  <Helmet>
@@ -68,7 +68,7 @@ class Singleprocess extends Component {
             <div className="main-panel">
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
-						<div className="">
+						<div className="blank-section">
 						<div  dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></div>
                     
 						</div>

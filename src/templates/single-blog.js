@@ -30,7 +30,7 @@ const settings = {
 class Singleblog extends Component {
   render() {
     const blog = this.props.data.allWordpressPost
-	console.log(blog);
+	
 	const id = this.props.data.allWordpressPost.edges[0].node.wordpress_id
 	const title = this.props.data.allWordpressPost.edges[0].node.title
 	let disqusConfig = {

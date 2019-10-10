@@ -30,7 +30,7 @@ class Singleservice extends Component {
   render() {
     const service = this.props.data.allWordpressWpServices
     const subservice = this.props.data.allWordpressWpSubservices
-	console.log(subservice);
+	
     return (
       <Layout>
 	  <Helmet>
@@ -71,8 +71,8 @@ class Singleservice extends Component {
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">
 						<div className="event-section-1">
-							<div className="blank-section">
-                        		<div className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></div>
+							<div className="blank-section" >
+                        		<div dangerouslySetInnerHTML={{ __html: service.edges[0].node.content}}  ></div>
 							</div>
 						</div>
                     </div>
@@ -90,7 +90,7 @@ class Singleservice extends Component {
 												<div className="thumbnial-icon text-secondary">
 												   
 												   
-												   {(prop.node.acf.icon != null) ? (<img src={prop.node.acf.icon.source_url} className="img-fluid" alt=""/>) : ('')}
+												   {(prop.node.acf.icon != null) ? (<img src={prop.node.acf.icon} className="img-fluid" alt=""/>) : ('')}
 												   
 												   
 												</div>
@@ -351,9 +351,7 @@ export const pageQuery = graphql`
 				id
 				title
 				acf{
-					icon{
-					source_url
-				}
+					icon
 				short_description
 				
 				}

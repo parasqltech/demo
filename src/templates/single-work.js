@@ -11,7 +11,7 @@ import Randomwork from '../components/Work/Randomwork'
 class SingleWork extends Component {
   render() {
     const work = this.props.data.allWordpressWpWorks
-	console.log(work);
+	
     return (
       <Layout>
 	  <Helmet>

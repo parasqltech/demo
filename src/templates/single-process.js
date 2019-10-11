@@ -51,14 +51,14 @@ class Singleprocess extends Component {
 				<section className="breadcumbs-and-title-section">
 					 
 					<div className="container text-center">
-						
+						<span className="section-subheading-heading">Process</span>
 						
 						<h1 className="section-heading" dangerouslySetInnerHTML={{ __html: service.edges[0].node.title}} >
 						
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>
-							<li> Services</li>
+							<li> Process</li>
 						</ul>
 					</div>
 			</section>

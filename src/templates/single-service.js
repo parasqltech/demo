@@ -20,7 +20,6 @@ const settings = {
       slidesToShow: 4,
 	  autoplay: true,
 	  autoplaySpeed: 2000,
-	  
 	  mobileFirst: true,
       
     };
@@ -54,7 +53,7 @@ class Singleservice extends Component {
 					 
 					<div className="container text-center">
 						
-						
+						<span className="section-subheading-heading">Service</span>
 						<h1 className="section-heading" dangerouslySetInnerHTML={{ __html: service.edges[0].node.title}} >
 						
 						</h1>
@@ -101,7 +100,24 @@ class Singleservice extends Component {
 												</p>
 												
 												
-												
+												<Slider {...settings} className="trusted-by-slider" >
+													{
+														prop.node.acf.service_slider &&
+														prop.node.acf.service_slider.map(
+														propd => {
+															return (
+																<>
+																{(propd.slider_title != null) ? (<>
+																{(propd.slider_image != null) ? (<Link to={"services/"+propd.slider_url} ><img src={propd.slider_image.source_url} className="img-fluid" alt="" /></Link>) : ('')}
+																</>) : ('')}
+																
+																</>
+																
+																
+																)
+															}
+														)}
+												</Slider>     
 												
 												
 												
@@ -353,6 +369,14 @@ export const pageQuery = graphql`
 				acf{
 					icon
 				short_description
+				service_slider {
+            slider_title
+            slider_url
+            slider_image {
+              id
+              source_url
+            }
+          }
 				
 				}
 			}

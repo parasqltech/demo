@@ -469,6 +469,40 @@ exports.createPages = ({ actions, graphql }) => {
 	 
 	 
     })
+	.then(() => {
+      return graphql(`
+         {
+      allWordpressPost{
+        edges {
+          node {
+            id
+            slug
+			title
+			
+          }
+        }
+      }
+    }
+      `)
+    })
+	.then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+		const  allWordpressCategory  = result.data.allWordpressPost.edges
+		
+		paginate({
+			createPage,
+			items: allWordpressCategory,
+			itemsPerPage: 10,
+			pathPrefix: '/article',
+			component: path.resolve(`./src/templates/demo-page.js`),
+		  });
+	 
+	 
+    })
+	
 	
 	
 	

@@ -32,7 +32,7 @@ export const PageTemplate = ({ title, content }) => {
 					<div className="main-panel">
 						<div className="row">
 							<div className="col-lg-12">
-								<p className="label-text" dangerouslySetInnerHTML={{ __html: content }} />
+								<div className="label-text" dangerouslySetInnerHTML={{ __html: content }} />
 									
 							</div>
 						</div>

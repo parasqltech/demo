@@ -5,7 +5,7 @@ const FooterM4 = () => (
   <StaticQuery
     query={graphql`
       query {
-        allWordpressWpApiMenusMenusItems(filter: {name: {eq: "footer menu"}}){
+        allWordpressWpApiMenusMenusItems(filter: {name: {eq: "footer 4"}}){
 			edges{
 				node{
 					id
@@ -31,7 +31,7 @@ const FooterM4 = () => (
 				data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
                 prop => {
 					return (
-						<li><Link to={prop.object_slug} dangerouslySetInnerHTML={{ __html: prop.title}}></Link></li>
+						<li><Link to={"platforms/"+prop.object_slug} dangerouslySetInnerHTML={{ __html: prop.title}}></Link></li>
 					)
                 }
                 )}

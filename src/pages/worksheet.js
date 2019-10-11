@@ -38,11 +38,11 @@ class Grid extends React.Component {
 						
 						
 						<h1 className="section-heading">
-						Article
+						Worksheet
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>
-							<li> Article</li>
+							<li> Worksheet</li>
 						</ul>
 					</div>
 			</section>

@@ -277,7 +277,7 @@ $(function choosefile() {
 		  url: url,
 		  method: "POST",
 		  cache: false,
-		  data: $form.serializeObject()
+		  data: $form.serializeObject(),
 		  success: function(html){
 			alert("Im insert successfully");
 		  }

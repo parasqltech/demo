@@ -266,7 +266,7 @@ $(function choosefile() {
 				}, 2000);
 	});
 	
-	$(document).on('submit','#form', function(){
+	$(document).on('submit','#form', function(e){
 		e.preventDefault();
 		console.log("Oh look, I submitted!");
 		

@@ -264,7 +264,27 @@ $(function choosefile() {
 				$('html, body').animate({
 					scrollTop: $(".formdiv").offset().top - 110
 				}, 2000);
-			});
+	});
+	
+	$(document).on('submit','#form', function(){
+		e.preventDefault();
+		console.log("Oh look, I submitted!");
+		
+		var $form = $('form#form');
+		var url = $('#form').attr('action');
+		
+		$.ajax({
+		  url: url,
+		  method: "POST",
+		  cache: false,
+		  data: $form.serializeObject()
+		  success: function(html){
+			alert("Im insert successfully");
+		  }
+		});  
+		
+	});
+	
    
 	
 	$( document ).ready(function() {

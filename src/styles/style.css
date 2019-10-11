@@ -10025,6 +10025,16 @@ section.work-details-section-1 .breif-text span {
     }
 }
 
+.aligncenter {
+	text-align:center;
+}
+.alignright{
+	float:right;
+}
+.alignleft{
+	float:left;
+}
+
 
 
   

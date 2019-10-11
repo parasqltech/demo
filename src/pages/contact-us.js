@@ -131,7 +131,7 @@ const IndexPage = () => (
 				<div className="container">
 					<div className="main-panel">
 						<h2 className="section-heading-2 text-center mb-4"><span className=" sub-heading d-block mb-2" >Contact Us</span> How Can We Help You?</h2>
-						<form method="POST" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" >
+						<form method="POST" id="form" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" >
 							<div className="row justify-content-center">
 								<div className="col-lg-8 col-md-10">
 									 <div className="row">

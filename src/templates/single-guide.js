@@ -104,7 +104,7 @@ class Singleguide extends Component {
                                      <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value={"guide/"+blog.edges[0].node.slug} />
                                         <input type="hidden" className="form-control" name="form_name" value="Resource" />
                                         <div className="col-md-12  mb-3 text-right">
-                                        <input type="submit" className="btn-default border-0" value="Submit"/>
+                                        <button type="submit" className="btn-default border-0" value="Submit">Submit</button>
                                     </div>
                                 </div>
                             </form>

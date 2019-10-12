@@ -31,10 +31,10 @@ const Randomevent = () => (
             <div className="row">
                 <div className="col-md-12">
                     
-                        <span className="section-subheading-heading">Relevant Story</span>  
+                        <span className="section-subheading-heading">Relevant Events</span>  
                         <h2 className="section-heading text-center wow fadeIn">
                            
-                            Some other case study
+                            Event
                         </h2>
                     <div className="work-portfolio-module pt-0">
                         <div className=" home-portfolio-slider-1 ">

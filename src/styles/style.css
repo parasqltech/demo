@@ -4066,7 +4066,7 @@ section.breadcumbs-and-title-section .section-heading {
       border-radius: 4px 0px 0px 4px;
   }
   .rating-block  .rating li.r1::before{
-      width: 10%;
+      width: 20%;
       border-radius: 4px 0px 0px 4px;
   }
   .feature-label {
@@ -9561,21 +9561,7 @@ section.career-section-03 .thumbnail {
     text-align: center;
     border-radius: 4px;
 }
-.rating-block .rating li.r10::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    display: block;
-    background: green;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
-}
-.rating-block .rating li.r1::before {
-    width: 10%;
-    border-radius: 4px 0px 0px 4px;
-}
+
 section.home-event-section .work-thumbnial {
     position: relative;
     width: 100%;

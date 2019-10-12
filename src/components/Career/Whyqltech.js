@@ -40,6 +40,7 @@ const Whyqltech = () => (
                         <h2 className="section-heading ">Life at QL Tech
                             
                         </h2>
+						
 						<span className="sub-heading">Growth, purpose, and collaboration. For starters.</span>
                         <p className="label-text">
 						Learning is fun here. Check out some of our recent ventures
@@ -81,6 +82,9 @@ const Whyqltech = () => (
                             </div> 
                             
                     </div>
+					<div className="col-md-12 text-center" >
+							<Link className="btn-default" to="/event">Check out more events</Link>
+					</div>
                 </div>
                     
             </div>

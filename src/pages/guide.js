@@ -102,7 +102,7 @@ const guide = () => (
                 prop => {
 					return (
 						
-						<div className="col-md-6 col-sm-6">
+						<div className="col-md-6 col-sm-6 wow fadeInLeft">
                             <div className="grid">
                                 <div className=" guide-thumbnial">
                                     <div className="guide-image" style={{"background-image":"url("+  prop.node.acf.feature_image.source_url +")"}}>

@@ -88,7 +88,7 @@ class Grid extends React.Component {
 				category.edges.map(
                 (prop,i) => {
 					return (
-                       <div className={ "col-sm-6 "+items[i] } >
+                       <div className={ "col-sm-6 wow fadeInLeft "+items[i] } >
                         <div className="thumbnail">
                             <div className="thumbnial-image">
                                 {(prop.node.acf.feature_image) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid w-100" alt=""/>) : ('')}

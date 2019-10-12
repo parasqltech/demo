@@ -150,7 +150,7 @@ const IndexPage = () => (
 											<input type="number" minlength="10" maxlength="10" min="0" className="form-control" placeholder="" name="number" required/>
 										</div>
 										<div className="col-md-12">
-											<label className="label-text">Message</label>
+											<label className="label-text">Your Goal</label>
 											<textarea rows="3" className="form-control" placeholder="" name="message" required></textarea>
 										</div>
 										<input type="hidden" required className="form-control" name="url" value="/contact-us" />

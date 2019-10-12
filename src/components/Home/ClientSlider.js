@@ -11,6 +11,8 @@ const settings = {
       arrows : false,
       infinite: true,
       speed: 500,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
       slidesToShow: 4,
       slidesToScroll: 1,
 	    mobileFirst: true,

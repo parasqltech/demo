@@ -266,24 +266,7 @@ $(function choosefile() {
 				}, 2000);
 	});
 	
-	$(document).on('submit','#form', function(e){
-		e.preventDefault();
-		console.log("Oh look, I submitted!");
-		
-		var $form = $('form#form');
-		var url = $('#form').attr('action');
-		
-		$.ajax({
-		  url: url,
-		  method: "POST",
-		  cache: false,
-		  data: $form.serialize(),
-		  success: function(html){
-			alert("Im insert successfully");
-		  }
-		});  
-		
-	});
+	
 	
    
 	

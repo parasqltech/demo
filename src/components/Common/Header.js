@@ -43,16 +43,16 @@ const Navbar = () => (
                 </p>
                 <ul  className="social-list justify-content-end ">
                     <li>
-                        <a href="#" className="tel:+61 (0)862623559"><i className="fa fa-phone mr-2"></i><span className="d-inline d-sm-none  d-md-inline">+61 (0)862623559</span></a>
+                        <a href="tel:+61 (0)862623559" ><i className="fa fa-phone mr-2"></i><span className="d-inline d-sm-none  d-md-inline">+61 (0)862623559</span></a>
                     </li>
                      <li>
                         <a href="mailto:support@qltech.com.au"><i className="fa fa-envelope  mr-2"></i><span className="d-none d-md-inline">Send Email</span></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/QLTechAU/" className=""><i className="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/QLTechAU/" className=""><i className="fa fa-facebook"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/company/qltechau" className=""><i className="fa fa-linkedin"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/qltechau" className=""><i className="fa fa-linkedin"></i></a>
                     </li>
                    
                 </ul>

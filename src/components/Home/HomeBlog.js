@@ -7,14 +7,14 @@ import BlogAuthor from '../../img/fevicon.png';
 
 const settings = {
       dots: false,
-      infinite: false,
+      infinite: true,
       arrows : false,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 2,
 	  variableWidth: true,
 	  autoplay: true,
-	  autoplaySpeed: 4000,
+	  autoplaySpeed: 2000,
 	  cssEase: "linear",
 	  mobileFirst: true,
 	     responsive: [

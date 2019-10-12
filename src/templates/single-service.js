@@ -264,7 +264,7 @@ class Singleservice extends Component {
                     </div>
                 </div>
                 <div className="main-panel">
-                    <form method="POST" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" >
+                    <form method="POST" action="https://script.google.com/macros/s/AKfycbzL2C_5HX4tC_eCYeVnoB7mdM4Z_Urpt6mbubrLA4LSTC18g-g/exec" >
 							<div className="row justify-content-center">
 								<div className="col-lg-8 col-md-10">
 									 <div className="row">

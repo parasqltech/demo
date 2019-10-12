@@ -106,30 +106,32 @@ class SingleWork extends Component {
                                 <form method="POST" action="">
                                         <div className="bg-light p-3">
                                             <h2 className="section-heading-3 text-center "> Contact Us</h2>
-                                            <form method="POST" action="">
+                                            <form method="POST" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec">
                                                 <div className="row ">
                                                     <div className="col-md-12 mb-2">
                                                         <label className="label-text">First Name</label>
-                                                        <input type="text" className="form-control" placeholder=""/>
+                                                        <input type="text" name="first_name" className="form-control" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-2">
                                                         <label className="label-text">Last Name</label>
-                                                        <input type="text" className="form-control" placeholder=""/>
+                                                        <input type="text" className="form-control" name="last_name"  placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-2">
                                                         <label className="label-text">Email</label>
-                                                        <input type="text" className="form-control" placeholder=""/>
+                                                        <input type="text" className="form-control" name="email" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-2">
                                                         <label className="label-text">Phone Number</label>
-                                                        <input type="text" className="form-control" placeholder=""/>
+                                                        <input type="number" minlength="10" maxlength="10" min="0" className="form-control" name="number" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-3">
                                                         <label className="label-text">Your Goal</label>
-                                                        <textarea type="text"  className="form-control resize" placeholder=""></textarea>
+                                                        <textarea type="text" name="message"  className="form-control resize" placeholder=""></textarea>
                                                     </div>
+													<input type="hidden" required className="form-control" name="url" value={"work/"+work.edges[0].node.slug} />
+													<input type="hidden" required className="form-control" name="form_name" value="Work Detail Form" />
                                                     <div className="col-md-12  mb-0 ">
-                                                        <button className="btn btn-default border-0 btn-block mt-0">Submit</button>
+                                                        <button type="submit" className="btn-default border-0 btn-sub" value="Submit">Submit</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -204,6 +206,7 @@ export const pageQuery = graphql`
 			node {
 				title
 				content
+				slug
 				acf {
 			youtube_video_url		
           about_company

@@ -14,7 +14,7 @@ const settings = {
       slidesToScroll: 3,
 	  variableWidth: true,
 	  autoplay: true,
-	  autoplaySpeed: 4000,
+	  autoplaySpeed: 2000,
 	   mobileFirst: true,
 	     responsive: [
     {
@@ -62,7 +62,7 @@ const HomeWork = () => (
                           }
                         }
                       }
-                      allWordpressWpWorks(limit: 8) {
+                      allWordpressWpWorks(limit: 10) {
                         edges {
                           node {
                             id

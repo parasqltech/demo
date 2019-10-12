@@ -17,8 +17,8 @@ const TemplateWrapper = ({ children }) => (
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src={withPrefix("js/bootstrap.min.js")}></script>
 		<script src={withPrefix("js/main.js")}></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfTkf7ZJoHR9hN3KeNdpOGX9hj4XDO7sA">
-    </script>
+		
+    
 	</Helmet>
     <Header />
     <div>{children}</div>

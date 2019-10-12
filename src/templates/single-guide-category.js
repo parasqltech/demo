@@ -48,10 +48,10 @@ class Singlecategory extends Component {
                                 <Link className="nav-link " to="/hub">Feature</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to="/article">Articles</Link>
+                                    <Link className="nav-link " to="/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/guide">Guide</Link>
+                                    <Link className="nav-link active" to="/guide">Guide</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/worksheet">Worksheet</Link>

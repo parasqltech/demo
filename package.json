@@ -28,6 +28,7 @@
     "gatsby-source-wordpress": "^3.0.1",
     "gatsby-transformer-remark": "^2.1.1",
     "gatsby-transformer-sharp": "^2.1.1",
+    "gatsby-wordpress-search": "^1.0.9",
     "google-map-react": "^1.1.4",
     "isotope-layout": "^3.0.6",
     "jarallax": "^1.11.0",

@@ -124,6 +124,7 @@ class Singleservice extends Component {
 												
 												<div className="clear-fix py-4">
 													<a href="#" className="btn btn-secondary-link  float-left">Schedule a call <i className="fa fa-long-arrow-right ml-1"></i></a>
+													<a href="Javascript:;" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ql-tech/business-challenges'});return false;">Schedule a Call</a>
 												</div>
 											</div>
 										</div>

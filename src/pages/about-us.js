@@ -49,7 +49,7 @@ const AboutPage = () => (
 	<AboutFirstSection/>
 	<Whatwedo />
    
-    <section className="about-history-section timeline mb-4 pb-4" >
+   <section className="about-history-section timeline mb-4 pb-4" >
         <div className="container">
                 <span className="section-subheading-heading">Our History</span>
                 <h3 className="section-heading text-center">
@@ -168,7 +168,7 @@ const AboutPage = () => (
                                                </div>
                                            </div>
 										   
-										   
+										   <div className="col-md-6  history-block-single">
 										   
 										       <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
@@ -197,6 +197,7 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
+										   <div className="col-md-6  history-block-single">
 										       <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
                                                       
@@ -218,11 +219,13 @@ const AboutPage = () => (
                                        </div>
                                </div>
                     </div>
+                    </div>
+                    </div>
                 
                
            
 
-        
+       
     </section>
    <Team />
     <section className="about-history-section pt-0 bg-white">

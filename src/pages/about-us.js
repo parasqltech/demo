@@ -222,7 +222,7 @@ const AboutPage = () => (
                
            
 
-        </div>
+        
     </section>
    <Team />
     <section className="about-history-section pt-0 bg-white">

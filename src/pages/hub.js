@@ -7,7 +7,8 @@ import Helmet from 'react-helmet'
 import SingleArticle from '../components/hub/SingleArticle';
 import SingleGuide from '../components/hub/SingleGuide';
 import SingleWorksheet from '../components/hub/SingleWorksheet';
-import SingleSearch from '../components/hub/SingleSearch';
+import Main from '../components/Search/Main';
+
 
 
 
@@ -69,10 +70,7 @@ const kh = () => (
                             </ul>
                             <div className="search-box ">
                                 <div className="input-group">
-                                    <input type="text" className="form-control" placeholder="Search Here..."/>
-                                    <div className="input-group-append">
-                                        <button className="btn" type="button"><i className="fa fa-search"></i></button>
-                                    </div>
+                                    <Main />
                                 </div>
                             </div>
                         </div>

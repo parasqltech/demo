@@ -10021,6 +10021,31 @@ section.work-details-section-1 .breif-text span {
 	float:left;
 }
 
+.lisearch{
+	position: absolute;
+	z-index: 1;
+	background: #fff;
+	list-style: none;
+	margin-top: 45px !important;
+	border:1px solid #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+.lisearch li{
+	border-bottom:1px solid #ccc;
+	padding: 5px;
+	text-overflow: ellipsis;
+}
+
+.lisearch li a{
+  color:#707070;
+}
+.lisearch li a:hover{
+  text-decoration:none;
+}
+
+
 
 
   

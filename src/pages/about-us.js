@@ -62,115 +62,158 @@ const AboutPage = () => (
                                            <div className="col-md-6 history-block-single">
                                                <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
-                                                       <p className="h5">Title Here</p>
+                                                      
                                                        <p className="details">
-                                                            LStop tearing your hair out over seemingly analytics reports. We'll set them up for you the way.
+                                                           We opened our doors as a workflow and marketing automation agency following inbound methodology 
+
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       March
-                                                       2013
+                                                      July 2015
                                                    </div>
                                                </div>
                                            </div>
                                            <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
-                                                       <p className="h5">Title Here</p>
+                                                       
                                                        <p className="details">
-                                                            LStop tearing your hair out over seemingly analytics reports. We'll set them up for you the way.
+                                                           Proudly became Google partners & Hubspot Inbound Certified 
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       March
-                                                       2013
+                                                      Dec 2015 
                                                    </div>
                                                </div>
                                            </div>
                                             <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
-                                                       <p className="h5">Title Here</p>
+                                                       
                                                        <p className="details">
-                                                            LStop tearing your hair out over seemingly analytics reports. We'll set them up for you the way.
+                                                            Identified our buyer personas and shifted our business model  from project-based work to retainer clients
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       March
-                                                       2013
+                                                      July 2016
                                                    </div>
                                                </div>
                                            </div>
                                             <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
-                                                       <p className="h5">Title Here</p>
+                                                       
                                                        <p className="details">
-                                                            LStop tearing your hair out over seemingly analytics reports. We'll set them up for you the way.
+                                                            Keap / Infusionsoft Partners
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       March
-                                                       2013
+                                                      Dec 2016 
                                                    </div>
                                                </div>
                                            </div>
                                             <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
-                                                       <p className="h5">Title Here</p>
+                                                       
                                                        <p className="details">
-                                                            LStop tearing your hair out over seemingly analytics reports. We'll set them up for you the way.
+                                                           We pivoted to re-defined our fundamental core value. As a Customer-Centric agency with Framework-based approach in the form of SOSTAC
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       March
-                                                       2013
+                                                       July 2017
+
                                                    </div>
                                                </div>
                                            </div>
                                             <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
-                                                       <p className="h5">Title Here</p>
+                                                     
                                                        <p className="details">
-                                                            LStop tearing your hair out over seemingly analytics reports. We'll set them up for you the way.
+                                                            As the organisation grew we shifted to a larger facility. 
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       March
-                                                       2013
+                                                       Sep 2017
+
                                                    </div>
                                                </div>
                                            </div>
                                             <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
-                                                       <p className="h5">Title Here</p>
+                                                      
                                                        <p className="details">
-                                                            LStop tearing your hair out over seemingly analytics reports. We'll set them up for you the way.
+                                                            We pivoted again and went deeper into our core value - A Customer-Centric Organisation driven with Systems thinking. This along with SOSTAC helped us in Identifying business Challenges. Which in return provided the uptick in revenue and efficiency for our customers. 
+
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       March
-                                                       2013
+                                                       July 2018 
                                                    </div>
                                                </div>
                                            </div>
                                             <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
-                                                       <p className="h5">Title Here</p>
+                                                       
                                                        <p className="details">
-                                                            LStop tearing your hair out over seemingly analytics reports. We'll set them up for you the way.
+                                                           Went on to become Keap certified Preferred service partner APAC 
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       March
-                                                       2013
+                                                       Dec 2018
                                                    </div>
                                                </div>
                                            </div>
+										   
+										   
+										   
+										       <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                      
+                                                       <p className="details">
+                                                           As we were solving bigger problems, alignment across various teams was necessary. True to our nature we adapted into an operational framework to synergise various teams and individuals. Adoption of OKR’s
+
+
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       July 2019 
+                                                   </div>
+                                               </div>
+                                           </div>
+                                            <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                           ZOHO Authorised Partners
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       Jan 2019
+                                                   </div>
+                                               </div>
+                                           </div>
+										       <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                      
+                                                       <p className="details">
+                                                           Cannot wait to solve the challenges this year brings 
+
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                      July 2020 
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           
+										   
+										   
+										   
                                           
                                        </div>
                                </div>

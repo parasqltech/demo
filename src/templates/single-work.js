@@ -121,7 +121,7 @@ class SingleWork extends Component {
                                                         <input type="text" className="form-control" name="email" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-2">
-                                                        <label className="label-text">Phone Number</label>
+                                                        <label className="label-text">Contact Number</label>
                                                         <input type="number" minlength="10" maxlength="10" min="0" className="form-control" name="number" placeholder=""/>
                                                     </div>
                                                     <div className="col-md-12 mb-3">

@@ -51,11 +51,11 @@ class demopage extends Component {
 						
 						
 						<h1 className="section-heading">
-						Article
+						Articles
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>
-							<li> Article</li>
+							<li> Articles</li>
 						</ul>
 					</div>
 			</section>

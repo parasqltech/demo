@@ -84,7 +84,7 @@ const Navbar = () => (
 						<div key={i} >
 						{(prop.wordpress_children ? (
 						
-							<div>
+							<>
 								{(prop.object_slug == 'services' ? (
 									<li className="nav-item dropdown position-static">
 									<a className="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
@@ -97,20 +97,20 @@ const Navbar = () => (
                                </li>
                                <li className="other-menu border-right">
                                    <span className="services-heading ">Industries</span>
-                                   <span className="services-description">Discover how we're helping transform myriad industries to win tomorrow’s customer.</span>
+                                   <span className="services-description mb-2">Discover how we're helping transform myriad industries to win tomorrow’s customer.</span>
                                    <IndustriesHeader />
                                </li>
                                <li className="other-menu">
                                    <span className="services-heading ">Platforms</span>
-                                   <span className="services-description">Explore possibilities or get the most from your technology investments</span>
+                                   <span className="services-description mb-2">Explore possibilities or get the most from your technology investments</span>
 									<PlatformHeader />
                                </li>
                            </ul>
                        </li>
 								
 								):(
-								<div>
-									{(prop.object_slug == 'process' ? (<li className="nav-item dropdown position-static">
+								<>
+									{(prop.object_slug == 'process' ? (<li className="nav-item dropdown position-static processMenu">
                            <a className="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
                                data-toggle="dropdown">
                                Process
@@ -129,14 +129,14 @@ const Navbar = () => (
 								return (<li key={i} ><Link className="dropdown-item"   to={child.object_slug}>{child.title}</Link></li> )
 							  })}</ul></li>))}	
 								
-								</div>
+								</>
 								
 								
 								
 								
 								
 								))}
-							</div>
+							</>
 						
 							) : (<li className="nav-item">
 							<Link className="nav-link" key={prop.id} to={prop.object_slug} >

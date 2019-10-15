@@ -4287,7 +4287,7 @@ header .dropdown-menu {
     overflow: hidden;
     transition: all .25s;
     box-shadow: 1px 1px 15px rgba(0,0,0,.15);
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     background: #fff;
 }
 
@@ -4301,6 +4301,7 @@ header .dropdown:hover .dropdown-menu {
     height: auto;
     margin-top: 0px;
     transition: all .50s;
+    border: 1px solid #ddd;
 }
 
 header .dropdown .dropdown-toggle::before {
@@ -4341,7 +4342,6 @@ header .dropdown-menu .dropdown-item {
 header .dropdown-menu li {
     width: 100%;
 }
-
 header .dropdown-menu .services-heading {
     font-size: 16px;
     color: #333;
@@ -4413,6 +4413,13 @@ header .dropdown-menu .other-menu{
     width: calc( 25% - 4px);
     padding: 10px 10px 10px 20px;
     display: inline-block;
+    min-height: 399px;
+}
+header  .processMenu ul li{
+    border-right: 1px solid #eee;
+}
+header  .processMenu ul li:last-child{
+    border-right: none;
 }
 .sub-header {
     position: sticky;
@@ -7421,7 +7428,9 @@ section.thank-you-section .social-menu li span{
     section.home-services-section .inner-container .service-block-two:nth-child(4) {
         margin-top: -10px;
     }
-  
+    header .dropdown-menu .other-menu{
+        min-height: 457px;
+    }
 }
 
 @media all and (max-width:991px) and (min-width:768px) {
@@ -7752,6 +7761,13 @@ section.thank-you-section .social-menu li span{
     section.home-section-1 {
         padding-bottom: 60px;
     }
+    header .dropdown-menu .other-menu{
+        min-height: auto;
+        border-right:none !important;
+    }
+    header  .processMenu ul li:nth-child(2){
+        border-right: none;
+    }
 }
 
 @media all and (max-width:767px) {
@@ -7980,7 +7996,7 @@ section.thank-you-section .social-menu li span{
     }
     header .navbar-nav {
         overflow-y: scroll;
-        height: 500px;
+        height: 600px;
     }
     header .dropdown-menu .service-menu.service-menu-full li {
         width: 100%;
@@ -8558,6 +8574,24 @@ section.thank-you-section .social-menu li span{
 section.breadcumbs-and-title-section .section-heading {
     font-size: 30px;
     margin-bottom: 10px;
+}
+section.home-work-section .work-thumbnial{
+    max-width: 300px;
+}
+section.about-history-section {
+    margin-bottom: 0px !important;
+}
+section.about-history-section .history-block {
+    padding: 30px 15px 0px;
+}
+section.about-us-section-4 {
+    padding-bottom: 0px;
+}
+section.work-section-1 {
+    padding: 30px 0px 0px;
+}
+header  .processMenu ul li{
+    border-right: none;
 }
 }
 @media all and (max-width:576px) {

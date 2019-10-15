@@ -37,12 +37,12 @@ const Whyqltech = () => (
            <div className="main-panel">
                <div className="row justify-content-center text-center">
                     <div className="col-md-10 mt-4">
-                        <h2 className="section-heading ">Life at QL Tech
+                        <h2 className="section-heading mb-0 pb-0">Life at QL Tech
                             
                         </h2>
 						
-						<span className="sub-heading">Growth, purpose, and collaboration. For starters.</span>
-                        <p className="label-text">
+						<span className="sub-heading  pb-4 mb-4">Growth, purpose, and collaboration. For starters.</span>
+                        <p className="label-text mt-1">
 						Learning is fun here. Check out some of our recent ventures
 
                         </p> 

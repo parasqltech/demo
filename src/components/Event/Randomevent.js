@@ -34,7 +34,7 @@ const Randomevent = () => (
                         <span className="section-subheading-heading">Relevant Events</span>  
                         <h2 className="section-heading text-center wow fadeIn">
                            
-                            Event
+                            Events
                         </h2>
                     <div className="work-portfolio-module pt-0">
                         <div className=" home-portfolio-slider-1 ">

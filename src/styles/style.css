@@ -5318,8 +5318,8 @@ section.home-process-section .process-block.one .inner-box .icon-box:first-child
 section.home-process-section .process-block-two.two .inner-box .icon-box::before {
     position: absolute;
     content: '';
-    left: 0px;
-    top: 0px;
+    left: -9px;
+    top: -2px;
     right: 0px;
     bottom: 0px;
     background: url(../img/process-bg.png) no-repeat;

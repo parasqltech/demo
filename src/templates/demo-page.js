@@ -14,7 +14,7 @@ import 'moment-timezone';
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import Helmet from 'react-helmet'
 import author from '../img/fevicon.png';
-
+import Main from '../components/Search/Main';
 const settings = {
       dots: false,
 	  prevArrow: false,
@@ -83,10 +83,7 @@ class demopage extends Component {
                             </ul>
                             <div className="search-box ">
                                 <div className="input-group">
-                                    <input type="text" className="form-control" placeholder="Search Here..."/>
-                                    <div className="input-group-append">
-                                        <button className="btn" type="button"><i className="fa fa-search"></i></button>
-                                    </div>
+                                   <Main />
                                 </div>
                             </div>
                         </div>

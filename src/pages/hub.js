@@ -7,7 +7,7 @@ import Helmet from 'react-helmet'
 import SingleArticle from '../components/hub/SingleArticle';
 import SingleGuide from '../components/hub/SingleGuide';
 import SingleWorksheet from '../components/hub/SingleWorksheet';
-import Main from '../components/Search/Main';
+
 
 
 
@@ -68,11 +68,7 @@ const kh = () => (
                                     <Link className="nav-link" to="/worksheet">Worksheet</Link>
                                 </li>
                             </ul>
-                            <div className="search-box ">
-                                <div className="input-group">
-                                    <Main />
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

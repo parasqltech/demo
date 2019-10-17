@@ -10061,7 +10061,7 @@ section.work-details-section-1 .breif-text span {
 
 .lisearch{
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	background: #fff;
 	list-style: none;
 	margin-top: 45px !important;

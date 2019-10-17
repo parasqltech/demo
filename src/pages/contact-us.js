@@ -4,6 +4,7 @@ import Particles from 'react-particles-js';
 import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
 
+
 const IndexPage = () => (
 	<Layout>
 		<Helmet>
@@ -129,21 +130,21 @@ const IndexPage = () => (
 				<div className="container">
 					<div className="main-panel">
 						<h2 className="section-heading-2 text-center mb-4"><span className=" sub-heading d-block mb-2" >Contact Us</span> How Can We Help You?</h2>
-						<form method="POST" id="form" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" >
+						<form method="POST" id="form" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" data-parsley-validate >
 							<div className="row justify-content-center">
 								<div className="col-lg-8 col-md-10">
 									 <div className="row">
 										<div className="col-md-6 mb-4">
 											<label className="label-text">First Name</label>
-											<input type="text" className="form-control" placeholder="" name="first_name" required/>
+											<input type="text" className="form-control" placeholder="" data-parsley-trigger="change" name="first_name" required/>
 										</div>
 										<div className="col-md-6 mb-4">
 											<label className="label-text">Last Name</label>
-											<input type="text" className="form-control" placeholder="" name="last_name" required/>
+											<input type="text" className="form-control" placeholder="" data-parsley-trigger="change" name="last_name" required/>
 										</div>
 										<div className="col-md-12 mb-4">
 											<label className="label-text">Email</label>
-											<input type="email" className="form-control" placeholder="" name="email" required/>
+											<input type="email" className="form-control" placeholder="" name="email" data-parsley-trigger="change" required/>
 										</div>
 										<div className="col-md-12 mb-4">
 											<label className="label-text">Contact Number</label>

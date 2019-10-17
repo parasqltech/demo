@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import blog_thumb from '../img/blog/blog-thubnial-1.jpg';
 import Helmet from 'react-helmet'
 import author from '../img/fevicon.png';
-
+import Main from '../components/Worksheet/Main';
 
 class Grid extends React.Component {
 	constructor(props) {
@@ -68,10 +68,7 @@ class Grid extends React.Component {
                             </ul>
                             <div className="search-box ">
                                 <div className="input-group">
-                                    <input type="text" className="form-control" placeholder="Search Here..."/>
-                                    <div className="input-group-append">
-                                        <button className="btn" type="button"><i className="fa fa-search"></i></button>
-                                    </div>
+                                    <Main />
                                 </div>
                             </div>
                         </div>

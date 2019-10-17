@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import Particles from 'react-particles-js';
 import event_thumb from '../img/events/event-thumbnial.jpg';
 import Helmet from 'react-helmet'
-
+import Main from '../components/Guide/Main';
 const guide = () => (
   <StaticQuery
     query={graphql`
@@ -80,10 +80,7 @@ const guide = () => (
                             </ul>
                             <div className="search-box ">
                                 <div className="input-group">
-                                    <input type="text" className="form-control" placeholder="Search Here..."/>
-                                    <div className="input-group-append">
-                                        <button className="btn" type="button"><i className="fa fa-search"></i></button>
-                                    </div>
+                                    <Main />
                                 </div>
                             </div>
                         </div>

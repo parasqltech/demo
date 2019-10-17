@@ -95,9 +95,9 @@ module.exports = {
     resolve: `gatsby-plugin-nprogress`,
     options: {
       // Setting a color is optional.
-      color: `tomato`,
+      color: "#75d3ff",
       // Disable the loading spinner.
-      showSpinner: false,
+      showSpinner: true,
     },
   },
     'gatsby-plugin-netlify', // make sure to keep it last in the array

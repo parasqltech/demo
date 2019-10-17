@@ -42,7 +42,7 @@ const Whyqltech = () => (
                         </h2>
 						
 						<span className="sub-heading  pb-4 mb-4">Growth, purpose, and collaboration. For starters.</span>
-                        <p className="label-text mt-1">
+                        <p className="section-heading-2 mt-4 d-block pt-2">
 						Learning is fun here. Check out some of our recent ventures
 
                         </p> 

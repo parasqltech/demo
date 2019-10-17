@@ -108,7 +108,7 @@ class Singleservice extends Component {
 															return (
 																<>
 																{(propd.slider_title != null) ? (<>
-																{(propd.slider_image != null) ? (<Link to={"services/"+propd.slider_url} ><img src={propd.slider_image.source_url} className="img-fluid" alt="" /></Link>) : ('')}
+																{(propd.slider_image != null) ? (<Link to={"services/"+propd.slider_url}  title={propd.slider_title}><img src={propd.slider_image.source_url} className="img-fluid" alt="" /></Link>) : ('')}
 																</>) : ('')}
 																
 																</>

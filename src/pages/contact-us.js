@@ -2,6 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import Particles from 'react-particles-js';
 import Layout from '../components/Layout'
+import Contact from '../components/Contact/Contact'
+import expert from '../img/expert.png';
+import career from '../img/career-b.png';
 import Helmet from 'react-helmet'
 
 
@@ -44,7 +47,8 @@ const IndexPage = () => (
 						<div className="card text-center">
 							<div className="card-body">
 								<span className="card-icon   ">
-									<i className="fa fa-phone"></i>
+									
+									<img src={expert} className="img-fluid" />
 								</span>
 								<h6 className="card-title  mb-4">Talk to our experts</h6>
 								<p className="label-text mb-4">Need assistance? You are just an e-mail away. Drop a line at  
@@ -72,7 +76,8 @@ const IndexPage = () => (
 							<div className="card text-center pb-4">
 								<div className="card-body">
 									<span className="card-icon   ">
-										<i className="fa fa-comments"></i>
+										<img src={career} className="img-fluid" />
+										
 									</span>
 									<h6 className="card-title  mb-4">Career</h6>
 									<p className="label-text  mb-4">Ready to take on the challenge?  </p>
@@ -130,41 +135,7 @@ const IndexPage = () => (
 				<div className="container">
 					<div className="main-panel">
 						<h2 className="section-heading-2 text-center mb-4"><span className=" sub-heading d-block mb-2" >Contact Us</span> How Can We Help You?</h2>
-						<form method="POST" id="form" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec" data-parsley-validate >
-							<div className="row justify-content-center">
-								<div className="col-lg-8 col-md-10">
-									 <div className="row">
-										<div className="col-md-6 mb-4">
-											<label className="label-text">First Name</label>
-											<input type="text" className="form-control" placeholder="" data-parsley-trigger="change" name="first_name" required/>
-										</div>
-										<div className="col-md-6 mb-4">
-											<label className="label-text">Last Name</label>
-											<input type="text" className="form-control" placeholder="" data-parsley-trigger="change" name="last_name" required/>
-										</div>
-										<div className="col-md-12 mb-4">
-											<label className="label-text">Email</label>
-											<input type="email" className="form-control" placeholder="" name="email" data-parsley-trigger="change" required/>
-										</div>
-										<div className="col-md-12 mb-4">
-											<label className="label-text">Contact Number</label>
-											<input type="number" minlength="10" maxlength="10" min="0" className="form-control" placeholder="" name="number" required/>
-										</div>
-										<div className="col-md-12">
-											<label className="label-text">Your Goal</label>
-											<textarea rows="3" className="form-control" placeholder="" name="message" required></textarea>
-										</div>
-										<input type="hidden" required className="form-control" name="url" value="/contact-us" />
-										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
-										<div className="col-md-12  mb-4 ">
-										<button type="submit" className="btn-default border-0 btn-sub" value="Submit">Submit</button>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						   
-						</form>
+						<Contact />
 					</div>
 				</div>
 		</section>

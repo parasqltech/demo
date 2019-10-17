@@ -4,6 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link, StaticQuery, graphql } from 'gatsby'
 import BlogAuthor from '../../img/fevicon.png';
+import qlimg from '../../img/Thumbnail-4.png';
+import other from '../../img/Thumbnail-3-01.png';
+
+
 
 const settings = {
       dots: false,
@@ -108,7 +112,12 @@ const HomeBlog = () => (
                                     </div>
                                     <div className="thumbnial-footer">
                                         <div className="author pull-left">
-                                            <div className="image"><img src={BlogAuthor} alt=""/></div>
+                                            <div className="image">
+											
+											
+											{(prop.node.acf.posted_by == "QL Tech") ? (<img src={qlimg} className="img-fluid" alt=""/>) : (<img src={other} className="img-fluid" alt=""/>)}
+											
+											</div>
                                             by {prop.node.acf.posted_by}
                                         </div>
                                         <div className="social-links pull-right">

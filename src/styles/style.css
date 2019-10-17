@@ -6265,7 +6265,7 @@ section.about-us-section-3 .thumbnial {
     transition: 0.5s;
     margin-bottom: 15px;
     border-radius: 12px;
-    min-height: 320px;
+    min-height: 347px;
 }
 
 section.about-us-section-3 .thumbnial-bg {
@@ -6457,6 +6457,10 @@ section.about-history-section .history-block .thumbnial {
     border: 1px solid #e8e8e8;
     border-radius: 4px 0px 4px 4px;
     width: calc(100% - 40px);
+	margin-bottom: 15px;
+}
+section.about-history-section .history-block .thumbnial .details{
+   margin-bottom:0px;
 
 }
 
@@ -8885,9 +8889,13 @@ section.breadcumbs-and-title-section .breadcrumbs li {
 }
 .trusted-by-slider .slick-slide img {
     filter: grayscale();
+	
 }
 .trusted-by-slider .slick-slide img:hover{
     filter: unset;
+}
+section.service-section-1 .trusted-by-slider .slick-slide img {
+	transform:scale(0.9);
 }
 
 
@@ -9025,7 +9033,7 @@ section.service-section-1 .sub-service .thumbnial-icon{
     background-color: #21a6df;
     color:#fff;
     border-radius: 6px;
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 
@@ -10083,7 +10091,9 @@ section.work-details-section-1 .breif-text span {
   text-decoration:none;
 }
 
-
+.srv-validation-message{
+	color:red;
+}
 
 
   

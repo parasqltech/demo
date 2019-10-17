@@ -15,6 +15,8 @@ import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import Helmet from 'react-helmet'
 import author from '../img/fevicon.png';
 import Main from '../components/Search/Main';
+import qlimg from '../img/Thumbnail-4.png';
+import other from '../img/Thumbnail-3-01.png';
 const settings = {
       dots: false,
 	  prevArrow: false,
@@ -119,7 +121,9 @@ class demopage extends Component {
                                             </div>
                                             <div className="thumbnial-footer">
                                                 <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
+                                                    <div className="image">
+													{(prop.node.acf.posted_by == "QL Tech") ? (<img src={qlimg} className="img-fluid" alt=""/>) : (<img src={other} className="img-fluid" alt=""/>)}
+													</div>
                                                     By <b>{prop.node.acf.posted_by}</b>  
                                                 </div>
                                                 <div className="social-links pull-right">

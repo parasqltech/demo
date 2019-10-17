@@ -95,7 +95,10 @@ class Singleguide extends Component {
                                     </div>
                                     <div className="col-md-12 mb-3">
                                         <label className="label-text">Which CRM do you currently use?<sup>*</sup></label>
-                                        <input type="text" name="crm" required="" className="form-control" placeholder=""/>
+                                       
+										<select name="crm" id="input_5_7" className="form-control" required><option value="" selected="selected" className="gf_placeholder">Please select one</option><option value="Hubspot">Hubspot</option><option value="Infusionsoft">Infusionsoft</option><option value="Salesforce Pardot">Salesforce Pardot</option><option value="ZOHO">ZOHO</option><option value="Marketo">Marketo</option><option value="Leadsquared">Leadsquared</option><option value="Ontraport">Ontraport</option><option value="Do not currently use a CRM">Do not currently use a CRM</option><option value="Other">Other</option></select>
+										
+										
                                     </div>
                                     <div className="col-md-12 ">
                                         <label className="label-text">Your Goal</label>

@@ -95,7 +95,7 @@ module.exports = {
     resolve: `gatsby-plugin-nprogress`,
     options: {
       // Setting a color is optional.
-      color: "#75d3ff",
+      color: "#1d73bd",
       // Disable the loading spinner.
       showSpinner: true,
     },

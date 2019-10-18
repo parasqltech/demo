@@ -3,6 +3,7 @@ import { graphql,Link } from "gatsby"
 import PropTypes from "prop-types"
 import Layout from '../components/Layout'
 import Lightbox from '../components/Lightbox'
+import ContactWorksheet from '../components/Contact/ContactWorksheet'
 import Particles from 'react-particles-js';
 import about from '../img/about-us.png';
 import quote from  "../img/quote.png"
@@ -75,39 +76,10 @@ class Singleworksheet extends Component {
 							<div className="sidebar bg-light">
                             <div className="sidebar-widget">
                                 <p className="section-heading-2 text-center">Download now</p>
-                                 <form method="POST" className="gform form-section" action="https://script.google.com/macros/s/AKfycbzL2C_5HX4tC_eCYeVnoB7mdM4Z_Urpt6mbubrLA4LSTC18g-g/exec" >
-                                 <div className="row">
-                                    <div className="col-md-6 mb-3">
-                                        <label className="label-text">First Name<sup>*</sup></label>
-                                        <input type="text" name="first_name" required="" className="form-control" placeholder=""/>
-                                    </div>
-                                    <div className="col-md-6 mb-3">
-                                            <label className="label-text">Last Name<sup>*</sup></label>
-                                        <input type="text" name="last_name" required="" className="form-control" placeholder=""/>
-                                    </div>
-                                    <div className="col-md-12 mb-3">
-                                        <label className="label-text">Email<sup>*</sup></label>
-                                        <input type="email" name="email" required="" className="form-control" placeholder=""/>
-                                    </div>
-                                    <div className="col-md-12 mb-3">
-                                        <label className="label-text">Phone Number<sup>*</sup></label>
-                                        <input type="number" name="number" required="" className="form-control" placeholder=""/>
-                                    </div>
-                                    <div className="col-md-12 mb-3">
-                                        <label className="label-text">Which CRM do you currently use?<sup>*</sup></label>
-                                       <select name="crm" id="input_5_7" className="form-control" required><option value="" selected="selected" className="gf_placeholder">Please select one</option><option value="Hubspot">Hubspot</option><option value="Infusionsoft">Infusionsoft</option><option value="Salesforce Pardot">Salesforce Pardot</option><option value="ZOHO">ZOHO</option><option value="Marketo">Marketo</option><option value="Leadsquared">Leadsquared</option><option value="Ontraport">Ontraport</option><option value="Do not currently use a CRM">Do not currently use a CRM</option><option value="Other">Other</option></select>
-                                    </div>
-                                    <div className="col-md-12 ">
-                                        <label className="label-text">Your Goal</label>
-                                        <textarea rows="4" name="message" required="" className="form-control" placeholder=""></textarea>
-                                    </div>
-                                     <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value={"worksheet/"+blog.edges[0].node.slug} />
-                                        <input type="hidden" className="form-control" name="form_name" value="Resource" />
-                                        <div className="col-md-12  mb-3 text-right">
-                                        <button type="submit" className="btn-default border-0" value="Submit">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
+                                 
+								 <ContactWorksheet url={"worksheet/"+blog.edges[0].node.slug} />
+								 
+								 
                             </div>
                            
                         </div>

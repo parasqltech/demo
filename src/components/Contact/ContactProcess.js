@@ -1,7 +1,7 @@
 import React from "react"
 import SimpleReactValidator from 'simple-react-validator';
 
-class Contact extends React.Component{
+class ContactProcess extends React.Component{
 	
 	constructor(props) {
 		super(props);
@@ -21,6 +21,9 @@ class Contact extends React.Component{
 	  this.email = this.email.bind(this);
 	  this.number = this.number.bind(this);
 	  this.goal = this.goal.bind(this);
+	  
+	
+	  
 	}
 	
 	setTitle(e) {
@@ -94,7 +97,7 @@ class Contact extends React.Component{
 											<label className="label-text">Your Goal</label>
 											<textarea rows="3" onChange={this.goal} className="form-control" placeholder="" name="message" required>{this.state.goal}</textarea>
 										</div>
-										<input type="hidden" required className="form-control" name="url" value="/contact-us" />
+										<input type="hidden" required className="form-control" name="url" value={this.props.url} />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
 										<div className="col-md-12  mb-4 ">
 										<button type="button" onClick={this.submitForm} className="btn-default border-0 btn-sub" value="Submit">Submit</button>
@@ -110,4 +113,4 @@ class Contact extends React.Component{
   }
 }
 
-export default Contact
+export default ContactProcess

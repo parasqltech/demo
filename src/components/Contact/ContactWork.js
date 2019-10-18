@@ -1,7 +1,7 @@
 import React from "react"
 import SimpleReactValidator from 'simple-react-validator';
 
-class Contact extends React.Component{
+class ContactWork extends React.Component{
 	
 	constructor(props) {
 		super(props);
@@ -68,33 +68,33 @@ class Contact extends React.Component{
       <>
       <form method="POST" id="form" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec"  >
 							<div className="row justify-content-center">
-								<div className="col-lg-8 col-md-10">
+								<div className="">
 									 <div className="row">
-										<div className="col-md-6 mb-4">
+										<div className="col-md-12 mb-2">
 											<label className="label-text">First Name</label>
 											<input type="text" className="form-control" placeholder=""  name="first_name" value={this.state.first_name} onChange={this.setTitle}  required/>
 											{this.validator.message('First Name', this.state.first_name, 'required|alpha')}
 										</div>
-										<div className="col-md-6 mb-4">
+										<div className="col-md-12 mb-2">
 											<label className="label-text">Last Name</label>
 											<input type="text" className="form-control" placeholder=""  name="last_name" value={this.state.last_name} onChange={this.setln} required/>
 											{this.validator.message('Last Name', this.state.last_name, 'required|alpha')}
 										</div>
-										<div className="col-md-12 mb-4">
+										<div className="col-md-12 mb-2">
 											<label className="label-text">Email</label>
 											<input type="email" className="form-control" value={this.state.email} onChange={this.email} placeholder="" name="email" required/>
 											{this.validator.message('Email', this.state.email, 'required|email')}
 										</div>
-										<div className="col-md-12 mb-4">
+										<div className="col-md-12 mb-2">
 											<label className="label-text">Contact Number</label>
 											<input type="text"  value={this.state.number} onChange={this.number} className="form-control" placeholder="" name="number" required/>
 											{this.validator.message('Contact Number', this.state.number, 'required|numeric|min:10|max:10')}
 										</div>
-										<div className="col-md-12">
+										<div className="col-md-12 mb-2">
 											<label className="label-text">Your Goal</label>
 											<textarea rows="3" onChange={this.goal} className="form-control" placeholder="" name="message" required>{this.state.goal}</textarea>
 										</div>
-										<input type="hidden" required className="form-control" name="url" value="/contact-us" />
+										<input type="hidden" required className="form-control" name="url" value={this.props.url} />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
 										<div className="col-md-12  mb-4 ">
 										<button type="button" onClick={this.submitForm} className="btn-default border-0 btn-sub" value="Submit">Submit</button>
@@ -110,4 +110,4 @@ class Contact extends React.Component{
   }
 }
 
-export default Contact
+export default ContactWork

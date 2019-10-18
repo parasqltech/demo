@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Helmet from 'react-helmet'
+import ContactProcess from '../components/Contact/ContactProcess'
 
 const settings = {
       dots: false,
@@ -93,41 +94,7 @@ class Singleprocess extends Component {
                     </div>
                 </div>
                 <div className="main-panel">
-                   <form method="POST" action="https://script.google.com/macros/s/AKfycbzL2C_5HX4tC_eCYeVnoB7mdM4Z_Urpt6mbubrLA4LSTC18g-g/exec" >
-							<div className="row justify-content-center">
-								<div className="col-lg-8 col-md-10">
-									 <div className="row">
-										<div className="col-md-6 mb-4">
-											<label className="label-text">First Name</label>
-											<input type="text" className="form-control"  name="first_name" required/>
-										</div>
-										<div className="col-md-6 mb-4">
-											<label className="label-text">Last Name</label>
-											<input type="text" className="form-control"  name="last_name" required/>
-										</div>
-										<div className="col-md-12 mb-4">
-											<label className="label-text">Email</label>
-											<input type="email" className="form-control"  name="email" required/>
-										</div>
-										<div className="col-md-12 mb-4">
-											<label className="label-text">Contact Number</label>
-											<input type="number" className="form-control"  name="number" required/>
-										</div>
-										<div className="col-md-12">
-											<label className="label-text">Your Goal</label>
-											<textarea rows="3" className="form-control"  name="message" required></textarea>
-										</div>
-										<input type="hidden" required className="form-control" name="url" value={service.edges[0].node.slug} />
-										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
-										<div className="col-md-12  mb-4 ">
-										<button type="submit" className="btn-default border-0" value="Submit">Submit</button>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						   
-						</form>
+                  <ContactProcess url={service.edges[0].node.slug} />
                 </div>
             </div>
     </section>

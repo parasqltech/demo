@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
+import ContactCareer from '../Contact/ContactCareer'
+
+
 const JobPost = () => (
   <StaticQuery
     query={graphql`
@@ -95,69 +98,7 @@ const JobPost = () => (
                                 <div className=" col-lg-10">
                                     <div className="p-3 formdiv"  >
                                         <h2 className="section-heading-2 d-block text-center">Are you Ready?</h2>
-                                        <form method="post" action="https://script.google.com/macros/s/AKfycbwcE57k_MU__-34meqARCcZLmpXf0TDZr51E4_S0WsyGZ54g4uj/exec" enctype="multipart/form-data">
-                                            <div className="row ">
-                                                <div className="col-md-6 mb-4">
-                                            <label className="label-text">First Name</label>
-                                            <input type="text" className="form-control" placeholder="" name="first_name" required/>
-                                        </div>
-                                        <div className="col-md-6 mb-4">
-                                            <label className="label-text">Last Name</label>
-                                            <input type="text" className="form-control" placeholder="" name="last_name" required/>
-                                        </div>
-                                                <div className="col-md-12 mb-3">
-                                                    <label className="label-text">Email</label>
-                                                    <input type="email" name="email" required="" className="form-control" placeholder="" required />
-                                                </div>
-                                                <div className="col-md-12 mb-3">
-                                                    <label className="label-text">Select Position</label>
-                                                    <select className="form-control" name="position" required>
-                                                        <option value="">Please Select</option>
-                                                        <option value="Jr. PHP Developer">Jr. PHP Developer</option>
-                                                        <option value="UI/UX Designer">UI/UX Designer</option>
-                                                        <option value="HR Executive">HR Executive</option>
-                                                        <option value="SEO Executive">SEO Executive</option>
-                                                        <option value="Sr. Magento Developer">Sr. Magento Developer</option>
-                                                        <option value="Content Writer">Content Writer</option>
-                                                        <option value="Graphic Designer">Graphic Designer</option>
-                                                        <option value="Junior WordPress Developer">Junior WordPress Developer</option>
-                                                        <option value="Jr. iOS Developer">Jr. iOS Developer</option>
-                                                        <option value="Sr. Android Developer">Sr. Android Developer</option>
-                                                        <option value="Programmer / Developer">Programmer / Developer</option>
-                                                        <option value="Customer Service Representative">Customer Service Representative</option>
-                                                        <option value="Strategic Account Manager">Strategic Account Manager</option>
-                                                    </select>
-                                                </div>
-                                                <div className="col-md-12">
-                                                    <div className="row">
-                                                        <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
-                                                            <label className="label-text">Current CTC</label>
-                                                            <input type="number" name="CCTC" required className="form-control" placeholder=""/>
-                                                        </div>
-                                                        <div className="col-xl-6 col-lg-12 col-md-6  col-sm-6 mb-4">
-                                                            <label className="label-text">Expected CTC</label>
-                                                            <input type="number" name="ECTC" required className="form-control" placeholder=""/>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-12  mb-0">
-                                                    <label className="label-text">Resume Upload</label>
-                                                    <div className="input-group ">
-                                                        <input type="text"  className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
-                                                                                                                <label className="input-group-btn">
-                                                            <span className="btn btn-outline-secondary">
-                                                                Browse<input type="file" className="d-none" required multiple="" name="resume"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value="/career" />
-                                        <input type="hidden" className="form-control" name="form_name" value="Career" />
-                                                <div className="col-md-12  mb-3 ">
-                                                    <button type="submit" className="btn-default border-0" value="Submit">Submit</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                        <ContactCareer />
                                     </div>
                                 </div>
                         </div>

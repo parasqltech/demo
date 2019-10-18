@@ -8,11 +8,11 @@ const thankyou = () => (
 	 
     <section className="thank-you-section">
         <div className="container">
-            <div className="main-panel text-center">
+            <div className="pt-2 text-center">
                 <div className="row justify-content-center">
-                    <div className="col-md-6">
+                    <div className="col-md-5">
                         <img src={thankyouimg} className="img-fluid text-center" alt=""/>
-                        <h1 className="section-heading text-subheading font-weight-bold mt-4 mb-0"> Thank You</h1>
+                        <h1 className="section-heading text-subheading font-weight-bold mt-0 mb-0"> Thank You</h1>
                         <p className="section-heading-3 text-subheading mt-0"> for reaching out to us</p>
                     </div>
                 </div>

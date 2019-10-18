@@ -95,7 +95,7 @@ class SingleWork extends Component {
                         </div>
                         
                         <div className="col-xl-3 col-lg-4">
-                            <h5 className="section-heading-3">About us</h5>
+                            <h5 className="section-heading-3">About</h5>
                             <p className="label-text" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.about_company }} ></p>
                             <p className="label-text mb-0"><b>Industry: </b> {work.edges[0].node.acf.company_name}</p>
                             <p className="label-text mb-0"><b>Platforms: </b> {work.edges[0].node.acf.company_size}</p>

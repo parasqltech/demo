@@ -89,7 +89,7 @@ class Singleblog extends Component {
 							<div className="author-image blog-author-image">
 									<img src={blog.edges[0].node.author.avatar_urls.wordpress_96} className="img-fluid"/>
 							</div>
-							<div className="author-info">
+							<div className="author-info blog-author-info">
 									<span className="sub-heading ">Written By</span>
 									<h4 className="section-heading-3 mb-2">{blog.edges[0].node.author.name}</h4>
 									<p className="mb-0">{blog.edges[0].node.author.description}</p>

@@ -90,7 +90,7 @@ const guide = () => (
                 <div className="row justify-content-center">
                         <div className="col-md-11 ">
                      <div className="row  justify-content-center">
-                        <div className="col-lg-9 col-md-12">
+                        <div className="col-lg-12 col-md-12">
                         <div className="row">
 						              {data &&
 				data.allWordpressWpGuide &&
@@ -121,28 +121,7 @@ const guide = () => (
                         
                     </div>
                     </div>
-					<div className="col-lg-3 col-md-12">
-                                <div className="sidebar postion-sticky">
-                                    <div className="sidebar-widget p-3 bg-light">
-                                        <h6 className="sidebar-title">Category</h6>
-                                        <ul className="Categary-list">
-                                            {data &&
-												data.allWordpressCategory &&
-												data.allWordpressCategory.edges &&
-												data.allWordpressCategory.edges.map(
-												(propd,i) => {
-													return (
-											
-											
-											<li key={i} ><Link to={"guide-category/"+propd.node.slug}>{propd.node.name}</Link></li>
-											)
-												}
-												)}	
-                                        </ul>
-                                    
-                                    </div>
-                                </div>
-                            </div>
+					
                     </div>
                     </div>
                     </div>

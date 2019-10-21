@@ -49,7 +49,7 @@ const ClientSlider = () => (
   <StaticQuery
     query={graphql`
       query {
-        allWordpressWpClients {
+        allWordpressWpClients(sort: {fields: wordpress_id, order: ASC}){
     edges {
       node {
         id

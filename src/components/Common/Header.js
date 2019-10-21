@@ -97,7 +97,7 @@ const Navbar = () => (
                                </li>
                                <li className="other-menu border-right">
                                    <span className="services-heading ">Industries</span>
-                                   <span className="services-description mb-2">Discover how we're helping transform myriad industries to win tomorrow’s customer.</span>
+                                   <span className="services-description mb-2">Discover how we're helping transform myriad industries to win tomorrow’s customer</span>
                                    <IndustriesHeader />
                                </li>
                                <li className="other-menu">

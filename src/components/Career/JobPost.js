@@ -97,6 +97,7 @@ const JobPost = () => (
                                 <div className="row justify-content-center mt-4 pt-4">
                                 <div className=" col-lg-10">
                                     <div className="p-3 formdiv"  >
+									<span className=" sub-heading d-block mb-2 text-center mb-2">Contact Us</span>
                                         <h2 className="section-heading-2 d-block text-center">Are you Ready?</h2>
                                         <ContactCareer />
                                     </div>

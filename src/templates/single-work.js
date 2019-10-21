@@ -52,26 +52,29 @@ class SingleWork extends Component {
 							<div className="embed-responsive embed-responsive-16by9 text-center">
 							<iframe className="embed-responsive-item " width="560" height="315" src={work.edges[0].node.acf.youtube_video_url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
-                            <h2 className="section-heading-2 mb-2 mt-4">Challenge</h2>
-                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.problem_statement }} ></p>
-                            
-                             <div className="text-center">
+							
+							{(work.edges[0].node.acf.problem_statement != "") ? (<><h2 className="section-heading-2 mb-2 mt-4">Challenge</h2><p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.problem_statement }} ></p></>) : ('')}
+							
+							
+							{(work.edges[0].node.acf.the_ql_approach_to_the_business != "") ? ( <><div className="text-center">
                                 <span className="custom-break-line">
                                     <span className="custom-break-line-one"></span>
                                     <span  className="custom-break-line-two"></span>
                                 </span>
                             </div>
                             <h2 className="section-heading-2 mb-2">Strategy</h2>
-                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.the_ql_approach_to_the_business }} ></p>
-                           
-                            <div className="text-center">
+                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.the_ql_approach_to_the_business }} ></p></>) : ('')}
+                            
+                            {(work.edges[0].node.acf.how_the_clients_business_transformed != "") ? (<><div className="text-center">
                                     <span className="custom-break-line">
                                        <span className="custom-break-line-one"></span>
                                        <span  className="custom-break-line-two"></span>
                                    </span>
                                </div>
                             <h2 className="section-heading-2 mb-2"> Transformation</h2>
-                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.how_the_clients_business_transformed }} ></p>    
+                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.how_the_clients_business_transformed }} ></p></> ) : ("")}
+                           
+                               
                         </div>
                         
                         <div className="col-xl-3 col-lg-4">
@@ -99,7 +102,8 @@ class SingleWork extends Component {
             </div>   
         </div>
     </section>
-	<section className="home-testimonial-section">
+	
+	{(work.edges[0].node.acf.client_name != "") ? (<section className="home-testimonial-section">
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-md-8 ">
@@ -136,7 +140,10 @@ class SingleWork extends Component {
                 </div>
             </div>
         </div>
-    </section>
+    </section>) : ("")}
+	
+	
+	
 	
 	<Randomwork />	
 		

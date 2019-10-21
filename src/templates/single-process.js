@@ -87,6 +87,7 @@ class Singleprocess extends Component {
             <div className="container  bg-white">
                 <div className="row justify-content-center">
                     <div className="col-md-10">
+						<span className=" sub-heading d-block mb-2 text-center mb-2">Contact Us</span>
                         <h2 className="section-heading text-center wow fadeIn mb-2">
                             Let us know how we can help
                         </h2>

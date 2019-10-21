@@ -71,16 +71,16 @@ class demopage extends Component {
                         <div className="col-md-11 justify-content-between row mb-4">
                             <ul className="nav  resource-menu">
                                 <li className="nav-item">
-                                <Link className="nav-link " to="/hub">Feature</Link>   
+                                <Link className="nav-link " to="/hub">Featured</Link>   
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link active" to="/article">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/guide">Guide</Link>
+                                    <Link className="nav-link " to="/guide">Guides</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/worksheet">Worksheet</Link>
+                                    <Link className="nav-link" to="/worksheet">Worksheets</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">

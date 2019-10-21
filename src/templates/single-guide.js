@@ -133,7 +133,7 @@ class Singleguide extends Component {
                     <p className="label-text">
                             {blog.edges[0].node.acf.section_desc}
                     </p>
-                    <a href="javacsript:void(0)" className="btn btn-default btn-dnwld float-right"> SEND ME MY PDF!</a>
+                    <a href="javascript:;" className="btn btn-default btn-dnwld float-right"> SEND ME MY PDF!</a>
                 </div>
             </div>
         </div>

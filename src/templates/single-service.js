@@ -90,7 +90,7 @@ class Singleservice extends Component {
 												<div className="thumbnial-icon text-secondary">
 												   
 												   
-												   {(prop.node.acf.icon != null) ? (<img src={prop.node.acf.icon} className="img-fluid" alt=""/>) : ('')}
+												   {(prop.node.acf.icon != null) ? (<img src={prop.node.acf.icon.source_url} className="img-fluid" alt=""/>) : ('')}
 												   
 												   
 												</div>
@@ -336,7 +336,10 @@ export const pageQuery = graphql`
 				id
 				title
 				acf{
-					icon
+					icon{
+						id
+						source_url
+					}
 				short_description
 				service_slider {
             slider_title

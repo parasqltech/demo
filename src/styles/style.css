@@ -8638,7 +8638,7 @@ section.service-section-1:after, section.service-section-1:before{
 		min-height:auto !important;
 	}
 	.alignright,.alignleft {
-    float: none;
+    float: none !important;
     text-align: center;
 }
 }
@@ -10203,3 +10203,4 @@ section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial::before {
         min-height: auto;
     }
 }
+

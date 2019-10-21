@@ -12,7 +12,7 @@ class Singlecategory extends Component {
   render() {
     const category = this.props.data.allWordpressCategory
     const posts = this.props.data.allWordpressPost
-	
+	console.log(this.props.path);
     return (
       <Layout>
 			
@@ -136,7 +136,7 @@ class Singlecategory extends Component {
 												(propd,i) => {
 													return (
 													<>
-													{(window.location.pathname == "/category/"+propd.node.slug) ? (<li key={i} ><Link className="active" to={"category/"+propd.node.slug}>{propd.node.name}</Link></li>) : (<li key={i} ><Link to={"category/"+propd.node.slug}>{propd.node.name}</Link></li>)}
+													{(this.props.path == "/category/"+propd.node.slug+"/") ? (<li key={i} ><Link className="active" to={"category/"+propd.node.slug}>{propd.node.name}</Link></li>) : (<li key={i} ><Link to={"category/"+propd.node.slug}>{propd.node.name}</Link></li>)}
 											
 													</>
 											)

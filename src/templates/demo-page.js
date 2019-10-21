@@ -151,8 +151,14 @@ class demopage extends Component {
 							
 							<div>
         <div className="clear-fix justify-content-between row m-2">
-			<Link className="btn btn-primary"  to={this.props.pageContext.previousPagePath}>Previous</Link>
-			<Link className="btn btn-primary" to={this.props.pageContext.nextPagePath}>Next</Link>
+			
+			{(this.props.pageContext.previousPagePath != "") ? (<Link className="btn btn-primary"  to={this.props.pageContext.previousPagePath}>Previous</Link>) : (<Link className="btn btn-primary invisible"  to={this.props.pageContext.previousPagePath}>Previous</Link>)}
+			
+			
+			{(this.props.pageContext.nextPagePath != "") ? (<Link className="btn btn-primary" to={this.props.pageContext.nextPagePath}>Next</Link>) : (<Link className="btn btn-primary invisible" to={this.props.pageContext.nextPagePath}>Next</Link>)}
+			
+			
+			
 		</div>
         
       </div>

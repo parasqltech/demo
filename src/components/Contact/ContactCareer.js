@@ -30,11 +30,7 @@ class ContactCareer extends React.Component{
 	  this.resume = this.resume.bind(this);
 	  
 	  
-	  let possibleStrings = [
-	  '.pdf', 
-	  '.doc', 
-	  '.docx', 
-	 ]
+	  
 	  
 	}
 	
@@ -54,14 +50,22 @@ class ContactCareer extends React.Component{
 		});
 	}
 	resume(e) {
-		console.log(e.target.value);
-		
 		var v = e.target.value.toLowerCase();
-		
-		this.setState({
-			resume: e.target.value
+		const possibleStrings = ['pdf', 'doc', 'docx'];
+		var flag = 0;
+		possibleStrings.map(item =>{
+			if(v.includes(item)){
+				
+				flag = 1;
+			}
 		});
+		console.log(flag);
 		
+		if(flag == 1){
+			this.setState({
+				resume: e.target.value
+			});
+		}
 	}
 	
 	setTitle(e) {
@@ -160,14 +164,14 @@ class ContactCareer extends React.Component{
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-12  mb-0">
+                                                <div className="col-md-12  mb-4">
                                                     <label className="label-text">Resume Upload</label>
                                                     <div className="input-group ">
                                                         <input type="text"  className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
                                                              <label className="input-group-btn">
-                                                            <span className="btn btn-outline-secondary">
+                                                            <span className="btn btn-outline-secondary uploadBtn">
                                                                 Browse<input type="file" value={this.state.resume} onChange={this.resume} accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" className="d-none" required name="resume"/>  
-																{this.validator.message('Resume', this.state.ectc, 'required')}		
+																{this.validator.message('Resume', this.state.resume, 'required')}		
                                                             </span>
                                                         </label>
                                                     </div>

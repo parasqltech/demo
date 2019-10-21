@@ -7304,7 +7304,13 @@ section.thank-you-section .social-menu li span{
 	vertical-align:middle;
 	padding-left: 30px;
 }
+.uploadBtn .srv-validation-message {
 
+    position: absolute;
+    left: 0;
+    top: 48px;
+
+}
 
 
 @media all and (max-width:1199px) and (min-width:992px) {

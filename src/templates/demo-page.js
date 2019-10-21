@@ -51,9 +51,9 @@ class demopage extends Component {
 					
 					<div className="container text-center">
 						
-						
+						<span className="section-subheading-heading">Articles</span>
 						<h1 className="section-heading">
-						Articles
+						Trending Ideas
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>

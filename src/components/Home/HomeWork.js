@@ -134,7 +134,9 @@ const HomeWork = () => (
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    <div className="work-portfolio-module">
+                    <span className="sub-heading  text-center d-block mb-0">Case Studies</span>
+					<h2 className="section-heading text-center d-block">Our Work Speaks For Itself</h2>
+                    <div className="work-portfolio-module pt-0">
                         
 						<Slider {...settings} className="home-portfolio-slider" >
                             {data &&

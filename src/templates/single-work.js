@@ -40,28 +40,7 @@ class SingleWork extends Component {
                 </h1>
                 <p className="sub-heading">{work.edges[0].node.acf.sub_title}</p>
 
-                <div className="breif-info main-panel">
-                    <div className="row justify-content-center">
-                        <div className="col-md-4 col-sm-6 text-center">
-                            <p className="breif-text">
-                                <span className="percentage">{work.edges[0].node.acf.revenue_1} %</span> 
-                                <span>{work.edges[0].node.acf.revenue_text_1}</span>
-                            </p>
-                        </div>
-                        <div className="col-md-4 col-sm-6 text-center">
-                            <p className="breif-text">
-                                <span className="percentage">{work.edges[0].node.acf.revenue_2} %</span> 
-                                <span>{work.edges[0].node.acf.revenue_text_2}</span>
-                            </p>
-                        </div>
-                        <div className="col-md-4 col-sm-6 text-center">
-                            <p className="breif-text">
-                                <span className="percentage">{work.edges[0].node.acf.revenue_3} %</span> 
-                                <span>{work.edges[0].node.acf.revenue_text_3}</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                
                
                 
                 <div className="main-panel">

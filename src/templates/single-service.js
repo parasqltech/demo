@@ -19,7 +19,7 @@ const settings = {
       infinite: false,
       speed: 500,
       slidesToShow: 4,
-	  autoplay: true,
+	  autoplay: false,
 	  autoplaySpeed: 2000,
 	  mobileFirst: true,
       
@@ -54,7 +54,7 @@ class Singleservice extends Component {
 					 
 					<div className="container text-center">
 						
-						<span className="section-subheading-heading">Core - Service</span>
+						<span className="section-subheading-heading">Services</span>
 						<h1 className="section-heading" dangerouslySetInnerHTML={{ __html: service.edges[0].node.title}} >
 						
 						</h1>

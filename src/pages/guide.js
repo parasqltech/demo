@@ -48,9 +48,9 @@ const guide = () => (
 					
 					<div className="container text-center">
 						
-						
+						<span className="section-subheading-heading">Guide</span>
 						<h1 className="section-heading">
-						Guide
+						Delivering Experiences
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>

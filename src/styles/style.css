@@ -5314,7 +5314,7 @@ section.home-process-section .process-block.one .inner-box .icon-box:first-child
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: url(../img/process-bg.png) no-repeat;
+    background: url(../img/process-bg-1.png) no-repeat;
     background-position: center center;
     background-size:100%;
 }
@@ -5326,7 +5326,7 @@ section.home-process-section .process-block-two.two .inner-box .icon-box::before
     top: -2px;
     right: 0px;
     bottom: 0px;
-    background: url(../img/process-bg.png) no-repeat;
+    background: url(../img/process-bg-2.png) no-repeat;
     background-position: center center;
     background-size:100%;
 }
@@ -5339,7 +5339,7 @@ section.home-process-section .process-block.three .inner-box .icon-box:before {
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: url(../img/process-bg.png) no-repeat;
+    background: url(../img/process-bg-3.png) no-repeat;
     background-position: center center;
     background-size:100%;
 }
@@ -5352,7 +5352,7 @@ section.home-process-section .process-block-two.four .inner-box .icon-box::befor
     top: 0px;
     right: 0px;
     bottom: 0px;
-    background: url(../img/process-bg.png) no-repeat;
+    background: url(../img/process-bg-4.png) no-repeat;
     background-size:100%;
     background-position: center ;
 }
@@ -10158,4 +10158,48 @@ body.ReactModal__Body--open{
 }
 .author-info .sub-heading{
     font-size: 14px;
+}
+section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial{
+    min-height: 500px;
+    background: #e2e2e2;
+    position: relative;
+}
+
+
+section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial::before{
+    content: "Loading...";
+    position: absolute;
+    left:0%;
+    width: 100%;
+    text-align: center;
+    color:#ccc;
+    top: 50%;
+}
+
+section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial::before {
+    content: "Loading...";
+    position: absolute;
+    left: 0%;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: #aaa;
+    font-weight: 300;
+    top: 40%;
+}
+@media all and (max-width:991px) and (min-width:768px){
+    section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
+        min-height: 392px;
+    }
+}
+
+@media all and (max-width:767px) {
+    section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
+        min-height: 300px;
+    }
+}
+@media all and (max-width:576px) {
+    section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
+        min-height: auto;
+    }
 }

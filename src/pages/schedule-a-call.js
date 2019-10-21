@@ -1,15 +1,30 @@
-import React from 'react'
+import React,{Component} from 'react'
 import Layout from '../components/Layout'
 
-const call = () => (
-  <Layout>
-    <iframe
-        src="https://calendly.com/ql-tech/business-challenges"
-        width="100%"
-        height="620px"
-        frameborder="0"
-      ></iframe>
-  </Layout>
-)
+class Calendly extends React.Component {
+  componentDidMount() {
+    const head = document.querySelector('head');
+    const script = document.createElement('script');
+    script.setAttribute('src',  'https://assets.calendly.com/assets/external/widget.js');
+    head.appendChild(script);
+  }
 
-export default call
+  componentWillUnmount() {
+    // whatever you need to cleanup the widgets code
+  }
+
+  render(){
+    return (
+      <Layout>
+        <div id="schedule_form">
+          <div 
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/ql-tech/business-challenges"
+            style={{ minWidth: '320px', height: '650px' }} />
+        </div>
+      </Layout>
+    );
+  }
+}
+
+export default Calendly

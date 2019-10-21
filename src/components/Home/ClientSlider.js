@@ -9,7 +9,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 const settings = {
       dots: false,
       arrows : false,
-      infinite: true,
+      infinite: false,
       speed: 500,
 	  autoplay: true,
 	  autoplaySpeed: 2000,

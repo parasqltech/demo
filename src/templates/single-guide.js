@@ -74,7 +74,7 @@ class Singleguide extends Component {
                         </div>
                    <div className="col-md-4">
 							<div className="sidebar bg-light">
-                            <div className="sidebar-widget">
+                            <div className="sidebar-widget guideform">
                                 <p className="section-heading-2 text-center">Download now</p>
                                  
 								 <ContactGuide url={"guide/"+blog.edges[0].node.slug} />
@@ -133,7 +133,7 @@ class Singleguide extends Component {
                     <p className="label-text">
                             {blog.edges[0].node.acf.section_desc}
                     </p>
-                    <a href="javacsript:void(0)" className="btn btn-default float-right"> SEND ME MY PDF!</a>
+                    <a href="javacsript:void(0)" className="btn btn-default btn-dnwld float-right"> SEND ME MY PDF!</a>
                 </div>
             </div>
         </div>

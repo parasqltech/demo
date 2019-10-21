@@ -267,6 +267,13 @@ $(function choosefile() {
 	});
 	
 	
+	$(document).on('click','.btn-dnwld',function(){
+				$('html, body').animate({
+					scrollTop: $(".guideform").offset().top - 110
+				}, 2000);
+	});
+	
+	
 	
    
 	

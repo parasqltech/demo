@@ -15,7 +15,7 @@ class ContactCareer extends React.Component{
           goal: '',
           position: '',
           cctc: '',
-          actc: '',
+          ectc: '',
           resume: '',
         
 		}
@@ -26,7 +26,7 @@ class ContactCareer extends React.Component{
 	  this.number = this.number.bind(this);
 	  this.position = this.position.bind(this);
 	  this.cctc = this.cctc.bind(this);
-	  this.actc = this.actc.bind(this);
+	  this.ectc = this.ectc.bind(this);
 	  this.resume = this.resume.bind(this);
 	  
 	}
@@ -41,9 +41,9 @@ class ContactCareer extends React.Component{
 			cctc: e.target.value
 		});
 	}
-	actc(e) {
+	ectc(e) {
 		this.setState({
-			actc: e.target.value
+			ectc: e.target.value
 		});
 	}
 	resume(e) {
@@ -154,7 +154,7 @@ class ContactCareer extends React.Component{
                                                         <input type="text"  className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
                                                              <label className="input-group-btn">
                                                             <span className="btn btn-outline-secondary">
-                                                                Browse<input type="file" className="d-none" required multiple="" name="resume"/>     
+                                                                Browse<input type="file" accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" className="d-none" required multiple="" name="resume"/>     
                                                             </span>
                                                         </label>
                                                     </div>

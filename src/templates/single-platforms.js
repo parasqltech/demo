@@ -96,7 +96,7 @@ class Singleplatform extends Component {
             <div className="row justify-content-start">
                 <div className="col-md-12">
                     <div className="about-content xs-center sm-center wow fadeInUp">
-                        <span className="sub-heading text-center d-block mb-0">FAQS</span>
+                        <span className="sub-heading text-center d-block mb-0">FAQ's</span>
                         <h3 className="section-heading text-center"></h3>
                          <div id="accordion" className="faq-section">
                                 

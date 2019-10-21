@@ -5,6 +5,7 @@ import FooterM2 from './FooterMenu_2'
 import FooterM3 from './FooterMenu_3'
 import FooterM4 from './FooterMenu_4'
 import FooterSocial from './FooterSocial'
+import ContactSubscribe from '../Contact/ContactSubscribe'
 
 const Footer = () => (
   <StaticQuery
@@ -40,13 +41,8 @@ const Footer = () => (
                         <h3 className="section-heading"><span>Stay in the Know </span>
                             Discover Ideas &amp; Insights right in your inbox
                         </h3>
+                        <ContactSubscribe />
                         
-                        <div className="input-group mb-3 subcribe-form">
-                            <input type="text" className="form-control" placeholder="Email address" />
-                            <div className="input-group-prepend">
-                                <button className="btn btn-outline-secondary" type="button">Subscribe Now</button>
-                            </div>
-                        </div>
 						<h3 className="section-heading mt-4"><span className="text-light d-inline" >Explore our <Link to="hub"  className="text-white">Knowledge Hub</Link></span></h3>
                     </div>
                 </div>

@@ -91,39 +91,7 @@ class Singleworksheet extends Component {
        </div>
 	   
     </section>
-	<section className="what-you-get ">
-        <div className="container bg-white">
-              <h2 className="section-heading text-center mb-1">{blog.edges[0].node.acf.guide_offer_title}</h2>
-            <p className="sub-heading text-center pb-4" >{blog.edges[0].node.acf.guide_offer_subtitle}</p>
-            <div className="row">
-                {
-				blog.edges[0].node.acf.what_this_guide_has_to_offfer &&
-				blog.edges[0].node.acf.what_this_guide_has_to_offfer.map(
-                propd => {
-					return (
-						<Tilt options={{ max : 10,scale:1 }} className="Tilt col-lg-4 col-md-6 customer-benifil">
-						<div className="thumbnial text-center Tilt-inner"  data-wow-delay="0.4s" data-tilt=""
-						data-tilt-max="10" data-tilt-scale="1">
-							<div className="thumbnial-icon">
-								{(propd.offer_icon != null ) ? (<img src={propd.offer_icon.source_url} className="img-fluid" alt=""/>) : ("") }
-							</div>
-							<h4 className="section-heading-2"> {propd.offer_title}</h4>
-							<p className="label-text">{propd.offer_desc} </p>
-						</div>
-					</Tilt>
-					)
-                }
-                )}
-				
-				
-				
-                
-            </div> 
-            
-            
-            
-        </div>  
-    </section>	
+	
      <section className="guide-last-section">
         <div className="container">
             <div className="row justify-content-end">
@@ -167,15 +135,7 @@ export const pageQuery = graphql`
 				  posted_by
 				  section_desc
 				  section_title
-				   guide_offer_subtitle
-				  guide_offer_title
-				  what_this_guide_has_to_offfer {
-					offer_desc
-					offer_title
-					offer_icon {
-					  source_url
-					}
-				  }
+				  
 				}
 				yoast {
 				focuskw

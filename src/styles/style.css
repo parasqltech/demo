@@ -10152,4 +10152,10 @@ body.ReactModal__Body--open{
   height: 100%;
 	
 }
-  
+.author-details-block  .blog-author-image{
+    width: 80px;
+    text-align: left;
+}
+.author-info .sub-heading{
+    font-size: 14px;
+}

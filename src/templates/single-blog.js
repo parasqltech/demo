@@ -85,13 +85,24 @@ class Singleblog extends Component {
                             </Link>) : ('')}
 							
                         </div>
-                        
+                        <div className="author-details-block border-bottom  pb-4 mb-4">
+							<div className="author-image blog-author-image">
+									<img src={blog.edges[0].node.author.avatar_urls.wordpress_96} className="img-fluid"/>
+							</div>
+							<div className="author-info">
+									<span className="sub-heading ">Written By</span>
+									<h4 className="section-heading-3 mb-2">{blog.edges[0].node.author.name}</h4>
+									<p className="mb-0">{blog.edges[0].node.author.description}</p>
+							</div>
+						</div>
                         </div>
                    
                     
                 </div>
             </div>
        </div>
+	
+	   
 	   <div className="container bg-white">
       <Disqus config={disqusConfig} />
 	  </div>
@@ -139,6 +150,13 @@ export const pageQuery = graphql`
 					  source_url
 				  }
 				  posted_by
+				}
+				author {   
+				  name
+				  description
+				  avatar_urls {
+					wordpress_96
+				  }
 				}
 				yoast {
 				focuskw

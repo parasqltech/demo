@@ -122,9 +122,9 @@ class demopage extends Component {
                                             <div className="thumbnial-footer">
                                                 <div className="author pull-left">
                                                     <div className="image">
-													{(prop.node.acf.posted_by == "QL Tech") ? (<img src={qlimg} className="img-fluid" alt=""/>) : (<img src={other} className="img-fluid" alt=""/>)}
+													<img src={prop.node.author.avatar_urls.wordpress_48} className="img-fluid" alt=""/>
 													</div>
-                                                    By <b>{prop.node.acf.posted_by}</b>  
+                                                    By <b>{prop.node.author.name}</b>  
                                                 </div>
                                                 <div className="social-links pull-right">
                                                     <ul className="post-info ">
@@ -223,6 +223,13 @@ export const pageQuery = graphql`
 					}
 					
 					posted_by
+					}
+					author {   
+					  name
+					  description
+					  avatar_urls {
+						wordpress_48
+					  }
 					}
 					categories{
 					  id

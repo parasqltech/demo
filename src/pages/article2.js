@@ -26,6 +26,13 @@ const article = () => (
 					
 					posted_by
 					}
+					author {   
+				  name
+				  description
+				  avatar_urls {
+					wordpress_48
+				  }
+				}
 					categories{
 					  id
 					  name
@@ -128,8 +135,8 @@ const article = () => (
                                             </div>
                                             <div className="thumbnial-footer">
                                                 <div className="author pull-left">
-                                                    <div className="image"><img src={author} alt=""/></div>
-                                                    By <b>{prop.node.acf.posted_by}</b>  
+                                                    <div className="image"><img src={prop.node.acf.author.avatar_urls.wordpress_48} alt=""/></div>
+                                                    By <b>{prop.node.acf.author.name}</b>  
                                                 </div>
                                                 <div className="social-links pull-right">
                                                     <ul className="post-info ">

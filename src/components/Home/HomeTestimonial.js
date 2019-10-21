@@ -78,7 +78,7 @@ render() {
                                           </div>
                                           <p className="label-text">
                                               <span>{(prop.node.acf.descprition).substring(0, 400)}</span>
-                                              {(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.acf.image,prop.node.acf.name,prop.node.acf.desgination,prop.node.acf.descprition)}>Read More</a></span>):(''))}
+                                              {(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.acf.image.source_url,prop.node.acf.name,prop.node.acf.desgination,prop.node.acf.descprition)}>Read More</a></span>):(''))}
                                               
                                               
                                               
@@ -128,10 +128,19 @@ render() {
                                           <p className="label-text">
                                               <span>{this.state.testimonial_text}</span>
                                           </p>
-                                          <div className="author-info">
+										  <div className="author-details-block">
+											<div className="author-image text-center">
+												<img src={this.state.testimonial_img} className="img-fluid d-inline" alt={this.state.testimonial_name} />
+											</div>
+											 <div className="author-info">
+
+												
                                               <h4>{this.state.testimonial_name}</h4>
                                               <p>{this.state.testimonial_designation}</p>
                                           </div>
+										  
+										  </div>
+                                         
                                       </div>
                             </div>
                         </div>

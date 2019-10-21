@@ -7293,7 +7293,17 @@ section.thank-you-section .social-menu li span{
     text-align: center;
     color:#333;
 }
-
+.author-details-block .author-image{
+	width:180px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.author-details-block .author-info{
+	width:calc( 100% - 180px );
+	display:inline-block;
+	vertical-align:middle;
+	padding-left: 30px;
+}
 
 
 
@@ -8621,6 +8631,10 @@ section.service-section-1:after, section.service-section-1:before{
 	header .dropdown-menu .other-menu{
 		min-height:auto !important;
 	}
+	.alignright,.alignleft {
+    float: none;
+    text-align: center;
+}
 }
 @media all and (max-width:576px) {
     .label-text {
@@ -8772,7 +8786,13 @@ section.service-section-1:after, section.service-section-1:before{
         width: calc(100% - 20px);
     }
 
- 
+.author-details-block .author-info,.author-details-block .author-image{
+	width:100%;
+	display:block;
+}
+ .author-details-block .author-image img {
+	max-width:180px;
+ }
 }
 
 @media all and (max-width:360px) {

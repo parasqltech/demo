@@ -39,7 +39,7 @@ class ContactSubscribe extends Component{
 		formData.append("last_name", "Friend");
 		formData.append("form_name", "Email");
 		formData.append("email", this.state.email);
-		formData.append("url",  "Footer/"+window.location.pathname);
+		formData.append("url",  "footer"+window.location.pathname);
 		request.send(formData);
 		
 		this.setState({shown: "d-block"});

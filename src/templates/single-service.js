@@ -35,6 +35,7 @@ class Singleservice extends Component {
         testimonial_name: "",
         testimonial_designation: "",
         testimonial_text: "",
+        show: "d-block",
       }
     }
 	 handleModalOpen = (img,name,des,desc) => {
@@ -43,13 +44,24 @@ class Singleservice extends Component {
     }
 
     handleModalClose = event => {
-    // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: false })
+		this.setState({ isModalOpen: false })
     }
+	
   render() {
     const service = this.props.data.allWordpressWpServices
     const subservice = this.props.data.allWordpressWpSubservices
 	const works = this.props.data.allWordpressWpWorks
+	const faq = service.edges[0].node.acf.faq;
+	var flag = 0;
+	faq.map(function(item){
+		if(item.question == ""){
+			flag = 1;
+		}
+	}, this)
+	
+	
+	
+	
     return (
       <Layout>
 	  <Helmet>
@@ -115,7 +127,7 @@ class Singleservice extends Component {
 												</div>
 												
 												<h3 className="thumbnial-title" dangerouslySetInnerHTML={{ __html: prop.node.title}}/>
-												<p className="label-text"  dangerouslySetInnerHTML={{ __html: prop.node.acf.short_description}} >
+												<p className="label-text stext"  dangerouslySetInnerHTML={{ __html: prop.node.acf.short_description}} >
 												   
 												</p>
 												
@@ -166,7 +178,7 @@ class Singleservice extends Component {
             </div>
         </div>
     </section>
-	{(service.edges[0].node.acf.about_image != null) ? (<section className="home-about-section bg-white">
+	{(service.edges[0].node.acf.about_image != null) ? (<section className="home-about-section bg-white"  >
         <div className="container">
             <div className="about-mockup-bg  wow fadeIn">
                 <img src={(service.edges[0].node.acf.about_image != null) ? service.edges[0].node.acf.about_image.source_url : ''} className="img-fluid about-us-image" alt=""/>
@@ -178,12 +190,7 @@ class Singleservice extends Component {
                        
                         <h3 className="section-heading" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.title}} ></h3>
                         <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.description}} ></p>
-                        <div className="play-button">
-                            <span data-video-id="" className="video-area-popup">
-
-                                <i className="fa fa-play"></i></span>
-                            <span>Check How we work together</span>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -280,7 +287,7 @@ class Singleservice extends Component {
             </div>
         </div>
     </section>	
-	{(service.edges[0].node.acf.faq != null) ? (<section className="home-about-section pt-4 pb-4 bg-white">
+	{(service.edges[0].node.acf.faq != null) ? (<section className={(flag == 1) ? ('home-about-section pt-4 pb-4 bg-white d-none') : ('home-about-section pt-4 pb-4 bg-white')}  >
         <div className="container">
            
             <div className="row justify-content-start">

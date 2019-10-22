@@ -21,16 +21,27 @@ const settings = {
 	  autoplaySpeed: 2000,
 	  cssEase: "linear",
 	  mobileFirst: true,
-	     responsive: [
+	    responsive: [
     {
       breakpoint: 1024,
-      settings: "unslick"
+      settings:{
+        slidesToShow: 4,
+        slidesToScroll: 3,
+      }
+    },
+	{
+      breakpoint: 767,
+      settings:{
+        slidesToShow: 1,
+        slidesToScroll: 1,
+		
+      }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     {
@@ -40,6 +51,9 @@ const settings = {
         slidesToScroll: 1
       }
     }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
   ]
     };
 

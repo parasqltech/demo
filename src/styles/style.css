@@ -7225,11 +7225,7 @@ section.work-section-1 .work-thumbnial {
     display: inline-block;
 }
 section.work-section-1 .work-thumbnial .work-thumbnail-image {
-    height: auto;
-}
-section.work-section-1 .work-thumbnial:nth-child(2n) .work-thumbnail-image {
-   
-    height: auto;
+    min-height: 171px;
 }
 section.work-section-1 .work-thumbnial .work-thumbnail-image img {
     width: 100%;
@@ -7438,7 +7434,7 @@ section.thank-you-section .social-menu li span{
     }
 
     section.work-section-1 .work-thumbnial, section.events-section-1 .work-thumbnial {
-        width: calc((100% / 3) - 30px);
+        width: calc((100% / 3) - 50px);
     }
     section.about-us-section-4 .team-list li {
         width: calc(100%/9);
@@ -8821,6 +8817,15 @@ section.service-section-1:after, section.service-section-1:before{
    .author-details-block .blog-author-info{
 	 padding-left:10px;
  }
+ section.work-section-1 .work-thumbnial .work-thumbnail-image {
+    min-height: 267px;
+}
+}
+@media all and (max-width:420px) {
+
+    section.work-section-1 .work-thumbnial .work-thumbnail-image {
+        min-height: 150px;
+    }
 }
 
 @media all and (max-width:360px) {
@@ -8876,6 +8881,9 @@ section.service-section-1:after, section.service-section-1:before{
     section.worksheet-section .thumbnial .thumbnial-image {
         height: auto;
      }
+    section.work-section-1 .work-thumbnial .work-thumbnail-image {
+        min-height: 170px;
+    }
 }
 
 
@@ -9844,16 +9852,22 @@ section.work-details-section-1 .breif-text span {
     border: 1px solid #ccc;
 }
 .is-style-stripes tr td{
- 
     padding: 10px;
 }
-
 .RightBtn:disabled {
     display:none !important;
-  }
-  .LeftBtn:disabled {
+}
+.LeftBtn:disabled {
     display:none !important;
-  }
+}
+.stext{
+    font-size: 17px;
+}
+.stext strong{
+	font-weight:400;
+	text-decoration: none;
+color: #0078ad;
+}
 
   @media all and (min-width:1600px) {
       p{
@@ -10105,7 +10119,7 @@ section.work-details-section-1 .breif-text span {
         font-size: 18px;
     }
     .form-section .btn-outline-secondary {
-        font-size: 20px;
+        font-size: 20px !important;
         padding: 10px 8px;
     }
     section.contact-us-section-3 .card{
@@ -10216,6 +10230,9 @@ section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial img{
 @media all and (max-width:991px) and (min-width:768px){
     section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
         min-height: 392px;
+    }
+    .play-button .video-area-popup{
+        margin-right: 98px;
     }
 }
 

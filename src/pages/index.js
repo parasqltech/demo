@@ -67,11 +67,11 @@ const IndexPage = () => (
                 <div className="col-lg-8 col-md-10 col-md-offset-1 col-xs-12">
                     <div className="home-parallax-layers" id="home-parallax-layers">
                         <Tilt  className="welcome-mockup text-center wow fadInUp Tilt" options={{ max : 10,scale:1 }} data-wow-delay="0.2s" >
-                            <img src={home_section} className="img-fluid d-inline Tilt-inner" alt="" />
+                            <img data-src={home_section} className="img-fluid d-inline Tilt-inner lazyload" alt="" />
                         </Tilt>
                         <div className="welcome-mockup-bg wow fadeInUp"  data-wow-delay="0.1s" 
                             data-wow-delay="0.9s">
-                            <img src={home_section_bg}  className="img-fluid d-inline" alt="" />
+                            <img data-src={home_section_bg}  className="img-fluid d-inline lazyload" alt="" />
                         </div>
                     </div>
                 </div>

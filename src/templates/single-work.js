@@ -95,16 +95,7 @@ class SingleWork extends Component {
 							</div>) : ('')}
 							
 							
-							{(work.edges[0].node.acf.gallery != null) ? (<div className="mt-5 mb-5"><Slider {...settings} className="trusted-by-slider" >
-							{
-								work.edges[0].node.acf.gallery.map(
-								prop => {
-									return (
-										<img src={prop.source_url} className="img-fluid" alt="" />
-										)
-									}
-								)}
-						</Slider></div>) : ('')}
+							
 							
 							
 							
@@ -131,7 +122,17 @@ class SingleWork extends Component {
                            
                                
                         </div>
-                        
+                        {(work.edges[0].node.acf.gallery != null) ? (<div className="mt-5 mb-5"><Slider {...settings} className="trusted-by-slider" >
+							{
+								work.edges[0].node.acf.gallery.map(
+								prop => {
+									return (
+										<img src={prop.source_url} className="img-fluid" alt="" />
+										)
+									}
+								)}
+						</Slider></div>) : ('')}
+						
                         <div className="col-xl-3 col-lg-4">
                             <h5 className="section-heading-3">About</h5>
                             <p className="label-text" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.about_company }} ></p>

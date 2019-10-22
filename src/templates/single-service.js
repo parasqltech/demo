@@ -30,7 +30,7 @@ class Singleservice extends Component {
   render() {
     const service = this.props.data.allWordpressWpServices
     const subservice = this.props.data.allWordpressWpSubservices
-	
+	const works = this.props.data.allWordpressWpWorks
     return (
       <Layout>
 	  <Helmet>
@@ -211,7 +211,50 @@ class Singleservice extends Component {
             </div>
         </div>
     </section>):('')}
-	 
+	 <section className="home-work-section home-work-section-details pt-4  ">
+        
+        <div className="container bg-white">
+               
+            <div className="row">
+                <div className="col-md-12">
+                    
+                        <span className="section-subheading-heading">Relevant Story</span> 
+                        <h2 className="section-heading text-center wow fadeIn" >
+                            Some other case study
+                        </h2>
+                    <div className=" pt-0">
+                        <div className="home-portfolio-slider-1 wow  animated" >
+                            <div className="row">
+							{
+							works &&
+							works.edges.map(
+							prop => {
+								return (
+                                <div className="col-md-4">
+                                   <div className="work-thumbnial">
+                                       <div className="work-thumbnail-image">
+                                           <img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>
+                                       </div>
+                                       <div className="work-thumbnail-details">
+                                           <p className="work-title" dangerouslySetInnerHTML={{ __html: prop.node.title }}  ></p>
+                                           <p className="label-text">{prop.node.acf.short_descprition}</p>
+                                           <Link to={"work/"+prop.node.slug} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
+                                       </div>
+                                   </div>
+                               </div>
+							   )
+							}
+							)}
+							   
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>	
 	{(service.edges[0].node.acf.faq != null) ? (<section className="home-about-section pt-4 pb-4 bg-white">
         <div className="container">
            
@@ -285,7 +328,7 @@ Singleservice.propTypes = {
 export default Singleservice
 
 export const pageQuery = graphql`
-  query($id: String!,$catslug: String!) {
+  query($id: String!,$catslug: String!,$casestudyids_new: [Int]) {
     allWordpressWpServices(filter: {id: { eq: $id }}) {
 		edges {
       node {
@@ -354,6 +397,22 @@ export const pageQuery = graphql`
 			}
 		}	
 	}
+	allWordpressWpWorks(filter: {wordpress_id: {in: $casestudyids_new}},sort: {fields: wordpress_id, order: ASC}) {
+    edges {
+      node {
+				title
+				slug
+				acf{
+					short_descprition
+					main_image {
+                                source_url
+                                link
+                              }
+				}
+				
+		}
+    }
+  }
 	
   }
   

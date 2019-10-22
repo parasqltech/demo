@@ -222,6 +222,7 @@ exports.createPages = ({ actions, graphql }) => {
             slug
 			acf {
 				service_slug
+				case_study
 			}
           }
         }
@@ -238,11 +239,21 @@ exports.createPages = ({ actions, graphql }) => {
 		 const platformsTemplate = path.resolve(`./src/templates/single-service.js`);
 		  allWordpressWpServices.edges.forEach(edge => {
 			  
+			if(edge.node.acf.case_study != null){
+				var a = edge.node.acf.case_study;
+			}	
+			else{
+				var a = [289,1600,294];
+			}	  
+			
+			
+			  
 			createPage({
 			  path: `/services/${edge.node.slug}/`,
 			  component: slash(platformsTemplate),
 			  context: {
 				id: edge.node.id,
+				casestudyids_new: a,
 				catslug: `/${edge.node.acf.service_slug}/`,
 			  },
 			})

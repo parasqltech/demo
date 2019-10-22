@@ -57,7 +57,7 @@ class Randomevent extends React.Component{
 								<>
 									{(prop.node.slug == this.props.url) ? ('') : (
 									<>
-									{(i > 3) ? ('') : (<div className="col-lg-4 col-md-6 col-sm-6 mb-4">
+									{(i > 2) ? ('') : (<div className="col-lg-4 col-md-6 col-sm-6 mb-4">
                                     <div className="work-thumbnial " >
                                         <div className="work-thumbnail-image">
                                             {(prop.node.acf.image != null) ? (<img src={prop.node.acf.image.source_url} className="img-fluid" alt=""/>) : ('')}

@@ -91,7 +91,7 @@ class Singleblog extends Component {
 							</div>
 							<div className="author-info blog-author-info">
 									<span className="sub-heading ">Written By</span>
-									<h4 className="section-heading-3 mb-2">{blog.edges[0].node.author.name}</h4>
+									<h4 className="section-heading-3 mb-2 mt-0">{blog.edges[0].node.author.name}</h4>
 									<p className="mb-0">{blog.edges[0].node.author.description}</p>
 							</div>
 						</div>

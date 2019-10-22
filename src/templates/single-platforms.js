@@ -98,7 +98,7 @@ class Singleplatform extends Component {
                     <div className="about-content xs-center sm-center wow fadeInUp">
                         <span className="sub-heading text-center d-block mb-0">FAQs</span>
                         <h3 className="section-heading text-center"></h3>
-                         <div id="accordion" className="faq-section">
+                         <div id="accordion" className="faq-section mt-4">
                                 
 								{platform.edges[0].node.acf.faq &&
 									platform.edges[0].node.acf.faq.map(
@@ -138,9 +138,9 @@ class Singleplatform extends Component {
             <div className="row">
                 <div className="col-md-12">
                     
-                        <span className="section-subheading-heading">Relevant Story</span> 
+                        <span className="section-subheading-heading">Our Success</span> 
                         <h2 className="section-heading text-center wow fadeIn" >
-                            Some other case study
+                            See it in Action
                         </h2>
                     <div className=" pt-0">
                         <div className="home-portfolio-slider-1 wow  animated" >

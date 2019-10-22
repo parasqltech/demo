@@ -106,8 +106,8 @@ const guide = () => (
 								
                                     </div>
                                    
-                                    <Link to={"guide/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="guide-text">
-									
+                                    <Link to={"guide/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title+' <i class="fa fa-long-arrow-right ml-1"></i>'}} className="guide-text">
+									 
                                     </Link>
                                 </div>
                             </div>

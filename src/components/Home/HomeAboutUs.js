@@ -39,10 +39,13 @@ render() {
 <section className="home-about-section bg-white">
         <div className="container">
             <div className="about-mockup-bg  wow fadeIn">
-                <img src={img} className="img-fluid about-us-image" alt="" />
+               
             </div>
 
             <div className="row justify-content-end">
+			<div class="col-md-5 col-lg-6 col-sm-12 text-center">
+				 <img src={img} className="img-fluid d-inline" alt="" />
+			</div>
                 <div className="col-md-7 col-lg-6 col-sm-12 ">
                     <div className="about-content xs-center sm-center wow fadeInUp">
                         <h4 className="sub-heading ">About us</h4>

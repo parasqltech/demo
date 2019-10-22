@@ -134,8 +134,8 @@ const HomeWork = () => (
             </div>
             <div className="row">
                 <div className="col-md-12">
-                    <span className="sub-heading  text-center d-block mb-0">Case Studies</span>
-					<h2 className="section-heading text-center d-block">Our Work Speaks For Itself</h2>
+                    <span className="sub-heading  text-center d-block mb-0">Our Work</span>
+					<h2 className="section-heading text-center d-block">Customer Stories</h2>
                     <div className="work-portfolio-module pt-0">
                         
 						<Slider {...settings} className="home-portfolio-slider" >

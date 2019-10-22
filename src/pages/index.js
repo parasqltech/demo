@@ -63,7 +63,7 @@ const IndexPage = () => (
                     
                 </div>
             </div>
-            <div className="row justify-content-center">
+            <div className="row justify-content-center mt-4 mb-4">
                 <div className="col-lg-8 col-md-10 col-md-offset-1 col-xs-12">
                     <div className="home-parallax-layers" id="home-parallax-layers">
                         <Tilt  className="welcome-mockup text-center wow fadInUp Tilt" options={{ max : 10,scale:1 }} data-wow-delay="0.2s" >

@@ -102,7 +102,7 @@ const Navbar = () => (
                                </li>
                                <li className="other-menu">
                                    <span className="services-heading ">Platforms</span>
-                                   <span className="services-description mb-2">Explore possibilities or get the most from your technology investments</span>
+                                   <span className="services-description mb-2">Explore possibilities and get the most from your technology stack</span>
 									<PlatformHeader />
                                </li>
                            </ul>

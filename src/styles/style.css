@@ -4580,7 +4580,7 @@ section.home-section-1 .btn-default {
 }
 
 section.home-section-1 .home-parallax-layers {
-    height: 660px;
+    height: 540px;
 }
 
 section.home-section-1 .welcome-mockup-bg {
@@ -5405,7 +5405,7 @@ section.home-process-section .process-block .inner-box .number:before {
     top: -45px;
     width: 1px;
     height: 45px;
-    background-color: #2200bd;
+    background-color: #26a9e1;
 }
 
 /* Process Block Two */
@@ -5463,7 +5463,7 @@ section.home-process-section .process-block-two .inner-box .number:before {
     bottom: -45px;
     width: 1px;
     height: 45px;
-    background-color: #2200bd;
+    background-color: #26a9e1;
 }
 
 /****/
@@ -7355,7 +7355,7 @@ section.thank-you-section .social-menu li span{
         top: 628px;
     }
     section.home-section-1 .home-parallax-layers {
-        height: 639px;
+        height: 580px;
     }
 
     section.home-services-section .inner-container .service-block-two:first-child {
@@ -9906,7 +9906,7 @@ section.work-details-section-1 .breif-text span {
         margin-bottom: 10px;
     }
     section.home-section-1 .home-parallax-layers {
-        height: 752px;
+        height: 540px;
     }
     .section-subheading-heading {
         font-size: 24px;

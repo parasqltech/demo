@@ -43,9 +43,9 @@ class Randomwork extends React.Component{
             <div className="row">
                 <div className="col-md-12">
                     
-                        <span className="section-subheading-heading">Relevant Story</span> 
+                        <span className="section-subheading-heading">Our Work</span> 
                         <h2 className="section-heading text-center wow fadeIn" >
-                            Some other case study
+                            Customer Stories
                         </h2>
                     <div className=" pt-0">
                         <div className="home-portfolio-slider-1 wow  animated" >

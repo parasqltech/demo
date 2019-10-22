@@ -91,7 +91,7 @@ class Grid extends React.Component {
                                 {(prop.node.acf.feature_image) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid w-100" alt=""/>) : ('')}
                                 
                             </div>
-                             <Link to={"worksheet/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="worksheet-text">
+                             <Link to={"worksheet/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title+' <i class="fa fa-long-arrow-right ml-1"></i>'}} className="worksheet-text">
 									
                             </Link>
                         </div>

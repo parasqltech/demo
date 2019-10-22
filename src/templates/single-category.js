@@ -98,8 +98,8 @@ class Singlecategory extends Component {
                                             </div>
                                             <div className="thumbnial-footer">
                                                 <div className="author pull-left">
-                                                    <div className="image"><img src={BlogAuthor} alt=""/></div>
-                                                    By <b>{prop.node.acf.posted_by}</b>  
+                                                    <div className="image"><img src={prop.node.author.avatar_urls.wordpress_48} alt=""/></div>
+                                                    By <b>{prop.node.author.name}</b>  
                                                 </div>
                                                 <div className="social-links pull-right">
                                                     <ul className="post-info ">
@@ -189,6 +189,13 @@ export const pageQuery = graphql`
             source_url
           }
         }
+		author {   
+					  name
+					  description
+					  avatar_urls {
+						wordpress_48
+					  }
+					}
       }
     }
   }

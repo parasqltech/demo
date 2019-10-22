@@ -11,7 +11,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Helmet from 'react-helmet'
-
+import ReactModal from 'react-modal'
 const settings = {
       dots: false,
 	  prevArrow: false,
@@ -27,6 +27,25 @@ const settings = {
 
 
 class Singleservice extends Component {
+	 constructor(props) {
+      super(props);
+      this.state = {
+        isModalOpen: false,
+        testimonial_img: "",
+        testimonial_name: "",
+        testimonial_designation: "",
+        testimonial_text: "",
+      }
+    }
+	 handleModalOpen = (img,name,des,desc) => {
+        this.setState({ isModalOpen: true,testimonial_img:img,testimonial_name:name,testimonial_designation:des,testimonial_text:desc })
+		
+    }
+
+    handleModalClose = event => {
+    // console.log('handleModalOpen: ', event);
+    this.setState({ isModalOpen: false })
+    }
   render() {
     const service = this.props.data.allWordpressWpServices
     const subservice = this.props.data.allWordpressWpSubservices
@@ -199,7 +218,13 @@ class Singleservice extends Component {
                                 <div className="quote">
                                     <img src={quote} className="img-fluid" alt=""/>
                                 </div>
-                                <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.testimonial_}} ></p>
+                                
+								
+										<span>{(service.edges[0].node.acf.testimonial_).substring(0, 400)}</span>
+                                              {(service.edges[0].node.acf.testimonial_.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(service.edges[0].node.acf.image.source_url,service.edges[0].node.acf.client_name,service.edges[0].node.acf.designationcompany,service.edges[0].node.acf.testimonial_)}>Read More</a></span>):(''))}
+								
+								
+								
                                 <div className="author-info">
                                     <h4 dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.client_name}} ></h4>
                                     <p dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.designationcompany}} ></p>
@@ -218,9 +243,9 @@ class Singleservice extends Component {
             <div className="row">
                 <div className="col-md-12">
                     
-                        <span className="section-subheading-heading">Relevant Story</span> 
+                        <span className="section-subheading-heading">Our Success</span> 
                         <h2 className="section-heading text-center wow fadeIn" >
-                            Some other case study
+                            See it in Action
                         </h2>
                     <div className=" pt-0">
                         <div className="home-portfolio-slider-1 wow  animated" >
@@ -263,13 +288,14 @@ class Singleservice extends Component {
                     <div className="about-content xs-center sm-center wow fadeInUp">
                         <span className="sub-heading text-center d-block mb-0">FAQs</span>
                        
-                         <div id="accordion" className="faq-section">
+                         <div id="accordion" className="faq-section mt-4">
                                 
 								{service.edges[0].node.acf.faq &&
 									service.edges[0].node.acf.faq.map(
 									(prop,i) => {
 									return (
-										<div key={i} className="card">
+										<>
+										{(prop.question != "") ? (<div key={i} className="card">
 										<div className="card-header collapsed bg-white row  m-0" data-toggle="collapse" href={"#faq"+i} role="tab">
 											<span className="toggle-icon"></span> {prop.question}
 										</div>
@@ -280,7 +306,9 @@ class Singleservice extends Component {
 												</p>
 											</div>
 										</div>
-									</div>
+									</div>) : ('')}
+										</>
+										
 									)
 								}
 								)}
@@ -314,8 +342,61 @@ class Singleservice extends Component {
                 </div>
             </div>
     </section>
-	
+	<ReactModal  
+          isOpen={this.state.isModalOpen}
+          onRequestClose={this.handleModalClose}
+            className="modal d-block fade testimonial-view show"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg " tabindex="-1" role="dialog">
+          <div class="modal-content " >
+              <button type="button" class="close btn-default" onClick={this.handleModalClose} data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        
+            <div class="modal-body p-4">
+                <div class="row justify-content-center">
+                    
+                    <div class="col-xl-12">
+                        <div class="author-content">
+                            <div class="quote">
+                                <img src={quote} class="img-fluid" alt=""/>
+                            </div>
+                            <p class="label-text testimonialDetail"></p>
+                            <div class="author-info">
+                                <div className="author-content">
+                                         
+                                          <p className="label-text">
+                                              <span>{this.state.testimonial_text}</span>
+                                          </p>
+										  <div className="author-details-block">
+											<div className="author-image text-center">
+												<img src={this.state.testimonial_img} className="img-fluid d-inline" alt={this.state.testimonial_name} />
+											</div>
+											 <div className="author-info">
+
+												
+                                              <h4>{this.state.testimonial_name}</h4>
+                                              <p>{this.state.testimonial_designation}</p>
+                                          </div>
+										  
+										  </div>
+                                         
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+          </div>
+        </div>
+       
+          
+      
+      
+        </ReactModal>
 		</Layout>
+		
     )
   }
 }

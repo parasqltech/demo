@@ -39,7 +39,7 @@ render() {
 		<div  className="play-button mt-2" onClick={() => this.handleModalOpen()}>
                             <span data-video-id="" className="video-area-popup">
                                 <i className="fa fa-play"></i></span>
-                            <span>Check out our quick introduction</span>
+                            <span>Check out what Jeremiah from Keap (<i>APAC Head</i>) has to say</span>
                         </div>
 <ReactModal  
         isOpen={this.state.isModalOpen}
@@ -54,7 +54,7 @@ render() {
       
           <div className="modal-body p-0">
           <div className="embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/pozK-668Ams?rel=0" allowfullscreen></iframe>
+                <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/4E1fbMrAFMY" allowfullscreen></iframe>
             </div>
               
           </div>

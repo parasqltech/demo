@@ -99,9 +99,9 @@ class Singleindustries extends Component {
             <div className="row">
                 <div className="col-md-12">
                     
-                        <span className="section-subheading-heading">Relevant Story</span> 
+                        <span className="section-subheading-heading">Our Success</span> 
                         <h2 className="section-heading text-center wow fadeIn" >
-                            Some other case study
+                            See it in Action
                         </h2>
                     <div className=" pt-0">
                         <div className="home-portfolio-slider-1 wow  animated" >

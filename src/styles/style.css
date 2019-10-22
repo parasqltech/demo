@@ -4087,9 +4087,19 @@ section.breadcumbs-and-title-section .section-heading {
     transform: rotate(-43deg);
 }
 
+.modal{
+	overflow-y:scroll;
+}
 .modal .modal-content{
     position: relative;
     border-radius: 12px;
+}
+.modal .author-content{
+	padding:10px;
+}
+.modal .author-content p.label-text{
+		text-align:justify;
+		
 }
 .modal .modal-content .close {
     position: absolute;
@@ -5483,7 +5493,7 @@ section.home-testimonial-section .author-info {
     margin-top: 40px;
 }
 
-section.home-testimonial-section h4 {
+section.home-testimonial-section h4 , .author-details-block .author-info h4 {
     margin-bottom: 5px;
     font-size: 16px;
     color: #233653;

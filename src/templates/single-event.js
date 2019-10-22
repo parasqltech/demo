@@ -69,7 +69,7 @@ class SingleProject extends Component {
     <Lightbox images={event.edges[0].node.acf.gallery} />
     </div>
 	
-	<Randomevent />	
+	<Randomevent url={event.edges[0].node.slug} />	
 		
 		
 		
@@ -93,6 +93,7 @@ export const pageQuery = graphql`
 		edges {
 			node {
 				title
+				slug
 				acf{
 					date
 					image{

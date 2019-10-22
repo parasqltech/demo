@@ -1,7 +1,7 @@
-import React from "react"
+import React,{Component} from "react"
 import SimpleReactValidator from 'simple-react-validator';
-
-class ContactSubscribe extends React.Component{
+import PropTypes from "prop-types"
+class ContactSubscribe extends Component{
 	
 	constructor(props) {
 		super(props);
@@ -10,11 +10,13 @@ class ContactSubscribe extends React.Component{
 		this.state = {
          
           email: '',
+		  shown: "d-none",
        
         
 		}
 	  this.submitForm = this.submitForm.bind(this);
 	  this.email = this.email.bind(this);
+	  
 	}
 	
 	
@@ -30,11 +32,23 @@ class ContactSubscribe extends React.Component{
 	submitForm() {
 	  if (this.validator.allValid()) {
 		var request = new XMLHttpRequest();
-		request.open('POST', 'https://script.google.com/a/qltech.com.au/macros/s/AKfycbx4zRDVbnstpOPzRqJOBBj7HqXYLPBFjFlo4mYuVVy9SU_Elk0/exec', true);
+		request.open('POST', 'https://script.google.com/a/qltech.com.au/macros/s/AKfycbxlmzD9YrxzkO4efexXOUak3dgxN9PSTQRgR6gZ/exec', true);
 		var formData = new FormData();
+		
 		formData.append("email", this.state.email);
-		formData.append("url", this.props.path);
+		formData.append("url", $("#url").val());
 		request.send(formData);
+		this.setState({email: ""});
+		this.setState({shown: "d-block"});
+		
+		setTimeout(
+			function() {
+				this.setState({shown: "d-none"});
+			}
+			.bind(this),
+			3000
+		);
+		
 		
 	  } else {
 		this.validator.showMessages();
@@ -49,12 +63,15 @@ class ContactSubscribe extends React.Component{
       <>
      <div className="input-group mb-3 subcribe-form">
                             <input type="email" className="form-control" value={this.state.email} onChange={this.email} placeholder="Email address" required/>
+							<input type="hidden" name="url" id="url" />
 							
                             <div className="input-group-prepend">
                                 <button className="btn btn-outline-secondary" onClick={this.submitForm} type="button">Subscribe Now</button>
                             </div>
 							{this.validator.message('Email', this.state.email, 'required|email')}
+							
                         </div>
+						<p  className={"text-success "+this.state.shown} >Thank you for your subscription.</p>
     </>
     )
   }

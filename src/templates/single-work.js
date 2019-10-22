@@ -147,7 +147,7 @@ class SingleWork extends Component {
 	
 	
 	
-	<Randomwork />	
+	<Randomwork url={work.edges[0].node.slug} />	
 		
 		
 			 

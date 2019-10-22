@@ -241,9 +241,11 @@ exports.createPages = ({ actions, graphql }) => {
 			  
 			if(edge.node.acf.case_study != null){
 				var a = edge.node.acf.case_study;
+				
 			}	
 			else{
 				var a = [289,1600,294];
+				
 			}	  
 			
 			

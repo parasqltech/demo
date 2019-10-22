@@ -236,7 +236,7 @@ class Singleservice extends Component {
                                            <img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>
                                        </div>
                                        <div className="work-thumbnail-details">
-                                           <p className="work-title" dangerouslySetInnerHTML={{ __html: prop.node.title }}  ></p>
+                                           <p className="work-title" dangerouslySetInnerHTML={{ __html: prop.node.acf.title }}  ></p>
                                            <p className="label-text">{prop.node.acf.short_descprition}</p>
                                            <Link to={"work/"+prop.node.slug} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
                                        </div>
@@ -403,6 +403,7 @@ export const pageQuery = graphql`
 				title
 				slug
 				acf{
+					title
 					short_descprition
 					main_image {
                                 source_url

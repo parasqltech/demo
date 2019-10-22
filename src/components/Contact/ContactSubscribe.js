@@ -36,17 +36,11 @@ class ContactSubscribe extends Component{
 		var formData = new FormData();
 		
 		formData.append("email", this.state.email);
-		formData.append("url", window.location.href);
+		formData.append("url",  "Footer/"+window.location.pathname);
 		request.send(formData);
 		
 		this.setState({shown: "d-block"});
-		setTimeout(
-			function() {
-				this.setState({email: ""});
-			}
-			.bind(this),
-			500
-		);
+		
 		setTimeout(
 			function() {
 				this.setState({shown: "d-none"});

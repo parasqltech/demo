@@ -100,6 +100,17 @@ module.exports = {
       showSpinner: true,
     },
   },
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+        },
+        `gatsby-remark-lazy-load`,
+      ]
+    }
+  },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

@@ -149,7 +149,7 @@ const HomeWork = () => (
                                     return (    
                                         <div className="work-thumbnial" >
                                             <div className="work-thumbnail-image">
-                                                {(prop.node.acf.main_image != null) ? (<img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>) : ('')}
+                                                {(prop.node.acf.main_image != null) ? (<img data-src={prop.node.acf.main_image.source_url} className="img-fluid lazyload" alt=""/>) : ('')}
                                             </div>
                                             <div className="work-thumbnail-details">
                                                 <p className="work-title">{prop.node.acf.title}</p>

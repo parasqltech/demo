@@ -79,7 +79,7 @@ const HomePartner = () => (
                         prop => {
                         return ( 
                 <div className="client-logo">
-                    <img src={prop.node.acf.icon.source_url} className="img-fluid" alt=""/>
+                    <img data-src={prop.node.acf.icon.source_url} className="img-fluid lazyload" alt=""/>
                 </div>
                  )
                         }

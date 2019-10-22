@@ -73,7 +73,7 @@ const ClientSlider = () => (
 				data.allWordpressWpClients.edges.map(
 				prop => {
 					return (
-                        <img src={prop.node.acf.img.source_url} className="img-fluid" alt="" />
+                        <img data-src={prop.node.acf.img.source_url} className="img-fluid lazyload" alt="" />
                         )
 					}
 				)}

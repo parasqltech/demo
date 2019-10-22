@@ -5,7 +5,8 @@ import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
 import Header from './Common/Header'
 import Footer from './Common/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import "../styles/style.css";
 import $ from "jquery";
 import favicon from "../img/fevicon.png";

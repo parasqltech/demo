@@ -68,7 +68,7 @@ render() {
                                   <div className="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                       <div className="author-image">
                                           
-											  {(prop.node.acf.image != null) ? (<img src={prop.node.acf.image.source_url} className="img-fluid" alt=""/>) : ('')}
+											  {(prop.node.acf.image != null) ? (<img data-src={prop.node.acf.image.source_url} className="img-fluid lazyload" alt=""/>) : ('')}
                                       </div>
                                   </div>
                                   <div className="col-xl-6 col-lg-6 col-md-8 col-sm-8">

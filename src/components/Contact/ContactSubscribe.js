@@ -35,6 +35,8 @@ class ContactSubscribe extends Component{
 		request.open('POST', 'https://script.google.com/a/qltech.com.au/macros/s/AKfycbxlmzD9YrxzkO4efexXOUak3dgxN9PSTQRgR6gZ/exec', true);
 		var formData = new FormData();
 		
+		formData.append("first_name", "Friend");
+		formData.append("last_name", "Friend");
 		formData.append("email", this.state.email);
 		formData.append("url",  "Footer/"+window.location.pathname);
 		request.send(formData);

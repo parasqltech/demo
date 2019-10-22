@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Tilt from 'react-tilt'
-
+import AboutPopup from './AboutPopup';
 
 
 const Expereince = () => (
@@ -54,7 +54,7 @@ const Expereince = () => (
                                 <h3 className="section-heading">{prop.node.acf.tagline}</h3>
                                 <p className="label-text">{prop.node.acf.descprition}</p>
                                 
-                              
+								<AboutPopup />
                                   </>
                                         )
                                     }

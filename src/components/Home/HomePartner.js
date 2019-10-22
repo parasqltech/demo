@@ -9,6 +9,7 @@ import clients_3 from '../../img/clients/hubspot-partners.png';
 import clients_4 from '../../img/clients/keep-certified-partner.png';
 
 
+
 const settings = {
   dots: false,
   arrows : false,

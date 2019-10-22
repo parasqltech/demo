@@ -267,7 +267,7 @@ class Singleservice extends Component {
                     </div>
                 </div>
                 <div className="main-panel">
-					<ContactService url={service.edges[0].node.slug} />
+					<ContactService url={"services/"+service.edges[0].node.slug} />
                 </div>
             </div>
     </section>

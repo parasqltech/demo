@@ -10199,6 +10199,10 @@ section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial::before {
     font-weight: 300;
     top: 40%;
 }
+section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial img{
+	position:relative;
+	z-index:2px;
+}
 @media all and (max-width:991px) and (min-width:768px){
     section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
         min-height: 392px;

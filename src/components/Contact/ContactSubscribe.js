@@ -30,9 +30,10 @@ class ContactSubscribe extends React.Component{
 	submitForm() {
 	  if (this.validator.allValid()) {
 		var request = new XMLHttpRequest();
-		request.open('POST', 'https://script.google.com/a/qltech.com.au/macros/s/AKfycbzM-2tkpmhvcjNAJZvPNAObtmjJiyh4Ldudva7NnoS70P3r2Z4/exec', true);
+		request.open('POST', 'https://script.google.com/a/qltech.com.au/macros/s/AKfycbx4zRDVbnstpOPzRqJOBBj7HqXYLPBFjFlo4mYuVVy9SU_Elk0/exec', true);
 		var formData = new FormData();
 		formData.append("email", this.state.email);
+		formData.append("url", this.props.path);
 		request.send(formData);
 		
 	  } else {

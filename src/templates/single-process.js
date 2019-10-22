@@ -95,7 +95,7 @@ class Singleprocess extends Component {
                     </div>
                 </div>
                 <div className="main-panel">
-                  <ContactProcess url={service.edges[0].node.slug} />
+                  <ContactProcess url={"process/"+service.edges[0].node.slug} />
                 </div>
             </div>
     </section>

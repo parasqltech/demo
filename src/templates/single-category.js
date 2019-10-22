@@ -12,7 +12,7 @@ class Singlecategory extends Component {
   render() {
     const category = this.props.data.allWordpressCategory
     const posts = this.props.data.allWordpressPost
-	console.log(this.props.path);
+	
     return (
       <Layout>
 			

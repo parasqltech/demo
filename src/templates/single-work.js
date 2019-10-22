@@ -49,9 +49,11 @@ class SingleWork extends Component {
                             
                             <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.content }}  ></p>
 							
-							<div className="embed-responsive embed-responsive-16by9 text-center">
+							{(work.edges[0].node.acf.youtube_video_url != "") ? (<div className="embed-responsive embed-responsive-16by9 text-center">
 							<iframe className="embed-responsive-item " width="560" height="315" src={work.edges[0].node.acf.youtube_video_url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>
+							</div>) : ('')}
+							
+							
 							
 							{(work.edges[0].node.acf.problem_statement != "") ? (<><h2 className="section-heading-2 mb-2 mt-4">Challenge</h2><p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.problem_statement }} ></p></>) : ('')}
 							

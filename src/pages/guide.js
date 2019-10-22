@@ -48,13 +48,13 @@ const guide = () => (
 					
 					<div className="container text-center">
 						
-						<span className="section-subheading-heading">Guide</span>
+						<span className="section-subheading-heading">Guides</span>
 						<h1 className="section-heading">
 						Delivering Experiences
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>
-							<li> Guide</li>
+							<li> Guides</li>
 						</ul>
 					</div>
 			</section>

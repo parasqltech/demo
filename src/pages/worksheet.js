@@ -36,13 +36,13 @@ class Grid extends React.Component {
 					
 					<div className="container text-center">
 						
-						<span className="section-subheading-heading">Worksheet</span>
+						<span className="section-subheading-heading">Worksheets</span>
 						<h1 className="section-heading">
 						Amplify Work Efficiency
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>
-							<li> Worksheet</li>
+							<li> Worksheets</li>
 						</ul>
 					</div>
 			</section>

@@ -47,7 +47,8 @@ const Randomwork = () => (
                                 <div className="col-md-4">
                                    <div className="work-thumbnial">
                                        <div className="work-thumbnail-image">
-                                           <img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>
+									   {(prop.node.acf.main_image != null) ? (<img src={prop.node.acf.main_image.source_url} className="img-fluid" alt=""/>) : ('')}
+										   
                                        </div>
                                        <div className="work-thumbnail-details">
                                            <p className="work-title" dangerouslySetInnerHTML={{ __html: prop.node.title }}  ></p>

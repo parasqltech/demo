@@ -108,7 +108,7 @@ class FilterGrid extends React.Component {
 				 {category && category.edges.map(
                         (cats,i) => {
 				 return ( 
-					 <li><a href="javascript:void(0)" id={"cls"+i} onClick={() => {this.onFilterChange(cats.node.slug,"cls"+i)}} className="flt" >{cats.node.name}</a></li>
+					 <li><a href="javascript:void(0)" id={"cls"+i} onClick={() => {this.onFilterChange(cats.node.slug,"cls"+i)}} className="flt" dangerouslySetInnerHTML={{ __html: cats.node.name}}  ></a></li>
 
 				 )})}   
 

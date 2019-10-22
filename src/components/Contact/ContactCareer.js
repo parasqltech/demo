@@ -132,8 +132,10 @@ class ContactCareer extends React.Component{
 										</div>
                                                 <div className="col-md-12 mb-3">
                                                     <label className="label-text">Select Position</label>
-                                                    <select value={this.state.position} onChange={this.position} className="form-control" name="position" required>
+                                                    <select value={this.state.position} id="des" onChange={this.position} className="form-control" name="position" required>
                                                         <option value="">Please Select</option>
+                                                        <option value="Front End Developer">Front End Developer</option>
+                                                        <option value="Jr. PHP Developer">Jr. PHP Developer</option>
                                                         <option value="Jr. PHP Developer">Jr. PHP Developer</option>
                                                         <option value="UI/UX Designer">UI/UX Designer</option>
                                                         <option value="HR Executive">HR Executive</option>

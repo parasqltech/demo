@@ -66,7 +66,7 @@ const JobPost = () => (
                                                     <div class="d-inline m-0">
                                                         <p className="label-text  exp-loc-text d-inline">{prop.node.acf.exp} </p>
                                                         <p className="label-text  exp-loc-text d-inline">{prop.node.acf.location} </p>
-                                                        <a href="javascript:;" className="apply apply-btn">{prop.node.acf.button_name} </a>
+                                                        <a href="javascript:;" data-name={prop.node.acf.job_title} className="apply apply-btn">{prop.node.acf.button_name} </a>
                                                     </div>
                                                    
                                                 

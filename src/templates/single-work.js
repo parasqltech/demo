@@ -8,6 +8,47 @@ import Particles from 'react-particles-js';
 import Helmet from 'react-helmet'
 import quote from  "../img/quote.png"
 import Randomwork from '../components/Work/Randomwork'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const settings = {
+      dots: false,
+      arrows : false,
+      infinite: false,
+      speed: 500,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+	    mobileFirst: true,
+      responsive: [
+        {
+        breakpoint: 767,
+        settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+        dots: true
+        }
+    },
+    {
+        breakpoint: 400,
+        settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
+        }
+    },
+    {
+        breakpoint:320,
+        settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+        }
+    }
+    ]
+    };
+
 
 class SingleWork extends Component {
   render() {
@@ -52,6 +93,18 @@ class SingleWork extends Component {
 							{(work.edges[0].node.acf.youtube_video_url != "") ? (<div className="embed-responsive embed-responsive-16by9 text-center">
 							<iframe className="embed-responsive-item " width="560" height="315" src={work.edges[0].node.acf.youtube_video_url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>) : ('')}
+							
+							
+							{(work.edges[0].node.acf.gallery != null) ? (<div className="mt-5 mb-5"><Slider {...settings} className="trusted-by-slider" >
+							{
+								work.edges[0].node.acf.gallery.map(
+								prop => {
+									return (
+										<img src={prop.source_url} className="img-fluid" alt="" />
+										)
+									}
+								)}
+						</Slider></div>) : ('')}
 							
 							
 							
@@ -197,6 +250,10 @@ export const pageQuery = graphql`
           the_ql_approach_to_the_business
           title
           title_main
+		  gallery{
+			 id
+			source_url
+		  }
          
         }
 		yoast {

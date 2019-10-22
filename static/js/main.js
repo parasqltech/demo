@@ -261,6 +261,8 @@ $(function choosefile() {
     }
    
 	$(document).on('click','.apply',function(){
+		var v = $(this).attr('data-name');
+				$("#des").val(v);
 				$('html, body').animate({
 					scrollTop: $(".formdiv").offset().top - 110
 				}, 2000);

@@ -282,7 +282,7 @@ $(function choosefile() {
 	$( document ).ready(function() {
 		
 		$("#url").val(window.location.href);
-		
+		 
 		
 		setTimeout(function(){ 
 			ParallaxScroll.init();

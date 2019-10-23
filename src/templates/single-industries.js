@@ -7,9 +7,29 @@ import ContactIndustries from '../components/Contact/ContactIndustries'
 import Particles from 'react-particles-js';
 import Helmet from 'react-helmet'
 import quote from  "../img/quote.png"
-
+import ReactModal from 'react-modal'
 
 class Singleindustries extends Component {
+	
+	constructor(props) {
+      super(props);
+      this.state = {
+        isModalOpen: false,
+        testimonial_img: "",
+        testimonial_name: "",
+        testimonial_designation: "",
+        testimonial_text: "",
+        show: "d-block",
+      }
+    }
+	 handleModalOpen = (img,name,des,desc) => {
+        this.setState({ isModalOpen: true,testimonial_img:img,testimonial_name:name,testimonial_designation:des,testimonial_text:desc })
+		
+    }
+
+    handleModalClose = event => {
+		this.setState({ isModalOpen: false })
+    }
   render() {
     const industries = this.props.data.allWordpressWpIndustries
     const works = this.props.data.allWordpressWpWorks
@@ -80,7 +100,12 @@ class Singleindustries extends Component {
                                 <div className="quote">
                                     <img src={quote} className="img-fluid" alt=""/>
                                 </div>
-                                <p className="label-text" dangerouslySetInnerHTML={{ __html: industries.edges[0].node.acf.testimonial_}} ></p>
+                               
+								
+								<span>{(industries.edges[0].node.acf.testimonial_).substring(0, 400)}</span>
+                                              {(industries.edges[0].node.acf.testimonial_.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(industries.edges[0].node.acf.image.source_url,industries.edges[0].node.acf.client_name,industries.edges[0].node.acf.designationcompany,industries.edges[0].node.acf.testimonial_)}>Read More</a></span>):(''))}
+								
+								
                                 <div className="author-info">
                                     <h4 dangerouslySetInnerHTML={{ __html: industries.edges[0].node.acf.client_name}} ></h4>
                                     <p dangerouslySetInnerHTML={{ __html: industries.edges[0].node.acf.designationcompany}} ></p>
@@ -153,6 +178,59 @@ class Singleindustries extends Component {
                 </div>
             </div>
     </section>
+	<ReactModal  
+          isOpen={this.state.isModalOpen}
+          onRequestClose={this.handleModalClose}
+            className="modal d-block fade testimonial-view show"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg " tabindex="-1" role="dialog">
+          <div class="modal-content " >
+              <button type="button" class="close btn-default" onClick={this.handleModalClose} data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        
+            <div class="modal-body p-4">
+                <div class="row justify-content-center">
+                    
+                    <div class="col-xl-12">
+                        <div class="author-content">
+                            <div class="quote">
+                                <img src={quote} class="img-fluid" alt=""/>
+                            </div>
+                            <p class="label-text testimonialDetail"></p>
+                            <div class="author-info">
+                                <div className="author-content">
+                                         
+                                          <p className="label-text">
+                                              <span>{this.state.testimonial_text}</span>
+                                          </p>
+										  <div className="author-details-block">
+											<div className="author-image text-center">
+												<img src={this.state.testimonial_img} className="img-fluid d-inline" alt={this.state.testimonial_name} />
+											</div>
+											 <div className="author-info">
+
+												
+                                              <h4>{this.state.testimonial_name}</h4>
+                                              <p>{this.state.testimonial_designation}</p>
+                                          </div>
+										  
+										  </div>
+                                         
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+          </div>
+        </div>
+       
+          
+      
+      
+        </ReactModal>
 		</Layout>
     )
   }

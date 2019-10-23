@@ -8899,11 +8899,11 @@ section.work-details-section-1 .breif-text span {
     }
     header .social-header .key-message,
     header .social-header .social-list li {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
     }
     header .navbar-light .navbar-nav .nav-link {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     header .dropdown-menu .dropdown-item {
         font-size: 18px;
@@ -8916,6 +8916,9 @@ section.work-details-section-1 .breif-text span {
     }
     header .navbar-light .navbar-nav .nav-link.btn-default {
         font-size: 18px;
+    }
+    header .dropdown-menu .other-menu {
+        min-height: 328px;
     }
     section.breadcumbs-and-title-section .breadcrumbs li {
         font-size: 20px;
@@ -8946,7 +8949,7 @@ section.work-details-section-1 .breif-text span {
         margin-bottom: 10px;
     }
     section.home-section-1 .home-parallax-layers {
-        height: 540px;
+        height: 440px;
     }
     .section-subheading-heading {
         font-size: 24px;
@@ -8965,7 +8968,7 @@ section.work-details-section-1 .breif-text span {
         font-size: 72px;
     }
     section.about-us-section-3 .thumbnial {
-        min-height: 347px;
+        min-height: 374px;
     }
     section.about-us-section-3 .thumbnial .thumbnial-heading {
         font-size: 24px;
@@ -8980,7 +8983,7 @@ section.work-details-section-1 .breif-text span {
         top: -36px;
         font-size: 18px;
     }
-    section.about-history-section .ceo-message-block .ceo-message {
+    section.about-history-section .ceo-message-block .ceo-message p{
         font-size: 46px;
     }
     section.about-us-section-2 .about-us-data-show .about-us-data-show-single {
@@ -9003,7 +9006,7 @@ section.work-details-section-1 .breif-text span {
         padding-left: 540px;
     }
     section.home-about-section {
-        padding: 180px 0px;
+        padding: 110px 0px 192px;
     }
     section.home-work-section .work-thumbnial .work-thumbnail-details .work-title {
         font-size: 22px;
@@ -9024,7 +9027,8 @@ section.work-details-section-1 .breif-text span {
         font-weight: 500;
     }
     section.home-services-section .service-block-two .inner-box h3 {
-        font-size: 28px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
     section.home-services-section .service-block-two .inner-box .text {
         font-size: 22px;
@@ -9180,7 +9184,23 @@ section.work-details-section-1 .breif-text span {
     footer .form-control:focus,
     footer .form-control:hover {
         font-size: 18px;
-    }}
+    }
+    section.home-section-1 .welcome-mockup-bg {
+        bottom: 0;
+    }
+    section.service-section-1::after {
+        right: -774px;
+    }    
+    section.service-section-1::before {
+        left: -774px;
+    }    
+    section.work-section-1 .work-thumbnial .work-thumbnail-image {
+        min-height: 182px;
+    }
+    section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
+        min-height: 881px;
+    }    
+}
 @media all and (max-width:1599px) and (min-width:1400px) {
 
     section.work-section-1 .work-thumbnial,

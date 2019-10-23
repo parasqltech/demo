@@ -8038,8 +8038,15 @@ section.breadcumbs-and-title-section .breadcrumbs li {
 }
 .trusted-by-slider .slick-slide img {
     filter: grayscale();
-
 }
+.trusted-by-slider-1 a{
+    width:calc( 100% / 4);
+    display: inline-block;
+}
+.trusted-by-slider-1 a img{
+    max-width: 100%;
+}
+
 .trusted-by-slider .slick-slide img:hover {
     filter: unset;
 }

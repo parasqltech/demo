@@ -88,7 +88,7 @@ class SingleWork extends Component {
                     <div className="row justify-content-between ">
                         <div className="col-xl-8 col-lg-8">
                             
-							{(work.edges[0].node.acf.custom_image != null) ? (<img data-src={work.edges[0].node.acf.custom_image.source_url} className="img-fluid lazyload"/>) : ('') }
+							{(work.edges[0].node.acf.custom_image != null) ? (<img data-src={work.edges[0].node.acf.custom_image.source_url} className="img-fluid lazyload mb-4"/>) : ('') }
 							
 							
                             <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.content }}  ></p>

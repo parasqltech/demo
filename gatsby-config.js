@@ -111,7 +111,37 @@ module.exports = {
       ]
     }
   },
-  'gatsby-plugin-htaccess',
+  {
+      resolve: 'gatsby-plugin-htaccess',
+      options: {
+        custom: `
+            <IfModule mod_expires.c>
+			  ExpiresActive On
+
+			  # Images
+			  ExpiresByType image/jpeg "access plus 1 year"
+			  ExpiresByType image/gif "access plus 1 year"
+			  ExpiresByType image/png "access plus 1 year"
+			  ExpiresByType image/webp "access plus 1 year"
+			  ExpiresByType image/svg+xml "access plus 1 year"
+			  ExpiresByType image/x-icon "access plus 1 year"
+
+			  # Video
+			  ExpiresByType video/mp4 "access plus 1 year"
+			  ExpiresByType video/mpeg "access plus 1 year"
+
+			  # CSS, JavaScript
+			  ExpiresByType text/css "access plus 1 month"
+			  ExpiresByType text/javascript "access plus 1 month"
+			  ExpiresByType application/javascript "access plus 1 month"
+
+			  # Others
+			  ExpiresByType application/pdf "access plus 1 month"
+			  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+			</IfModule>
+        `,
+      },
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

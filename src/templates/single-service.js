@@ -16,10 +16,10 @@ const settings = {
       dots: false,
 	  prevArrow: false,
 	  nextArrow: false,
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 4,
-	  autoplay: false,
+	  autoplay: true,
 	  autoplaySpeed: 2000,
 	  mobileFirst: true,
       
@@ -131,8 +131,7 @@ class Singleservice extends Component {
 												   
 												</div>
 												
-												
-												<Slider {...settings} className="trusted-by-slider" >
+												{(prop.node.acf.service_slider.length >= 4) ? (<Slider {...settings} className="trusted-by-slider" >
 													{
 														prop.node.acf.service_slider &&
 														prop.node.acf.service_slider.map(
@@ -149,7 +148,26 @@ class Singleservice extends Component {
 																)
 															}
 														)}
-												</Slider>     
+												</Slider>) : (<div className="trusted-by-slider-1">{
+														prop.node.acf.service_slider &&
+														prop.node.acf.service_slider.map(
+														propd => {
+															return (
+																<>
+																{(propd.slider_title != null) ? (<>
+																{(propd.slider_image != null) ? (<Link to={"services/"+propd.slider_url}  title={propd.slider_title}><img src={propd.slider_image.source_url} className="img-fluid" alt="" /></Link>) : ('')}
+																</>) : ('')}
+																
+																</>
+																
+																
+																)
+															}
+														)}</div>)}
+												
+												
+												
+												     
 												
 												
 												

@@ -95,7 +95,7 @@ class SingleWork extends Component {
 							</div>) : ('')}
 							
 							
-							
+							{(work.edges[0].node.acf.custom_image != null) ? (<img data-src={work.edges[0].node.acf.custom_image.source_url} className="img-fluid lazyload"/>) : ('') }
 							
 							
 							
@@ -236,6 +236,10 @@ export const pageQuery = graphql`
           client_image{
 			  source_url
 		  } 
+		   custom_image {
+            id
+            source_url
+          }
           location
           long_descprition
           problem_statement

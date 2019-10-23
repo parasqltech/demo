@@ -74,7 +74,7 @@ const HomeService = () => (
                                 <div className="shape-three"></div>
                                 <div className="icon-box">
 								
-								{(prop.node.acf.icon != null ) ? (<img className="img-fluid" src={prop.node.acf.icon.source_url} />) : ('')}
+								{(prop.node.acf.icon != null ) ? (<img className="img-fluid lazyload" data-src={prop.node.acf.icon.source_url} />) : ('')}
 								
                                     
                                 </div>

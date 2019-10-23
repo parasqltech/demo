@@ -109,7 +109,7 @@ const HomeWork = () => (
                     <div className="inner-column wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms"
                         >
                         <div className="image">
-                            <img src={work} className="img-fluid" alt=""/>
+                            <img data-src={work} className="img-fluid lazyload" alt=""/>
                         </div>
                     </div>
                 </div>

@@ -137,7 +137,7 @@ const HomeBlog = () => (
 											
 											
 											
-											<img src={prop.node.author.avatar_urls.wordpress_48} className="img-fluid" alt=""/>
+											<img data-src={prop.node.author.avatar_urls.wordpress_48} className="img-fluid lazyload" alt=""/>
 											
 											</div>
                                             By {prop.node.author.name}

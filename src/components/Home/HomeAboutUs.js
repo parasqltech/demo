@@ -44,7 +44,7 @@ render() {
 
             <div className="row justify-content-end">
 			<div class="col-md-5 col-lg-6 col-sm-12 text-center">
-				 <img src={img} className="img-fluid d-inline" alt="" />
+				 <img data-src={img} className="img-fluid d-inline lazyload" alt="" />
 			</div>
                 <div className="col-md-7 col-lg-6 col-sm-12 ">
                     <div className="about-content xs-center sm-center wow fadeInUp">

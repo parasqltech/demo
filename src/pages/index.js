@@ -111,7 +111,7 @@ const IndexPage = () => (
                     <div className="inner-box  d-inline-block">
                     <div className="inner-box  d-inline-block">
                         <div className="icon-box  ">
-                            <span className="icon text-center"><img src={pro_2} className="img-fluid" alt=""/></span>
+                            <span className="icon text-center"><img data-src={pro_2} className="img-fluid lazyload" alt=""/></span>
                         </div>
                         <h3>Integrated Thinking</h3>
                         <div className="number"></div>
@@ -121,19 +121,19 @@ const IndexPage = () => (
                  <div className="process-block-two two col-lg-3 col-md-6 col-sm-6 text-center">
                     <div className="inner-box d-inline-block">
                         <div className="icon-box  d-lg-none d-block text-center ">
-                            <span className="icon text-center"><img src={pro_4} className="img-fluid  d-inline" alt=""/></span>
+                            <span className="icon text-center"><img data-src={pro_4} className="img-fluid lazyload  d-inline" alt=""/></span>
                         </div>
                         <div className="number"></div>
                         <h3>SOSTAC</h3>
                         <div className="icon-box  d-lg-block d-none  text-center">
-                            <span className="icon text-center "><img src={pro_4} className="img-fluid  d-inline" alt=""/></span>
+                            <span className="icon text-center "><img data-src={pro_4} className="img-fluid lazyload  d-inline" alt=""/></span>
                         </div>
                     </div>
                 </div>
                  <div className="process-block three col-lg-3 col-md-6 col-sm-6 text-center">
                     <div className="inner-box  d-inline-block" >
                         <div className="icon-box  ">
-                            <span className="icon text-center"><img src={pro_3} className="img-fluid  d-inline" alt=""/></span>
+                            <span className="icon text-center"><img data-src={pro_3} className="img-fluid lazyload  d-inline" alt=""/></span>
                         </div>
                         <h3>OKR</h3>
                         <div className="number"></div>
@@ -142,12 +142,12 @@ const IndexPage = () => (
                 <div className="process-block-two four col-lg-3 col-md-6 col-sm-6 text-center">
                 <div className="inner-box d-inline-block">
                             <div className="icon-box  d-lg-none d-block text-center ">
-                                <span className="icon text-center"><img src={pro_1} className="img-fluid  d-inline" alt=""/></span>
+                                <span className="icon text-center"><img data-src={pro_1} className="img-fluid lazyload  d-inline" alt=""/></span>
                             </div>
                             <div className="number"></div>
                             <h3>Inbound Methodology</h3>
                             <div className="icon-box  d-lg-block d-none  text-center">
-                                <span className="icon text-center "><img src={pro_1} className="img-fluid  d-inline" alt=""/></span>
+                                <span className="icon text-center "><img data-src={pro_1} className="img-fluid lazyload  d-inline" alt=""/></span>
                             </div>
                         </div>
                     </div>

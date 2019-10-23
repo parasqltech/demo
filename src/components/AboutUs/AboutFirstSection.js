@@ -37,7 +37,7 @@ render() {
             <div className="container">
                 <div className="main-panel">
                     <div className="row">
-                        <div className="col-lg-4 mb-4">
+                        <div className="col-lg-4 mb-4 text-center">
                             <div className="play-video-thumbnial">
                                 <img src={about_top} className="img-fluid " alt=""/>
                                 

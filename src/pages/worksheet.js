@@ -38,7 +38,7 @@ class Grid extends React.Component {
 						
 						<span className="section-subheading-heading">Worksheets</span>
 						<h1 className="section-heading">
-						Amplify Work Efficiency
+						Improve work efficiency
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>

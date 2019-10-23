@@ -50,7 +50,7 @@ const guide = () => (
 						
 						<span className="section-subheading-heading">Guides</span>
 						<h1 className="section-heading">
-						Delivering Experiences
+						Handy Resources
 						</h1>
 						<ul className="breadcrumbs">
 							<li> <Link to="/">Home</Link> \</li>

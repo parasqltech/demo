@@ -120,7 +120,7 @@ const HomeBlog = () => (
                                 <div className="thumbnial">
                                     <div className="thumbnial-image">
                                         <Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug}>
-										{(prop.node.acf != null) ? (<img data-src={prop.node.acf.feature_image.source_url} className="img-fluid w-100 lazyload"
+										{(prop.node.acf.feature_image != null) ? (<img data-src={prop.node.acf.feature_image.source_url} className="img-fluid w-100 lazyload"
                                                 alt=""/>) : ('')}
 										</Link>
 										

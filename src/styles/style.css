@@ -2,8 +2,7 @@
 
 @import url('./font-awesome.css');
 @import url('./flaticon.css');
-@import url('./owl.carousel.min.css');
-@import url('./owl.theme.default.css');
+
 
 
 @charset "UTF-8";
@@ -4167,6 +4166,10 @@ section.home-about-section {
     position: relative;
     padding: 33px 0px 50px;
 }
+
+section.home-about-section-1 {
+    min-height: 300px;
+}
 section.home-about-section .about-us-image {
     position: absolute;
     left: -80px;
@@ -6602,6 +6605,10 @@ section.thank-you-section .social-menu li span {
     section.home-about-section {
         padding: 36px 0px 60px;
     }
+    
+    section.home-about-section-1 {
+        min-height: 350px;
+    }
     section.home-about-section h3 {
         font-size: 28px;
         line-height: 1.3em;
@@ -6785,6 +6792,10 @@ section.thank-you-section .social-menu li span {
     }
     section.home-about-section {
         padding: 36px 0px 60px;
+    }
+    
+    section.home-about-section-1 {
+        min-height: 300px;
     }
     section.home-about-section h3 {
         font-size: 22px;
@@ -7755,7 +7766,12 @@ section.thank-you-section .social-menu li span {
     .alignleft {
         float: none !important;
         text-align: center;
-    }}
+    }
+    
+    section.home-about-section-1 {
+        min-height: auto;
+    }
+}
 @media all and (max-width:576px) {
     .label-text {
         font-size: 14px;

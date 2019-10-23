@@ -196,7 +196,7 @@ class Singleservice extends Component {
             </div>
         </div>
     </section>
-	{(service.edges[0].node.acf.about_image != null) ? (<section className="home-about-section bg-white"  >
+	{(service.edges[0].node.acf.about_image != null) ? (<section className="home-about-section home-about-section-1 bg-white"  >
         <div className="container">
             <div className="about-mockup-bg  wow fadeIn">
                 <img src={(service.edges[0].node.acf.about_image != null) ? service.edges[0].node.acf.about_image.source_url : ''} className="img-fluid about-us-image" alt=""/>

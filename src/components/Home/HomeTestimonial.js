@@ -68,7 +68,7 @@ render() {
                                   <div className="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                                       <div className="author-image">
                                           
-											  {(prop.node.acf.image != null) ? (<img data-src={prop.node.acf.image.source_url} className="img-fluid lazyload" alt=""/>) : ('')}
+											  {(prop.node.acf.image != null) ? (<img data-src={prop.node.acf.image} className="img-fluid lazyload" alt=""/>) : ('')}
                                       </div>
                                   </div>
                                   <div className="col-xl-6 col-lg-6 col-md-8 col-sm-8">
@@ -78,7 +78,7 @@ render() {
                                           </div>
                                           <p className="label-text">
                                               <span>{(prop.node.acf.descprition).substring(0, 400)}</span>
-                                              {(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.acf.image.source_url,prop.node.acf.name,prop.node.acf.desgination,prop.node.acf.descprition)}>Read More</a></span>):(''))}
+                                              {(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.acf.image,prop.node.acf.name,prop.node.acf.desgination,prop.node.acf.descprition)}>Read More</a></span>):(''))}
                                               
                                               
                                               
@@ -174,9 +174,7 @@ const HomeTestimonial = () => (
                       desgination
                       descprition
                       name
-                      image {
-                        source_url
-                      }
+                      image 
                     }
                   }
                 }

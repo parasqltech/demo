@@ -207,7 +207,7 @@ class Singleservice extends Component {
                     <div className="about-content xs-center sm-center wow fadeInUp">
                        
                         <h3 className="section-heading" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.title}} ></h3>
-                        <p className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.description}} ></p>
+                        <div className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.acf.description}} ></div>
                         
                     </div>
                 </div>

@@ -6232,8 +6232,7 @@ status = 301
 force = false
 [[redirects]]
 from = "/resources/case-study-ccd/thankyou/?contactId=9341&inf_contact_key=308876630a10feccce59462213a4dd40c83e4466b9e29ff760b3f1c75c27aeb9&inf_field_BrowserLanguage=en-us&inf_field_FirstName=Anthony&inf_field_LastName=Llenas&inf_field_Email=anthony@ilocend.com&inf_field_Phone1=6467781552&inf_custom_Message=Would+like+to+set+up+a+conference+call+with+someone+from+your+team+that+would+be+in+charge+on+handling+new+accounts."
-query = {Regards&inf_qjFW8cXHIR3aWQtT = "", We+are+looking+to+use+your+services. = ""}
-to = "https://www.qltech.com.au/work/clear-choice-dental/thankyou"
+to = "https://www.qltech.com.au/work/clear-choice-dental/"
 status = 301
 force = false
 [[redirects]]

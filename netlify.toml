@@ -7012,33 +7012,32 @@ status = 301
 force = false
 [[redirects]]
 from = "/thank-contact-us/?contactId=288&inf_contact_key=2dd7244c5531dc7cf3583b64e008d5b7e5fd0f8adba0239f2a6bcb8f852d605f&inf_field_BrowserLanguage=en_US&inf_field_FirstName=Sarah&inf_field_LastName=Williams&inf_field_Email=youmustbemellow@hotmail.com&inf_field_Phone1=0435556866&inf_custom_TypeofService1=Websites+or+E-Commerce+or+Apps&inf_field_Website=brewer.info&inf_custom_Message=Hi,"
-query = {Mainly+we+have+been+struggling+with+getting+joomla+to+do+what+we+want,+and+we+have+spent+far+too+long+trying+to+figure+it+out!&captcha.typed = "fDJE&inf_12FbbMOsZiV9BnHW", We+are+trying+to+build+a+complex+website+teaching+people+how+to+home-brew.+We+have+been+struggling+with+joomla+the+most+-+if+we+design+the+site+using+a+simple+desktop+program+like+Microsoft+Publisher,+can+you+help+us+put+it+online?!? = ""}
-to = "https://www.qltech.com.au/thank-subscribing-us"
+to = "https://www.qltech.com.au/thank-you"
 status = 301
 force = false
 [[redirects]]
 from = "/thank-subscribing-us/?contactId=164&inf_contact_key=c2c1d4f70671eab1f74a3d0d043f543ee5fd0f8adba0239f2a6bcb8f852d605f&inf_field_FirstName=Rishabh&inf_field_Email=jainrishabh67@gmail.com&inf_jImhxTkXcyuLgcqU="
-to = "https://www.qltech.com.au/thank-subscribing-us"
+to = "https://www.qltech.com.au/thank-you"
 status = 301
 force = false
 [[redirects]]
-from = "/thank-subscribing-us/?contactId=234&inf_contact_key=bff02cdfaf0ab85f0e84f9a5fba3cea05ef874970906b5f459bb1f2a950b1ab4&inf_field_BrowserLanguage=en_AU&inf_field_LanguageISO2=en&inf_field_FirstName=Talai&inf_field_Email=talai.tangifua@gmail.com&inf_fxOQv4BJaVC2GJSz="
-to = "https://www.qltech.com.au/thank-subscribing-us"
+from = "/thank-you/?contactId=234&inf_contact_key=bff02cdfaf0ab85f0e84f9a5fba3cea05ef874970906b5f459bb1f2a950b1ab4&inf_field_BrowserLanguage=en_AU&inf_field_LanguageISO2=en&inf_field_FirstName=Talai&inf_field_Email=talai.tangifua@gmail.com&inf_fxOQv4BJaVC2GJSz="
+to = "https://www.qltech.com.au/thank-you"
 status = 301
 force = false
 [[redirects]]
-from = "/thank-subscribing-us/?contactId=74&inf_contact_key=3902a4682fe5f2fed8a22a53644f89fc0054d6d826e516e3325806fd6ecae58c&inf_field_FirstName=Glen&inf_field_Email=glenmarsh9999@gmail.com&inf_lCVU7N1X2l6vV19H="
-to = "https://www.qltech.com.au/thank-subscribing-us"
+from = "/thank-you/?contactId=74&inf_contact_key=3902a4682fe5f2fed8a22a53644f89fc0054d6d826e516e3325806fd6ecae58c&inf_field_FirstName=Glen&inf_field_Email=glenmarsh9999@gmail.com&inf_lCVU7N1X2l6vV19H="
+to = "https://www.qltech.com.au/thank-you"
 status = 301
 force = false
 [[redirects]]
-from = "/thank-subscribing-us/?contactId=90&inf_contact_key=501a17949b75f5d41976f3d3882e44730054d6d826e516e3325806fd6ecae58c&inf_field_FirstName=TEST1&inf_field_Email=hellosunny08@gmail.com&inf_D6XFxouBMqHOFszc="
-to = "https://www.qltech.com.au/thank-subscribing-us"
+from = "/thank-you/?contactId=90&inf_contact_key=501a17949b75f5d41976f3d3882e44730054d6d826e516e3325806fd6ecae58c&inf_field_FirstName=TEST1&inf_field_Email=hellosunny08@gmail.com&inf_D6XFxouBMqHOFszc="
+to = "https://www.qltech.com.au/thank-you"
 status = 301
 force = false
 [[redirects]]
-from = "/thank-subscribing-us/?contactId=92&inf_contact_key=fdb808d24ad69cf5bc20cdfe02e516c20054d6d826e516e3325806fd6ecae58c&inf_field_FirstName=Glen&inf_field_Email=glenmarsh9999@gmail.com&inf_D6XFxouBMqHOFszc="
-to = "https://www.qltech.com.au/thank-subscribing-us"
+from = "/thank-you/?contactId=92&inf_contact_key=fdb808d24ad69cf5bc20cdfe02e516c20054d6d826e516e3325806fd6ecae58c&inf_field_FirstName=Glen&inf_field_Email=glenmarsh9999@gmail.com&inf_D6XFxouBMqHOFszc="
+to = "https://www.qltech.com.au/thank-you"
 status = 301
 force = false
 [[redirects]]

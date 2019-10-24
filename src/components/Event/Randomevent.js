@@ -42,10 +42,8 @@ class Randomevent extends React.Component{
             <div className="row">
                 <div className="col-md-12">
                     
-                        <span className="section-subheading-heading">Relevant Events</span> 
-                        <h2 className="section-heading text-center wow fadeIn" >
-                            Events
-                        </h2>
+                        <span className="section-subheading-heading">Check out more Events</span> 
+                        
                     <div className=" pt-0">
                         <div className="home-portfolio-slider-1 wow  animated" >
                             <div className="row">

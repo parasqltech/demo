@@ -7014,6 +7014,9 @@ section.thank-you-section .social-menu li span {
         min-height: 210px;
     }}
 @media all and (max-width:767px) {
+    body{
+        font-size: 14px;
+    }
     .modal {
         padding: 15px;
     }
@@ -7304,6 +7307,7 @@ section.thank-you-section .social-menu li span {
     }
     section.home-testimonial-section .author-content {
         margin-top: 0;
+        font-size: 14px;
     }
     section.home-testimonial-section .quote {
         max-width: 40px;
@@ -7667,6 +7671,9 @@ section.thank-you-section .social-menu li span {
         left: 0px;
         max-width: 100%;
     }
+    .label-text {
+        line-height: 1.5em;
+    }
     section.home-work-section .slick-slide {
         margin: 0px 15px;
     }
@@ -7754,8 +7761,13 @@ section.thank-you-section .social-menu li span {
     section.about-history-section .history-block {
         padding: 30px 15px 0px;
     }
-    section.about-us-section-4 {
-        padding-bottom: 0px;
+    .faq-section .card .card-header {
+        font-size: 14px !important;
+    }    
+    section.events-section-1 .event-content-block ul li, .blank-section ul li {
+        line-height: 1.4em;
+        font-size: 14px;
+        margin-bottom: 6px;
     }
     section.work-section-1 {
         padding: 30px 0px 0px;

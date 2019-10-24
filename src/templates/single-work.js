@@ -180,7 +180,7 @@ class SingleWork extends Component {
                         <div className="col-xl-6 col-lg-6 col-md-4 col-sm-4 col-6">
                             <div className="author-image">
                                 
-									{(work.edges[0].node.acf.client_image != null) ? (<img src={work.edges[0].node.acf.client_image.source_url} className="img-fluid" alt=""/>) : ('')}
+									{(work.edges[0].node.acf.client_pic != null) ? (<img src={work.edges[0].node.acf.client_pic.source_url} className="img-fluid" alt=""/>) : ('')}
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-6 col-md-8 col-sm-8">
@@ -236,7 +236,7 @@ export const pageQuery = graphql`
           company_size
           client_designation
           how_the_clients_business_transformed
-          client_image{
+          client_pic{
 			  source_url
 		  } 
 		   custom_image {

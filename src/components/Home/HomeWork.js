@@ -6,17 +6,20 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import work from '../../img/work.png';
 import portfolio from '../../img/portfolio/1.jpg';
 import homeTestimonialimage from '../../img/work.png'
+
 const settings = {
       dots: false,
       infinite: true,
+      arrows : false,
       speed: 500,
       slidesToShow: 4,
-      slidesToScroll: 3,
+      slidesToScroll: 2,
 	  variableWidth: true,
 	  autoplay: true,
 	  autoplaySpeed: 2000,
-	   mobileFirst: true,
-	     responsive: [
+	  cssEase: "linear",
+	  mobileFirst: true,
+	    responsive: [
     {
       breakpoint: 1024,
       settings:{
@@ -50,7 +53,6 @@ const settings = {
     // settings: "unslick"
     // instead of a settings object
   ]
-
     };
 
 

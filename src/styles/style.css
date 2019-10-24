@@ -3291,7 +3291,7 @@ section.breadcumbs-and-title-section .section-heading {
     display: flex;
     font-weight: 600;
     margin-top: 40px;
-    display: inline-block;
+    display: block;
 }
 .bg-light {
     background: #fdfdfd !important;
@@ -3318,6 +3318,12 @@ section.breadcumbs-and-title-section .section-heading {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     width: 60px;
+    vertical-align: middle;
+}
+.play-button .video-area-popup  + span{
+    width: calc( 100% - 100px);
+    display: inline-block;
+    vertical-align: middle;
 }
 .play-button .video-area-popup:hover {
     background: #ffffff none repeat scroll 0 0;
@@ -4911,7 +4917,8 @@ section.home-testimonial-section .author-content {
 }
 section.home-testimonial-section .quote {
     max-width: 200px;
-    display: inline-block;
+    display: block;
+
 }
 section.home-testimonial-section .label-text {
     font-size: 18px;
@@ -5616,7 +5623,7 @@ section.about-us-section-3 .thumbnial {
     transition: 0.5s;
     margin-bottom: 15px;
     border-radius: 12px;
-    min-height: 347px;
+    min-height: 400px;
 }
 section.about-us-section-3 .thumbnial-bg {
     -webkit-animation: 5s ease 0s normal none infinite running border_animate;
@@ -5802,7 +5809,7 @@ section.about-history-section .history-block .thumbnial::after {
     content: "";
     width: 15px;
     height: 15px;
-    top: -10px;
+    top: -25px;
     right: -63px;
     display: block;
     position: absolute;
@@ -6273,6 +6280,10 @@ section.contact-us-section-2 .card .nav-link,
 section.contact-us-section-3 .card .nav-link {
     font-size: 16px;
     font-weight: 500;
+}
+
+section.contact-us-section-2 .card .nav-link{
+    margin-top:-8px;
 }
 section.contact-us-section-3 .card .nav-link {
     font-size: 14px;
@@ -7771,6 +7782,13 @@ section.thank-you-section .social-menu li span {
     section.home-about-section-1 {
         min-height: auto;
     }
+    section.contact-us-section-2 .nav-link {   
+        margin-bottom: 15px;
+        margin-top: -5px;
+    }
+    section.what-you-get .thumbnial{
+        height: auto;
+    }
 }
 @media all and (max-width:576px) {
     .label-text {
@@ -7861,7 +7879,7 @@ section.thank-you-section .social-menu li span {
     }
     .subnavbar .resource-menu .nav-item {
         display: inline-block;
-        width: 24%;
+        width: 25%;
     }
     .subnavbar .resource-menu .nav-item .nav-link {
         width: 100%;
@@ -7922,10 +7940,15 @@ section.thank-you-section .social-menu li span {
         min-height: 267px;
     }}
 @media all and (max-width:420px) {
-
     section.work-section-1 .work-thumbnial .work-thumbnail-image {
-        min-height: 150px;
-    }}
+        min-height: 224px;
+    }
+    .subnavbar .resource-menu .nav-item,
+    .subnavbar .resource-menu .nav-item .nav-link {
+        display: block;
+        width: 100%;
+    }
+}
 @media all and (max-width:360px) {
     .btn-default {
         padding: 8px 15px;
@@ -7964,17 +7987,14 @@ section.thank-you-section .social-menu li span {
     section.home-section-1 .home-parallax-layers {
         height: 260px;
     }
-    .subnavbar .resource-menu .nav-item,
-    .subnavbar .resource-menu .nav-item .nav-link {
-        display: block;
-        width: 100%;
-    }
+  
     section.worksheet-section .thumbnial .thumbnial-image {
         height: auto;
     }
     section.work-section-1 .work-thumbnial .work-thumbnail-image {
-        min-height: 170px;
-    }}
+        min-height: 200px;
+    }
+}
 
 
 
@@ -8449,7 +8469,6 @@ section.career-section-01 .slick-slider .slick-next {
     width: 50px !important;
     height: 50px !important;
     z-index: 11111;
-    background: #fff !important;
 }
 section.career-section-01 .slick-slider .slick-prev:before,
 section.career-section-01 .slick-slider .slick-next:before {
@@ -9262,13 +9281,6 @@ section.work-details-section-1 .breif-text span {
 }
 .srv-validation-message {
     color: red;
-}
-body.ReactModal__Body--open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-
 }
 .author-details-block .blog-author-image {
     width: 80px;

@@ -5992,7 +5992,6 @@ status = 301
 force = false
 [[redirects]]
 from = "/Monetize"
-query = {Site: = "", Your = "", www.bit.ly/2CTuCer = ""}
 to = "https://www.qltech.com.au/"
 status = 301
 force = false

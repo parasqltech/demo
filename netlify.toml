@@ -2176,7 +2176,6 @@ status = 301
 force = false
 [[redirects]]
 from = "/thank-contact-us/?contactId=4464&inf_contact_key=27116ef85de6ed5a58fd51db5f074355cc1665ad961fe224278b8b6aa09a837e&inf_field_BrowserLanguage=en-au&inf_custom_Message=website+revamp+for+www.sentwithlove.com.au"
-query = {including+google+ad+extensions,+chat+button,+smoother+PayPal+transaction+process,+automated+emails,+easier+and+shorter+sign+up+form = "", www.sentwithlove.com.au&inf_field_FirstName = "Melissa&inf_field_Email"}
 to = "https://www.qltech.com.au/thank-contact-us"
 status = 301
 force = false

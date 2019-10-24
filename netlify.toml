@@ -5571,8 +5571,7 @@ to = "https://www.qltech.com.au/hub/marketing/inbound-marketing-strategy-enhance
 status = 301
 force = false
 [[redirects]]
-from = "/grow/marketing/instagram-social-media-"
-query = {platform-in-digital-marketing/ = ""}
+from = "/grow/marketing/instagram-social-media-platform-in-digital-marketing"
 to = "https://www.qltech.com.au/hub/social-media/instagram-platform-in-digital-marketing/"
 status = 301
 force = false

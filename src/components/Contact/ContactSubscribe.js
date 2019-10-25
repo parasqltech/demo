@@ -32,7 +32,7 @@ class ContactSubscribe extends Component{
 	submitForm() {
 	  if (this.validator.allValid()) {
 		var request = new XMLHttpRequest();
-		request.open('POST', 'https://script.google.com/a/qltech.com.au/macros/s/AKfycbxlmzD9YrxzkO4efexXOUak3dgxN9PSTQRgR6gZ/exec', true);
+		request.open('POST', 'https://script.google.com/a/qltech.com.au/macros/s/AKfycbzM-2tkpmhvcjNAJZvPNAObtmjJiyh4Ldudva7NnoS70P3r2Z4/exec', true);
 		var formData = new FormData();
 		
 		formData.append("first_name", "Friend");

@@ -39,7 +39,7 @@ render() {
 		<div  className="play-button mt-2" onClick={() => this.handleModalOpen()}>
                             <span data-video-id="" className="video-area-popup">
                                 <i className="fa fa-play"></i></span>
-                            <span>Check out what Jeremiah from Keap (<i>APAC Head</i>) has to say</span>
+                            <span>Check out what Jeremiah from Keap has to say</span>
                         </div>
 <ReactModal  
         isOpen={this.state.isModalOpen}

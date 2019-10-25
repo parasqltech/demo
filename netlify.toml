@@ -1039,7 +1039,7 @@ status = 301
 force = false
 [[redirects]]
 from = "/thank-you/"
-to = "https://www.qltech.com.au/thankyou/"
+to = "https://www.qltech.com.au/thank-you/"
 status = 301
 force = false
 [[redirects]]

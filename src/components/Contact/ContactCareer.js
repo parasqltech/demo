@@ -135,17 +135,15 @@ class ContactCareer extends React.Component{
                                                     <select value={this.state.position} id="des" onChange={this.position} className="form-control" name="position" required>
                                                         <option value="">Please Select</option>
                                                         <option value="Front End Developer">Front End Developer</option>
-                                                        <option value="Jr. PHP Developer">Jr. PHP Developer</option>
-                                                        <option value="Jr. PHP Developer">Jr. PHP Developer</option>
+                                                        <option value="PHP Developer">PHP Developer</option>
                                                         <option value="UI/UX Designer">UI/UX Designer</option>
                                                         <option value="HR Executive">HR Executive</option>
-                                                        <option value="SEO Executive">SEO Executive</option>
-                                                        <option value="Sr. Magento Developer">Sr. Magento Developer</option>
+                                                        <option value="SEO Executive">SEO Executive</option> 
                                                         <option value="Content Writer">Content Writer</option>
                                                         <option value="Graphic Designer">Graphic Designer</option>
                                                         <option value="Junior WordPress Developer">Junior WordPress Developer</option>
-                                                        <option value="Jr. iOS Developer">Jr. iOS Developer</option>
-                                                        <option value="Sr. Android Developer">Sr. Android Developer</option>
+                                                        <option value="IOS Developer">IOS Developer</option>
+                                                        <option value="Android Developer">Android Developer</option>
                                                         <option value="Programmer / Developer">Programmer / Developer</option>
                                                         <option value="Customer Service Representative">Customer Service Representative</option>
                                                         <option value="Strategic Account Manager">Strategic Account Manager</option>

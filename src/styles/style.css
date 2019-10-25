@@ -5768,7 +5768,7 @@ section.about-history-section .history-block .middle-line::before {
     content: "";
     width: 2px;
     height: 100%;
-    top: 32px;
+    top: 20px;
     left: calc(50% - 1px);
     display: block;
     position: absolute;

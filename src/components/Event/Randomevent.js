@@ -44,7 +44,7 @@ class Randomevent extends React.Component{
                     
                         <span className="section-subheading-heading">Check out more Events</span> 
                         
-                    <div className=" pt-0 mt-3">
+                    <div className=" pt-0 mt-5">
                         <div className="home-portfolio-slider-1 wow  animated" >
                             <div className="row">
 							{data &&

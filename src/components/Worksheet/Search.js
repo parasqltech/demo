@@ -15,15 +15,17 @@ export default class Search extends Component {
   render() {
     return (
       <>
-        <input type="text" className="form-control" placeholder="Search Here..." value={this.state.query} onChange={this.search} />
+	  {(this.props.searchIndex.length > 5) ? (<><input type="text" className="form-control" placeholder="Search Here..." value={this.state.query} onChange={this.search} />
         <ul className="lisearch" >
           {this.state.results.map(page => (
             <li key={page.node.id}>
-              <Link to={"/" + page.node.url.replace('https://qltech.io/worksheet','/worksheet/')}>{page.node.title}</Link>
+              <Link to={"/" + page.node.url.replace('https://qltech.io/worksheet','/worksheet/')} dangerouslySetInnerHTML={{ __html: page.node.title}} ></Link>
               
             </li>
           ))}
-        </ul>
+        </ul></>) : ('') }
+	  
+        
       </>
     )
   }

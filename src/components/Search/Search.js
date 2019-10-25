@@ -19,7 +19,7 @@ export default class Search extends Component {
         <ul className="lisearch" >
           {this.state.results.map(page => (
             <li key={page.node.id}>
-              <Link to={"/" + page.node.url.replace('https://qltech.io/knowledge-article/','/hub/')}>{page.node.title}</Link>
+              <Link to={"/" + page.node.url.replace('https://qltech.io/knowledge-article/','/hub/')} dangerouslySetInnerHTML={{ __html: page.node.title}} ></Link>
               
             </li>
           ))}

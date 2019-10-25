@@ -123,9 +123,7 @@ class SingleWork extends Component {
                             <h2 className="section-heading-2 mb-2"> Transformation</h2>
                             <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.how_the_clients_business_transformed }} ></p></> ) : ("")}
                            
-                               
-                        </div>
-                        {(work.edges[0].node.acf.gallery != null) ? (<div className="mt-5 mb-5"><Slider {...settings} className="trusted-by-slider" >
+                               {(work.edges[0].node.acf.gallery != null) ? (<div className="mt-5 mb-5"><Slider {...settings} className="trusted-by-slider" >
 							{
 								work.edges[0].node.acf.gallery.map(
 								prop => {
@@ -135,6 +133,8 @@ class SingleWork extends Component {
 									}
 								)}
 						</Slider></div>) : ('')}
+                        </div>
+                        
 						
                         <div className="col-xl-3 col-lg-4">
                             <h5 className="section-heading-3">About</h5>

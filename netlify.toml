@@ -2659,11 +2659,6 @@ to = "https://www.qltech.com.au/"
 status = 301
 force = false
 [[redirects]]
-from = "/career"
-to = "https://www.qltech.com.au/career"
-status = 301
-force = false
-[[redirects]]
 from = "/category/develop/mobile-apps-development/page/2/"
 to = "https://www.qltech.com.au/category/mobile-apps"
 status = 301
@@ -5441,11 +5436,6 @@ force = false
 [[redirects]]
 from = "/emps"
 to = "https://www.qltech.com.au/"
-status = 301
-force = false
-[[redirects]]
-from = "/event/"
-to = "https://www.qltech.com.au/event"
 status = 301
 force = false
 [[redirects]]

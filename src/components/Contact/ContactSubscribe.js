@@ -44,9 +44,11 @@ class ContactSubscribe extends Component{
 		
 		this.setState({shown: "d-block"});
 		
+		this.setState({email: " "});
 		setTimeout(
 			function() {
 				this.setState({shown: "d-none"});
+				
 			}
 			.bind(this),
 			3000

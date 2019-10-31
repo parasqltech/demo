@@ -23,6 +23,7 @@ import pro_4 from '../img/sostac.png';
 import ico_4 from '../img/icon-4.png';
 import ico_3 from '../img/icon-3.png';
 import ico_2 from '../img/icon-2.png';
+import LazyLoad from 'react-lazyload';
 
 const IndexPage = () => (
 	<Layout>
@@ -78,6 +79,7 @@ const IndexPage = () => (
             </div>
         </div>
     </section>
+	<LazyLoad height={100} >
 	<section className="home-trust-list-section bg-white">
         <div className="container">
             <div className="main-panel">
@@ -94,8 +96,14 @@ const IndexPage = () => (
             </div>
         </div>
     </section>
+	</LazyLoad>
+	<LazyLoad height={200} >
 	<HomeService />
+	</LazyLoad>
+	<LazyLoad height={300} >
 	<HomeAboutUs />
+	</LazyLoad>
+	<LazyLoad height={200} >
 	 <section className="home-process-section wow fadeIn">
         <div className="container">
             <div className="row justify-content-center">
@@ -155,10 +163,19 @@ const IndexPage = () => (
                 
         </div>
     </section>
+	</LazyLoad>
+	<LazyLoad height={200} >
 	<HomeWork />
+	</LazyLoad>
+	<LazyLoad height={200} >
 	<HomeTestimonial />
+	</LazyLoad>
+	<LazyLoad height={200} >
 	<HomeBlog />
+	</LazyLoad>
+	<LazyLoad height={200} >
 	<HomePartner />
+	</LazyLoad>
 	</Layout>
 )
 

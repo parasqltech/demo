@@ -51,6 +51,7 @@
     "react-form-validate": "^1.0.3",
     "react-helmet": "^5.2.1",
     "react-images": "^1.0.0",
+    "react-lazyload": "^2.6.2",
     "react-modal": "^3.10.1",
     "react-model": "^3.0.1",
     "react-moment": "^0.9.6",

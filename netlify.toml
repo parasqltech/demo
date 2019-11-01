@@ -7757,4 +7757,63 @@ from = "https://www.qltech.com.au/category/news-updates/page/2/"
 to = "https://www.qltech.com.au/"
 status = 301
 force = false
-
+[[redirects]]
+from = "https://www.qltech.com.au/project/yupit/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/brain-wellness-spa/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/awt/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/unstoppable-you/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/baby-nappy/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/carrific/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/gujarati-samaj/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/3658/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/sal-cheveux/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/australian-sports-camps/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/youre-the-boss/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/lost-found-link/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false

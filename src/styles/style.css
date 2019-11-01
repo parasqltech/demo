@@ -9522,3 +9522,7 @@ section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial img {
     section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
         min-height: auto;
     }}
+	
+.er-msg{
+	margin-left: 16px !important;
+}	

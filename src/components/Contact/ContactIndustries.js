@@ -13,6 +13,7 @@ class ContactIndustries extends React.Component{
           email: '',
           number: '',
           goal: '',
+		  shown: "d-none",
         
 		}
 	  this.submitForm = this.submitForm.bind(this);
@@ -54,7 +55,27 @@ class ContactIndustries extends React.Component{
 	submitForm() {
 	  if (this.validator.allValid()) {
 		
-		document.getElementById('form').submit()
+		var myarr = ["free", "downloads", "offers", "DA", "PA", "affordable price", "clients", "Some example", "services", "giveaways", "goal", "example", "test", "Marketing", "traffic", "offers"];
+		
+		var flag = 0;
+		for(let i = 0; i < myarr.length; i++){
+			if(new RegExp('\\b'+ myarr[i] +'\\b','gi').test(this.state.goal) == true){
+				flag = 1;
+			}
+		}	
+		if(flag == 1){
+			this.setState({shown: "d-block"});
+			setTimeout(
+				function() {
+					this.setState({shown: "d-none"});
+				}
+			.bind(this),
+				2000
+			);
+		}
+		else{
+			document.getElementById('form').submit();	
+		}	
 	  } else {
 		this.validator.showMessages();
 		// rerender to show messages for the first time
@@ -96,6 +117,7 @@ class ContactIndustries extends React.Component{
 										</div>
 										<input type="hidden" required className="form-control" name="url" value={this.props.url} />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
+										<p  className={"text-danger er-msg "+this.state.shown} >Invalid Message.</p>
 										<div className="col-md-12  mb-4 ">
 										<button type="button" onClick={this.submitForm} className="btn-default border-0 btn-sub" value="Submit">Submit</button>
 											

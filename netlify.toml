@@ -1227,11 +1227,6 @@ to = "https://www.qltech.com.au/category/seo"
 status = 301
 force = false
 [[redirects]]
-from = "/category/automate/"
-to = "https://www.qltech.com.au/category/automate"
-status = 301
-force = false
-[[redirects]]
 from = "/develop/joomla/four-best-joomla-extensions-internet-security/"
 to = "https://www.qltech.com.au/category/web-development"
 status = 301
@@ -1629,11 +1624,6 @@ force = false
 [[redirects]]
 from = "/blog/page/6/"
 to = "https://www.qltech.com.au/"
-status = 301
-force = false
-[[redirects]]
-from = "/category/develop/"
-to = "https://www.qltech.com.au/category/web-development"
 status = 301
 force = false
 [[redirects]]
@@ -3200,11 +3190,6 @@ force = false
 [[redirects]]
 from = "/category/grow/page/2/"
 to = "https://www.qltech.com.au/category/marketing"
-status = 301
-force = false
-[[redirects]]
-from = "/category/magento/"
-to = "https://www.qltech.com.au/category/magento"
 status = 301
 force = false
 [[redirects]]

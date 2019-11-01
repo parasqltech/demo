@@ -26,11 +26,7 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"	
 	
-[[redirects]]
-from = "/category/marketing"
-to = "https://www.qltech.com.au/category/marketing"
-status = 301
-force = false
+
 [[redirects]]
 from = "/about/"
 to = "https://www.qltech.com.au/about-us"
@@ -2659,11 +2655,6 @@ force = false
 [[redirects]]
 from = "/category/develop/mobile-apps-development/page/2/"
 to = "https://www.qltech.com.au/category/mobile-apps"
-status = 301
-force = false
-[[redirects]]
-from = "/category/marketing/"
-to = "https://www.qltech.com.au/category/marketing"
 status = 301
 force = false
 [[redirects]]

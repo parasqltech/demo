@@ -26,8 +26,11 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"	
 	
-
-  
+[[redirects]]
+from = "/category/marketing"
+to = "https://www.qltech.com.au/category/marketing"
+status = 301
+force = false
 [[redirects]]
 from = "/about/"
 to = "https://www.qltech.com.au/about-us"
@@ -7245,6 +7248,541 @@ status = 301
 force = false
 [[redirects]]
 from = "/xy"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/googlewebsearch/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/services/shopify/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/inboundmarketingstrategy/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/inbound/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/inboundtools/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/services/drupal/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/blog/page/21/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/application/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/marketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seotrends/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/yii2/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/digitalmarketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/author/rajani/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/ecommercesite/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/googlecomment/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/inboundtools/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/cookie-policy/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/author/sophorn/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/websitetraffic/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seoservices/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/onlinestore/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/angularjs/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/affiliatemarketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/infusionsoftfordentist/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seotools/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/twitterad/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/webdesigntrends/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/webtraffic/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/googleupdates/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/mobileapplicationdevelopmentcompany/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/uxdesigntrends/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seonews/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/socialmediamarketer/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/cro/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/boost-traffic-content-marketing-2017/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/guide/advanced-seo-techniques/thankyou/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/contentcurationtools/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/localupdates/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/onlinestore/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/angularjs/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/affiliatemarketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/infusionsoftfordentist/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seostatistics/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/onlinestoreinaustralia/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/visualmarketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/googlenews/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seotools/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/twitterad/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/webdesigntrends/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/webtraffic/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/category/web-development"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/googleupdates/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/uxdesigntrends/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seonews/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/qualityassurance/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/socialmediamarketer/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/category/grow/marketing/page/3/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/boost-traffic-content-marketing-2017/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/blog/page/23/?nonamp=1"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/blog/page/25/?nonamp=1"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/19-amazing-inbound-tools-marketers-crave/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/react-js/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/events-4/tags/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/email-marketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/startup-company/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/business-marketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/marketing-startups/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/author/helen-cartwright/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seo-backlinks/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/online-marketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/google-snippets/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/buyer-persona/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/persona-template/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/load-testing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/author/james-silverwood/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/ecommerce-development/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/develop-apps/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/performance-testing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/conversion-rate/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/pinterest-marketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/ppc-advertising/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/mobile-algorithm/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/healthcare-automation/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/php-perth/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/local-seo/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/crm-tool/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/laravel-development/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/infusionsoft-service/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/ios-development/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seo-strategy/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/magento-performance/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/ppc-marketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/effective-marketing/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/android-10/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/wordpress-blog/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/magento-upgradation/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/seo-content/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/buyer-personas/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/cordova-plugins/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/website-development/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/ppc-chat/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/millennial-2018/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/content-management/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/wordpress-plugins/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/tag/metric-conversion/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/category/grow/page/4/"
+to = "https://www.qltech.com.au/"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/category/news-updates/page/2/"
 to = "https://www.qltech.com.au/"
 status = 301
 force = false

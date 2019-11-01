@@ -822,11 +822,6 @@ to = "https://www.qltech.com.au/hub/php-development/benefits-custom-web-developm
 status = 301
 force = false
 [[redirects]]
-from = "/develop/wordpress/building-quality-wordpress-projects/"
-to = "https://www.qltech.com.com/hub/wordpress-dev/building-quality-wordpress-projects/"
-status = 301
-force = false
-[[redirects]]
 from = "/grow/healthcare/automation-can-benefit-healthcare-industry/"
 to = "https://www.qltech.com.au/hub/health-care/automation-can-benefit-healthcare-industry"
 status = 301

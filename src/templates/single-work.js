@@ -91,7 +91,7 @@ class SingleWork extends Component {
 							{(work.edges[0].node.acf.custom_image != null) ? (<img data-src={work.edges[0].node.acf.custom_image.source_url} className="img-fluid lazyload mb-4"/>) : ('') }
 							
 							
-                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.content }}  ></p>
+                            <div className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.content }}  ></div>
 							
 							{(work.edges[0].node.acf.youtube_video_url != "") ? (<div className="embed-responsive embed-responsive-16by9 text-center">
 							<iframe className="embed-responsive-item " width="560" height="315" src={work.edges[0].node.acf.youtube_video_url} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -32,7 +32,7 @@ class ContactSubscribe extends Component{
 	submitForm() {
 	  if (this.validator.allValid()) {
 		var request = new XMLHttpRequest();
-		request.open('POST', 'https://script.google.com/macros/s/AKfycbwnIe_Zd3xo7hjtrkOolZSxN4hvrIntHxPg3Bog4ztlXygWIcc/exec', true);
+		request.open('POST', 'https://script.google.com/macros/s/AKfycbycfOFmDih98LQhuWITY_JhLYmM_PXpARj0enCNY9cPaCL3xLs/exec', true);
 		
 		var formData = new FormData();
 		

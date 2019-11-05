@@ -87,7 +87,7 @@ class ContactWork extends React.Component{
   render (){
     return(
       <>
-      <form method="POST" id="form" action="https://script.google.com/macros/s/AKfycby6PzAC31YbZItcHbE2EK-YbdyR_L9uTNEBGgSo1EgR4YIltUZX/exec"  >
+      <form method="POST" id="form" action="https://script.google.com/macros/s/AKfycbwCKMtCjCKbULTmpSNqkWQNgu5FfIw-U387iryVlXsOIxPpjYyO/exec"  >
 							<div className="row justify-content-center">
 								<div className="">
 									 <div className="row">

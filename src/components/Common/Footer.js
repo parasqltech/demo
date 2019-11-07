@@ -114,9 +114,9 @@ const Footer = () => (
                         
                     </p>
                     <ul className="pull-right mb-0 footer other-links">
-                        <li><Link to="/privacy-policy">Privacy Policy</Link> |</li>
-                        <li><Link to="/terms-and-conditions">Terms and Conditions</Link> |</li>
-                        <li><Link to="/disclaimer">Disclaimer</Link> </li>
+                        <li><Link to="/privacy-policy/">Privacy Policy</Link> |</li>
+                        <li><Link to="/terms-and-conditions/">Terms and Conditions</Link> |</li>
+                        <li><Link to="/disclaimer/">Disclaimer</Link> </li>
                        
                     </ul>
                 </div>

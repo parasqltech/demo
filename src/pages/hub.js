@@ -60,16 +60,16 @@ const kh = () => (
                         <div className="col-md-11 justify-content-between row mb-4">
                             <ul className="nav  resource-menu">
                                 <li className="nav-item">
-                                <Link className="nav-link active" to="/hub">Featured</Link>   
+                                <Link className="nav-link active" to="/hub/">Featured</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/article">Articles</Link>
+                                    <Link className="nav-link " to="/article/">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/guide">Guides</Link>
+                                    <Link className="nav-link " to="/guide/">Guides</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/worksheet">Worksheets</Link>
+                                    <Link className="nav-link" to="/worksheet/">Worksheets</Link>
                                 </li>
                             </ul>
                             

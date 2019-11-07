@@ -67,7 +67,7 @@ class Randomevent extends React.Component{
 											</Moment></p>
                                         </div>
                                         <div className="work-thumbnail-details">
-                                            <Link to={"event/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
+                                            <Link to={"event/"+prop.node.slug+"/"} className="work-title">{prop.node.title}</Link>
                                         </div>
                                     </div>
                                 </div>)}		

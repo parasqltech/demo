@@ -68,7 +68,7 @@ const Whyqltech = () => (
 													</Moment></p>
 												</div>
 												<div className="work-thumbnail-details">
-													<Link to={"event/"+prop.node.slug} className="work-title">{prop.node.title}</Link>
+													<Link to={"event/"+prop.node.slug+"/"} className="work-title">{prop.node.title}</Link>
 												</div>
 											</div>
 										</div>
@@ -83,7 +83,7 @@ const Whyqltech = () => (
                             
                     </div>
 					<div className="col-md-12 text-center" >
-							<Link className="btn-default" to="/event">Check out more events</Link>
+							<Link className="btn-default" to="/event/">Check out more events</Link>
 					</div>
                 </div>
                     

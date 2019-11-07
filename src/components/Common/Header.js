@@ -126,7 +126,7 @@ const Navbar = () => (
 								<a className="nav-link dropdown-toggle" data-toggle="dropdown" href="jacasvript:;">About</a>
 								<ul className="dropdown-menu row">
 								{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
-								return (<li key={i} ><Link className="dropdown-item"   to={child.object_slug}>{child.title}</Link></li> )
+								return (<li key={i} ><Link className="dropdown-item"   to={child.object_slug+"/"}>{child.title}</Link></li> )
 							  })}</ul></li>))}	
 								
 								</>
@@ -139,7 +139,7 @@ const Navbar = () => (
 							</>
 						
 							) : (<li className="nav-item">
-							<Link className="nav-link" key={prop.id} to={prop.object_slug} >
+							<Link className="nav-link" key={prop.id} to={prop.object_slug+"/"} >
 								{prop.title}
 							</Link>
                         </li>))}
@@ -153,7 +153,7 @@ const Navbar = () => (
 							</Link>
                         </li>
                         <li className="nav-item d-none  d-md-inline">
-                            <Link className="nav-link btn-default" to="contact-us" >
+                            <Link className="nav-link btn-default" to="contact-us/" >
 								Contact Us
 							</Link>
                         </li>

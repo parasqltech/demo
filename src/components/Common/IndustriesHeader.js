@@ -26,7 +26,7 @@ const IndustriesHeader = () => (
                 prop => {
 					return (
 					<li>
-                                           <Link to={"industries/"+prop.node.slug} className="dropdown-item mt-1">
+                                           <Link to={"industries/"+prop.node.slug+"/"} className="dropdown-item mt-1">
                                                <span className="dropdown-menu-li-list" dangerouslySetInnerHTML={{ __html: prop.node.title}}></span>
                                            </Link>
                                        </li>

@@ -133,7 +133,7 @@ const HomeWork = () => (
                                     <h2 className="section-heading text-left mb-4">{prop.node.acf.title}</h2>
                                     <p className="label-text mb-4">{prop.node.acf.descprtiton}</p>
 
-                                    <Link to="/work" className="btn btn-secondary-link"><span>View More Work <i className="fa fa-long-arrow-right ml-1"></i></span></Link>
+                                    <Link to="/work/" className="btn btn-secondary-link"><span>View More Work <i className="fa fa-long-arrow-right ml-1"></i></span></Link>
                                 </div>
                                 </div>
                                       )
@@ -164,7 +164,7 @@ const HomeWork = () => (
                                             <div className="work-thumbnail-details">
                                                 <p className="work-title">{prop.node.acf.title}</p>
                                                 <p className="label-text">{prop.node.acf.short_descprition}</p>
-                                                <Link to={"work/"+prop.node.slug} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
+                                                <Link to={"work/"+prop.node.slug+"/"} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
                                             </div>
                                         </div>
                                          )

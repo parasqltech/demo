@@ -135,7 +135,7 @@ class FilterGrid extends React.Component {
                             <p className="label-text">{prop.node.acf.short_descprition}</p>
                             
 							
-							<Link to={"work/"+prop.node.slug} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
+							<Link to={"work/"+prop.node.slug+"/"} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
 							
                         </div>
                     </div>

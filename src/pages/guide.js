@@ -70,16 +70,16 @@ const guide = () => (
                         <div className="col-md-11 justify-content-between row mb-4">
                             <ul className="nav  resource-menu">
                                 <li className="nav-item">
-                                <Link className="nav-link " to="/hub">Featured</Link>   
+                                <Link className="nav-link " to="/hub/">Featured</Link>   
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link " to="/article">Articles</Link>
+                                    <Link className="nav-link " to="/article/">Articles</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" to="/guide">Guides</Link>
+                                    <Link className="nav-link active" to="/guide/">Guides</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/worksheet">Worksheets</Link>
+                                    <Link className="nav-link" to="/worksheet/">Worksheets</Link>
                                 </li>
                             </ul>
                             <div className="search-box ">
@@ -110,7 +110,7 @@ const guide = () => (
 								
                                     </div>
                                    
-                                    <Link to={"guide/"+prop.node.slug} dangerouslySetInnerHTML={{ __html: prop.node.title+' <i class="fa fa-long-arrow-right ml-1"></i>'}} className="guide-text">
+                                    <Link to={"guide/"+prop.node.slug+"/"} dangerouslySetInnerHTML={{ __html: prop.node.title+' <i class="fa fa-long-arrow-right ml-1"></i>'}} className="guide-text">
 									 
                                     </Link>
                                 </div>

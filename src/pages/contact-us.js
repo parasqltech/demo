@@ -99,7 +99,8 @@ const IndexPage = () => (
 								<div className="row ">
 									<div className="col-lg-12 mb-4">
 											
-											<iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.1889103145554!2d115.85688631473754!3d-31.955771381227688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bb29e26a22b5%3A0x4237fca06c578d13!2s45%20St%20Georges%20Terrace%2C%20Perth%20WA%206000%2C%20Australia!5e0!3m2!1sen!2sin!4v1570856252666!5m2!1sen!2sin" width="600" height="450" frameborder="0"  allowfullscreen=""></iframe>
+											
+											<iframe className="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13540.757186424815!2d115.8591542!3d-31.9557609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4c57bca413365250!2sQL%20Tech!5e0!3m2!1sen!2sau!4v1573473327100!5m2!1sen!2sau" width="600" height="450" frameborder="0"  allowfullscreen=""></iframe>
 									</div>
 									<div className="col-lg-12 text-left">
 										<div className="card-body">

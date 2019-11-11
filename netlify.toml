@@ -8411,3 +8411,128 @@ from = "https://www.qltech.com.au/category/news-updates/page/2/"
 to = "https://www.qltech.com.au/"
 status = 301
 force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/yupit/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/brain-wellness-spa/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/awt/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/unstoppable-you/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/baby-nappy/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/carrific/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/gujarati-samaj/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/3658/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/sal-cheveux/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/australian-sports-camps/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/youre-the-boss/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/project/lost-found-link/"
+to = "https://www.qltech.com.au/work"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/services/zoho-crm/"
+to = "https://www.qltech.com.au/platforms/zoho-one"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/services/infusionsoft/"
+to = "https://www.qltech.com.au/platforms/keap-infusionsoft"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/hubspot-crm-services/"
+to = "https://www.qltech.com.au/platforms/hubspot"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/hub/marketing/increase-sales-leads-with-email-marketing"
+to = "https://www.qltech.com.au/marketing/increase-sales-leads-with-email-marketing"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/category/develop/"
+to = "https://www.qltech.com.au/category/wordpress-dev"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/category/web-design"
+to = "https://www.qltech.com.au/services/graphic-design"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/web-design/"
+to = "https://www.qltech.com.au/services/graphic-design"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/develop/wordpress/19-amazing-inbound-tools-marketers-crave/"
+to = "https://www.qltech.com.au/hub/marketing/inbound-marketing-strategy-enhance-business"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/book-a-consultation/"
+to = "https://www.qltech.com.au/schedule-a-call"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/hub/cro/"
+to = "https://www.qltech.com.au/category/cro"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/services/laravel/"
+to = "https://www.qltech.com.au/services/laravel-development"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com/hub/marketing/top-5-reasons-create-buyer-persona"
+to = "https://www.qltech.com.au/category/web-development"
+status = 301
+force = false
+[[redirects]]
+from = "https://www.qltech.com.au/develop/web-design/top-10-tips-get-started-responsive-web-design/"
+to = "https://www.qltech.com.au/category/web-design"
+status = 301
+force = false

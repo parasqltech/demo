@@ -121,7 +121,7 @@ const IndexPage = () => (
 										<div className="col-lg-12 text-left">
 											<div className="card-body">
 												<p className="card-title mb-1">India Office</p>
-												<p className="label-text">301/C, Wallstreet Annexe, Near Gujarat College, Kavi Nanalal Marg, Ellisbridge, Ahmedabad, Gujarat 380006</p>
+												<p className="label-text">301/A, Wallstreet Annexe, Near Gujarat College, Kavi Nanalal Marg, Ellisbridge, Ahmedabad, Gujarat 380006</p>
 											</div>
 										</div>
 									</div>

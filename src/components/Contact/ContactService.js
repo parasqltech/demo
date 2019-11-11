@@ -14,6 +14,7 @@ class ContactService extends React.Component{
           number: '',
           goal: '',
 		  shown: "d-none",
+		  shown_new: "d-none",
         
 		}
 	  this.submitForm = this.submitForm.bind(this);
@@ -57,6 +58,21 @@ class ContactService extends React.Component{
 	
 	submitForm() {
 	  if (this.validator.allValid()) {
+		
+		var fnew = this.state.first_name.slice(0, 5);  
+		var lnew = this.state.last_name.slice(0, 5);  
+		
+		if(fnew == lnew){
+			this.setState({shown_new: "d-block"});
+			setTimeout(
+				function() {
+					this.setState({shown_new: "d-none"});
+				}
+			.bind(this),
+				2000
+			);
+			return false;
+		}	
 		
 		var myarr = ["free", "downloads", "offers", "DA", "PA", "affordable price", "clients", "Some example", "services", "giveaways", "goal", "example", "test", "Marketing", "traffic", "offers","Bitcoin", "ervaringen", "review", "Capsules", "Amoxicillin", "blogger", "supplier", "SEO", "backlinks", "Digital", "Marketing", "link builder", "domain authority", "Off–Page",  "Title Tag Optimization", "Meta Tag Optimization", "keyword", "SERPs"];
 		
@@ -121,6 +137,7 @@ class ContactService extends React.Component{
 										<input type="hidden" required className="form-control" name="url" value={this.props.url} />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
 										<p  className={"text-danger er-msg "+this.state.shown} >Invalid Message.</p>
+										<p  className={"text-danger er-msg "+this.state.shown_new} >First name last name are must be different.</p>
 										<div className="col-md-12  mb-4 ">
 										<button type="button" onClick={this.submitForm} className="btn-default border-0 btn-sub" value="Submit">Submit</button>
 											

@@ -2001,11 +2001,6 @@ to = "https://www.qltech.com.au/category/php-development"
 status = 301
 force = false
 [[redirects]]
-from = "/category/web-design/"
-to = "https://www.qltech.com.au/category/web-design"
-status = 301
-force = false
-[[redirects]]
 from = "/develop/magento/magento-development-business-e-commerce-store/"
 to = "https://www.qltech.com.au/category/magento"
 status = 301

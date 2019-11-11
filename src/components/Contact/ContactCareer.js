@@ -107,7 +107,7 @@ class ContactCareer extends React.Component{
   render (){
     return(
       <>
-	  <form method="post" id="form" action="https://script.google.com/macros/s/AKfycbyyA4XBhMbE6a0uptpdVPl5IdRbI9Y2rkLX0kLEgd__YBiYjo0/exec" enctype="multipart/form-data">
+	  <form method="post" id="form" action="https://script.google.com/macros/s/AKfycbwcE57k_MU__-34meqARCcZLmpXf0TDZr51E4_S0WsyGZ54g4uj/exec" enctype="multipart/form-data">
 	  
                                             <div className="row ">
                                                 <div className="col-md-6 mb-4">

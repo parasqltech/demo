@@ -916,11 +916,6 @@ to = "https://www.qltech.com.au/hub/marketing/boost-traffic-content-marketing"
 status = 301
 force = false
 [[redirects]]
-from = "/book-a-consultation/"
-to = "https://www.qltech.com.au/book-a-consultation/"
-status = 301
-force = false
-[[redirects]]
 from = "/grow/marketing/lead-nurturing-roi/"
 to = "https://www.qltech.com.au/hub/marketing/lead-nurturing-roi"
 status = 301
@@ -1752,7 +1747,7 @@ status = 301
 force = false
 [[redirects]]
 from = "/book-a-consultation/progree-bar/"
-to = "https://www.qltech.com.au/"
+to = "https://www.qltech.com.au/schedule-a-call/"
 status = 301
 force = false
 [[redirects]]
@@ -4893,12 +4888,12 @@ status = 301
 force = false
 [[redirects]]
 from = "/book-a-consultation/?inf_contact_key=6b6c5ae283bab6b2434d49d46181f1d9d8db13ba76f38377e4632d3e4ae54a18"
-to = "https://www.qltech.com.au/book-a-consultation/"
+to = "https://www.qltech.com.au/schedule-a-call/"
 status = 301
 force = false
 [[redirects]]
 from = "/book-a-consultation/?inf_contact_key=c086cf7c64a0fb9a4e7f541920678b7337f6339b206fc436b409a6936c574c32"
-to = "https://www.qltech.com.au/book-a-consultation/"
+to = "https://www.qltech.com.au/schedule-a-call/"
 status = 301
 force = false
 [[redirects]]
@@ -8513,7 +8508,7 @@ status = 301
 force = false
 [[redirects]]
 from = "https://www.qltech.com.au/book-a-consultation/"
-to = "https://www.qltech.com.au/schedule-a-call"
+to = "https://www.qltech.com.au/schedule-a-call/"
 status = 301
 force = false
 [[redirects]]

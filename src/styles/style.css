@@ -8947,6 +8947,25 @@ section.work-details-section-1 .breif-text span {
     text-decoration: none;
     color: #0078ad;
 }
+section.error-page{
+ padding: 80px 0px 60px;   
+}
+section.error-page .error-number{ 
+    font-size: 220px;
+    font-weight: 900;
+    color:#7b8797;
+    line-height: 220px;
+}
+section.error-page h1{ 
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+section.error-page p.label-text{ 
+    font-size: 24px;
+    color:#7b8797;
+}
 @media all and (min-width:1600px) {
     p {
         font-size: 20px;
@@ -9338,7 +9357,24 @@ section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial img {
 @media all and (max-width:767px) {
     section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
         min-height: 300px;
-    }}
+    }
+    section.error-page {
+        padding: 30px 0px;
+    }
+    section.error-page .error-number{ 
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 100px;
+    }
+    section.error-page h1{ 
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    section.error-page p.label-text{ 
+        font-size: 18px;
+    }
+}
 @media all and (max-width:576px) {
     section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial {
         min-height: auto;

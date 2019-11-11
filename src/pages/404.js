@@ -1,14 +1,19 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 const NotFoundPage = () => (
   <Layout>
-	<section className="career-section-03 bg-light">
+	<section className="error-page bg-light text-center">
         <div className="container">
             <div className="main-panel">
-				<div>
-					<h1>NOT FOUND</h1>
-					<p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+				<div className="row justify-content-center">
+					<div className="col-lg-10">
+						<span className="error-number">404</span>
+						<h1 className="heading-main">PAGE CAN NOT BE FOUND.</h1>
+						<p className="label-text">The page you are looking for does not exist.</p>
+						<Link to="/" className="btn-default">BACK TO HOME</Link>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -16,5 +21,4 @@ const NotFoundPage = () => (
     
   </Layout>
 )
-
 export default NotFoundPage

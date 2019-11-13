@@ -6,16 +6,14 @@ class Contact extends React.Component{
 	constructor(props) {
 		super(props);
 		this.validator = new SimpleReactValidator();
-  
 		this.state = {
           first_name: '',
           last_name: '',
           email: '',
           number: '',
           goal: '',
-		   shown: "d-none",
-		   shown_new: "d-none",
-        
+		  shown: "d-none",
+		  shown_new: "d-none"
 		}
 	  this.submitForm = this.submitForm.bind(this);
 	  this.setTitle = this.setTitle.bind(this);

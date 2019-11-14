@@ -78,7 +78,7 @@ const AboutPage = () => (
                                                    <div className="thumbnial-body ">
                                                        
                                                        <p className="details">
-                                                           Proudly became Google partners & Hubspot Inbound Certified 
+                                                           Proudly became Google partners &amp; Hubspot Inbound Certified 
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
@@ -117,7 +117,7 @@ const AboutPage = () => (
                                                    <div className="thumbnial-body ">
                                                        
                                                        <p className="details">
-                                                           We pivoted to re-defined our fundamental core value. As a Customer-Centric agency with Framework-based approach in the form of SOSTAC
+                                                           We pivoted to re-defined our fundamental core value. A Customer-Centric agency with Framework-based approach in the form of SOSTAC
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
@@ -131,7 +131,7 @@ const AboutPage = () => (
                                                    <div className="thumbnial-body ">
                                                      
                                                        <p className="details">
-                                                            As the organisation grew we shifted to a larger facility. 
+                                                            As the organisation grew we shifted to a larger facility
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
@@ -145,7 +145,7 @@ const AboutPage = () => (
                                                    <div className="thumbnial-body ">
                                                       
                                                        <p className="details">
-                                                            We pivoted again and went deeper into our core value - A Customer-Centric Organisation driven with Systems thinking. This along with SOSTAC helped us in Identifying business Challenges. Which in return provided the uptick in revenue and efficiency for our customers. 
+                                                            We pivoted again and went deeper into our core value - A Customer-Centric Organisation driven with Systems thinking. This along with SOSTAC helped us in Identifying business Challenges. Which in return provided the uptick in revenue and efficiency for our customers 
 
                                                        </p>
                                                    </div>
@@ -211,14 +211,9 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
-                                           
-										   
-										   
-										   
-                                          
                                        </div>
                                </div>
-                    </div>
+                            </div>
                     </div>
                     </div>
                 

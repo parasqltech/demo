@@ -313,7 +313,7 @@ class Singleservice extends Component {
                     <div className="about-content xs-center sm-center wow fadeInUp">
                         <span className="sub-heading text-center d-block mb-0">FAQs</span>
                        
-                         <div id="accordion" className="faq-section mt-4">
+                        <div id="accordion" className="faq-section mt-4">
                                 
 								{service.edges[0].node.acf.faq &&
 									service.edges[0].node.acf.faq.map(
@@ -341,7 +341,7 @@ class Singleservice extends Component {
 								
 								
 								
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

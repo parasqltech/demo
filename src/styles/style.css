@@ -8966,6 +8966,7 @@ section.error-page p.label-text{
     font-size: 24px;
     color:#7b8797;
 }
+
 @media all and (min-width:1600px) {
     p {
         font-size: 20px;
@@ -9383,3 +9384,19 @@ section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial img {
 .er-msg{
 	margin-left: 16px !important;
 }	
+
+@media all and (max-width:1599px) and (min-width:1200px){
+    section.home-work-section .work-thumbnial , section.home-blog-section .thumbnial{
+        max-width: 280px;
+    }
+}
+@media all and (max-width:1199px) and (min-width:992px){
+    section.home-work-section .work-thumbnial , section.home-blog-section .thumbnial{
+        max-width: 260px;
+    }
+}
+@media all and (max-width:991px) and (min-width:768px){
+    section.home-work-section .work-thumbnial , section.home-blog-section .thumbnial{
+        max-width: 260px;
+    }
+}

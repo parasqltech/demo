@@ -15,7 +15,7 @@ const settings = {
       slidesToShow: 4,
       slidesToScroll: 2,
 	  variableWidth: true,
-	  autoplay: true,
+	  autoplay: false,
 	  autoplaySpeed: 2000,
 	  cssEase: "linear",
 	  mobileFirst: true,
@@ -25,6 +25,7 @@ const settings = {
       settings:{
         slidesToShow: 4,
         slidesToScroll: 2,
+		
       }
     },
 	{

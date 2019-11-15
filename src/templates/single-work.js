@@ -112,7 +112,7 @@ class SingleWork extends Component {
                                 </span>
                             </div>
                             <h2 className="section-heading-2 mb-2">Strategy</h2>
-                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.the_ql_approach_to_the_business }} ></p></>) : ('')}
+                            <div className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.the_ql_approach_to_the_business }} ></div></>) : ('')}
                             
                             {(work.edges[0].node.acf.how_the_clients_business_transformed != "") ? (<><div className="text-center">
                                     <span className="custom-break-line">
@@ -121,7 +121,7 @@ class SingleWork extends Component {
                                    </span>
                                </div>
                             <h2 className="section-heading-2 mb-2"> Transformation</h2>
-                            <p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.how_the_clients_business_transformed }} ></p></> ) : ("")}
+                            <div className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.how_the_clients_business_transformed }} ></div></> ) : ("")}
                            
                                {(work.edges[0].node.acf.gallery != null) ? (<div className=""><Slider {...settings} className="trusted-by-slider" >
 							{

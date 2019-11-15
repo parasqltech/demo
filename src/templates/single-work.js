@@ -52,7 +52,22 @@ const settings = {
 
 class SingleWork extends Component {
   render() {
-    const work = this.props.data.allWordpressWpWorks
+    const work = this.props.data.allWordpressWpWorks;
+	const work_details = work.edges[0].node.acf.gallery.length;
+	var cls ="col-lg-12";
+	if(work_details <= 2){
+		cls ="col-lg-6";
+	}
+	else if(work_details <= 3){
+		cls ="col-lg-4";
+	}
+	else if(work_details <= 4){
+		cls ="col-lg-3";
+	}
+	else{
+		cls ="col-lg-2";
+	}
+	
 	
     return (
       <Layout>
@@ -102,7 +117,7 @@ class SingleWork extends Component {
 							
 							
 							
-							{(work.edges[0].node.acf.problem_statement != "") ? (<><h2 className="section-heading-2 mb-2 mt-4">Challenge</h2><p className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.problem_statement }} ></p></>) : ('')}
+							{(work.edges[0].node.acf.problem_statement != "") ? (<><h2 className="section-heading-2 mb-2 mt-4">Challenge</h2><div className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.problem_statement }} ></div></>) : ('')}
 							
 							
 							{(work.edges[0].node.acf.the_ql_approach_to_the_business != "") ? ( <><div className="text-center">
@@ -123,18 +138,18 @@ class SingleWork extends Component {
                             <h2 className="section-heading-2 mb-2"> Transformation</h2>
                             <div className="label-text mb-4" dangerouslySetInnerHTML={{ __html: work.edges[0].node.acf.how_the_clients_business_transformed }} ></div></> ) : ("")}
                            
-                               {(work.edges[0].node.acf.gallery != null) ? (<div className=""><Slider {...settings} className="trusted-by-slider" >
+                               {(work.edges[0].node.acf.gallery != null) ? (<div className=""><div {...settings} className="trusted-by-slider row" >
 							{
 								work.edges[0].node.acf.gallery.map(
 								prop => {
 									return (
-										<div className="p-2">
+										<div className={cls+" p-2"}>
 										<img src={prop.source_url} className="img-fluid" alt="" />
 										</div>
 										)
 									}
 								)}
-						</Slider></div>) : ('')}
+						</div></div>) : ('')}
                         </div>
                         
 						

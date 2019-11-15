@@ -20,14 +20,26 @@ const settings = {
 	  cssEase: "linear",
 	  mobileFirst: true,
 	    responsive: [
+    
     {
-      breakpoint: 1024,
+    breakpoint: 1199,
       settings:{
-        slidesToShow: 4,
+        variableWidth: true,
+        slidesToShow: 3,
         slidesToScroll: 2,
 		
       }
     },
+    {
+    breakpoint: 991,
+    settings:{
+      variableWidth: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+    }
+  },
+    
+    
 	{
       breakpoint: 768,
       settings:{

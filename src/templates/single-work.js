@@ -203,9 +203,7 @@ class SingleWork extends Component {
         </div>
     </section>) : ("")}
 	
-	
-	
-	
+
 	<Randomwork url={work.edges[0].node.slug} />	
 		
 		

@@ -53,20 +53,27 @@ const settings = {
 class SingleWork extends Component {
   render() {
     const work = this.props.data.allWordpressWpWorks;
-	const work_details = work.edges[0].node.acf.gallery.length;
+	
 	var cls ="col-lg-12";
-	if(work_details <= 2){
-		cls ="col-lg-6";
+	if(work.edges[0].node.acf.gallery != null){
+		const work_details = work.edges[0].node.acf.gallery.length;
+		if(work_details <= 2){
+			cls ="col-lg-6";
+		}
+		else if(work_details <= 3){
+			cls ="col-lg-4";
+		}
+		else if(work_details <= 4){
+			cls ="col-lg-3";
+		}
+		else{
+			cls ="col-lg-2";
+		}
 	}
-	else if(work_details <= 3){
-		cls ="col-lg-4";
-	}
-	else if(work_details <= 4){
-		cls ="col-lg-3";
-	}
-	else{
-		cls ="col-lg-2";
-	}
+	
+	
+	
+	
 	
 	
     return (

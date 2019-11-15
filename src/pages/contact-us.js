@@ -58,8 +58,8 @@ const IndexPage = () => (
 								<div className="row justify-content-center">
 									<div className="col-md-5">
 										<p className="section-heading-3  mb-0">Australia</p>
-										<a href="tel:+61 0862623559" className="nav-link d-block pl-0 pb-0">
-												+61 (0)862623559
+										<a href="tel:+61 8 6262 3559" className="nav-link d-block pl-0 pb-0">
+												+61 8 6262 3559
 											</a>
 										
 									</div>

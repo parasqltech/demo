@@ -43,7 +43,7 @@ const Navbar = () => (
                 </p>
                 <ul  className="social-list justify-content-end ">
                     <li>
-                        <a href="tel:+61 (0)862623559" ><i className="fa fa-phone mr-2"></i><span className="d-inline d-sm-none  d-md-inline">+61 (0)862623559</span></a>
+                        <a href="tel:+61 8 6262 3559" ><i className="fa fa-phone mr-2"></i><span className="d-inline d-sm-none  d-md-inline">+61 8 6262 3559</span></a>
                     </li>
                      <li>
                         <a href="mailto:support@qltech.com.au"><i className="fa fa-envelope  mr-2"></i><span className="d-none d-md-inline">Send Email</span></a>

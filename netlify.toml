@@ -3242,11 +3242,6 @@ to = "https://www.qltech.com.au/category/mobile-apps"
 status = 301
 force = false
 [[redirects]]
-from = "/category/web-development/"
-to = "https://www.qltech.com.au/category/web-development"
-status = 301
-force = false
-[[redirects]]
 from = "/category/wordpress/"
 to = "https://www.qltech.com.au/category/wordpress-dev"
 status = 301

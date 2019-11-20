@@ -89,6 +89,8 @@ class Singleblog extends Component {
 							<div className="author-image blog-author-image">
 							
 							{(blog.edges[0].node.author.avatar_urls != '') ? (<img src={blog.edges[0].node.author.avatar_urls.wordpress_96} className="img-fluid"/>) : ('')}
+							
+							
 									
 							</div>
 							<div className="author-info blog-author-info">

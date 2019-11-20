@@ -7517,11 +7517,6 @@ to = "https://www.qltech.com.au/"
 status = 301
 force = false
 [[redirects]]
-from = "https://www.qltech.com.au/category/web-development"
-to = "https://www.qltech.com.au/"
-status = 301
-force = false
-[[redirects]]
 from = "https://www.qltech.com.au/tag/googleupdates/"
 to = "https://www.qltech.com.au/"
 status = 301
@@ -8108,11 +8103,6 @@ status = 301
 force = false
 [[redirects]]
 from = "https://www.qltech.com.au/tag/webtraffic/"
-to = "https://www.qltech.com.au/"
-status = 301
-force = false
-[[redirects]]
-from = "https://www.qltech.com.au/category/web-development"
 to = "https://www.qltech.com.au/"
 status = 301
 force = false

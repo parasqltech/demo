@@ -153,6 +153,13 @@ module.exports = {
         `,
       },
     },
+	{
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+		sitemap: 'https://www.qltech.com.au/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: ['/404/','/cgi-bin/'] }]
+      }
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

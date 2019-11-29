@@ -27,6 +27,11 @@
     Cache-Control = "public, max-age=604800"	
 
 [[redirects]]
+from = "https://qltech.com.au/*"
+to = "https://www.qltech.com.au/:splat"
+status = 301
+force = true
+[[redirects]]
 from = "https://www.qltech.com.au/project/yupit/"
 to = "https://www.qltech.com.au/work"
 status = 301

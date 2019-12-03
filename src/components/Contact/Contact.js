@@ -166,7 +166,7 @@ class Contact extends React.Component{
 										</div>
 										
 										
-										<p  className={"text-danger er-msg "+this.state.shown_captcha} >Invalid Message.</p>
+										<p className={"text-danger er-msg "+this.state.shown_captcha} >Please Verify Captcha.</p>
 										
 										<input type="hidden" required className="form-control" name="url" value="/contact-us" />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />

@@ -15,7 +15,8 @@ class Contact extends React.Component{
           number: '',
           goal: '',
 		  shown: "d-none",
-		  shown_new: "d-none"
+		  shown_new: "d-none",
+		  shown_captcha: "d-none"
 		}
 	  this.submitForm = this.submitForm.bind(this);
 	  this.setTitle = this.setTitle.bind(this);
@@ -73,8 +74,21 @@ class Contact extends React.Component{
 		}
 		
 		const recaptchaValue = recaptchaRef.current.getValue();
-		console.log(recaptchaValue);
-		return false;
+		
+		if(recaptchaValue == ''){
+			
+			this.setState({shown_captcha: "d-block"});
+			setTimeout(
+				function() {
+					this.setState({shown_captcha: "d-none"});
+				}
+			.bind(this),
+				2000
+			);
+			
+			
+			return false;
+		}
 		
 
 		var myarr = ["free", "downloads", "offers", "DA", "PA", "affordable price", "clients", "Some example", "services", "giveaways", "goal", "example", "test", "Marketing", "traffic", "offers","Bitcoin", "ervaringen", "review", "Capsules", "Amoxicillin", "blogger", "supplier", "SEO", "backlinks", "Digital", "Marketing", "link builder", "domain authority", "Off–Page",  "Title Tag Optimization", "Meta Tag Optimization", "keyword", "SERPs"];
@@ -144,12 +158,15 @@ class Contact extends React.Component{
 											<textarea rows="3" onChange={this.goal} className="form-control" placeholder="" name="message" required>{this.state.goal}</textarea>
 										</div>
 										
-										<ReCAPTCHA
-											ref={recaptchaRef}
-											sitekey=" 6Lc5jjEUAAAAAI1yf3CfFogxqiok5pt7wcF7_SKJ"
-											
-										  />
+										<div className="col-md-12 mt-3">
+											<ReCAPTCHA
+												ref={recaptchaRef}
+												sitekey=" 6Lc5jjEUAAAAAI1yf3CfFogxqiok5pt7wcF7_SKJ"
+											/>
+										</div>
 										
+										
+										<p  className={"text-danger er-msg "+this.state.shown_captcha} >Invalid Message.</p>
 										
 										<input type="hidden" required className="form-control" name="url" value="/contact-us" />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />

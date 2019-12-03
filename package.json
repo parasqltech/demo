@@ -51,6 +51,7 @@
     "react-autosuggest": "^9.4.3",
     "react-dom": "^16.8.0",
     "react-form-validate": "^1.0.3",
+    "react-google-recaptcha": "^2.0.1",
     "react-helmet": "^5.2.1",
     "react-images": "^1.0.0",
     "react-lazyload": "^2.6.2",

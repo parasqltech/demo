@@ -82,7 +82,7 @@ const IndexPage = () => (
 									<h6 className="card-title  mb-4">Career</h6>
 									<p className="label-text  mb-4">Ready to take on the challenge?  </p>
 
-								   <Link to="career/" className="btn btn-default mt-0 mb-4"> Go to career section</Link>
+								   <Link to="/career/" className="btn btn-default mt-0 mb-4"> Go to career section</Link>
 								</div>
 							</div>
 					</div>

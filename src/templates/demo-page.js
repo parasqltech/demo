@@ -111,14 +111,14 @@ class demopage extends Component {
 					<div className="col-lg-6 col-md-6 wow fadeInLeft article-block">
                                          <div className="thumbnial">
                                             <div className="thumbnial-image">
-                                                <Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug+"/"}>
+                                                <Link to={"/hub/"+prop.node.categories[0].slug+"/"+prop.node.slug+"/"}>
 												
 												{(prop.node.acf.feature_image != null) ? (<img src={prop.node.acf.feature_image.source_url} className="img-fluid w-100"
                                                 alt=""/>) : ('')}		
 														</Link>
                                             </div>
                                             <div className="thumbnial-content">
-                                                <Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug+"/"} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="blog-title">
+                                                <Link to={"/hub/"+prop.node.categories[0].slug+"/"+prop.node.slug+"/"} dangerouslySetInnerHTML={{ __html: prop.node.title}} className="blog-title">
                                                 </Link>
                                                 <div className="post-date">{prop.node.date}</div>
                                             </div>
@@ -131,10 +131,10 @@ class demopage extends Component {
                                                 </div>
                                                 <div className="social-links pull-right">
                                                     <ul className="post-info ">
-                                                        <li><Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug+"/"}><span
+                                                        <li><Link to={"/hub/"+prop.node.categories[0].slug+"/"+prop.node.slug+"/"}><span
                                                             className="icon flaticon-chat-comment-oval-speech-bubble-with-text-lines"></span></Link>
                                                         </li>
-                                                        <li><Link to={"hub/"+prop.node.categories[0].slug+"/"+prop.node.slug+"/"}><span className="icon flaticon-share"></span></Link>
+                                                        <li><Link to={"/hub/"+prop.node.categories[0].slug+"/"+prop.node.slug+"/"}><span className="icon flaticon-share"></span></Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -179,7 +179,7 @@ class demopage extends Component {
 													return (
 											
 											
-											<li key={i} ><Link to={"category/"+propd.node.slug+"/"}>{propd.node.name}</Link></li>
+											<li key={i} ><Link to={"/category/"+propd.node.slug+"/"}>{propd.node.name}</Link></li>
 											)
 												}
 												)}		

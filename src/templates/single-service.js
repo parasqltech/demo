@@ -139,7 +139,7 @@ class Singleservice extends Component {
 															return (
 																<>
 																{(propd.slider_title != null) ? (<>
-																{(propd.slider_image != null) ? (<Link to={"services/"+propd.slider_url+"/"}  title={propd.slider_title}><img src={propd.slider_image.source_url} className="img-fluid" alt="" /></Link>) : ('')}
+																{(propd.slider_image != null) ? (<Link to={"/services/"+propd.slider_url+"/"}  title={propd.slider_title}><img src={propd.slider_image.source_url} className="img-fluid" alt="" /></Link>) : ('')}
 																</>) : ('')}
 																
 																</>
@@ -155,7 +155,7 @@ class Singleservice extends Component {
 															return (
 																<>
 																{(propd.slider_title != null) ? (<>
-																{(propd.slider_image != null) ? (<Link to={"services/"+propd.slider_url+"/"}  title={propd.slider_title}><img src={propd.slider_image.source_url} className="img-fluid" alt="" /></Link>) : ('')}
+																{(propd.slider_image != null) ? (<Link to={"/services/"+propd.slider_url+"/"}  title={propd.slider_title}><img src={propd.slider_image.source_url} className="img-fluid" alt="" /></Link>) : ('')}
 																</>) : ('')}
 																
 																</>
@@ -288,7 +288,7 @@ class Singleservice extends Component {
                                        <div className="work-thumbnail-details">
                                            <p className="work-title" dangerouslySetInnerHTML={{ __html: prop.node.acf.title }}  ></p>
                                            <p className="label-text">{prop.node.acf.short_descprition}</p>
-                                           <Link to={"work/"+prop.node.slug+"/"} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
+                                           <Link to={"/work/"+prop.node.slug+"/"} className="btn btn-secondary-link">Read More <i className="fa fa-long-arrow-right ml-1"></i></Link>
                                        </div>
                                    </div>
                                </div>

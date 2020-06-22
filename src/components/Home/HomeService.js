@@ -78,7 +78,7 @@ const HomeService = () => (
 								
                                     
                                 </div>
-                                <h3><Link to={"services/"+prop.node.slug+"/"}>{prop.node.acf.title}</Link></h3>
+                                <h3><Link to={"/services/"+prop.node.slug+"/"}>{prop.node.acf.title}</Link></h3>
                                 <div className="text">{prop.node.acf.descprition}</div>
                             </div>
                         </div>

@@ -110,7 +110,7 @@ const Footer = () => (
         <div className="footer-last">
             <div className="container">
                 <div className="row mx-0 justify-content-between">
-                    <p className="mb-0 pull-left company-copyright"> © 2019 QL Tech. All Rights Reserved.
+                    <p className="mb-0 pull-left company-copyright"> © {(new Date().getFullYear())} QL Tech. All Rights Reserved.
                         
                     </p>
                     <ul className="pull-right mb-0 footer other-links">

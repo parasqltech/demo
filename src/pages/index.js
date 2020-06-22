@@ -111,6 +111,7 @@ const IndexPage = () => (
                         <span className="sub-heading d-block text-center mb-0">Our Processes</span>
                     <h2 className="section-heading text-center wow fadeIn">
                         Pillars of our Success</h2>
+                        
                 </div>
             </div>
 

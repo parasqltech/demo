@@ -10,6 +10,9 @@
 body {
     font-family: 'Roboto', sans-serif !important;
 }
+:focus{
+     outline: none !important;
+}
 
 
 /*!

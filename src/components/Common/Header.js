@@ -139,7 +139,7 @@ const Navbar = () => (
 							</>
 						
 							) : (<li className="nav-item">
-							<Link className="nav-link" key={prop.id} to={prop.object_slug+"/"} >
+							<Link className="nav-link" key={prop.id} to={"/"+prop.object_slug+"/"}>
 								{prop.title}
 							</Link>
                         </li>))}

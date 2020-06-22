@@ -26,7 +26,7 @@ const PlatformHeader = () => (
                 prop => {
 					return (
 					<li>
-                                           <Link to={"platforms/"+prop.node.slug+"/"} className="dropdown-item mt-1">
+                                           <Link to={"/platforms/"+prop.node.slug+"/"} className="dropdown-item mt-1">
                                                <span className="dropdown-menu-li-list"  dangerouslySetInnerHTML={{ __html: prop.node.title}}></span>
                                            </Link>
                                        </li>

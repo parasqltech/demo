@@ -31,7 +31,7 @@ const FooterM2 = () => (
 				data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
                 prop => {
 					return (
-						<li><Link to={"services/"+prop.object_slug+"/"} dangerouslySetInnerHTML={{ __html: prop.title}}></Link></li>
+						<li><Link to={"/services/"+prop.object_slug+"/"} dangerouslySetInnerHTML={{ __html: prop.title}}></Link></li>
 					)
                 }
                 )}

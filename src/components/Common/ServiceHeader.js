@@ -30,7 +30,7 @@ const ServiceHeader = () => (
                 (prop,i) => {
 					return (
 					<li key={i} className="">
-                                           <Link to={"services/"+prop.node.slug+"/"} className="dropdown-item">
+                                           <Link to={"/services/"+prop.node.slug+"/"} className="dropdown-item">
                                                <span className="services-heading">{prop.node.acf.title}</span>
                                                <span className="services-description">{prop.node.acf.descprition}</span>
                                            </Link>

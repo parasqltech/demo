@@ -126,7 +126,7 @@ const Navbar = () => (
 								<a className="nav-link dropdown-toggle" data-toggle="dropdown" href="jacasvript:;">About</a>
 								<ul className="dropdown-menu row">
 								{prop && prop.wordpress_children && prop.wordpress_children.map((child, i) => {
-								return (<li key={i} ><Link className="dropdown-item"   to={child.object_slug+"/"}>{child.title}</Link></li> )
+								return (<li key={i} ><Link className="dropdown-item"   to={"/"+child.object_slug+"/"}>{child.title}</Link></li> )
 							  })}</ul></li>))}	
 								
 								</>

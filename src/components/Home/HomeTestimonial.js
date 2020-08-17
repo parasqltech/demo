@@ -78,7 +78,7 @@ render() {
                                           </div>
                                           <p className="label-text">
                                               <span>{(prop.node.acf.descprition).substring(0, 400)}</span>
-                                              {(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.acf.image,prop.node.acf.name,prop.node.acf.desgination,prop.node.acf.descprition)}>Read More</a></span>):(''))}
+                                              {(prop.node.acf.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.acf.image.source_url,prop.node.acf.name,prop.node.acf.desgination,prop.node.acf.descprition)}>Read More</a></span>):(''))}
                                               
                                               
                                               

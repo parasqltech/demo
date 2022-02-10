@@ -42,7 +42,7 @@
     "lodash": "^4.17.5",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
-    "node-sass": "^4.9.2",
+    "node-sass": "^7.0.0",
     "parallax-js": "^3.1.0",
     "parcel-bundler": "^1.9.4",
     "popper.js": "^1.15.0",
